@@ -41,7 +41,19 @@ Each script's letters live in a folder named for the script's id: `_data/letters
 | `near` | Letters it is easily taken for: a list of `{char, note}`. |
 | `note` | What the letter carries, cited. |
 
-Other scripts may add fields of their own (a Thai letter's tone `class`, say, or the Sanskrit letter it continues); describe them here when you add them.
+Fields the Thai letters add, which other scripts can use where they fit:
+
+| Field | Meaning |
+| --- | --- |
+| `name_native` | The letter's name in its own script: `ก ไก่`. |
+| `meaning` | For a Thai letter, what its name-word means: `chicken`. |
+| `class` | The Thai tone class: `mid`, `high` or `low`. |
+| `sound`, `ipa` | The sound at the start of a syllable, romanized and in IPA. |
+| `final_sound` | The sound at the end of a syllable, if the letter can end one. |
+| `sanskrit` | The Sanskrit or Pali letter it continues, in Devanagari with its transliteration: `ग ga`. |
+| `obsolete` | `true` for a letter no longer used. |
+
+Describe new fields here when you add them.
 
 ## Leaf: `_data/leaves/<grove>/<id>.yml`
 

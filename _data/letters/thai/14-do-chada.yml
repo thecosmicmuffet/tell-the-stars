@@ -1,0 +1,11 @@
+char: ฎ
+position: 14
+name: do chada
+name_native: ฎ ชฎา
+meaning: a tall crown
+class: mid
+sound: d
+ipa: d
+final_sound: t
+near:
+- {char: ฏ, note: they differ only at the foot}

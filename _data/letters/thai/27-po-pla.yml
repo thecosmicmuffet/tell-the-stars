@@ -1,0 +1,12 @@
+char: ป
+position: 27
+name: po pla
+name_native: ป ปลา
+meaning: fish
+class: mid
+sound: p
+ipa: p
+final_sound: p
+sanskrit: प pa
+near:
+- {char: บ, note: the stem rises above the line in ป}

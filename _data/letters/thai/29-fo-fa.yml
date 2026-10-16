@@ -1,0 +1,12 @@
+char: ฝ
+position: 29
+name: fo fa
+name_native: ฝ ฝา
+meaning: lid
+class: high
+sound: f
+ipa: f
+near:
+- {char: ผ, note: the stem rises above the line in ฝ}
+note: >-
+  Thai's f, which Sanskrit lacks.

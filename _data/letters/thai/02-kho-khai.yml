@@ -1,0 +1,12 @@
+char: ข
+position: 2
+name: kho khai
+name_native: ข ไข่
+meaning: egg
+class: high
+sound: kh
+ipa: kʰ
+final_sound: k
+sanskrit: ख kha
+near:
+- {char: ฃ, note: a notch at the top is the whole difference}

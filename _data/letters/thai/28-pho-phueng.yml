@@ -1,0 +1,11 @@
+char: ผ
+position: 28
+name: pho phueng
+name_native: ผ ผึ้ง
+meaning: bee
+class: high
+sound: ph
+ipa: pʰ
+sanskrit: फ pha
+near:
+- {char: ฝ, note: the stem rises above the line in ฝ}

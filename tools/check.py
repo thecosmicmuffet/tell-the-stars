@@ -291,6 +291,10 @@ for path in files('letters'):
     for f in ('value', 'position'):
         if l.get(f) is not None and not isinstance(l.get(f), int):
             err(path, f'`{f}` must be a whole number')
+    if l.get('obsolete') is not None and not isinstance(l.get('obsolete'), bool):
+        err(path, '`obsolete` must be true or false')
+    if folder == 'thai' and l.get('class') not in ('mid', 'high', 'low'):
+        warn(path, '`class` should be mid, high or low')
     for n in l.get('near') or []:
         if not isinstance(n, dict) or not n.get('char'):
             err(path, 'each `near` entry needs `char`')

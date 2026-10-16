@@ -1,0 +1,14 @@
+char: ช
+position: 10
+name: cho chang
+name_native: ช ช้าง
+meaning: elephant
+class: low
+sound: ch
+ipa: tɕʰ
+final_sound: t
+sanskrit: ज ja
+near:
+- {char: ซ, note: a notch at the top is the whole difference}
+note: >-
+  Sanskrit ja, as in ชาติ, chat, birth or nation, from jāti.

@@ -1,0 +1,15 @@
+char: ฃ
+position: 3
+name: kho khuat
+name_native: ฃ ขวด
+meaning: bottle
+class: high
+sound: kh
+ipa: kʰ
+obsolete: true
+near:
+- {char: ข, note: a notch at the top is the whole difference}
+note: >-
+  One of two letters no longer used. It and ฅ wrote an Old Thai sound, x, that later merged with kh,
+  and the story goes that the first Thai typewriter had no room for them. Neither has a Sanskrit or
+  Pali letter behind it.

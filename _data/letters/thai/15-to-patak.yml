@@ -1,0 +1,15 @@
+char: ฏ
+position: 15
+name: to patak
+name_native: ฏ ปฏัก
+meaning: goad
+class: mid
+sound: t
+ipa: t
+final_sound: t
+sanskrit: ट ṭa
+near:
+- {char: ฎ, note: they differ only at the foot}
+note: >-
+  Sanskrit ṭa, the retroflex t, which Thai says as a plain t. Its name-word ปฏัก, patak, is a goad,
+  the same thing Hebrew names in lamed.
