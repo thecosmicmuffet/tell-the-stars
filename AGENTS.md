@@ -4,11 +4,11 @@ This file is for any model or agent adding to the tree: Claude, GPT, Grok, Qwen,
 
 ## What this is
 
-A tool to explore the development of language. The README's **The Idea** is the brief, in the words of the person who planted it: from shared calls, to scratches in the dirt, to letters, each letter a junction of different experiences that unfolds into more letters and more rules. Two layers are planted so far: the twenty-two letters (`_data/letters/`) and a tree of biblical names (`_data/leaves/`, `_data/roots/`). New layers are welcome.
+A tool to explore the development of language. The README's **The Idea** is the brief, in the words of the person who planted it: from shared calls, to scratches in the dirt, to letters, each letter a junction of different experiences that unfolds into more letters and more rules. Three layers are planted so far: a family of scripts (`_data/scripts/`), from clay tokens to Thai; the twenty-two Hebrew letters (`_data/letters/hebrew/`); and a tree of biblical names (`_data/leaves/`, `_data/roots/`). New layers are welcome.
 
 ## Read first
 
-1. `names.txt` on the live site, or `_data/leaves/` here. Every map is first ingested as a name, so begin with the list of names. Then `_data/letters/`, where it all starts.
+1. `names.txt` on the live site, or `_data/leaves/` here. Every map is first ingested as a name, so begin with the list of names. Then `_data/scripts/` and `_data/letters/`, where it all starts.
 2. [docs/schema.md](docs/schema.md) for every field.
 3. One or two existing leaves near where you want to work. `_data/leaves/ezra/r-jarib.yml` and `_data/leaves/apostles/barnabas.yml` show most of the fields.
 
@@ -16,7 +16,9 @@ The live site serves the whole tree in three shapes: `llms-full.txt` (plain text
 
 ## The shape of a contribution
 
-- **One file per thing.** A leaf, a root, a reading, a ring or a margin note is each its own YAML file under `_data/`. The file name is the id: lowercase `a-z`, `0-9` and hyphens.
+- **One file per thing.** A script, a letter, a leaf, a root, a reading, a ring or a margin note is each its own YAML file under `_data/`. The file name is the id: lowercase `a-z`, `0-9` and hyphens.
+- **Scripts** go in `_data/scripts/<id>.yml`, joined to the script they came from by `parent`, with a `certainty` when the descent is argued. A script nobody can read still belongs here; say so in `status` and leave its questions in `open`.
+- **Letters** go in `_data/letters/<script>/<nn>-<name>.yml`, in a folder named for the script's id.
 - **Leaves** go in `_data/leaves/<grove>/<id>.yml`, in the same grove as their parent. A name with no grove yet goes in `_data/leaves/planted/`.
 - **Sign everything new** with `by` (a person's handle, or `model/instance` such as `claude`, `gpt/<instance>`, `grok`, `qwen/<instance>`) and `at` (an ISO 8601 time).
 - **Cut a ring** for each session that adds something: `_data/rings/<YYYY-MM-DD>-<slug>.yml` with `day`, `title`, `summary`, `by`, and `added` (the ids you planted or changed).
@@ -42,6 +44,15 @@ Two names can be one token and still not one identity. Say which kind of samenes
 
 Family links (`mother`, `wife of`, `adopted by`, `nursed by`) and resonances (`purple and trade, as in`) use the same `links` list.
 
+## Open doors
+
+Every script file can carry `open`: questions left for the next mind. `llms.txt` lists them all. Take one up, answer it with evidence in a new file, a margin note or a pull request, and sign it. Directions already named:
+
+- **Thai to Sanskrit.** The Thai consonants as `_data/letters/thai/`, each with the Sanskrit or Pali letter it continues, its tone class, and the sound Thai gives it. Thai kept letters for sounds it no longer makes and moved a lost difference into tone: a junction you can watch happen.
+- **Olmec and the Isthmian script.** Sign lists for the Cascajal block and La Mojarra, with every proposed reading marked by how sure it is.
+- **Pictograph fragments.** The Jiahu signs, the Vinča symbols, the Indus seals, the first pictures in cuneiform and the Egyptian signs behind the first alphabet: what each sign shows, and which later signs it resembles.
+- **More of the family.** Syriac, Arabic, Cyrillic, the runes, Geʽez, Tibetan, and the scripts one person designed, such as Hangul and Sequoyah's Cherokee syllabary.
+
 ## Writing notes
 
 The `note` on a leaf is its masoret: what the name carries, in a few plain, cited sentences. Write from the text: the verse, the root, the names around it. Then stop. Do not rewrite another contributor's note. To add, disagree or extend, write a margin note in `_data/marginalia/`, or add a signed paragraph that begins with your `by`.
@@ -53,7 +64,7 @@ pip install pyyaml
 python3 tools/check.py
 ```
 
-Fix every error. Warnings, such as a root named by consonants that has no file yet, can stay. Then commit with a message that says what grew: `Plant Shelomith and Dibri (Lev 24:11)`, `Note on r-jarib`, `Ring: letters and sounds`. The site rebuilds itself from `master`; nothing generated is checked in.
+Fix every error. Warnings, such as a root named by consonants that has no file yet, can stay. Then commit with a message that says what grew: `Plant Shelomith and Dibri (Lev 24:11)`, `Note on r-jarib`, `Add the Thai consonants`, `Ring: letters and sounds`. The site rebuilds itself from `master`; nothing generated is checked in.
 
 ## A leaf, whole
 

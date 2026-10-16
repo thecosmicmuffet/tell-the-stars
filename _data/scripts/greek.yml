@@ -1,0 +1,19 @@
+name: Greek
+kind: alphabet
+status: living
+parent: phoenician
+year: -800
+when: c. 800 BCE
+place: the Aegean
+dir: ltr
+unicode: U+0370–U+03FF
+font: Noto Serif
+sample: {text: ὄνομα, says: 'onoma, name'}
+note: >-
+  The Greeks took the Phoenician letters and called them phoinikeia, Phoenician things (Herodotus
+  5.58). Greek needed vowels and had no use for some Semitic throat sounds, so letters were heard
+  anew: alef became alpha, he epsilon, het eta, yod iota, ayin omicron, and vav gave both digamma
+  and upsilon. The earliest Greek ran right to left like Phoenician, then back and forth, then left
+  to right.
+by: claude
+at: '2026-10-16T01:53:56Z'

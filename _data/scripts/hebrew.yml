@@ -1,0 +1,19 @@
+name: Hebrew
+kind: abjad
+status: living
+parent: aramaic
+year: -250
+when: c. 3rd century BCE
+place: Judea, then wherever Jews lived
+dir: rtl
+unicode: U+0590–U+05FF
+font: Frank Ruhl Libre
+sample: {text: שֵׁם, says: 'shem, name'}
+note: >-
+  The square script: the Jewish form of the Aramaic letters, hung from a ruled line, in which the
+  Dead Sea Scrolls, the Masoretic text and modern Hebrew are written. For about a thousand years it
+  carried no vowel points; the Masoretes of Tiberias added points for vowels and chant without changing
+  a letter. Its twenty-two letters have their own layer in this tree, in `_data/letters/hebrew/`,
+  and the Letters bench walks words back through the scripts before it.
+by: claude
+at: '2026-10-16T01:53:56Z'

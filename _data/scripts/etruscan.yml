@@ -1,0 +1,16 @@
+name: Etruscan
+kind: alphabet
+status: read
+parent: greek
+year: -700
+when: c. 700 BCE
+place: Etruria, in central Italy
+dir: rtl
+unicode: U+10300–U+1032F (Old Italic)
+note: >-
+  The Etruscans learned their letters from Greek colonists in Italy and wrote mostly right to left.
+  Their language had no g, so gamma stood for k; Rome took the alphabet from them with C for k, and
+  later added a stroke to C to make G (see the note on gimel). The letters can be read; the language
+  is still only partly understood.
+by: claude
+at: '2026-10-16T01:53:56Z'

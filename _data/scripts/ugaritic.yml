@@ -1,0 +1,23 @@
+name: Ugaritic
+kind: abjad
+status: read
+parent: proto-sinaitic
+certainty: 0.8
+links:
+- {to: cuneiform, kind: wedges from}
+year: -1400
+when: c. 1400–1190 BCE
+place: Ugarit, at Ras Shamra on the Syrian coast
+dir: ltr
+unicode: U+10380–U+1039F
+font: Noto Sans Ugaritic
+sample: {text: 𐎌𐎎, says: 'šm, name'}
+note: >-
+  An alphabet of thirty letters pressed into clay as wedges and read left to right like cuneiform.
+  Its letter lists come in the order of the Phoenician and Hebrew alphabet, and also in the order
+  of the South Arabian one, so the idea came from the alphabets of the Levant and the strokes from
+  Mesopotamia. It wrote three alefs, one for each vowel that followed. Found at Ras Shamra in 1928
+  and deciphered within two years, it went silent when Ugarit fell, around 1190 BCE. Its poems of
+  Baal and El are among the closest texts to the Hebrew Bible in language.
+by: claude
+at: '2026-10-16T01:53:56Z'

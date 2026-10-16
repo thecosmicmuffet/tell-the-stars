@@ -1,0 +1,18 @@
+name: Siddham
+kind: abugida
+status: living
+parent: gupta
+year: 588
+when: late 6th century CE
+place: northern India, then China and Japan
+dir: ltr
+unicode: U+11580–U+115FF
+font: Noto Sans Siddham
+sample: {text: 𑖡𑖯𑖦, says: 'nāma, name'}
+note: >-
+  Siddham means accomplished, perfected. Buddhist monks carried it with Sanskrit mantras and seed
+  syllables to China, and Kūkai brought it to Japan in 806, where Shingon and Tendai still write it,
+  calling the letters bonji, Sanskrit letters. A single seed syllable can stand for a deity. In India
+  it gave way to Nagari by the 11th century.
+by: claude
+at: '2026-10-16T01:53:56Z'

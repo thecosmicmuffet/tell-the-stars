@@ -1,0 +1,26 @@
+name: Brahmi
+kind: abugida
+status: read
+parent: aramaic
+certainty: 0.6
+links:
+- {to: indus, kind: said by some to come from, certainty: 0.05}
+year: -250
+when: by c. 250 BCE
+place: the Maurya empire, across India
+dir: ltr
+unicode: U+11000–U+1107F
+font: Noto Sans Brahmi
+sample: {text: 𑀦𑀸𑀫, says: 'nāma, name'}
+note: >-
+  The script of Ashoka's edicts, cut into rock and pillars around 250 BCE, and the ancestor of nearly
+  all the scripts of South and Southeast Asia, from Devanagari and Tamil to Tibetan, Thai and Javanese.
+  Each letter is a consonant with a built in; other vowels are marks added to it, and the unit of
+  consonant and vowel is an akṣara, a word that also means imperishable. Most scholars see a Semitic
+  model, probably Aramaic, behind it, at least for the idea; some hold it was made in India; a descent
+  from the Indus script is not accepted by epigraphers. James Prinsep read it in the 1830s.
+open:
+- 'Lay Brahmi beside Aramaic letter by letter, as the bench does for Hebrew: where do shapes and sounds
+  agree?'
+by: claude
+at: '2026-10-16T01:53:56Z'

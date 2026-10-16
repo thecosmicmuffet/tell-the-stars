@@ -2,9 +2,32 @@
 
 Every file under `_data/` is YAML. A file's name, without `.yml`, is its id: lowercase `a-z`, `0-9` and hyphens (the root ids `Y` and `E` are the two exceptions). Fields not listed here are kept but not shown.
 
-## Letter: `_data/letters/<nn>-<name>.yml`
+## Script: `_data/scripts/<id>.yml`
 
-The two-digit prefix keeps the files in alphabet order.
+One writing system, or one system of signs that may or may not be writing. Scripts form their own lineage: `parent` is the script a script came from.
+
+| Field | Required | Meaning |
+| --- | --- | --- |
+| `name` | yes | The script's name in English. |
+| `kind` | | `alphabet`, `abjad` (consonants only), `abugida` (consonants carrying vowel marks), `syllabary`, `logo-syllabic`, `logo-consonantal`, `logographic`, `featural`, `symbols` (signs that may not write a language), `counters`, or `unknown`. |
+| `status` | | `living` (in use), `read` (no longer used, but read), `partly read`, or `unread`. |
+| `parent` | | The id of the script it came from. Leave it out when no ancestor is known. |
+| `certainty` | | How sure the join to `parent` is, from 0 to 1. Left out when the join is plain fact. |
+| `links` | | Other joins: a list of `{to, kind, certainty}`, such as `{to: cuneiform, kind: wedges from}` or `{to: chinese, kind: signs like, certainty: 0.1}`. |
+| `year` | yes | The earliest writing in it, as a whole number, negative for BCE. Approximate; it orders the tree. |
+| `when` | | The dates in words, as precise as the evidence allows: `c. 1400–1190 BCE`. |
+| `place` | | Where it was written. |
+| `dir` | | `ltr`, `rtl`, `ttb` (top to bottom), `boustrophedon`, or `any`. |
+| `unicode` | | Its Unicode block, if it has one. |
+| `font` | | A Google Fonts family that can show the sample: `Noto Sans Brahmi`. |
+| `sample` | | A word written in it, as Unicode text: `{text, says}`. By custom the word for name, where the script can be typed. |
+| `note` | | Where it came from and what it carries, cited. |
+| `open` | | Questions it leaves open for the next mind: a list of plain sentences. |
+| `by`, `at` | for new scripts | Who planted it and when (ISO 8601). |
+
+## Letter: `_data/letters/<script>/<nn>-<name>.yml`
+
+Each script's letters live in a folder named for the script's id: `_data/letters/hebrew/01-alef.yml`. The two-digit prefix keeps the files in alphabet order. Only `char` is required; the other fields are filled as far as they apply to the script.
 
 | Field | Meaning |
 | --- | --- |
@@ -17,6 +40,8 @@ The two-digit prefix keeps the files in alphabet order.
 | `greek`, `latin` | The letters it became. |
 | `near` | Letters it is easily taken for: a list of `{char, note}`. |
 | `note` | What the letter carries, cited. |
+
+Other scripts may add fields of their own (a Thai letter's tone `class`, say, or the Sanskrit letter it continues); describe them here when you add them.
 
 ## Leaf: `_data/leaves/<grove>/<id>.yml`
 
@@ -69,7 +94,7 @@ The two-digit prefix keeps the files in alphabet order.
 
 ## Ring: `_data/rings/<YYYY-MM-DD>-<slug>.yml`
 
-`day` (`YYYY-MM-DD`, quoted), `title`, `summary`, `by`, and `added`: the ids planted or changed in that session.
+`day` (`YYYY-MM-DD`, quoted), `title`, `summary`, `by`, and `added`: the ids planted or changed in that session (leaves, roots, scripts or readings).
 
 ## Margin note: `_data/marginalia/<file>.yml`
 

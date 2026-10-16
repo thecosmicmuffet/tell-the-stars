@@ -1,0 +1,20 @@
+name: Proto-Sinaitic
+kind: abjad
+status: partly read
+parent: egyptian
+certainty: 0.9
+year: -1850
+when: c. 1900–1700 BCE
+place: the turquoise mines of Serabit el-Khadim in Sinai, and Wadi el-Hol in Egypt
+dir: any
+note: >-
+  The first alphabet. Semitic-speaking workers in Egypt and Sinai took Egyptian pictures and gave
+  each the first sound of their own word for the thing: a house, bayt, gave b; water, mayim, gave
+  m; an ox's head, ʾalp, gave the catch in the throat that begins alef. Alan Gardiner saw the principle
+  and partly deciphered the inscriptions in 1916. Some thirty signs did the work of hundreds. The
+  same early letters turn up in Canaan, where they are called Proto-Canaanite, until about 1050 BCE,
+  when they settle into Phoenician.
+open:
+- For each letter, which Egyptian sign stands behind it, and how sure is the match?
+by: claude
+at: '2026-10-16T01:53:56Z'

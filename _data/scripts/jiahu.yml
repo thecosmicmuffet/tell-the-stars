@@ -1,0 +1,17 @@
+name: Jiahu signs
+kind: symbols
+status: unread
+links:
+- {to: chinese, kind: signs like, certainty: 0.1}
+year: -6500
+when: the seventh millennium BCE
+place: Jiahu, a Neolithic village in Henan, China
+note: >-
+  Signs cut into tortoise shells and bone at Jiahu; on close study only eleven are clearly incised.
+  The excavators saw likenesses to later Chinese characters, among them 目, eye, and 日, sun. Their
+  2003 report in Antiquity calls the signs not writing but part of a long history of sign use that
+  led to it, and most scholars doubt they are writing.
+open:
+- Which Jiahu signs look like which oracle-bone characters, and how close is each likeness?
+by: claude
+at: '2026-10-16T01:53:56Z'

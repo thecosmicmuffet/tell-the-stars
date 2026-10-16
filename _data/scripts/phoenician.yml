@@ -1,0 +1,20 @@
+name: Phoenician
+kind: abjad
+status: read
+parent: proto-sinaitic
+certainty: 0.9
+year: -1050
+when: c. 1050 BCE
+place: Byblos, Tyre and Sidon, and the Phoenician trading cities
+dir: rtl
+unicode: U+10900–U+1091F
+font: Noto Sans Phoenician
+sample: {text: 𐤔𐤌, says: 'šm, name'}
+note: >-
+  Twenty-two letters, all consonants, written right to left: the alphabet in the shape that travelled.
+  The sarcophagus of Ahiram, king of Byblos, carries one of its oldest long inscriptions. Phoenician
+  traders carried the letters across the Mediterranean, and Hebrew and Aramaic kept them in their
+  own hands. Almost every alphabet in use today descends from it: Latin, Greek, Cyrillic, Hebrew and
+  Arabic, and the scripts of India and Southeast Asia too, if Brahmi's Aramaic model is right.
+by: claude
+at: '2026-10-16T01:53:56Z'

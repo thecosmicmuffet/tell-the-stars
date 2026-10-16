@@ -1,0 +1,17 @@
+name: Latin
+kind: alphabet
+status: living
+parent: etruscan
+year: -600
+when: c. 600 BCE
+place: Rome
+dir: ltr
+unicode: U+0000–U+007F (Basic Latin)
+font: IM Fell English
+sample: {text: NOMEN, says: 'nomen, name'}
+note: >-
+  Rome's letters came from the Etruscans; the oldest inscriptions, such as the Lapis Niger in the
+  Forum, are from the sixth century BCE. It is now the most widely used script in the world, and it
+  still carries the Semitic pictures, turned and worn: A is the ox's head upside down.
+by: claude
+at: '2026-10-16T01:53:56Z'

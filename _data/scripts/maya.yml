@@ -1,0 +1,19 @@
+name: Maya
+kind: logo-syllabic
+status: read
+parent: olmec
+certainty: 0.3
+links:
+- {to: isthmian, kind: kin of, certainty: 0.5}
+year: -300
+when: c. 300–200 BCE
+place: the Maya lowlands of Mexico, Guatemala and Belize
+dir: ttb
+note: >-
+  The best understood of the Mesoamerican scripts. Its oldest known text, ten painted signs at San
+  Bartolo in Guatemala from about 300 to 200 BCE, includes AJAW, lord (Saturno, Stuart and Beltrán,
+  Science, 2006). The signs mix whole words with syllables, so a scribe could spell one word several
+  ways. The reading opened in the twentieth century with Yuri Knorozov's syllables (1952) and Tatiana
+  Proskouriakoff's histories of kings (1960).
+by: claude
+at: '2026-10-16T01:53:56Z'

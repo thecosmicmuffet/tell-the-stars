@@ -1,0 +1,17 @@
+name: Chinese characters
+kind: logographic
+status: living
+year: -1250
+when: c. 1250 BCE
+place: Anyang, the last Shang capital, and after it all of China
+dir: ttb
+unicode: U+4E00–U+9FFF
+font: Noto Serif SC
+sample: {text: 名, says: 'míng, name: a mouth under the evening'}
+note: >-
+  The oldest large body of Chinese writing is the Shang kings' divination, cut into bones and turtle
+  shells from about 1250 BCE, and the script has been in use ever since, the longest continuous writing
+  system. The Shuowen Jiezi, a dictionary of about 100 CE, explains 名, name, as a mouth, 口, under
+  the evening, 夕: in the dark people cannot see one another, so they say their names.
+by: claude
+at: '2026-10-16T01:53:56Z'

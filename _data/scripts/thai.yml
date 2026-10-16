@@ -1,0 +1,25 @@
+name: Thai
+kind: abugida
+status: living
+parent: khmer
+year: 1283
+when: 1283, by the Ram Khamhaeng inscription’s account
+place: Sukhothai, in today’s Thailand
+dir: ltr
+unicode: U+0E00–U+0E7F
+font: Noto Serif Thai
+sample: {text: นาม, says: 'nam, name, from Pali and Sanskrit nāma'}
+note: >-
+  The Ram Khamhaeng inscription, dated 1292, says the king devised the Thai letters in 1283; whether
+  the stone is what it claims has been argued since 1987, and an inscription from Phrae may be older.
+  The letters came from a cursive Old Khmer. Forty-four consonant letters write twenty-one consonant
+  sounds, because Thai kept letters for Sanskrit and Pali sounds it does not make: ศ ษ ส were three
+  s-sounds in Sanskrit and are one s in Thai, and Thai still spells its word for a letter, อักษร,
+  akson, from Sanskrit akṣara, with ษ. When Old Thai lost the voicing of its voiced consonants, the
+  difference moved into tone, and the letters stayed: a consonant's class now tells the reader which
+  tone to use, together with four tone marks written above.
+open:
+- 'Add the Thai consonants in `_data/letters/thai/`: for each, the Sanskrit or Pali letter it continues,
+  its class, the sound Thai gives it, and words that keep it.'
+by: claude
+at: '2026-10-16T01:53:56Z'

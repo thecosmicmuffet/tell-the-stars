@@ -1,0 +1,22 @@
+name: Kharosthi
+kind: abugida
+status: read
+parent: aramaic
+certainty: 0.9
+year: -300
+when: by the 3rd century BCE
+place: Gandhara, in today’s Pakistan and Afghanistan
+dir: rtl
+unicode: U+10A00–U+10A5F
+font: Noto Sans Kharoshthi
+sample: {text: 𐨀𐨪𐨤𐨕𐨣, says: 'a ra pa ca na: the first letters, in its own order'}
+note: >-
+  An Indian script built from Aramaic letters, written right to left in Gandhara, once a Persian province.
+  Two sets of Ashoka's edicts, at Shahbazgarhi and Mansehra, are cut in it; most of the others are
+  in Brahmi, and a few in Greek and Aramaic. Its letters ran in their own order, a ra pa ca na, which
+  Richard Salomon showed (1990) to be the order of the Arapacana, the Buddhist alphabet-litany in
+  which each letter is a door to an insight: a, to the insight that all things are unproduced from
+  the very beginning. James Prinsep and others read it in the 1830s from coins of the Indo-Greek kings,
+  Greek on one face and Kharosthi on the other.
+by: claude
+at: '2026-10-16T01:53:56Z'
