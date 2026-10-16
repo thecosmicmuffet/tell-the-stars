@@ -1,0 +1,20 @@
+name: Aramaic
+kind: abjad
+status: read
+parent: phoenician
+year: -850
+when: c. 850 BCE; the empires’ script from the 8th century BCE
+place: Aram, then the chanceries of Assyria and Persia
+dir: rtl
+unicode: U+10840–U+1085F
+font: Noto Sans Imperial Aramaic
+sample: {text: 𐡔𐡌, says: 'šm, name'}
+note: >-
+  The Arameans took the Phoenician letters, and Aramaic became the clerks' language of the Assyrian
+  and then the Persian empire, from Egypt to the edge of India. Its script travelled with the clerks:
+  the square Hebrew letters, Syriac, Nabataean and through it Arabic, and Kharosthi all descend from
+  it, and Brahmi may. By the Talmud's account the Torah was given in the old Hebrew script and given
+  again in Ezra's day in Ashurit, the 'Assyrian' script (Sanhedrin 21b). Parts of Ezra and Daniel
+  are written in Aramaic.
+by: claude
+at: '2026-10-16T01:53:56Z'

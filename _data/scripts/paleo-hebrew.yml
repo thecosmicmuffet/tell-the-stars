@@ -1,0 +1,19 @@
+name: Old Hebrew
+kind: abjad
+status: read
+parent: phoenician
+year: -950
+when: 10th century BCE
+place: the kingdoms of Israel and Judah
+dir: rtl
+unicode: U+10900–U+1091F (the Phoenician letters)
+font: Noto Sans Phoenician
+sample: {text: 𐤔𐤌, says: 'shem, name'}
+note: >-
+  Paleo-Hebrew: the letters of the kingdoms of Israel and Judah, in the Siloam tunnel inscription,
+  on the seals and ostraca of royal officials, and earlier on the Gezer calendar. After the exile
+  Jews wrote in the Aramaic hand that became the square script, but some Dead Sea scrolls kept the
+  old letters for the Name alone, and the Samaritans still write with their descendant. On the page,
+  the Old Hebrew labels set the Hebrew consonants in these letters.
+by: claude
+at: '2026-10-16T01:53:56Z'

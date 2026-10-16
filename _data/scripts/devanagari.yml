@@ -1,0 +1,20 @@
+name: Devanagari
+kind: abugida
+status: living
+parent: siddham
+year: 1000
+when: by c. 1000 CE
+place: northern India
+dir: ltr
+unicode: U+0900–U+097F
+font: Noto Serif Devanagari
+sample: {text: नाम, says: 'nāma, name'}
+note: >-
+  The script most Sanskrit is printed in today, and the script of Hindi, Marathi and Nepali. The letters
+  hang from a headline, and the alphabet is ordered by the mouth: vowels first, then the consonants
+  from the throat to the lips, each row going unvoiced, aspirated, voiced, voiced aspirated, nasal
+  (k kh g gh ṅ). Sanskrit has been written in many scripts, Brahmi, Siddham, Grantha, Bengali, Khmer
+  and Thai among them; Devanagari is the most common. Nāma, name, is the same Indo-European word as
+  Greek onoma, Latin nomen and English name; Hebrew shem is unrelated.
+by: claude
+at: '2026-10-16T01:53:56Z'

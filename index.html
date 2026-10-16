@@ -123,7 +123,7 @@ a { color: var(--gold); text-decoration-thickness: 1px; text-underline-offset: 2
 .icon-btn svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.6; }
 .grab { display: none; }
 @media (max-width: 859.98px) { .grab { display: block; width: 44px; height: 5px; border-radius: 3px; background: var(--line-2); margin: 8px auto 0; flex: none; } }
-.sheet-body { overflow-y: auto; overscroll-behavior: contain; padding: 16px max(16px, env(safe-area-inset-right, 0px)) 22px max(16px, env(safe-area-inset-left, 0px)); display: grid; gap: 18px; min-height: 0; }
+.sheet-body { grid-template-columns: minmax(0, 1fr); overflow-y: auto; overscroll-behavior: contain; padding: 16px max(16px, env(safe-area-inset-right, 0px)) 22px max(16px, env(safe-area-inset-left, 0px)); display: grid; gap: 18px; min-height: 0; }
 
 /* leaf */
 .leaf-head { display: grid; gap: 4px; }
@@ -246,6 +246,45 @@ form.plant, form.add-note { display: grid; gap: 10px; }
 .names-row { display: flex; flex-wrap: wrap; gap: 4px 6px; }
 .reading-note { margin: 0; padding: 10px 14px; border-left: 2px solid var(--gold); background: rgba(232,189,98,0.06); border-radius: 0 10px 10px 0; line-height: 1.55; max-width: 62ch; }
 .he-row { font-family: var(--font-hebrew); font-size: 1.25rem; }
+.he-row.lat { font-family: var(--font-body); }
+
+/* scripts: the family of writing */
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.tabs .btn[aria-selected="true"] { border-color: var(--gold); color: var(--star); background: var(--panel-2); }
+.stree { display: grid; min-width: 0; }
+.snode { display: grid; min-width: 0; }
+.snode.top { margin-top: 6px; }
+.snode.top:first-child { margin-top: 0; }
+.srow { --step: 12px; display: grid; grid-template-columns: calc(var(--d, 0) * var(--step)) 4.4rem minmax(0, 1fr) auto; align-items: stretch; column-gap: 8px; width: 100%; min-width: 0; padding: 0 8px 0 4px; border: 1px solid transparent; border-radius: 10px; background: none; text-align: left; cursor: pointer; color: var(--ink); }
+.srow > * { align-self: center; }
+.srow:hover, .srow[aria-expanded="true"] { border-color: var(--line-2); background: rgba(22,27,54,0.6); }
+.srow .sgut { align-self: stretch; position: relative; background: repeating-linear-gradient(to right, transparent 0 5px, var(--line-2) 5px 6px, transparent 6px var(--step)); }
+.srow .sgut::after { content: ''; position: absolute; right: 0; top: 50%; width: 6px; border-top: 1px solid var(--line-2); }
+.snode.unsure .sgut::after { border-top: 1px dashed var(--gold); width: 7px; }
+.snode.top .sgut::after { display: none; }
+.srow .ssample { padding: 7px 0; font-size: 1.3rem; line-height: 1.25; color: var(--star); text-align: center; white-space: nowrap; overflow: hidden; }
+.srow .ssample.none { color: var(--faint); font-size: 0.9rem; }
+.srow .ssample.long { font-size: 1rem; }
+.srow .ssample.longer { font-size: 0.85rem; }
+.srow .sname { display: grid; min-width: 0; padding: 6px 0; }
+.srow .sname b { font-family: var(--font-display); font-weight: 400; font-size: var(--step-1); line-height: 1.15; }
+.srow .sname span { font-family: var(--font-mono); font-size: 0.7rem; color: var(--faint); letter-spacing: 0.03em; }
+.srow .sst { font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line-2); color: var(--muted); white-space: nowrap; }
+.srow .sst.living { color: var(--water-hi); border-color: rgba(139,192,223,0.45); }
+.srow .sst.unread { color: var(--wine-hi); border-color: rgba(194,71,104,0.55); }
+.srow .sst.partly-read { color: var(--gold); border-color: rgba(232,189,98,0.45); }
+.sdetail { margin: 4px 0 12px; padding-left: 10px; border-left: 1px solid var(--line-2); display: grid; gap: 8px; min-width: 0; }
+.sdetail .from { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 4px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--faint); letter-spacing: 0.03em; }
+.sdetail .from button, .sopen button.to { background: none; border: 0; padding: 0; cursor: pointer; color: var(--silver); font: inherit; text-decoration: underline; text-decoration-color: var(--line-2); text-underline-offset: 2px; }
+.sdetail .from button:hover, .sopen button.to:hover { color: var(--gold); }
+.sopen p { margin: 0; max-width: 62ch; }
+@media (max-width: 520px) {
+  .srow { --step: 9px; grid-template-columns: calc(var(--d, 0) * var(--step)) 3.3rem minmax(0, 1fr) auto; column-gap: 6px; padding: 0 4px 0 2px; }
+  .srow .ssample { font-size: 1.1rem; }
+  .srow .ssample.long { font-size: 0.8rem; }
+  .srow .ssample.longer { font-size: 0.7rem; }
+  .srow .sst { font-size: 0.58rem; padding: 1px 5px; letter-spacing: 0.05em; }
+}
 
 /* links that look like buttons, proposal sheet, footnote links */
 a.btn { display: inline-flex; align-items: center; text-decoration: none; color: var(--ink); }
@@ -391,7 +430,7 @@ const S = {
   meta: null,
   hw: { people: new Map(), roots: new Map() },
   dbPeople: new Map(), dbRoots: new Map(),
-  notes: [], rings: [], dialogs: [], letters: new Map(), bench: ['אֵלִיָּה', 'אֲדָמָה', 'אָדָם'], benchNote: null, benchRefresh: null,
+  notes: [], rings: [], dialogs: [], letters: new Map(), letterSets: {}, scripts: new Map(), focusScript: null, bench: ['אֵלִיָּה', 'אֲדָמָה', 'אָדָם'], benchNote: null, benchRefresh: null,
   people: new Map(), roots: new Map(),
   kids: new Map(), rootUsers: new Map(), depthMax: 1,
   mode: 'en', sel: null, hover: null, ringFocus: null,
@@ -689,6 +728,15 @@ function ensureScriptFont(mode) {
   if (!SCRIPT_SAMPLE[mode] || scriptFontsLoaded[mode] || !document.fonts || !document.fonts.load) return Promise.resolve();
   const fam = { ph: FONTS.phoen, ar: FONTS.aram, ug: FONTS.ugar }[mode];
   return document.fonts.load(`16px ${fam}`, SCRIPT_SAMPLE[mode]).then(() => { scriptFontsLoaded[mode] = true; request(); }).catch(() => {});
+}
+const FONT_REQUESTED = new Set(['Noto Sans Phoenician', 'Noto Sans Imperial Aramaic', 'Noto Sans Ugaritic', 'Frank Ruhl Libre', 'IM Fell English', 'Spectral', 'IBM Plex Mono']);
+function ensureFonts(families) {
+  for (const f of families) {
+    const fam = String(f || '').trim();
+    if (!fam || FONT_REQUESTED.has(fam) || !/^[A-Za-z0-9 ]{2,60}$/.test(fam)) continue;
+    FONT_REQUESTED.add(fam);
+    document.head.append(h('link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=' + fam.replace(/ /g, '+') + '&display=swap' }));
+  }
 }
 function isHeb(s) { return /[֐-׿]/.test(s || ''); }
 function flagsOf(p) { return String(p.flags || ''); }
@@ -1427,6 +1475,7 @@ function viewBench(words) {
   if (words) { S.bench = [words[0] || '', words[1] || '', words[2] || '']; S.benchNote = null; }
   for (const m of ['ph', 'ar', 'ug']) ensureScriptFont(m);
   const frag = document.createDocumentFragment();
+  frag.append(lettersTabs('bench'));
   frag.append(h('p', { class: 'note', text: 'Set up to three words and walk them through the scripts. Under each script they are laid over each other letter by letter, first letters together; where two strokes fall in the same place the ink turns white. Point the Hebrew and the clay alphabet can choose its alef by the vowel.' }));
   const inputs = [0, 1, 2].map(i => h('input', { id: 'bench-' + i, type: 'text', class: 'c' + i, dir: 'rtl', lang: 'he', value: S.bench[i] || '', maxlength: 32, placeholder: 'מִלָּה', autocomplete: 'off', 'aria-label': 'Word ' + (i + 1) }));
   const noteBox = h('div');
@@ -1493,11 +1542,15 @@ function viewBench(words) {
   S.benchRefresh = renderSaved;
 }
 function showLetter(ch, box) {
+  const l = S.letters.get(ch);
+  if (l) showLetterObj(l, box); else box.replaceChildren();
+}
+function showLetterObj(l, box) {
   box.replaceChildren();
-  const l = S.letters.get(ch); if (!l) return;
-  const line = [l.picture ? 'the old sign: ' + l.picture : null, l.meaning ? 'the name: ' + l.meaning : null, 'counts ' + l.value, l.sefer_yetzirah ? 'Sefer Yetzirah: ' + l.sefer_yetzirah : null, l.greek ? 'Greek ' + l.greek + (l.latin ? ', Latin ' + l.latin : '') : null].filter(Boolean).join(' · ');
+  const heb = !l.script || l.script === 'hebrew';
+  const line = [l.picture ? 'the old sign: ' + l.picture : null, l.meaning ? 'the name: ' + l.meaning : null, l.value != null ? 'counts ' + l.value : null, l.sefer_yetzirah ? 'Sefer Yetzirah: ' + l.sefer_yetzirah : null, l.greek ? 'Greek ' + l.greek + (l.latin ? ', Latin ' + l.latin : '') : null].filter(Boolean).join(' · ');
   box.append(h('div', { class: 'reading-note' },
-    h('div', { class: 'he-row', lang: 'he', dir: 'rtl', text: `${l.char}${l.final ? ' ' + l.final : ''}  ${l.name_heb || ''}` }),
+    h('div', { class: heb ? 'he-row' : 'he-row lat', lang: heb ? 'he' : null, dir: heb ? 'rtl' : null, text: `${l.char}${l.final ? ' ' + l.final : ''}  ${l.name_heb || l.name || ''}` }),
     h('div', { class: 'kind', text: line }),
     h('p', { class: 'note', style: 'margin:6px 0 0', text: l.note || '' }),
     ...(l.near || []).map(n => h('div', { class: 'kind' }, h('span', { class: 'he', lang: 'he', text: n.char + ' ' }), n.note))));
@@ -1527,6 +1580,141 @@ function drawLay(cv, script, es) {
   });
   c.globalCompositeOperation = 'source-over';
 }
+/* ------------------------------------------------------------------ scripts: the family of writing */
+const SCRIPT_DIR_WORD = { ltr: 'left to right', rtl: 'right to left', ttb: 'top to bottom', boustrophedon: 'back and forth', any: 'in any direction' };
+const SCRIPT_KINDS = ['alphabet', 'abjad', 'abugida', 'syllabary', 'logo-syllabic', 'logo-consonantal', 'logographic', 'featural', 'symbols', 'counters', 'unknown'];
+function whenOf(s) { if (s.when) return String(s.when); const y = Number(s.year); if (!Number.isFinite(y)) return ''; return y < 0 ? `c. ${-y} BCE` : `${y} CE`; }
+function fontStyle(fam) { return fam ? `font-family:"${String(fam).replace(/["\\]/g, '')}", var(--font-body)` : null; }
+function bodyWith(fam) { return fam ? `font-family:"Spectral", Georgia, "${String(fam).replace(/["\\]/g, '')}", "Times New Roman", serif` : null; }
+function lettersTabs(active) {
+  const tab = (id, label, fn) => h('button', { type: 'button', role: 'tab', class: 'btn', 'aria-selected': String(active === id), onclick: () => { if (active !== id) { S.view = fn; fn(); } } }, label);
+  return h('div', { class: 'tabs', role: 'tablist', 'aria-label': 'Letters' }, tab('bench', 'The bench', () => viewBench()), tab('scripts', 'The family of scripts', () => viewScripts()));
+}
+function viewScripts(focus) {
+  const frag = document.createDocumentFragment();
+  frag.append(lettersTabs('scripts'));
+  frag.append(h('p', { class: 'note', text: 'Writing has a family too. Each script below is one file in the repository, joined to the script it came from; a dashed join is uncertain, and its note says how sure. Where a script can be typed, it shows its word for name. The unread ones stand apart, with their questions open.' }));
+  if (!S.scripts.size) {
+    frag.append(h('p', { class: 'marg empty', text: 'No scripts planted yet.' }));
+    openSheet(frag, 'scripts', { noCenter: true }); return;
+  }
+  const all = [...S.scripts.values()];
+  ensureFonts([...new Set(all.filter(s => s.font && s.sample).map(s => String(s.font)))]);
+  const kids = new Map(), tops = [];
+  for (const s of all) {
+    if (s.parent && s.parent !== s.id && S.scripts.has(s.parent)) { if (!kids.has(s.parent)) kids.set(s.parent, []); kids.get(s.parent).push(s); }
+    else tops.push(s);
+  }
+  const byYear = (a, b) => (Number(a.year) || 0) - (Number(b.year) || 0) || String(a.name).localeCompare(String(b.name));
+  tops.sort(byYear); for (const v of kids.values()) v.sort(byYear);
+  const nodes = new Map(), seen = new Set(), order = [];
+  const walk = (s, d) => { seen.add(s.id); order.push([s, d]); for (const c of (kids.get(s.id) || [])) if (!seen.has(c.id)) walk(c, d + 1); };
+  for (const t of tops) walk(t, 0);
+  for (const s of all) if (!seen.has(s.id)) walk(s, 0);
+  function node(s, depth) {
+    const unsure = s.certainty != null && Number(s.certainty) < 1;
+    const parent = s.parent ? S.scripts.get(s.parent) : null;
+    const sample = s.sample && s.sample.text ? String(s.sample.text) : '';
+    const detail = h('div', { class: 'sdetail', hidden: true });
+    const row = h('button', { type: 'button', class: 'srow', style: `--d:${depth}`, 'aria-expanded': 'false', onclick: () => toggle() },
+      h('span', { class: 'sgut', 'aria-hidden': 'true' }),
+      h('span', { class: 'ssample' + (sample ? ([...sample].length >= 7 ? ' longer' : [...sample].length >= 5 ? ' long' : '') : ' none'), dir: s.dir === 'rtl' ? 'rtl' : null, style: sample ? fontStyle(s.font) : null, text: sample || '·', 'aria-hidden': sample ? null : 'true' }),
+      h('span', { class: 'sname' }, h('b', { text: s.name || s.id }), h('span', { text: whenOf(s) + (unsure && parent ? ` · from ${parent.name}?` : '') })),
+      s.status ? h('span', { class: 'sst ' + slug(String(s.status)), text: String(s.status) }) : h('span'));
+    function toggle(force) {
+      const open = force != null ? force : detail.hidden;
+      detail.hidden = !open; row.setAttribute('aria-expanded', String(open));
+      if (open && !detail.firstChild) detail.append(...scriptDetail(s));
+      if (open) { try { history.replaceState(null, '', '#scripts/' + s.id); } catch (e) {} }
+    }
+    const el = h('div', { class: 'snode' + (unsure ? ' unsure' : '') + (depth ? '' : ' top'), id: 'script-' + s.id }, row, detail);
+    nodes.set(s.id, { el, row, toggle });
+    return el;
+  }
+  frag.append(h('div', { class: 'stree' }, order.map(([s, d]) => node(s, d))));
+  const withOpen = all.filter(s => Array.isArray(s.open) && s.open.length).sort(byYear);
+  if (withOpen.length) {
+    const sec = h('section', { class: 'section sopen' }, h('h3', { text: 'Open questions' }), h('p', { class: 'note', text: 'Doors left open for the next mind, person or model. Take one up in a new file or a pull request, and sign it.' }));
+    for (const s of withOpen) for (const q of s.open) sec.append(h('p', {}, h('button', { type: 'button', class: 'to', onclick: () => focusScript(s.id), text: s.name }), ': ' + q));
+    frag.append(sec);
+  }
+  frag.append(h('div', { class: 'actions' }, h('button', { type: 'button', class: 'btn', onclick: () => openScriptPlant(null) }, 'Plant a script')));
+  S.focusScript = id => { const n = nodes.get(id); if (!n) return; n.toggle(true); n.el.scrollIntoView({ block: 'start', behavior: reduceMotion ? 'auto' : 'smooth' }); n.row.focus({ preventScroll: true }); };
+  openSheet(frag, 'scripts', { noCenter: true });
+  try { history.replaceState(null, '', focus ? '#scripts/' + focus : '#scripts'); } catch (e) {}
+  if (focus) requestAnimationFrame(() => focusScript(focus));
+}
+function focusScript(id) { if (S.focusScript) S.focusScript(id); }
+function scriptDetail(s) {
+  const out = [];
+  const certOf = c => (c != null && Number(c) < 1 ? ` (${c})` : '');
+  if (s.sample && s.sample.says) out.push(h('div', { class: 'kind', text: 'the word shown: ' + s.sample.says }));
+  const facts = [s.kind, s.place, s.dir ? 'written ' + (SCRIPT_DIR_WORD[s.dir] || s.dir) : null, s.unicode ? 'Unicode ' + s.unicode : null].filter(Boolean).join(' · ');
+  if (facts) out.push(h('div', { class: 'kind', text: facts }));
+  const chain = [], guard = new Set([s.id]); let cur = s;
+  while (cur && cur.parent && S.scripts.has(cur.parent) && !guard.has(cur.parent)) { const p = S.scripts.get(cur.parent); chain.push([p, cur.certainty]); guard.add(p.id); cur = p; }
+  if (chain.length) out.push(h('div', { class: 'from' }, 'from', ...chain.flatMap(([p, c], i) => [i ? ' ← ' : ' ', h('button', { type: 'button', onclick: () => focusScript(p.id), text: p.name + certOf(c) })])));
+  for (const k of (Array.isArray(s.links) ? s.links : [])) if (k && k.to) { const t = S.scripts.get(k.to); out.push(h('div', { class: 'from' }, (k.kind || 'linked with') + ' ', h('button', { type: 'button', onclick: () => focusScript(k.to), text: t ? t.name : k.to }), certOf(k.certainty))); }
+  for (const o of S.scripts.values()) for (const k of (Array.isArray(o.links) ? o.links : [])) if (k && k.to === s.id) out.push(h('div', { class: 'from' }, h('button', { type: 'button', onclick: () => focusScript(o.id), text: o.name }), ` ${k.kind || 'linked with'} ${s.name}`, certOf(k.certainty)));
+  if (s.note) out.push(h('p', { class: 'note', style: bodyWith(s.font), text: String(s.note) }));
+  const set = S.letterSets[s.id];
+  if (set && set.length) {
+    const lbox = h('div');
+    out.push(h('section', { class: 'section' }, h('h3', { text: `${set.length} letters` }),
+      h('div', { class: 'names-row' }, set.map(l => h('button', { type: 'button', class: 'chip', onclick: () => showLetterObj(l, lbox) }, h('span', { class: s.id === 'hebrew' ? 'he' : null, lang: s.id === 'hebrew' ? 'he' : null, style: s.id === 'hebrew' ? null : fontStyle(s.font), text: l.char }), ' ' + (l.name || '')))), lbox));
+  }
+  if (Array.isArray(s.open) && s.open.length) out.push(h('section', { class: 'section' }, h('h3', { text: 'Open' }), ...s.open.map(q => h('p', { class: 'note', text: String(q) }))));
+  const sig = [s.by ? 'planted by ' + whoName(s.by) : null, s.at ? String(s.at).slice(0, 10) : null].filter(Boolean).join(' · ');
+  if (sig) out.push(h('div', { class: 'kind', text: sig }));
+  out.push(h('div', { class: 'actions' },
+    h('a', { class: 'btn quiet', href: ghUrl(`/edit/${repoInfo().branch}/_data/scripts/${s.id}.yml`), target: '_blank', rel: 'noopener', text: 'Edit on GitHub' }),
+    h('button', { type: 'button', class: 'btn', onclick: () => openScriptPlant(s.id) }, 'Plant a script from this one')));
+  return out;
+}
+function openScriptPlant(parentId) {
+  const opts = [...S.scripts.values()].sort((a, b) => String(a.name).localeCompare(String(b.name)));
+  const field = (id, label, el, hint) => h('div', { class: 'field' }, h('label', { for: id, text: label }), el, hint ? h('span', { class: 'hint', text: hint }) : null);
+  const name = h('input', { id: 'sc-name', type: 'text', maxlength: 60, placeholder: 'Tibetan', autocomplete: 'off' });
+  const parent = h('select', { id: 'sc-parent' }, h('option', { value: '', text: 'none: it stands alone' }), ...opts.map(s => h('option', { value: s.id, text: s.name, selected: s.id === parentId ? true : null })));
+  const cert = h('input', { id: 'sc-cert', type: 'number', min: '0', max: '1', step: '0.05', placeholder: 'empty if sure' });
+  const year = h('input', { id: 'sc-year', type: 'number', step: '1', placeholder: '-900 for 900 BCE' });
+  const when = h('input', { id: 'sc-when', type: 'text', maxlength: 80, placeholder: 'c. 650 CE' });
+  const kind = h('select', { id: 'sc-kind' }, h('option', { value: '', text: 'choose' }), ...SCRIPT_KINDS.map(k => h('option', { value: k, text: k })));
+  const status = h('select', { id: 'sc-status' }, h('option', { value: '', text: 'choose' }), ...['living', 'read', 'partly read', 'unread'].map(k => h('option', { value: k, text: k })));
+  const sample = h('input', { id: 'sc-sample', type: 'text', maxlength: 40, placeholder: 'its word for name', autocomplete: 'off' });
+  const says = h('input', { id: 'sc-says', type: 'text', maxlength: 80, placeholder: 'what that says' });
+  const font = h('input', { id: 'sc-font', type: 'text', maxlength: 60, placeholder: 'Noto Serif Tibetan', autocomplete: 'off' });
+  const note = h('textarea', { id: 'sc-note', rows: 4, maxlength: 3000, placeholder: 'Where it came from and what it carries, with sources' });
+  const q = h('textarea', { id: 'sc-open', rows: 2, maxlength: 600, placeholder: 'A question it leaves open (optional)' });
+  const by = signField('sc-by');
+  const form = h('form', { class: 'plant', onsubmit: e => {
+    e.preventDefault();
+    const nm = name.value.trim(); if (!nm) { toast('Give the script a name first.'); return; }
+    const y = parseInt(year.value, 10); if (!Number.isFinite(y)) { toast('Give a year, negative for BCE.'); return; }
+    const base = slug(nm); let id = base, n = 2; while (S.scripts.has(id)) id = base + '-' + (n++);
+    const who = by.value.trim(); setSigner(who);
+    const c = cert.value === '' ? null : Math.max(0, Math.min(1, Number(cert.value)));
+    let text = yamlDoc({ name: nm, kind: kind.value || null, status: status.value || null, parent: parent.value || null, certainty: parent.value && c != null && c < 1 ? c : null, year: y, when: when.value.trim() || null, font: sample.value.trim() ? (font.value.trim() || null) : null });
+    if (sample.value.trim()) text += `sample: {text: ${JSON.stringify(sample.value.trim())}, says: ${JSON.stringify(says.value.trim())}}\n`;
+    text += yamlDoc({ note: note.value.trim() });
+    if (q.value.trim()) text += `open:\n- ${JSON.stringify(q.value.trim())}\n`;
+    text += yamlDoc({ by: who || 'a reader', at: new Date().toISOString() });
+    showProposal('A new script', '_data/scripts', `${id}.yml`, text);
+  } },
+    field('sc-name', 'Script', name),
+    h('div', { class: 'row2' }, field('sc-parent', 'Came from', parent), field('sc-cert', 'How sure', cert, '0 to 1')),
+    h('div', { class: 'row2' }, field('sc-year', 'Year', year, 'the earliest writing in it'), field('sc-when', 'When, in words', when)),
+    h('div', { class: 'row2' }, field('sc-kind', 'Kind', kind), field('sc-status', 'Can it be read?', status)),
+    h('div', { class: 'row2' }, field('sc-sample', 'Its word for name', sample), field('sc-says', 'What it says', says)),
+    field('sc-font', 'Font', font, 'a Google Fonts family that can show it'),
+    field('sc-note', 'Note', note), field('sc-open', 'Open question', q), field('sc-by', 'Signed', by),
+    h('div', { class: 'actions' }, h('button', { type: 'submit', class: 'btn primary' }, 'Propose the script')));
+  const frag = document.createDocumentFragment();
+  frag.append(h('p', { class: 'note', text: parentId ? `A script that came from ${S.scripts.get(parentId)?.name || parentId}. Fill in what you know; the next step opens it as a file on GitHub.` : 'A new script for the family. Choose where it came from, or leave it standing alone; the next step opens it as a file on GitHub.' }), form);
+  if (S.view) history_.push({ kind: 'view', open: S.view });
+  S.sel = null; S.editing = true;
+  openSheet(frag, 'plant a script', { noCenter: true });
+}
 function viewAbout() {
   const frag = h('div', { class: 'about section' });
   frag.append(h('p', { class: 'gloss', text: S.meta?.motto || 'Root to branch: lineage. Branch to leaf: masoret.' }));
@@ -1546,8 +1734,10 @@ function viewAbout() {
     row(x => { x.strokeStyle = COLOR.purple; x.setLineDash([3, 3]); x.beginPath(); x.moveTo(4, 16); x.bezierCurveTo(12, 16, 20, 6, 30, 6); x.stroke(); }, 'wife, handmaid, built, housed'),
     row(x => { const g = x.createLinearGradient(0, 20, 0, 2); g.addColorStop(0, COLOR.water); g.addColorStop(1, COLOR['wine-hi']); x.strokeStyle = g; x.lineWidth = 2; x.beginPath(); x.moveTo(6, 20); x.bezierCurveTo(10, 10, 22, 8, 28, 2); x.stroke(); }, 'a root strand, water to wine'));
   frag.append(h('section', { class: 'section' }, h('h3', { text: 'Reading the sky' }), L2));
-  frag.append(h('section', { class: 'section' }, h('h3', { text: 'Letters' }), h('p', { text: 'Every leaf now shows the old picture behind each of its letters, and on the Letters bench each letter opens to its own note: its sign, its value, the Greek and Latin letters it became, and the letters it is easily taken for. The letter buttons above the sky set every name in an older hand: the Old Hebrew letters of the kingdoms; the Aramaic script that, by the Talmud’s account, came in with Ezra (Sanhedrin 21b); and the clay alphabet of Ugarit, pressed with a stylus and read left to right. These are transcriptions of the Hebrew consonants, not spellings found in those places. In clay the alef carries its vowel, so El begins with the i-alef and Adam with the a-alef. The Letters bench lays words over each other, letter by letter, and keeps the readings you name.' })));
-  frag.append(h('section', { class: 'section' }, h('h3', { text: 'Growing it' }), h('p', { text: 'The tree lives in a public repository, one small YAML file per leaf, root, reading, ring and margin note, and this page rebuilds from it on every commit. Plant, Propose and Edit open the right file on GitHub with the text filled in; commit it there, or send it as a pull request. Each session that adds something cuts a ring and signs it.' })));
+  frag.append(h('section', { class: 'section' }, h('h3', { text: 'Letters' }), h('p', { text: 'Every leaf now shows the old picture behind each of its letters, and on the Letters bench each letter opens to its own note: its sign, its value, the Greek and Latin letters it became, and the letters it is easily taken for. The letter buttons above the sky set every name in an older hand: the Old Hebrew letters of the kingdoms; the Aramaic script that, by the Talmud’s account, came in with Ezra (Sanhedrin 21b); and the clay alphabet of Ugarit, pressed with a stylus and read left to right. These are transcriptions of the Hebrew consonants, not spellings found in those places. In clay the alef carries its vowel, so El begins with the i-alef and Adam with the a-alef. The Letters bench lays words over each other, letter by letter, and keeps the readings you name.' }),
+    h('p', { text: `Beside the bench grows the family of scripts: ${S.scripts.size || 'the'} writing systems, from clay tokens and Egyptian pictures to Thai, each joined to the script it came from, with the unread ones standing apart and their questions left open. Where a script can be typed, it shows its word for name.` }),
+    h('div', { class: 'actions' }, h('button', { type: 'button', class: 'btn', onclick: () => { S.view = () => viewScripts(); viewScripts(); } }, 'The family of scripts'))));
+  frag.append(h('section', { class: 'section' }, h('h3', { text: 'Growing it' }), h('p', { text: 'The tree lives in a public repository, one small YAML file per script, letter, leaf, root, reading, ring and margin note, and this page rebuilds from it on every commit. Plant, Propose and Edit open the right file on GitHub with the text filled in; commit it there, or send it as a pull request. Each session that adds something cuts a ring and signs it.' })));
   const minds = h('div', { class: 'refs', style: 'display:grid;gap:6px;font-family:var(--font-body);font-size:var(--step--1)' });
   for (const [href, label, what] of [['llms.txt', 'llms.txt', 'where a model should start'], ['names.txt', 'names.txt', 'every name, one per line'], ['llms-full.txt', 'llms-full.txt', 'every leaf, root and reading as plain text'], ['tree.json', 'tree.json', 'the whole tree as one JSON document'], [ghUrl(`/blob/${repoInfo().branch}/AGENTS.md`), 'AGENTS.md', 'how a model reads, writes and signs a contribution'], [ghUrl(''), 'The repository', 'the files themselves']])
     minds.append(h('span', {}, h('a', { href, target: href.startsWith('http') ? '_blank' : null, rel: href.startsWith('http') ? 'noopener' : null, text: label }), ' · ' + what));
@@ -1715,15 +1905,23 @@ function ingest(d) {
   S.dialogs = Object.entries(d.readings || {}).filter(([, r]) => r && typeof r === 'object').map(([id, r]) => Object.assign({ id }, r, { words: Array.isArray(r.words) ? r.words : [] }));
   S.rings = Object.entries(d.rings || {}).filter(([, r]) => r && typeof r === 'object').map(([id, r]) => Object.assign({ id }, r, { date: String(r.day || r.date || ''), added: Array.isArray(r.added) ? r.added : [] }));
   S.notes = collectNotes(d.marginalia);
-  S.letters = new Map();
-  for (const l of Object.values(d.letters || {})) {
-    if (!l || typeof l !== 'object' || !l.char) continue;
-    S.letters.set(l.char, l);
-    if (l.final) S.letters.set(l.final, l);
-    const pic = String(l.meaning || '').split(/[;,]/)[0].trim();
-    const el = /mother/.test(String(l.sefer_yetzirah || '')) ? ' · ' + String(l.sefer_yetzirah).split('·').pop().trim() : '';
-    LETTER_NAMES[l.char] = `${l.name} · ${pic}${el}`;
+  S.letters = new Map(); S.letterSets = {};
+  const sets = d.letters || {};
+  const flat = Object.values(sets).some(v => v && typeof v === 'object' && v.char);
+  for (const [sid, set] of (flat ? [['hebrew', sets]] : Object.entries(sets))) {
+    const list = Object.entries(set || {}).filter(([, l]) => l && typeof l === 'object' && l.char).sort(([a], [b]) => a.localeCompare(b)).map(([id, l]) => Object.assign({ id, script: sid }, l));
+    S.letterSets[sid] = list;
+    if (sid !== 'hebrew') continue;
+    for (const l of list) {
+      S.letters.set(l.char, l);
+      if (l.final) S.letters.set(l.final, l);
+      const pic = String(l.meaning || '').split(/[;,]/)[0].trim();
+      const el = /mother/.test(String(l.sefer_yetzirah || '')) ? ' · ' + String(l.sefer_yetzirah).split('·').pop().trim() : '';
+      LETTER_NAMES[l.char] = `${l.name} · ${pic}${el}`;
+    }
   }
+  S.scripts = new Map();
+  for (const [id, sc] of Object.entries(d.scripts || {})) if (sc && typeof sc === 'object' && !Array.isArray(sc)) S.scripts.set(id, Object.assign({}, sc, { id }));
   S.heartwoodSeen = true;
 }
 let firstData = true;
@@ -1735,6 +1933,7 @@ function afterData() {
     firstData = false; fit(false); growStart = 0; grown = reduceMotion ? 1 : 0;
     const hash = decodeURIComponent((location.hash || '').slice(1));
     if (hash && (S.people.has(hash) || S.roots.has(hash))) setTimeout(() => select({ type: S.people.has(hash) ? 'p' : 'r', id: hash }), 400);
+    else if (hash === 'scripts' || hash.startsWith('scripts/')) { const sid = hash.slice(8); setTimeout(() => openView(() => viewScripts(S.scripts.has(sid) ? sid : null)), 400); }
   }
   rerenderSheet();
   request();

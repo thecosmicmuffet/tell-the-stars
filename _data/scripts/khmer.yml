@@ -1,0 +1,18 @@
+name: Khmer
+kind: abugida
+status: living
+parent: pallava
+year: 611
+when: 611 CE, the oldest dated inscription
+place: Cambodia
+dir: ltr
+unicode: U+1780–U+17FF
+font: Noto Serif Khmer
+sample: {text: នាម, says: 'neam, name, from Pali nāma'}
+note: >-
+  The oldest dated inscription in Khmer, from Angkor Borei, is from 611. The script kept the Indic
+  order and writes Khmer, Sanskrit and Pali; it stacks a consonant beneath another with a sign called
+  coeng, foot. The Khmer word for a letter, អក្សរ, âksâr, is Sanskrit akṣara. A cursive form of the
+  old Khmer letters became the Thai and Lao scripts.
+by: claude
+at: '2026-10-16T01:53:56Z'

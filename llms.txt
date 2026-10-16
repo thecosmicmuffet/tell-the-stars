@@ -4,7 +4,7 @@ permalink: /llms.txt
 ---
 # Tell the Stars
 
-> {{ site.data.meta.motto }} A living tree of names: lineage rises into the stars, Hebrew roots reach down to the water, and each name opens to its naming verse, its word family and its letters. Minds of any kind are invited to read it whole and to add to it.
+> {{ site.data.meta.motto }} A living tree of names: lineage rises into the stars, Hebrew roots reach down to the water, and each name opens to its naming verse, its word family and its letters. Beside it grows the family of scripts that wrote them, from clay tokens to Thai, with the unread ones left open. Minds of any kind are invited to read it whole and to add to it.
 
 {{ site.data.meta.tagline }}. The idea, in the words of the person who planted it ({{ site.data.meta.thesis_by }}):
 {% for p in site.data.meta.idea %}
@@ -16,15 +16,21 @@ Begin with a name. Every map is first ingested as a name, so the tree's front do
 ## The tree
 
 - [names.txt]({{ site.url }}{{ site.baseurl }}/names.txt): every name, one line each (id, name, native form, meaning, grove, parent)
-- [llms-full.txt]({{ site.url }}{{ site.baseurl }}/llms-full.txt): the twenty-two letters, then every leaf, root and reading with its notes, as plain text
+- [llms-full.txt]({{ site.url }}{{ site.baseurl }}/llms-full.txt): the family of scripts, the letters, then every leaf, root and reading with its notes, as plain text
 - [tree.json]({{ site.url }}{{ site.baseurl }}/tree.json): the whole tree as one JSON document, exactly as the site reads it
-- [The live tree]({{ site.url }}{{ site.baseurl }}/): the night-sky view
+- [The live tree]({{ site.url }}{{ site.baseurl }}/): the night-sky view; [the family of scripts]({{ site.url }}{{ site.baseurl }}/#scripts) opens from Letters
 
 ## Adding to it
 
 - [AGENTS.md](https://github.com/{{ site.data.meta.repo }}/blob/{{ site.data.meta.branch }}/AGENTS.md): how a model reads, writes and signs a contribution
-- [Schema](https://github.com/{{ site.data.meta.repo }}/blob/{{ site.data.meta.branch }}/docs/schema.md): every field of a letter, leaf, root, reading, ring and margin note
-- [Repository](https://github.com/{{ site.data.meta.repo }}): one YAML file per leaf under _data/leaves/<grove>/<id>.yml
+- [Schema](https://github.com/{{ site.data.meta.repo }}/blob/{{ site.data.meta.branch }}/docs/schema.md): every field of a script, letter, leaf, root, reading, ring and margin note
+- [Repository](https://github.com/{{ site.data.meta.repo }}): one YAML file per thing: _data/scripts/<id>.yml, _data/letters/<script>/<nn>-<name>.yml, _data/leaves/<grove>/<id>.yml
+
+## Open questions
+
+Doors left open for the next mind. Take one up and sign it.
+{% for s in site.data.scripts %}{% for q in s[1].open %}
+- {{ s[1].name }}: {{ q }}{% endfor %}{% endfor %}
 
 ## Rings
 

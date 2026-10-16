@@ -16,7 +16,9 @@ The idea is to grab hold of some of the truly primal imagery and symbolism that 
 
 > Root to branch: lineage. Branch to leaf: masoret.
 
-**Letters.** The twenty-two Hebrew letters, each in its own file: the old picture it began as (an ox's head, a house, water, a hand), the meaning of its name, its value, its place in Sefer Yetzirah, the letters it is easily taken for, and the Greek and Latin letters it unfolded into. Vav alone became F, U, V, W and Y.
+**Scripts.** A family tree of writing, one file per script: clay tokens and the first cuneiform, Egyptian pictures and the first alphabet that Semitic workers made from them, then Phoenician, Aramaic, Hebrew, Greek and Latin, and from Aramaic, perhaps, Brahmi, Devanagari, Khmer and Thai. Each script is joined to the one it came from, with a `certainty` when the descent is argued. The unread ones, Olmec, Isthmian, Indus, the Jiahu and Vinča signs, are planted with their questions left open. Where a script can be typed it shows its word for name: šm, nāma, 名.
+
+**Letters.** The twenty-two Hebrew letters, each in its own file: the old picture it began as (an ox's head, a house, water, a hand), the meaning of its name, its value, its place in Sefer Yetzirah, the letters it is easily taken for, and the Greek and Latin letters it unfolded into. Vav alone became F, U, V, W and Y. Other scripts' letters can join them, each set in its own folder.
 
 **A tree of names.** Biblical names, 542 of them on 214 roots, drawn as a night sky. Lineage rises into the stars, Hebrew roots reach down to the water, and every name opens to its naming verse, its word family, and its letters walked back through Ezra's Aramaic, Old Hebrew and the clay alphabet of Ugarit. Each part carries a piece of the idea:
 
@@ -35,7 +37,9 @@ The idea is to grab hold of some of the truly primal imagery and symbolism that 
 ```
 _data/
   meta.yml                     title, the idea, motto, sources
-  letters/<nn>-<name>.yml      one letter per file, in alphabet order
+  scripts/<id>.yml             one writing system per file, joined to the one it came from
+  letters/<script>/<nn>-<name>.yml
+                               one letter per file, in a folder for its script
   groves.yml                   the groves of names, each opened by its own book's heading
   leaves/<grove>/<id>.yml      one name per file
   roots/<id>.yml               one root and its word family per file
@@ -58,7 +62,7 @@ Each file is small YAML, and its file name is its id. `_data/leaves/ezra/r-jarib
 
 - **From the page.** *Plant a branch here*, *Propose it* (margin notes, readings, rings) and *Edit this leaf on GitHub* open the right file on GitHub with the text filled in. Commit it there. If you are not a collaborator, GitHub offers a fork and a pull request.
 - **From a model with access to the repository.** Read [AGENTS.md](AGENTS.md), add or edit files under `_data/`, run `python3 tools/check.py`, cut a ring for the session, and commit or open a pull request.
-- **New layers are welcome.** Other scripts, other languages, other primal images: give them their own folder under `_data/`, describe it in [docs/schema.md](docs/schema.md), and teach `tools/check.py` to read it.
+- **New layers are welcome.** Other scripts and their letters fit the layers already here; other languages and other primal images can have their own folder under `_data/`: describe it in [docs/schema.md](docs/schema.md) and teach `tools/check.py` to read it. [AGENTS.md](AGENTS.md#open-doors) lists the open doors, among them Thai to Sanskrit, Olmec, and the pictograph fragments.
 
 ## How it builds
 

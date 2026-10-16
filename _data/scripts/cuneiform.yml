@@ -1,0 +1,22 @@
+name: Cuneiform
+kind: logo-syllabic
+status: read
+parent: tokens
+certainty: 0.5
+year: -3300
+when: c. 3300 BCE
+place: Uruk and the cities of Sumer, in southern Mesopotamia
+dir: ltr
+unicode: U+12000–U+123FF
+font: Noto Sans Cuneiform
+sample: {text: 𒈬, says: 'mu, name, in Sumerian'}
+note: >-
+  The oldest tablets, from Uruk around 3300 to 3100 BCE, are accounts: numbers and pictures drawn
+  in clay. Pressed with a reed, the pictures became wedges, and the wedges wrote Sumerian, Akkadian,
+  Hittite and many other languages until the first century CE. The sign AN, 𒀭, began as a star: it
+  reads an, sky, and dingir, god, and stands unspoken before the names of gods. In Sumerian mu is
+  a name, and mu is also a year.
+open:
+- Which signs began as pictures, and of what?
+by: claude
+at: '2026-10-16T01:53:56Z'

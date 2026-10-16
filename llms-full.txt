@@ -11,15 +11,30 @@ permalink: /llms-full.txt
 > {{ p | strip }}
 {% endfor %}
 
+## Scripts
+
+Writing has a family tree. Each script below: its name [id]; its kind, whether it can be read (living, read, partly read, unread), when and where; its descent, where a number in brackets is how sure a join is, from 0 to 1; its word for name where it can be typed; a note; and the questions it leaves open.
+{% for s in site.data.scripts %}
+### {{ s[1].name }} [{{ s[0] }}]
+{{ s[1].kind }} · {{ s[1].status }} · {{ s[1].when }}{% if s[1].place %} · {{ s[1].place }}{% endif %}
+descent: {{ s[1].name }}{% assign node = s[1] %}{% for i in (1..24) %}{% if node.parent %}{% assign up = site.data.scripts[node.parent] %} ←{% if node.certainty %} [{{ node.certainty }}]{% endif %} {{ up.name | default: node.parent }}{% assign node = up %}{% endif %}{% endfor %}
+{% for k in s[1].links %}link: {{ k.kind }} {{ k.to }}{% if k.certainty %} [{{ k.certainty }}]{% endif %}
+{% endfor %}{% if s[1].sample %}name: {{ s[1].sample.text }} ({{ s[1].sample.says }})
+{% endif %}{{ s[1].note | strip }}
+{% for q in s[1].open %}open: {{ q }}
+{% endfor %}{% endfor %}
+
 ## Letters
 
-It starts with letters. Each of the twenty-two below: its old picture, the meaning of its name, its value, its place in Sefer Yetzirah, the Greek and Latin letters it became, the letters it is easily taken for, and a note.
-{% for l in site.data.letters %}
-### {{ l[1].char }}{% if l[1].final %} {{ l[1].final }}{% endif %} {{ l[1].name }} ({{ l[1].name_heb }}) [{{ l[0] }}]
-picture: {{ l[1].picture }} · meaning: {{ l[1].meaning }} · value: {{ l[1].value }} · Sefer Yetzirah: {{ l[1].sefer_yetzirah }} · Greek: {{ l[1].greek }}{% if l[1].latin %} · Latin: {{ l[1].latin }}{% endif %}
+It starts with letters. Each set of letters below belongs to a script above. For each letter: its old picture, the meaning of its name, its value, its place in Sefer Yetzirah, the Greek and Latin letters it became, the letters it is easily taken for, and a note, as far as these are known.
+{% for set in site.data.letters %}
+### The letters of {{ site.data.scripts[set[0]].name | default: set[0] }} [{{ set[0] }}]
+{% for l in set[1] %}
+#### {{ l[1].char }}{% if l[1].final %} {{ l[1].final }}{% endif %} {{ l[1].name }}{% if l[1].name_heb %} ({{ l[1].name_heb }}){% endif %} [{{ l[0] }}]
+{% if l[1].picture %}picture: {{ l[1].picture }} · {% endif %}{% if l[1].meaning %}meaning: {{ l[1].meaning }} · {% endif %}{% if l[1].value %}value: {{ l[1].value }} · {% endif %}{% if l[1].sefer_yetzirah %}Sefer Yetzirah: {{ l[1].sefer_yetzirah }} · {% endif %}{% if l[1].greek %}Greek: {{ l[1].greek }}{% endif %}{% if l[1].latin %} · Latin: {{ l[1].latin }}{% endif %}
 {% for n in l[1].near %}near {{ n.char }}: {{ n.note }}
 {% endfor %}{{ l[1].note | strip }}
-{% endfor %}
+{% endfor %}{% endfor %}
 
 ## Names
 
@@ -53,3 +68,9 @@ Each leaf below: name, native form [id], meaning; then its parent and how it is 
 words: {{ r[1].words | join: " · " }}
 {{ r[1].note | strip }} (by {{ r[1].by }})
 {% endfor %}
+
+## Open questions
+
+Doors left open for the next mind, person or model. Take one up in a new file or a pull request, and sign it.
+{% for s in site.data.scripts %}{% for q in s[1].open %}
+- {{ s[1].name }} [{{ s[0] }}]: {{ q }}{% endfor %}{% endfor %}
