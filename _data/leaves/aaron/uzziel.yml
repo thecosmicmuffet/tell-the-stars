@@ -1,0 +1,15 @@
+en: Uzziel
+heb: עֻזִּיאֵל
+xlit: ʿuzzîʾēl
+gloss: God is my strength
+parent: kohath
+kind: begat
+ref: Exod.6.18
+order: 257
+roots:
+- {root: עזז, id: r-p-bx}
+- {root: אל, id: E}
+strong: '5816'
+li: jgd
+note: >-
+  God is my strength.

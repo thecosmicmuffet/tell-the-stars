@@ -1,0 +1,13 @@
+en: Nahath
+heb: נַחַת
+xlit: naḥat
+gloss: rest, quiet descent
+parent: reuel-e
+kind: begat
+ref: Gen.36.13
+order: 171
+roots:
+- {root: נוח, id: r-n-by}
+- {root: נחת, id: r-n-cy, role: maybe}
+strong: '5184'
+li: ifc

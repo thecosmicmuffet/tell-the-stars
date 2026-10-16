@@ -1,0 +1,19 @@
+en: Naamah
+heb: נַעֲמָה
+xlit: naʿămâ
+gloss: pleasant, lovely
+parent: benammi
+kind: people
+ref: 1Kgs.14.21
+order: 334
+flags: f
+roots:
+- {root: נעם, id: r-n-ed}
+links:
+- {to: solomon, kind: wife of}
+strong: 5279a
+li: ijd
+note: >-
+  'His mother's name was Naamah an Ammonitess' (1 Kgs 14:21, 31). Every king of Judah after
+  Solomon descends from her, though Ammonites were barred from the congregation 'even to their
+  tenth generation' (Deut 23:3).

@@ -1,0 +1,23 @@
+en: Ishmael
+heb: יִשְׁמָעֵאל
+xlit: yišmāʿēʾl
+gloss: God hears
+parent: abraham
+kind: begat
+ref: Gen.16.11
+order: 126
+roots:
+- {root: שמע, id: r-v-ed}
+- {root: אל, id: E}
+naming:
+- {ref: Gen.16.11, text: 'And the angel of the LORD said unto her, Behold, thou art with child,
+    and shalt bear a son, and shalt call his name Ishmael; because the LORD hath heard thy
+    affliction.'}
+links:
+- {to: hagar, kind: mother}
+strong: '3458'
+li: flk
+note: >-
+  'Thou... shalt call his name Ishmael; because the LORD hath heard thy affliction' (Gen 16:11).
+  Sent out with his mother, he is heard again: 'God heard the voice of the lad where he is'
+  (21:17). Isaac and Ishmael buried Abraham together (25:9).

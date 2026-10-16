@@ -1,0 +1,13 @@
+en: Abidah
+heb: אֲבִידָע
+xlit: ʾăbîdāʿ
+gloss: my father knows
+parent: midian
+kind: begat
+ref: Gen.25.4
+order: 140
+roots:
+- {root: אבה, id: r-a-ae}
+- {root: ידע, id: r-j-au}
+strong: '28'
+li: abc

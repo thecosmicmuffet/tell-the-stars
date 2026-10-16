@@ -1,0 +1,23 @@
+cons: חצר
+w: חצר
+def: be present, settle or dwell, fixed abode
+homonym: II
+bdb: h.fb
+family:
+- {w: חצר, x: ḥṣr, d: 'be present, settle or dwell, fixed abode', li: efx}
+- {w: חָצֵר, x: ḥāṣēr, p: n.m, d: settled abode, li: efq}
+- {w: חֲצַר־אַדָּר, x: ḥăṣar-ʾaddār, p: n.pr.loc, d: Hazar-addar, li: egf}
+- {w: חֲצַר גַּדָּה, x: ḥăṣar gaddâ, p: n.pr.loc, d: Hazar-gaddah, r: Josh.15.27, li: efy}
+- {w: חֲצַר סוּסָה, x: ḥăṣar sûsâ, p: n.pr.loc, d: Hazar-susah, li: ega}
+- {w: חֲצַר עֵינוֹן, x: ḥăṣar ʿênôn, p: n.pr.loc, d: Hazar-enan, li: egc}
+- {w: חֲצַר שׁוּעָל, x: ḥăṣar šûʿāl, p: n.pr.loc, d: Hazar-shual, li: ege}
+- {w: חֲצַר הַתִּיכוֹן, x: ḥăṣar hattîkôn, p: n.pr.loc, d: Hazar-hatticon, r: Ezek.47.16,
+  li: efz}
+- {w: חָצוֹר, x: ḥāṣôr, p: n.pr.loc, d: Hazor, li: eey}
+- {w: חָצוֹר חֲדַתָּה, x: ḥāṣôr ḥădattâ, p: n.pr.loc, d: Hazor, r: Josh.15.25, li: eez}
+- {w: חָצִיר, x: ḥāṣîr, p: 'n.[m.]', d: settled abode, li: eff}
+- {w: חֶצְרוֹ, x: ḥeṣrô, p: n.pr.m, d: Hezro, li: egg}
+- {w: חֶצְרוֹן, x: ḥeṣrôn, p: n.pr.loc, d: Hezron, li: egh}
+- {w: חֶצְרוֹנִי, x: ḥeṣrônî, p: adj.gent, d: Hezronites, r: Num.26.6, li: egi}
+- {w: חֲצֵרוֹת, x: ḥăṣērôt, p: n.pr.loc, d: Hazeroth, li: egj}
+- {w: חֲצַרְמָוֶת, x: ḥăṣarmāwet, p: n.pr.m, d: Hazarmaveth, li: egl}

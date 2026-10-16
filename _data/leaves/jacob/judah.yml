@@ -1,0 +1,19 @@
+en: Judah
+heb: יְהוּדָה
+xlit: yĕhûdâ
+gloss: praise
+parent: jacob
+kind: begat
+ref: Gen.29.35
+order: 180
+roots:
+- {root: ידה, id: r-j-at}
+naming:
+- {ref: Gen.29.35, text: 'And she conceived again, and bare a son: and she said, Now will
+    I praise the LORD : therefore she called his name Judah; and left bearing.'}
+links:
+- {to: leah, kind: mother}
+strong: '3063'
+li: evn
+note: >-
+  'Now will I praise (odeh) the LORD' (Gen 29:35). Jew, Judaism and Jude come from this name.

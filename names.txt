@@ -1,0 +1,11 @@
+---
+layout: null
+permalink: /names.txt
+---
+# Tell the Stars: every name on the tree, one per line.
+# id	name	native form	meaning	grove	parent
+{% for g in site.data.leaves -%}
+{% for l in g[1] -%}
+{{ l[0] }}	{{ l[1].en }}	{{ l[1].heb | default: l[1].greek }}	{{ l[1].gloss }}	{{ g[0] }}	{{ l[1].parent }}
+{% endfor -%}
+{% endfor -%}

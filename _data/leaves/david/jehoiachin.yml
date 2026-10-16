@@ -1,0 +1,23 @@
+en: Jehoiachin
+heb: יְהוֹיָכִין
+xlit: yĕhôyākîn
+gloss: Yah establishes (Jeconiah, Coniah)
+parent: jehoiakim
+kind: begat
+ref: 2Kgs.24.6
+order: 352
+roots:
+- {root: כון, id: r-k-aw}
+- {root: יה, id: Y}
+aliases:
+- {en: Jeconiah, ref: 1Chr.3.16, by: Chronicles, note: the same two elements in reverse, heb: יְכָנְיָה}
+- {en: Coniah, ref: Jer.22.24, by: Jeremiah, note: the prophet drops the Name from his name,
+  heb: כָּנְיָהוּ}
+strong: '3078'
+li: ewc
+note: >-
+  Yehoyakhin, Yah establishes; also Jeconiah, the same elements reversed, and Coniah, the
+  prophet's form without the Name: 'though Coniah... were the signet upon my right hand, yet
+  would I pluck thee thence' (Jer 22:24), and 'Write ye this man childless' (22:30). Matthew
+  lists his son (1:12), and Haggai reverses the signet for his grandson: 'I will... make thee
+  as a signet' (Hag 2:23).

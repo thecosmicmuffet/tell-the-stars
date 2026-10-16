@@ -1,0 +1,13 @@
+en: Maaseiah
+heb: מַעֲשֵׂיָה
+xlit: maʿăśêāhû
+gloss: work of Yah
+parent: pahath-moab
+kind: house
+ref: Ezra.10.30
+order: 452
+roots:
+- {root: עשה, id: r-p-fy}
+- {root: יה, id: Y}
+strong: '4641'
+li: hir

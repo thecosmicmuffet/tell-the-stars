@@ -1,0 +1,16 @@
+cons: ראש
+w: רֹאשׁ
+def: head, head
+homonym: I
+bdb: t.ad
+family:
+- {w: רֹאשׁ, x: rōʾš, p: n.m, d: head, li: lpx}
+- {w: רִאשָׁה, x: riʾšâ, p: n.f, d: beginning-time, r: Ezek.36.11, li: lpy}
+- {w: רֹאשָׁה, x: rōʾšâ, p: n.f, d: top, r: Zech.4.7, li: lpz}
+- {w: רִאשׁוֹן, x: riʾšôn, p: adj, d: former, li: lqa}
+- {w: רִאשֹׁנִי, x: riʾšōnî, p: adj, d: first, r: Jer.25.1, li: lqc}
+- {w: רֵאשִׁית, x: rēʾšît, p: n.f, d: beginning, li: lqb}
+- {w: מְרַאֲשָׁוֹת, x: mĕraʾăšāwōt, p: 'n.[f.]pl', d: place at the head, li: hnu}
+- {w: רֹאשׁ, x: rōʾš, p: n.m, d: venom, li: lpv}
+- {w: רֹאשׁ, x: rōʾš, p: n.m, d: Rosh, r: Gen.46.21, li: lpw}
+- {w: רֹאשׁ, x: rōʾš, p: n.pr.gent, d: Rôsh, li: lpu}

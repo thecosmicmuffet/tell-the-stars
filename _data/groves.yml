@@ -1,0 +1,26 @@
+- {id: adam, label: The Book of Adam, heading: This is the book of the generations of Adam.,
+  ref: Gen.5.1}
+- {id: cain, label: Cain's Line, heading: No toledot. The line of Cain is told without a heading.,
+  ref: Gen.4.17}
+- {id: nations, label: Sons of Noah, heading: 'Now these are the generations of the sons of
+    Noah, Shem, Ham, and Japheth.', ref: Gen.10.1}
+- {id: shem, label: Generations of Shem, heading: These are the generations of Shem., ref: Gen.11.10}
+- {id: terah, label: Generations of Terah, heading: Now these are the generations of Terah.,
+  ref: Gen.11.27}
+- {id: ishmael, label: Ishmael's Princes, heading: 'Now these are the generations of Ishmael,
+    Abraham''s son.', ref: Gen.25.12}
+- {id: esau, label: 'Esau, who is Edom', heading: 'Now these are the generations of Esau,
+    who is Edom.', ref: Gen.36.1}
+- {id: jacob, label: House of Jacob, heading: These are the generations of Jacob., ref: Gen.37.2}
+- {id: aaron, label: Aaron and Moses, heading: These also are the generations of Aaron and
+    Moses., ref: Num.3.1}
+- {id: perez, label: Generations of Pharez, heading: Now these are the generations of Pharez.,
+  ref: Ruth.4.18}
+- {id: david, label: Sons of David, heading: Now these were the sons of David., ref: 1Chr.3.1}
+- {id: saul, label: House of Kish, heading: 'Now there was a man of Benjamin, whose name was
+    Kish.', ref: 1Sam.9.1}
+- {id: ezra, label: The Roll, heading: All these had taken strange wives., ref: Ezra.10.44}
+- {id: jesus, label: Matthew's Line, heading: The book of the generation of Jesus Christ.,
+  ref: Matt.1.1}
+- {id: apostles, label: The Twelve, heading: Now the names of the twelve apostles are these.,
+  ref: Matt.10.2}

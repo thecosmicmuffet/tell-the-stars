@@ -1,0 +1,19 @@
+char: ד
+position: 4
+value: 4
+name: dalet
+name_heb: דָּלֶת
+picture: a door? (the earliest sign may be a fish)
+meaning: door
+sefer_yetzirah: double · d
+greek: Δ delta
+latin: D
+near:
+- {char: ר, note: 'one corner: Dodanim in Gen 10:4 is Rodanim in 1 Chr 1:7, and Hadad is Hadar'}
+- {char: ה, note: 'he with its leg taken away, which is how careful writers avoid writing
+    the Name'}
+note: >-
+  The door. The Phoenician dalet was a triangle, and the Greeks named the triangle of land
+  at the mouth of the Nile after the letter: the delta. In the square script dalet and resh
+  differ by one corner, and the text keeps the stumbles. A dalet is a he with its foot taken
+  away.

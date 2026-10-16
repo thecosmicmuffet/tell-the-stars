@@ -1,0 +1,18 @@
+en: Ahaz
+heb: אָחָז
+xlit: ʾāḥāz
+gloss: he has grasped (Jehoahaz without the Name)
+parent: jotham
+kind: begat
+ref: 2Kgs.15.38
+order: 345
+roots:
+- {root: אחז, id: r-a-cl}
+aliases:
+- {en: Jehoahaz, ref: '', by: an Assyrian scribe, note: 'Tiglath-pileser''s annals give the
+    full name, Iauhazi'}
+strong: '271'
+li: alf
+note: >-
+  Ahaz, he has grasped. The annals of Tiglath-pileser III list a king of Judah called Iauhazi,
+  Jehoahaz: the Assyrian scribe kept the Name that the biblical form leaves off.

@@ -1,0 +1,16 @@
+en: Eliah
+heb: אֵלִיָּה
+xlit: ʾēlîyâ
+gloss: my God is Yah
+parent: elam-h
+kind: house
+ref: Ezra.10.26
+order: 432
+roots:
+- {root: אל, id: E}
+- {root: יה, id: Y}
+strong: '452'
+li: ash
+note: >-
+  The same name, Eliyyah, in the house of Elam: see the priest Elijah of the house of Harim
+  (Ezra 10:21).

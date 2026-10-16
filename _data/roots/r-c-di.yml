@@ -1,0 +1,15 @@
+cons: גרש
+w: גָּרַשׁ
+def: drive out, cast out
+bdb: c.di
+note: >-
+  Drive out. Gershon, Gershom; Eden's gate (Gen 3:24); Hagar (21:10); Jonah, 'I am cast out
+  (nigrashti) of thy sight' (Jonah 2:4).
+family:
+- {w: גָּרַשׁ, x: gāraš, p: vb, d: drive out, li: cok}
+- {w: גֶּרֶשׁ, x: gereš, p: 'n.[m.]', d: thing thrust, r: Deut.33.14, li: coi}
+- {w: גְרוּשָׁה, x: gĕrûšâ, p: n.f, d: expulsion, r: Ezek.45.9, li: cnp}
+- {w: גֵּרְשֹׁם, x: gērĕšōm, p: n.pr.m, d: Gershom, li: con}
+- {w: גֵּרְשׁוֹן, x: gērĕšôn, p: n.pr.m, d: Gershon, li: com}
+- {w: גֵּרְשֻׁנִּי, x: gērĕšunnî, p: adj.gent, d: Gereshonite, li: coo}
+- {w: מִגְרָשׁ, x: migrāš, p: n.m, d: common, li: glj}

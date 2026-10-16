@@ -1,0 +1,14 @@
+en: Joseph
+heb: יוֹסֵף
+xlit: yôsēp
+greek: Ἰωσήφ
+gloss: may he add
+parent: jacob-m
+kind: begat
+ref: Matt.1.16
+order: 515
+roots:
+- {root: יסף, id: r-j-bz}
+note: >-
+  'Joseph the husband of Mary, of whom was born Jesus' (Matt 1:16). The chain of 'begat' breaks
+  at the last link: Joseph does not beget, and 'of whom' is feminine in Greek.

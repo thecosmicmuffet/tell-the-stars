@@ -1,0 +1,11 @@
+en: Alphaeus
+heb: חַלְפַי
+xlit: ḥalpay
+greek: Ἁλφαῖος
+gloss: changing? (Halfai)
+parent: israel
+kind: of
+ref: Mark.2.14
+order: 527
+roots:
+- {root: חלף, id: r-h-cx, role: maybe}

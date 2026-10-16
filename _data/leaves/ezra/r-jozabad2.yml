@@ -1,0 +1,13 @@
+en: Jozabad
+heb: יוֹזָבָד
+xlit: yôzābād
+gloss: Yah has bestowed
+parent: levites
+kind: house
+ref: Ezra.10.23
+order: 410
+roots:
+- {root: זבד, id: r-g-ad}
+- {root: יה, id: Y}
+strong: '3107'
+li: exi

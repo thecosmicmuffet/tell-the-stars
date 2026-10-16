@@ -1,0 +1,22 @@
+cons: לבן
+w: לָבֵן
+def: be white, make white
+bdb: l.ak
+family:
+- {w: לָבֵן, x: lābēn, p: vb, d: be white, li: gcb}
+- {w: לָבָן, x: lābān, p: adj, d: white, li: gce}
+- {w: לְבָנָה, x: lĕbānâ, p: n.f, d: moon, li: gck}
+- {w: לָבָן, x: lābān, p: n.pr.m, d: Laban, li: gcf}
+- {w: לָבָן, x: lābān, p: n.pr.loc, d: Laban, r: Deut.1.1, li: gcd}
+- {w: לְבָנָא, x: lĕbānāʾ, p: Np, d: Lebana, li: gch}
+- {w: לִבְנָה, x: libnâ, p: n.pr.loc, d: Libnah, li: gcn}
+- {w: לְבֹנָה, x: lĕbōnâ, p: n.f, d: frankincense, li: gcl}
+- {w: לְבוֹנָה, x: lĕbônâ, p: n.pr.loc, d: Lebonah, li: gbv}
+- {w: לִבְנִי, x: libnî, p: n.pr.m, d: Libni, li: gcq}
+- {w: לִבְנִי, x: libnî, p: adj.gent, d: Libnite, r: Num.3.21, li: gcp}
+- {w: לְבָנוֹן, x: lĕbānôn, p: n.pr.mont, d: Lebanon, li: gco}
+- {w: לִבְנֶה, x: libneh, p: 'n.[m.]', d: poplar, li: gcm}
+- {w: לְבֵנָה, x: lĕbēnâ, p: n.f, d: brick, li: gci}
+- {w: לָבַן, x: lāban, p: vb. denom, d: make brick, li: gcc}
+- {w: מַלְבֵּן, x: malbēn, p: 'n.[m.]', d: brick-mould, li: gzh}
+- {w: לַבֵּן, x: mût labbēn, p: N, d: ‘To die for the son’, r: Ps.9.1, li: gqt}

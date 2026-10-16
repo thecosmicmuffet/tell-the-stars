@@ -1,0 +1,20 @@
+en: Benammi
+heb: בֶּן־עַמִּי
+xlit: ben-ʿammî
+gloss: son of my kinsman (Ammon)
+parent: lot
+kind: begat
+ref: Gen.19.38
+order: 112
+flags: n
+roots:
+- {root: בן, id: r-b-ca}
+- {root: עמם, id: r-p-di}
+naming:
+- {ref: Gen.19.38, text: 'And the younger, she also bare a son, and called his name Ben-ammi:
+    the same is the father of the children of Ammon unto this day.'}
+strong: '1151'
+li: btf
+note: >-
+  Ben-ammi, son of my kinsman, father of the children of Ammon (Gen 19:38). Naamah, the mother
+  of Rehoboam, was an Ammonitess (1 Kgs 14:21).

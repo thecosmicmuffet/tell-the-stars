@@ -1,0 +1,11 @@
+en: James
+heb: יַעֲקֹב
+xlit: yaʿăqōb
+greek: Ἰάκωβος
+gloss: heel-holder (Jacob)
+parent: alphaeus
+kind: son
+ref: Matt.10.3
+order: 529
+roots:
+- {root: עקב, id: r-p-eu}

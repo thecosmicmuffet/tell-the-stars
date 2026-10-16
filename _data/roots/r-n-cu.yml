@@ -1,0 +1,13 @@
+cons: נחש
+w: נחשׁ
+def: hiss
+homonym: I
+bdb: n.cu
+note: >-
+  Serpent; divination; bronze: nahash, nihesh, nehoshet, one unpointed skeleton. Nahshon is
+  in Christ's genealogy.
+family:
+- {w: נחשׁ, x: nḥš, d: hiss, li: iet}
+- {w: נָחָשׁ, x: nāḥāš, p: n.m, d: serpent, li: ieq}
+- {w: נָחָשׁ, x: nāḥāš, p: n.pr.m, d: Nahash, li: ier}
+- {w: נַחְשׁוֹן, x: naḥšôn, p: n.pr.m, d: Naashon, li: iev}

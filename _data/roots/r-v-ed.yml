@@ -1,0 +1,32 @@
+cons: שמע
+w: שָׁמַע
+def: hear, be heard
+bdb: v.ed
+note: >-
+  Hear. Simeon, Ishmael, Shemaiah, Shimei, Mishma, Simon.
+family:
+- {w: שָׁמַע, x: šāmaʿ, p: vb, d: hear, li: nam}
+- {w: שֶׁמַע, x: šemaʿ, p: 'n.[m.]', d: sound, r: Ps.150.5, li: nak}
+- {w: שֶׁמַע, x: šemaʿ, p: n.pr.m, d: Shema, li: nal}
+- {w: שֵׁמַע, x: šēmaʿ, p: 'n.[m.]', d: hearing, li: naj}
+- {w: שֹׁמַע, x: šōmaʿ, p: n.m, d: report, li: nao}
+- {w: שְׁמַע, x: šĕmaʿ, p: n.pr.loc, d: Shema, r: Josh.15.26, li: nai}
+- {w: שָׁמָע, x: šāmāʿ, p: n.pr.m, d: Shama, r: 1Chr.11.44, li: nan}
+- {w: שִׁמְעָא, x: šimʿāʾ, p: n.pr.m, d: Shimea, li: nap}
+- {w: שְׁמָעָה, x: šĕmāʿâ, p: n.pr.m, d: Shemaah, r: 1Chr.12.3, li: naq}
+- {w: שִׁמְעָת, x: šimʿāt, p: n.pr.f, d: Shimath, li: nax}
+- {w: שִׁמְעָתִים, x: šimʿātîm, p: adj.gent.pl, d: Shimeathites, r: 1Chr.2.55, li: nay}
+- {w: שְׁמוּעָה, x: šĕmûʿâ, p: n.f, d: report, li: myy}
+- {w: שַׁמּוּעַ, x: šammûaʿ, p: n.pr.m, d: Shammua, li: myx}
+- {w: שִׁמְעוֹן, x: šimʿôn, p: n.pr.m, d: Simeon, li: nas}
+- {w: שִׁמְעוֹנִי, x: šimʿōnî, p: adj.gent, d: tribe of Simeon, li: naw}
+- {w: שִׁמְעִי, x: šimʿî, p: n.pr.m, d: Shimeah (from the margin), li: nat}
+- {w: שִׁמְעִי, x: šimʿî, p: adj.gent, d: of Shimi, r: Num.3.21, li: nau}
+- {w: שְׁמַעְיָה(וּ), x: šĕmaʿyāhû, p: n.pr.m, d: Shemaiah, li: nav}
+- {w: יִשְׁמָעֵאל, x: yišmāʿēʾl, p: n.pr.m, d: Ishmael, li: flk}
+- {w: יִשְׁמְעֵאלִי, x: yišmĕʿēʾlî, p: adj.gent, d: Ishmaelites, li: fll}
+- {w: יִשְׁמַעְיָה(וּ), x: yišmaʿyāhû, p: n.pr.m, d: Ishmaiah, li: flm}
+- {w: הַשְׁמָעוּת, x: hašmāʿût, p: n.f, d: a causing to hear, r: Ezek.24.26, li: ddy}
+- {w: מִשְׁמָע, x: mišmāʿ, p: 'n.[m.]', d: thing heard, r: Isa.11.3, li: hun}
+- {w: מִשְׁמָע, x: mišmāʿ, p: n.pr.m, d: Mishma, li: huo}
+- {w: מִשְׁמַעַת, x: mišmaʿat, p: n.f, d: obedient band, li: hup}

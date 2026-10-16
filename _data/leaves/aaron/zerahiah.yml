@@ -1,0 +1,16 @@
+en: Zerahiah
+heb: זְרַחְיָה
+xlit: zĕraḥyâ
+gloss: Yah has dawned
+parent: uzzi
+kind: begat
+ref: 1Chr.6.6
+wref: 1Chr.5.32
+order: 280
+roots:
+- {root: זרח, id: r-g-cj}
+- {root: יה, id: Y}
+strong: '2228'
+li: dlr
+note: >-
+  Zerahyah, Yah has dawned.

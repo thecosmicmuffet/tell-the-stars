@@ -1,0 +1,17 @@
+en: Ananias
+heb: חֲנַנְיָה
+xlit: ḥănanyâ
+greek: Ἁνανίας
+gloss: Yah has been gracious (Hananiah)
+parent: israel
+kind: of
+ref: Acts.9.10
+order: 537
+roots:
+- {root: חנן, id: r-h-dz}
+- {root: יה, id: Y}
+links:
+- {to: r-hananiah, kind: same name as}
+note: >-
+  Hananyah, Yah has been gracious: 'Brother Saul... receive thy sight' (Acts 9:17), and 'there
+  fell from his eyes as it had been scales' (9:18).

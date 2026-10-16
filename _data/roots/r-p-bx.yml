@@ -1,0 +1,27 @@
+cons: עזז
+w: עָזַז
+def: be strong, be strong
+bdb: p.bx
+family:
+- {w: עָזַז, x: ʿāzaz, p: vb, d: be strong, li: jfx}
+- {w: עַז, x: ʿaz, p: adj, d: strong, li: jfh}
+- {w: עֹז, x: ʿōz, p: n.m, d: strength, li: jfi}
+- {w: עֱזוּז, x: ʿĕzûz, p: 'n.[m.]', d: strength, li: jfu}
+- {w: עִזּוּז, x: ʿizzûz, p: adj, d: mighty, li: jfv}
+- {w: עָזָז, x: ʿāzāz, p: n.pr.m, d: Azaz, r: 1Chr.5.8, li: jfy}
+- {w: עֻזָּא, x: ʿuzzāʾ, p: n.pr.m, d: Uzza, li: jfj}
+- {w: עֻזָּה, x: ʿuzzâ, p: n.pr.m, d: Uzza, li: jfr}
+- {w: עֲזִיזָא, x: ʿăzîzāʾ, p: n.pr.m, d: Aziza, r: Ezra.10.27, li: jgg}
+- {w: עֲזַזְיָהוּ, x: ʿăzazyāhû, p: n.pr.m, d: Azaziah, li: jfz}
+- {w: עֻזִּיאֵל, x: ʿuzzîʾēl, p: n.pr.m, d: Uzziel, li: jgd}
+- {w: עָזִּיאֵלִי, x: ʿozzîʾēlî, p: adj.gent, d: Uzzielite, li: jge}
+- {w: עֻזִּיָּהוּ, x: ʿuzzîyāhû, p: n.pr.m, d: Uzziah, li: jgf}
+- {w: עֻזִּיָּא, x: ʿuzzîyāʾ, p: n.pr.m, d: Uzzia, r: 1Chr.11.44, li: jgb}
+- {w: עֻזִּי, x: ʿuzzî, p: n.pr.m, d: Uzzi, li: jga}
+- {w: (וְ)יַעֲזִיאֵל, x: yaʿăzîʾēl, p: n.pr.m, d: Jaaziel, r: 1Chr.15.18, li: fdv}
+- {w: יַעֲזִיָּהוּ, x: yaʿăzîyāhû, p: n.pr.m, d: Jaaziah, li: fdw}
+- {w: עַזְבּוּק, x: ʿazbûq, p: n.pr.m, d: Azbuk, r: Neh.3.16, li: jfo}
+- {w: עַזְגָּד, x: ʿazgād, p: n.pr.m, d: Azgad, li: jfp}
+- {w: עַזְמָוֶת, x: ʿazmāwet, p: n.pr.m, d: Azmaveth. See also, li: jgh}
+- {w: עַזָּן, x: ʿazzān, p: n.pr.m, d: Azzan, r: Num.34.26, li: jgi}
+- {w: עָזְנִיָּה, x: ʿoznîyâ, p: n.f, d: osprey, li: jgj}

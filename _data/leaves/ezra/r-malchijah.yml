@@ -1,0 +1,13 @@
+en: Malchijah
+heb: מַלְכִּיָּה
+xlit: malkîyāhû
+gloss: Yah is my king
+parent: parosh
+kind: house
+ref: Ezra.10.25
+order: 425
+roots:
+- {root: מלך, id: r-m-cd}
+- {root: יה, id: Y}
+strong: '4441'
+li: haq

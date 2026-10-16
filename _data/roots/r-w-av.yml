@@ -1,0 +1,7 @@
+cons: תלם
+w: תלם
+bdb: w.av
+family:
+- {w: תלם, x: tlm, li: nsy}
+- {w: תֶּלֶם, x: telem, p: n.m, d: furrow, li: nsx}
+- {w: תַּלְמַי, x: talmay, p: n.pr.m, d: Talmai, li: nsz}

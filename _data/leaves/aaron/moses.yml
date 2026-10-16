@@ -1,0 +1,24 @@
+en: Moses
+heb: מֹשֶׁה
+xlit: mōšeh
+gloss: 'drawer-out; Egyptian: son, born'
+parent: amram
+kind: begat
+ref: Exod.6.20
+order: 262
+roots:
+- {root: משה, id: r-m-ds}
+naming:
+- {ref: Exod.2.10, text: 'And the child grew, and she brought him unto Pharaoh’s daughter,
+    and he became her son. And she called his name Moses: and she said, Because I drew him
+    out of the water.'}
+links:
+- {to: jochebed, kind: mother}
+strong: '4872'
+li: hsf
+note: >-
+  Pharaoh's daughter 'called his name Moses: and she said, Because I drew him (meshitihu)
+  out of the water' (Exod 2:10). An Egyptian princess names him, and in Egyptian ms means
+  born, child, son: Thut-mose, Ah-mose, Ra-mose, the son of a god. Moses is that name with
+  the god left off. Read as Hebrew, Mosheh is an active participle: not 'drawn out' but 'one
+  who draws out.'

@@ -1,0 +1,10 @@
+cons: להב
+w: להב
+def: be thirsty, burn with thirst
+bdb: l.am
+family:
+- {w: להב, x: lhb, d: 'be thirsty, burn with thirst', li: gcw}
+- {w: לַהַב, x: lahab, p: n.m, d: flame, li: gcv}
+- {w: לֶהָבָה, x: labbâ, p: n.f, d: flame, li: gbu}
+- {w: שַׁלְהֶבֶת, x: šalhebet, p: n.f, d: flame, li: mvd}
+- {w: לְהָבִים, x: lĕhābîm, p: n.pr.gent., d: Lehabim, li: gcy}

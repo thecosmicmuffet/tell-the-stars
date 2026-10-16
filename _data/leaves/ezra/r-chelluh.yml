@@ -1,0 +1,15 @@
+en: Chelluh
+heb: כְּלוּהוּ
+xlit: kĕlûhû
+gloss: uncertain
+parent: bani2
+kind: house
+ref: Ezra.10.35
+order: 477
+roots:
+- {root: כלה, id: r-k-bk, role: maybe}
+kq: {k: כלוהי, q: כְּלוּהוּ, ref: Ezra.10.35}
+strong: '3622'
+li: fst
+note: >-
+  The written text has כלוהי; the Masoretic reading is Keluhu.

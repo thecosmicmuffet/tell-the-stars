@@ -1,0 +1,20 @@
+en: Mephibosheth
+heb: מְפִיבֹשֶׁת
+xlit: mĕpîbōšet
+gloss: from the mouth of shame (Merib-baal)
+parent: jonathan
+kind: begat
+ref: 2Sam.4.4
+order: 365
+roots:
+- {root: בוש, id: r-b-ax}
+- {root: בעל, id: r-b-ci, role: pun}
+- {root: ריב, id: r-t-cm, role: pun}
+aliases:
+- {en: Merib-baal, ref: 1Chr.8.34, by: Chronicles, note: the older form, heb: מְרִיב בַּעַל}
+strong: '4648'
+li: hiy
+note: >-
+  Merib-baal in Chronicles (1 Chr 8:34), Mephibosheth in Samuel: the same substitution. Lame
+  in both feet after his nurse fled with him and he fell (2 Sam 4:4), he 'did eat continually
+  at the king's table' (9:13).

@@ -1,0 +1,31 @@
+cons: בעל
+w: בָּעַל
+def: marry, rule over
+bdb: b.ci
+family:
+- {w: בָּעַל, x: bāʿal, p: vb, d: marry, li: bun}
+- {w: בַּעַל, x: baʿal, p: n.m, d: Baal, li: bul}
+- {w: בַּעַל, x: baʿal, p: Np, d: Baal, li: buk}
+- {w: בַעַל גַּד, x: baʿal gād, p: n.pr.loc, d: Baal-gad, li: bup}
+- {w: בַעַל הָמוֹן, x: baʿal hāmôn, p: n.pr.loc, d: Baal-hamon, r: Song.8.11, li: buq}
+- {w: בַעַל חָנָן, x: baʿal ḥānān, p: n.pr.m, d: Baal-hanan, li: bus}
+- {w: בַּעַל חָצוֹר, x: baʿal ḥāṣôr, p: n.pr.loc, d: Baal-hazor, li: but}
+- {w: בַעַל חֶרְמוֹן, x: baʿal ḥermôn, p: n.pr.loc, d: Baal-hermon, li: buu}
+- {w: בַּעַל מְעוֹן, x: baʿal mĕʿôn, p: n.pr.loc, d: Baal-meon, li: buv}
+- {w: בַּעַל פְּעוֹר, x: baʿal pĕʿôr, p: n.pr.m, d: Baal-peor, li: buw}
+- {w: בַּעַל פְּרָצִים, x: baʿal pĕrāṣîm, p: n.pr.loc, d: Baal-perazim, li: bux}
+- {w: בַעַל צְפוֹן, x: baʿal ṣĕpôn, p: n.pr.loc, d: Baal-zephon, li: buy}
+- {w: בַעַל שָׁלִשָׁה, x: baʿal šālišâ, p: n.pr.loc, d: Baal-shalisha, r: 2Kgs.4.42, li: buz}
+- {w: בַעַל תָּמָר, x: baʿal tāmār, p: n.pr.loc, d: Baal-tamar, r: Judg.20.33, li: bva}
+- {w: בַּעֲלָה, x: baʿălâ, p: n.f, d: mistress, li: bvc}
+- {w: בַּעֲלָה, x: baʿălâ, p: n.pr.loc, d: Baalah, li: bvb}
+- {w: בַּעֲלָת, x: baʿălāt, p: n.pr.loc, d: Baalath, li: bvk}
+- {w: בְּעָלוֹת, x: bĕʿālôt, p: n.pr.loc, d: Bealoth, li: bvd}
+- {w: בַּעֲלַת בְּאֵר, x: baʿălat bĕʾēr, p: n.pr.loc, d: Baalath-beer, r: Josh.19.8, li: bvl}
+- {w: בְּעֶלְיָדָע, x: bĕʿelyādāʿ, p: n.pr.m, d: Beeliada, li: bvh}
+- {w: בַּעַלְיָה, x: baʿalyâ, p: n.pr.m, d: Bealiah, r: 1Chr.12.6, li: bvi}
+- {w: בֵּל, x: bēl, p: n.pr.m, d: Bel, li: bra}
+- {w: בֵּלְאשַׁצַּר, x: bēlĕʾšaṣṣar, p: n.pr.m, d: Belshazzar, li: brd}
+- {w: בַּעֲלִיס, x: baʿălîs, p: n.pr.m, d: Baalis, r: Jer.40.14, li: bvj}
+- {w: בַּעֲנָא, x: baʿănāʾ, p: n.pr.m, d: Baana, li: bvn}
+- {w: בַּעֲנָה, x: baʿănâ, p: n.pr.m, d: Baanah, li: bvo}

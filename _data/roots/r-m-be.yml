@@ -1,0 +1,9 @@
+cons: מות
+w: מוּת
+def: die, die
+bdb: m.be
+family:
+- {w: מוּת, x: mût, p: vb, d: die, li: gqs}
+- {w: מָוֶת, x: māwet, p: n.m, d: death, li: gqr}
+- {w: מָמוֹת, x: māmôt, p: 'n.[m.]', d: death, li: hbq}
+- {w: תְּמוּתָה, x: tĕmûtâ, p: n.f, d: death, li: ntp}

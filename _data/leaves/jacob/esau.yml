@@ -1,0 +1,26 @@
+en: Esau
+heb: עֵשָׂו
+xlit: ʿēśāw
+gloss: hairy, made?; Edom, red
+parent: isaac
+kind: begat
+ref: Gen.25.25
+order: 155
+roots:
+- {root: עשה, id: r-p-fz, role: maybe}
+- {root: אדם, id: r-a-bd}
+aliases:
+- {en: Edom, ref: Gen.25.30, by: the red pottage, note: named for what he ate, heb: אֱדוֹם}
+naming:
+- {ref: Gen.25.25, text: 'And the first came out red, all over like an hairy garment; and
+    they called his name Esau.'}
+- {ref: Gen.25.30, text: 'And Esau said to Jacob, Feed me, I pray thee, with that same red
+    pottage; for I am faint: therefore was his name called Edom.'}
+links:
+- {to: rebekah, kind: mother}
+strong: '6215'
+li: jxm
+note: >-
+  'They called his name Esau' because he came out 'all over like an hairy garment' (Gen 25:25);
+  he is called Edom, red, after the red pottage he sold his birthright for (25:30). Edom is
+  Adam's root. His wives are listed twice under different names (26:34; 28:9; 36:2-3).

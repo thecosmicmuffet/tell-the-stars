@@ -1,0 +1,18 @@
+char: מ
+final: ם
+position: 13
+value: 40
+name: mem
+name_heb: מֵם
+picture: water, drawn as waves
+meaning: water
+sefer_yetzirah: mother · water
+greek: Μ mu
+latin: M
+near:
+- {char: ס, note: 'closed at a word''s end, mem is a square beside samekh''s ring'}
+note: >-
+  Water. Open in the middle of a word, closed at its end. The Masoretes kept two out of place:
+  a closed mem inside 'Of the increase (לםרבה) of his government' (Isa 9:6, KJV 9:7), which
+  the Talmud asks about (Sanhedrin 94a), and an open one at the end of 'which were broken
+  down (המ פרוצים)' (Neh 2:13). Sefer Yetzirah makes it water, one of the three mothers.

@@ -1,0 +1,20 @@
+en: Simeon
+heb: שִׁמְעוֹן
+xlit: šimʿôn
+gloss: heard
+parent: jacob
+kind: begat
+ref: Gen.29.33
+order: 178
+roots:
+- {root: שמע, id: r-v-ed}
+naming:
+- {ref: Gen.29.33, text: 'And she conceived again, and bare a son; and said, Because the LORD
+    hath heard that I was hated, he hath therefore given me this son also: and she called
+    his name Simeon.'}
+links:
+- {to: leah, kind: mother}
+strong: '8095'
+li: nas
+note: >-
+  'Because the LORD hath heard (shama) that I was hated' (Gen 29:33).

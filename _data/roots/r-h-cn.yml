@@ -1,0 +1,11 @@
+cons: חלה
+w: חָלָה
+def: be weak, sick
+homonym: I
+bdb: h.cn
+family:
+- {w: חָלָה, x: ḥālâ, p: vb, d: be weak, li: dwa}
+- {w: חֳלִי, x: ḥŏlî, p: n.m, d: sickness, li: dwo}
+- {w: מַחֲלֶה, x: maḥăleh, p: 'n.[m.]', d: sickness, li: gte}
+- {w: מַחֲלָה, x: maḥălâ, p: n.f, d: sickness, li: gtf}
+- {w: מַחֲלוּי, x: maḥălûy, p: n.m, d: sickness, r: 2Chr.24.25, li: gtg}

@@ -1,0 +1,13 @@
+en: Benaiah
+heb: בְּנָיָה
+xlit: bĕnāyāhû
+gloss: Yah has built
+parent: bani2
+kind: house
+ref: Ezra.10.35
+order: 475
+roots:
+- {root: בנה, id: r-b-cb}
+- {root: יה, id: Y}
+strong: '1141'
+li: btp

@@ -1,0 +1,18 @@
+char: ח
+position: 8
+value: 8
+name: het
+name_heb: חֵית
+picture: a fence or courtyard?
+meaning: fence?
+sefer_yetzirah: simple
+greek: Η eta
+latin: H
+near:
+- {char: ה, note: he with its gap closed}
+- {char: ת, note: a foot added at the bottom left}
+note: >-
+  One letter that once held two sounds, ḥ and ḫ, as ayin held ʿ and ġ. The Greek translators
+  still heard the difference in some names: Rachel comes into Greek with a chi, Isaac without
+  one. Greek let the rasp go and made the letter the vowel eta; the Latin alphabet kept the
+  breath as H.

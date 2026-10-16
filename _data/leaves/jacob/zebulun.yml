@@ -1,0 +1,22 @@
+en: Zebulun
+heb: זְבֻלוּן
+xlit: zĕbûlun
+gloss: dwelling, lofty abode; dowry (pun)
+parent: jacob
+kind: begat
+ref: Gen.30.20
+order: 186
+roots:
+- {root: זבל, id: r-g-af}
+- {root: זבד, id: r-g-ad, role: pun}
+naming:
+- {ref: Gen.30.20, text: 'And Leah said, God hath endued me with a good dowry; now will my
+    husband dwell with me, because I have born him six sons: and she called his name Zebulun.'}
+links:
+- {to: leah, kind: mother}
+strong: '2074'
+li: dfl
+note: >-
+  'God hath endued me (zevadani) with a good dowry (zeved); now will my husband dwell with
+  me (yizbeleni)' (Gen 30:20). Two roots in one naming: z-b-d, gift (Zabad, Zebadiah, Zebedee),
+  and z-b-l, lofty dwelling.

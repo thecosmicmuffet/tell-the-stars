@@ -1,0 +1,14 @@
+en: Ahitub
+heb: אֲחִיטוּב
+xlit: ʾăḥîṭûb
+gloss: my brother is goodness
+parent: amariah1
+kind: begat
+ref: 1Chr.6.7
+wref: 1Chr.5.33
+order: 283
+roots:
+- {root: אחה, id: r-a-ck}
+- {root: טוב, id: r-i-ai}
+strong: '285'
+li: alu

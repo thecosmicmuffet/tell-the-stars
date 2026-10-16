@@ -1,0 +1,20 @@
+en: Jochebed
+heb: יוֹכֶבֶד
+xlit: yôkebed
+gloss: Yah is glory
+parent: levi
+kind: son
+ref: Exod.6.20
+order: 260
+flags: f
+roots:
+- {root: כבד, id: r-k-af}
+- {root: יה, id: Y}
+links:
+- {to: amram, kind: wife of}
+strong: '3115'
+li: exq
+note: >-
+  Yokheved, Yah is glory: 'the daughter of Levi' (Num 26:59), mother of Aaron, Moses and Miriam.
+  Hers is the earliest personal name in scripture built on the divine Name, carried before
+  her son hears the Name at the bush (Exod 3:14-15; 6:3).

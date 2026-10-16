@@ -1,0 +1,17 @@
+char: ע
+position: 16
+value: 70
+name: ayin
+name_heb: עַיִן
+picture: an eye
+meaning: eye; also a spring
+sefer_yetzirah: simple
+greek: Ο omicron
+latin: O
+near:
+- {char: א, note: two throat sounds that later speakers stopped telling apart}
+note: >-
+  The eye, and the same word is a spring, the eye of the land where water comes up. It once
+  carried two sounds, ʿayin and ghayin, and the Greek translators heard the second in Gaza
+  and Gomorrah, with a gamma, and not in Eden. Greek had no use for a throat sound and made
+  the letter a vowel, O.

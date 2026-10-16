@@ -1,0 +1,16 @@
+en: Er
+heb: עֵר
+xlit: ʿēr
+gloss: watchful, awake
+parent: judah
+kind: begat
+ref: Gen.38.3
+order: 206
+roots:
+- {root: עור, id: r-p-bp}
+links:
+- {to: bathshua, kind: mother}
+strong: '6147'
+li: juf
+note: >-
+  Er, awake, watchful. Er and Onan die; Tamar is left waiting.

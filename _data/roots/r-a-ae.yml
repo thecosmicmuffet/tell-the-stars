@@ -1,0 +1,35 @@
+cons: אבה
+w: אבה
+def: decide, he who decides
+homonym: II
+bdb: a.ae
+family:
+- {w: אבה, x: ʾbh, d: 'decide, he who decides', li: aao}
+- {w: אָב, x: ʾāb, p: n.m, d: father, li: aac}
+- {w: אֲבִי־עַלְבוֹן, x: ʾăbî-ʿalbôn, p: n.pr.m, d: Abialbon, li: abt}
+- {w: אֲבִיאֵל, x: ʾăbîʾēl, p: n.pr.m, d: Abiel, li: aax}
+- {w: אֲבִיאָסָף, x: ʾăbîʾāsāp, p: n.pr.m, d: Abiasaph, r: Exod.6.24, li: aay}
+- {w: אֲבִיגַיִל, x: ʾăbîgayil, p: n.pr.f, d: Abigal, li: aba}
+- {w: אֲבִידָן, x: ʾăbîdān, p: n.pr.m, d: Abidan, li: abb}
+- {w: אֲבִידָע, x: ʾăbîdāʿ, p: n.pr.m, d: Abida, li: abc}
+- {w: אֲבִיָּהוּ, x: ʾăbî, p: n.pr.m, d: Abi, r: 2Chr.13.20, li: aau}
+- {w: אֲבִיהוּא, x: ʾăbîhûʾ, p: n.pr.m, d: Abihu, li: abe}
+- {w: אֲבִיהוּד, x: ʾăbîhûd, p: n.pr.m, d: Abihud, li: abf}
+- {w: אֲבִיחַיִל, x: ʾăbîḥayil, p: n.pr.m, d: Abihail, li: abi}
+- {w: אֲבִיטוּב, x: ʾăbîṭûb, p: n.pr.m, d: Abitub, r: 1Chr.8.11, li: abj}
+- {w: אֲבִיטָל, x: ʾăbîṭāl, p: n.pr.f, d: Abital, r: 2Sam.3.4, li: abk}
+- {w: אֲבִימָאֵל, x: ʾăbîmāʾēl, p: n.pr.m, d: Abimael, li: abm}
+- {w: אֲבִימֶלֶךְ, x: ʾăbîmelek, p: n.pr.m, d: Abimelech, li: abn}
+- {w: אֲבִינָדָב, x: ʾăbînādāb, p: n.pr.m, d: Abinadab, li: abo}
+- {w: אֲבִינֹעַם, x: ʾăbînōʿam, p: n.pr.m, d: Abinoam, li: abp}
+- {w: אֲבִינֵר, x: ʾăbînēr, p: n.pr.m, d: Abner, li: abq}
+- {w: אֲבִיעֶזֶר, x: ʾăbîʿezer, p: n.pr.m, d: Abiezer, r: Num.26.30, li: abs}
+- {w: אֲבִי הָעֶזְרִי, x: ʾăbî hāʿezrî, p: adj.gent, d: Abiezrite, r: Judg.6.11, li: aaw}
+- {w: אֲבִירָם, x: ʾăbîrām, p: n.pr.m, d: Abiram, li: abw}
+- {w: אַבְרָם, x: ʾabrāhām, p: n.pr.m, d: Abraham, li: adk}
+- {w: אֲבִישַׁג, x: ʾăbîšag, p: n.pr.f, d: Abishag, li: abx}
+- {w: אֲבִישׁוּעַ, x: ʾăbîšûaʿ, p: n.pr.m, d: Abishua, li: aby}
+- {w: אֲבִישׁוּר, x: ʾăbîšûr, p: n.pr.m, d: Abishur, li: abz}
+- {w: אֲבִישַׁי, x: ʾăbîšay, p: n.pr.m, d: Abishai, li: aca}
+- {w: אֲבִישָׁלוֹם, x: ʾăbîšālôm, p: n.pr.m, d: Abishalom, li: acb}
+- {w: אֶבְיָתָר, x: ʾebyātār, p: n.pr.m, d: Abiathar, li: acc}

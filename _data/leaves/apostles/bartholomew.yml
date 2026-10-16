@@ -1,0 +1,16 @@
+en: Bartholomew
+heb: בַּר־תַּלְמַי
+xlit: bar-talmay
+greek: Βαρθολομαῖος
+gloss: son of Talmai
+parent: israel
+kind: of
+ref: Matt.10.3
+order: 525
+roots:
+- {root: בן, id: r-b-ca}
+- {root: תלם, id: r-w-av, role: maybe}
+links:
+- {to: talmai, kind: same name as}
+note: >-
+  Bar-Talmai, son of Talmai: a patronymic standing in for a name.

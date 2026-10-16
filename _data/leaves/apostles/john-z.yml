@@ -1,0 +1,17 @@
+en: John
+heb: יוֹחָנָן
+xlit: yôḥānān
+greek: Ἰωάννης
+gloss: Yah has been gracious
+parent: zebedee
+kind: son
+ref: Matt.4.21
+order: 523
+roots:
+- {root: חנן, id: r-h-dz}
+- {root: יה, id: Y}
+aliases:
+- {en: Boanerges, ref: Mark.3.17, by: Jesus, note: 'which is, The sons of thunder'}
+note: >-
+  Yohanan, Yah has been gracious. He and James were surnamed 'Boanerges, which is, The sons
+  of thunder' (Mark 3:17).

@@ -1,0 +1,20 @@
+en: Azariah
+heb: עֲזַרְיָה
+xlit: ʿăzaryāhû
+gloss: 'Yah has helped (also Uzziah: Yah is my strength)'
+parent: amaziah
+kind: begat
+ref: 2Kgs.15.1
+order: 343
+roots:
+- {root: עזר, id: r-p-bz}
+- {root: עזז, id: r-p-bx, role: pun}
+- {root: יה, id: Y}
+aliases:
+- {en: Uzziah, ref: 2Kgs.15.13, by: Kings and Chronicles, note: Yah is my strength, heb: עֻזִיָּה}
+strong: '5838'
+li: jgy
+note: >-
+  Kings calls him Azariah, Yah has helped (2 Kgs 15:1); Kings and Chronicles also call him
+  Uzziah, Yah is my strength (2 Kgs 15:13; 2 Chr 26:1). Help and strength, ezer and oz, differ
+  by one letter. Isaiah saw the Lord 'in the year that king Uzziah died' (Isa 6:1).

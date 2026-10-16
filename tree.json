@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /tree.json
+---
+{"meta":{{ site.data.meta | jsonify }},"groves":{{ site.data.groves | jsonify }},"leaves":{{ site.data.leaves | jsonify }},"roots":{{ site.data.roots | jsonify }},"readings":{{ site.data.readings | jsonify }},"rings":{{ site.data.rings | jsonify }},"marginalia":{{ site.data.marginalia | jsonify }},"letters":{{ site.data.letters | jsonify }}}

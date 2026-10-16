@@ -1,0 +1,12 @@
+en: Thaddaeus
+heb: תַּדַּי
+xlit: tadday
+greek: Θαδδαῖος
+gloss: 'uncertain (also Lebbaeus: heart)'
+parent: israel
+kind: of
+ref: Matt.10.3
+order: 530
+aliases:
+- {en: Lebbaeus, ref: Matt.10.3, by: Matthew, note: heart}
+- {en: Judas, ref: Luke.6.16, by: Luke, note: Judas the brother of James}

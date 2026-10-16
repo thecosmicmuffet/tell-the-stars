@@ -1,0 +1,19 @@
+en: Zerubbabel
+heb: זְרֻבָּבֶל
+xlit: zĕrubbābel
+gloss: seed of Babel, sown in Babylon
+parent: shealtiel
+kind: son
+ref: Ezra.3.2
+order: 355
+roots:
+- {root: זרע, id: r-g-cl}
+- {root: בלל, id: r-b-bv, role: pun}
+links:
+- {to: pedaiah, kind: 'son of (1 Chr 3:19)'}
+strong: '2216'
+li: dlg
+note: >-
+  Zerubbavel, seed of Babylon: sown in Babel. With Jeshua he laid the foundation of the second
+  temple (Ezra 3:8). 'Not by might, nor by power, but by my spirit' (Zech 4:6) is spoken to
+  him.

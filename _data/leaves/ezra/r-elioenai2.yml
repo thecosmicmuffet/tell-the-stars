@@ -1,0 +1,14 @@
+en: Elioenai
+heb: אֶלְיוֹעֵנַי
+xlit: ʾelyôʿênay
+gloss: my eyes are toward Yah
+parent: zattu
+kind: house
+ref: Ezra.10.27
+order: 433
+roots:
+- {root: עין, id: r-p-ck}
+- {root: אל, id: E}
+- {root: יה, id: Y}
+strong: 454b
+li: asl

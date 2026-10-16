@@ -1,0 +1,20 @@
+en: Issachar
+heb: יִשָּׂשכָר
+xlit: yiśśāśkār
+gloss: there is hire, wages
+parent: jacob
+kind: begat
+ref: Gen.30.18
+order: 185
+roots:
+- {root: שכר, id: r-u-bk}
+naming:
+- {ref: Gen.30.18, text: 'And Leah said, God hath given me my hire, because I have given my
+    maiden to my husband: and she called his name Issachar.'}
+links:
+- {to: leah, kind: mother}
+strong: '3485'
+li: fmn
+note: >-
+  'God hath given me my hire (sekhari)' (Gen 30:18). The name is written with two shins, and
+  the Masoretes never point the second: a letter carried in the text and never read aloud.

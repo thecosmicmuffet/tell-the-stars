@@ -1,0 +1,23 @@
+en: Adam
+heb: אָדָם
+xlit: ʾādām
+gloss: man; the red earthling (adamah, ground)
+parent: god
+kind: of
+ref: Gen.5.1
+order: 2
+roots:
+- {root: אדם, id: r-a-bc}
+- {root: אדם, id: r-a-bd, role: maybe}
+naming:
+- {ref: Gen.5.2, text: 'Male and female created he them; and blessed them, and called their
+    name Adam, in the day when they were created.'}
+years: {beget: 130, total: 930}
+strong: '121'
+li: afa
+note: >-
+  'Male and female created he them; and blessed them, and called their name Adam' (Gen 5:2):
+  blessed and named in one breath. Adam is from adamah, the ground he was taken from, and
+  adom, red; Edom and odem, the sardius that heads the high priest's breastplate (Exod 28:17),
+  share the root. Dam, blood, sits inside the word, and adamah is Adam with a he added: 'for
+  dust thou art' (Gen 3:19).

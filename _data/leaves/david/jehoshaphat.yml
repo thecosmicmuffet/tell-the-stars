@@ -1,0 +1,13 @@
+en: Jehoshaphat
+heb: יְהוֹשָׁפָט
+xlit: yĕhôšāpāṭ
+gloss: Yah has judged
+parent: asa
+kind: begat
+ref: 1Kgs.15.24
+order: 338
+roots:
+- {root: שפט, id: r-v-fg}
+- {root: יה, id: Y}
+strong: '3092'
+li: ewr

@@ -1,0 +1,17 @@
+en: Leah
+heb: לֵאָה
+xlit: lēʾâ
+gloss: weary; wild cow?
+parent: laban
+kind: son
+ref: Gen.29.16
+order: 123
+flags: f
+roots:
+- {root: לאה, id: r-l-ad}
+links:
+- {to: jacob, kind: wife of}
+strong: '3812'
+li: gba
+note: >-
+  Le'ah: weary, or (from Akkadian) wild cow. 'Leah was tender eyed' (Gen 29:17).

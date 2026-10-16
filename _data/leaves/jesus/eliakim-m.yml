@@ -1,0 +1,12 @@
+en: Eliakim
+heb: אֶלְיָקִים
+xlit: ʾelyāqîm
+greek: Ἐλιακίμ
+gloss: God raises up
+parent: abiud
+kind: begat
+ref: Matt.1.13
+order: 507
+roots:
+- {root: קום, id: r-s-av}
+- {root: אל, id: E}

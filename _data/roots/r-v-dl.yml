@@ -1,0 +1,18 @@
+cons: שלח
+w: שָׁלַח
+def: send, send
+homonym: I
+bdb: v.dl
+family:
+- {w: שָׁלַח, x: šālaḥ, p: vb, d: send, li: mvu}
+- {w: שֶׁלַח, x: šelaḥ, p: 'n.[m.]', d: missile, li: mvt}
+- {w: שֶׁלַח, x: šelaḥ, p: n.pr.m, d: Salah, li: mvr}
+- {w: שֶׁלַח, x: šelaḥ, p: n.pr, d: Shiloah, r: Neh.3.15, li: mvs}
+- {w: שִׁלְחִי, x: šilḥî, p: n.pr.m, d: Shilhi, li: mvw}
+- {w: שִׁלְחִים, x: šilḥîm, p: n.pr.loc, d: Shilhim, r: Josh.15.32, li: mvx}
+- {w: שִׁלֹחַ, x: šilōaḥ, p: n.pr.font, d: Shiloah, li: mvq}
+- {w: שִׁלּוּחִים, x: šillûḥîm, p: 'n.[m.]pl', d: sending away, li: mvl}
+- {w: שְׁלּוּחָה, x: šĕllûḥâ, p: n.f, d: shoot, r: Isa.16.8, li: mvk}
+- {w: מִשְׁלַח, x: mišlaḥ, p: 'n.[m.]', d: sending, li: huc}
+- {w: מִשְׁלוֹחַ, x: mišlôaḥ, p: 'n.[m.]', d: sending, li: hub}
+- {w: מִשְׁלַחַת, x: mišlaḥat, p: n.f, d: discharge, li: hud}

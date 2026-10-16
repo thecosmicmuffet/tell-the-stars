@@ -1,0 +1,12 @@
+cons: חגג
+w: חָגַג
+def: make a pilgrimage, keep a pilgrim-feast
+bdb: h.am
+family:
+- {w: חָגַג, x: ḥāgag, p: vb, d: make a pilgrimage, li: doj}
+- {w: חַג, x: ḥag, p: n.m, d: festival-gathering, li: doc}
+- {w: חָגָּא, x: ḥāggāʾ, p: 'n.[f.]', d: reeling, r: Isa.19.17, li: dod}
+- {w: חַגַּי, x: ḥaggay, p: n.pr.m, d: Haggai, li: doq}
+- {w: חַגִּי, x: ḥaggî, p: n.pr.m, d: Haggi, li: dop}
+- {w: חַגִיָה, x: ḥaggîyâ, p: n.pr.m, d: Haggiah, r: 1Chr.6.15, li: dor}
+- {w: חַגִּית, x: ḥaggît, p: n.pr.f, d: Haggith, li: dos}

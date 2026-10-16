@@ -1,0 +1,23 @@
+en: Seth
+heb: שֵׁת
+xlit: šēt
+gloss: set, appointed
+parent: adam
+kind: begat
+ref: Gen.4.25
+order: 17
+roots:
+- {root: שית, id: r-v-cx}
+naming:
+- {ref: Gen.4.25, text: 'And Adam knew his wife again; and she bare a son, and called his
+    name Seth: For God, said she , hath appointed me another seed instead of Abel, whom Cain
+    slew.'}
+links:
+- {to: eve, kind: mother}
+years: {beget: 105, total: 912}
+strong: '8352'
+li: nme
+note: >-
+  Eve names him: 'For God, said she, hath appointed (shat) me another seed instead of Abel'
+  (Gen 4:25). Seth is the son set into a gap. 'Adam... begat a son in his own likeness, after
+  his image' (5:3), the words God used for making Adam (1:26).

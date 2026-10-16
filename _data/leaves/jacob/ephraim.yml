@@ -1,0 +1,21 @@
+en: Ephraim
+heb: אֶפְרָיִם
+xlit: ʾeprayim
+gloss: doubly fruitful
+parent: joseph
+kind: begat
+ref: Gen.41.52
+order: 236
+roots:
+- {root: פרה, id: r-q-cv}
+naming:
+- {ref: Gen.41.52, text: 'And the name of the second called he Ephraim: For God hath caused
+    me to be fruitful in the land of my affliction.'}
+links:
+- {to: asenath, kind: mother}
+- {to: jacob, kind: adopted by}
+strong: '669'
+li: baq
+note: >-
+  'For God hath caused me to be fruitful (hifrani) in the land of my affliction' (Gen 41:52).
+  Crossing his hands, Jacob sets the younger first (48:14).

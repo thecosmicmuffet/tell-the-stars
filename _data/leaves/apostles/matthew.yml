@@ -1,0 +1,18 @@
+en: Matthew
+heb: מַתִּתְיָה
+xlit: mattityâ
+greek: Μαθθαῖος
+gloss: gift of Yah (also Levi)
+parent: alphaeus
+kind: son
+ref: Mark.2.14
+order: 528
+roots:
+- {root: נתן, id: r-n-gg}
+- {root: יה, id: Y}
+aliases:
+- {en: Levi, ref: Mark.2.14, by: Mark, note: his name at the receipt of custom, heb: לֵוִי}
+links:
+- {to: r-mattithiah, kind: same name as}
+note: >-
+  Mattityah, gift of Yah. Mark and Luke call the tax collector Levi (Mark 2:14).

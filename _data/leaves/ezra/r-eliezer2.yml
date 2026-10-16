@@ -1,0 +1,13 @@
+en: Eliezer
+heb: אֱלִיעֶזֶר
+xlit: ʾĕlîʿezer
+gloss: my God is help
+parent: levites
+kind: house
+ref: Ezra.10.23
+order: 415
+roots:
+- {root: עזר, id: r-p-bz}
+- {root: אל, id: E}
+strong: '461'
+li: ass

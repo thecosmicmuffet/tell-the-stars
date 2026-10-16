@@ -1,0 +1,13 @@
+en: Amaziah
+heb: אֲמַצְיָהוּ
+xlit: ʾămaṣyāhû
+gloss: Yah is mighty
+parent: jehoash
+kind: begat
+ref: 2Kgs.14.1
+order: 342
+roots:
+- {root: אמץ, id: r-a-dz}
+- {root: יה, id: Y}
+strong: '558'
+li: awk

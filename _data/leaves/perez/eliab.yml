@@ -1,0 +1,13 @@
+en: Eliab
+heb: אֱלִיאָב
+xlit: ʾĕlîʾāb
+gloss: my God is father
+parent: jesse
+kind: begat
+ref: 1Chr.2.13
+order: 318
+roots:
+- {root: אבה, id: r-a-ae}
+- {root: אל, id: E}
+strong: '446'
+li: asc

@@ -1,0 +1,11 @@
+en: Sadoc
+heb: צָדוֹק
+xlit: ṣādôq
+greek: Σαδώκ
+gloss: righteous (Zadok)
+parent: azor
+kind: begat
+ref: Matt.1.14
+order: 509
+roots:
+- {root: צדק, id: r-r-ar}

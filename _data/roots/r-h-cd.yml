@@ -1,0 +1,20 @@
+cons: חיה
+w: חָיָה
+def: live, live
+bdb: h.cd
+note: >-
+  Live. Eve, Jehiel; the second spelling of Mehujael.
+family:
+- {w: חָיָה, x: ḥāyâ, p: vb, d: live, li: dty}
+- {w: חַי, x: ḥay, p: adj, d: alive, li: dts}
+- {w: חַי, x: ḥay, p: 'n.[m.]', d: kinsfolk, r: 1Sam.18.18, li: dtr}
+- {w: חַיָּה, x: ḥayyâ, p: n.f, d: living thing, li: dtv}
+- {w: חַיָּה, x: ḥayyâ, p: n.f, d: community, li: dtw}
+- {w: חָיֶה, x: ḥāyeh, p: adj, d: having the vigour of life, r: Exod.1.19, li: dtx}
+- {w: חַיִּים, x: ḥayyîm, p: n.m, d: life, li: dub}
+- {w: חַיּוּת, x: ḥayyût, p: n.f.abstr, d: living widows, r: 2Sam.20.3, li: dtz}
+- {w: מִחְיָה, x: miḥyâ, p: n.f, d: preservation of life, li: gsz}
+- {w: חִיאֵל, x: ḥîʾēl, p: n.pr.m, d: Hiel, r: 1Kgs.16.34, li: dtt}
+- {w: יְחִיאֵל, x: yĕḥîʾēl, p: n.pr.m, d: Jehiel, li: ezy}
+- {w: יְחִיאֵלִי, x: yĕḥîʾēlî, p: n.pr.m, d: Jehieli, li: ezz}
+- {w: יְחִיָּה, x: yĕḥîyâ, p: n.pr.m, d: Jehiah, r: 1Chr.15.24, li: fab}

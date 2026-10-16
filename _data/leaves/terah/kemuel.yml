@@ -1,0 +1,13 @@
+en: Kemuel
+heb: קְמוּאֵל
+xlit: qĕmûʾēl
+gloss: God has raised?
+parent: nahor2
+kind: begat
+ref: Gen.22.21
+order: 115
+roots:
+- {root: קום, id: r-s-av, role: maybe}
+- {root: אל, id: E}
+strong: '7055'
+li: lik

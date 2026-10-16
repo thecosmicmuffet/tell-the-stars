@@ -1,0 +1,20 @@
+en: Elisheba
+heb: אֱלִישֶׁבַע
+xlit: ʾĕlîšebaʿ
+gloss: my God is an oath; God of the seven
+parent: amminadab
+kind: begat
+ref: Exod.6.23
+order: 265
+flags: f
+roots:
+- {root: שבע, id: r-v-av}
+- {root: אל, id: E}
+links:
+- {to: aaron, kind: wife of}
+strong: '472'
+li: atc
+note: >-
+  Elisheva, my God is an oath, or God of seven (sheva). 'Daughter of Amminadab, sister of
+  Naashon' (Exod 6:23): the priests' mother is from Judah's line. Luke names Zacharias's wife
+  after her: 'of the daughters of Aaron, and her name was Elisabeth' (Luke 1:5).

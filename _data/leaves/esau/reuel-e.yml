@@ -1,0 +1,15 @@
+en: Reuel
+heb: רְעוּאֵל
+xlit: rĕʿûʾēl
+gloss: friend of God
+parent: esau
+kind: begat
+ref: Gen.36.4
+order: 160
+roots:
+- {root: רעה, id: r-t-dl}
+- {root: אל, id: E}
+links:
+- {to: bashemath, kind: mother}
+strong: '7467'
+li: man

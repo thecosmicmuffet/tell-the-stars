@@ -1,0 +1,17 @@
+char: י
+position: 10
+value: 10
+name: yod
+name_heb: יוֹד
+picture: an arm and hand
+meaning: hand
+sefer_yetzirah: simple
+greek: Ι iota
+latin: I, J
+near:
+- {char: ו, note: a long yod and a short vav}
+note: >-
+  The smallest letter, a hanging point. 'One jot or one tittle shall in no wise pass from
+  the law' (Matt 5:18): the jot is iota, the yod, and the tittle is the keraia, the little
+  horn of a stroke that tells one letter from another. Yod begins Yah and the Name. The Latin
+  I later grew a tail and became J.

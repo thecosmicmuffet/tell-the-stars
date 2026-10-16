@@ -1,0 +1,20 @@
+en: Enos
+heb: אֱנוֹשׁ
+xlit: ʾĕnôš
+gloss: man, mortal
+parent: seth
+kind: begat
+ref: Gen.4.26
+order: 18
+roots:
+- {root: אנש, id: r-a-ep}
+naming:
+- {ref: Gen.4.26, text: 'And to Seth, to him also there was born a son; and he called his
+    name Enos: then began men to call upon the name of the LORD .'}
+years: {beget: 90, total: 905}
+strong: '583'
+li: axi
+note: >-
+  Enosh is mortal man, the human as frail: 'What is man (enosh), that thou art mindful of
+  him?' (Ps 8:4). His birth is where the Name enters the record: 'then began men to call upon
+  the name of the LORD' (Gen 4:26).

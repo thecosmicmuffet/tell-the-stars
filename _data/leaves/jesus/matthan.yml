@@ -1,0 +1,11 @@
+en: Matthan
+heb: מַתָּן
+xlit: mattān
+greek: Ματθάν
+gloss: gift
+parent: eleazar-m
+kind: begat
+ref: Matt.1.15
+order: 513
+roots:
+- {root: נתן, id: r-n-gg}

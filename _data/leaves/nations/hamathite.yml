@@ -1,0 +1,13 @@
+en: Hamathite
+heb: חֲמָתִי
+xlit: ḥămātî
+gloss: of Hamath, the walled place
+parent: canaan
+kind: begat
+ref: Gen.10.18
+order: 73
+flags: n
+roots:
+- {root: חמה, id: r-h-df, role: maybe}
+strong: '2577'
+li: ebd

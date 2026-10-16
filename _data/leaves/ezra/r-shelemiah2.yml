@@ -1,0 +1,13 @@
+en: Shelemiah
+heb: שֶׁלֶמְיָהוּ
+xlit: šelemyāhû
+gloss: Yah has repaid
+parent: bani2
+kind: house
+ref: Ezra.10.41
+order: 494
+roots:
+- {root: שלם, id: r-v-ds}
+- {root: יה, id: Y}
+strong: '8018'
+li: mxk

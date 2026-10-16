@@ -1,0 +1,22 @@
+en: Cain
+heb: קַיִן
+xlit: qayin
+gloss: gotten; smith, spear
+parent: adam
+kind: begat
+ref: Gen.4.1
+order: 4
+roots:
+- {root: קין, id: r-s-bk}
+- {root: קנה, id: r-s-cb, role: pun}
+naming:
+- {ref: Gen.4.1, text: 'And Adam knew Eve his wife; and she conceived, and bare Cain, and
+    said, I have gotten a man from the LORD .'}
+links:
+- {to: eve, kind: mother}
+strong: 7014b
+li: lgo
+note: >-
+  'I have gotten (qaniti) a man from the LORD' (Gen 4:1). Qayin is a smith, or a spear (2
+  Sam 21:16); the naming hears qanah, to acquire. His line has no toledot heading, and 'the
+  book of the generations of Adam' (5:1) passes over him.

@@ -1,0 +1,19 @@
+en: Jehohanan
+heb: יְהוֹחָנָן
+xlit: yĕhôḥānān
+gloss: Yah has been gracious
+parent: eliashib-hp
+kind: son
+ref: Ezra.10.6
+order: 385
+roots:
+- {root: חנן, id: r-h-dz}
+- {root: יה, id: Y}
+links:
+- {to: jonathan-hp, kind: same person as, certainty: 0.5}
+strong: '3076'
+li: ewa
+note: >-
+  'Ezra... went into the chamber of Johanan the son of Eliashib: and when he came thither,
+  he did eat no bread, nor drink water' (Ezra 10:6). If this is the high priest of Nehemiah
+  12:22-23, 'son' here means grandson, and the date of Ezra's mission moves with it.

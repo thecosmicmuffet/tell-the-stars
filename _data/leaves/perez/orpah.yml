@@ -1,0 +1,18 @@
+en: Orpah
+heb: עָרְפָּה
+xlit: ʿorpâ
+gloss: back of the neck
+parent: moab
+kind: people
+ref: Ruth.1.4
+order: 311
+flags: f
+roots:
+- {root: ערף, id: r-p-fp}
+links:
+- {to: chilion, kind: wife of}
+strong: '6204'
+li: jww
+note: >-
+  Orpah, from oref, the back of the neck. 'Orpah kissed her mother in law; but Ruth clave
+  unto her' (Ruth 1:14): the one who turned back is named for her back.

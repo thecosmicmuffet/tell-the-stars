@@ -1,0 +1,16 @@
+cons: זבד
+w: זָבַד
+def: bestow upon, endow with
+bdb: g.ad
+note: >-
+  Bestow, endow: 'God hath endued me with a good dowry' (Gen 30:20).
+family:
+- {w: זָבַד, x: zābad, p: vb, d: bestow upon, r: Gen.30.20!a, li: dfc}
+- {w: זֶבֶד, x: zebed, p: n.m, d: endowment, r: Gen.30.20!a, li: dfb}
+- {w: זָבָד, x: zābād, p: n.pr.m, d: Zabad, li: dfd}
+- {w: זָבוּד, x: zābûd, p: n.pr.m, d: Zabud, r: 1Kgs.4.5, li: dfi}
+- {w: זבוד, x: zbwd, p: n.pr.m, d: Zabbud, r: Ezra.814, li: dfj}
+- {w: זבידה, x: zĕbûdâ, p: n.pr.f, d: Zebudah, li: dfk}
+- {w: זַבְדִּי, x: zabdî, p: n.pr.m, d: Zabdi, li: dfe}
+- {w: זַבְדִּיאֵל, x: zabdîʾēl, p: n.pr.m, d: Zabdiel, r: 1Chr.27.2, li: dff}
+- {w: זְבַדְיָהוּ, x: zĕbadyāhû, p: n.pr.m, d: Zebadiah, li: dfg}

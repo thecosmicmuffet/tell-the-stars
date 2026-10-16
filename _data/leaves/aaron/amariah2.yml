@@ -1,0 +1,14 @@
+en: Amariah
+heb: אֲמַרְיָה
+xlit: ʾămaryāhû
+gloss: Yah has said
+parent: azariah2
+kind: begat
+ref: 1Chr.6.11
+wref: 1Chr.5.37
+order: 289
+roots:
+- {root: אמר, id: r-a-ea}
+- {root: יה, id: Y}
+strong: '568'
+li: awt

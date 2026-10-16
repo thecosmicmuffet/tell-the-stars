@@ -1,0 +1,19 @@
+en: Reuel
+heb: רְעוּאֵל
+xlit: rĕʿûʾēl
+gloss: friend of God (also called Jethro)
+parent: midian
+kind: people
+ref: Exod.2.18
+order: 272
+roots:
+- {root: רעה, id: r-t-dl}
+- {root: אל, id: E}
+aliases:
+- {en: Jethro, ref: Exod.3.1, by: Exodus, note: 'abundance, excellence', heb: יִתְרוֹ}
+strong: '7467'
+li: man
+note: >-
+  Re'u'el, friend of God; also called Jethro, abundance. A priest of Midian who met Moses
+  at a well (Exod 2:15-21) and later brought Moses' wife and sons back to him in the wilderness
+  (18:2-6).

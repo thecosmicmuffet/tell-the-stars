@@ -1,0 +1,17 @@
+en: Salathiel
+heb: שְׁאַלְתִּיאֵל
+xlit: šĕʾaltîʾēl
+gloss: I asked of God
+parent: jehoiachin
+kind: begat
+ref: 1Chr.3.17
+order: 353
+roots:
+- {root: שאל, id: r-v-ag}
+- {root: אל, id: E}
+aliases:
+- {en: Shealtiel, ref: Ezra.3.2, by: Ezra, note: the Hebrew form, heb: שְׁאַלְתִּיאֵל}
+strong: 7597a
+li: mfu
+note: >-
+  She'alti'el, I asked of God: Saul's root.

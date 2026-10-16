@@ -1,0 +1,17 @@
+en: Elam
+heb: עֵילָם
+xlit: ʿêlām
+gloss: 'the highland (written: Olam, eternity)'
+parent: israel
+kind: house
+ref: Ezra.10.26
+order: 374
+flags: g
+roots:
+- {root: עלם, id: r-p-cx, role: pun}
+kq: {k: עולם, q: עֵילָם, ref: Ezra.10.2, note: 'written ''eternity'', read ''Elam'''}
+strong: 5867b
+li: jii
+note: >-
+  The written text of Ezra 10:2 has Shechaniah 'of the sons of Olam': eternity, the world.
+  The Masoretic reading is 'of the sons of Elam.' Elam is also Shem's eldest (Gen 10:22).

@@ -1,0 +1,12 @@
+en: Hebron
+heb: חֶבְרוֹן
+xlit: ḥebrôn
+gloss: association, league
+parent: kohath
+kind: begat
+ref: Exod.6.18
+order: 256
+roots:
+- {root: חבר, id: r-h-ai}
+strong: 2275b
+li: dnt

@@ -1,0 +1,13 @@
+cons: חצה
+w: חָצָה
+def: divide, divide
+bdb: h.ex
+family:
+- {w: חָצָה, x: ḥāṣâ, p: vb, d: divide, li: eex}
+- {w: חָצוֹת, x: ḥāṣôt, p: n.f, d: division, li: efa}
+- {w: חֲצִי, x: ḥăṣî, p: n.m, d: half, li: efb}
+- {w: חֵצִי, x: ḥēṣî, p: n.m, d: arrow, li: efc}
+- {w: יַחְצְאֵל, x: yaḥṣĕʾēl, p: n.pr.m, d: Jahzeel. Compare, li: fal}
+- {w: יַחְצְאֵלִי, x: yaḥṣĕʾēlî, p: adj.gent, d: Jachtseelite, r: Num.26.48, li: fam}
+- {w: מֶחֱצָה, x: meḥĕṣâ, p: n.f, d: half, li: guh}
+- {w: מַחֲצִית, x: maḥăṣît, p: n.f, d: half, li: gui}

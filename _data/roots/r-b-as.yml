@@ -1,0 +1,10 @@
+cons: בוס
+w: בּוּס
+def: tread down, trample
+bdb: b.as
+family:
+- {w: בּוּס, x: bûs, p: vb, d: tread down, li: bls}
+- {w: יְבוּס, x: yĕbûs, p: n.pr.loc, d: Jebus, li: eso}
+- {w: יְבוּסִי, x: yĕbûsî, p: N, d: Jebusite, li: esp}
+- {w: מְבוּסָה, x: mĕbûsâ, p: n.f, d: down-treading, li: gji}
+- {w: תְּבוּסָה, x: tĕbûsâ, p: n.f, d: down-treading, r: 2Chr.22.7, li: nnx}

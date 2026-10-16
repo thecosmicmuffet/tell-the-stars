@@ -1,0 +1,18 @@
+en: Absalom
+heb: אַבְשָׁלוֹם
+xlit: ʾăbîšālôm
+gloss: my father is peace
+parent: david
+kind: begat
+ref: 2Sam.3.3
+order: 331
+roots:
+- {root: אבה, id: r-a-ae}
+- {root: שלם, id: r-v-ds}
+links:
+- {to: maacah, kind: mother}
+strong: '53'
+li: acb
+note: >-
+  Avshalom, my father is peace. His mother Maacah was a princess of Geshur in Aram; her father
+  Talmai's name returns in Bar-Talmai, Bartholomew.

@@ -1,0 +1,17 @@
+char: ב
+position: 2
+value: 2
+name: bet
+name_heb: בֵּית
+picture: a house, drawn as its floor plan
+meaning: house
+sefer_yetzirah: double · b and v
+greek: Β beta
+latin: B
+near:
+- {char: כ, note: a small heel at the bottom right is the whole difference}
+note: >-
+  The house. Scripture opens with it, בְּרֵאשִׁית, 'In the beginning', and the rabbis noticed
+  that bet is closed on three sides and open only forward (Genesis Rabbah 1:10). 'Your house,
+  my house' is a change at the end of the word: בֵּיתְךָ, beitkha, and בֵּיתִי, beiti. With
+  a dot it is b; without one, v.

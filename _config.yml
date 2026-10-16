@@ -1,0 +1,17 @@
+# GitHub Pages builds this site with Jekyll on every push to master.
+# The tree itself lives in _data/ as one YAML file per leaf, root, reading and ring;
+# tree.json, names.txt, llms.txt and llms-full.txt are generated from it at build time.
+title: Tell the Stars
+description: >-
+  A living tree of names. Lineage rises into the stars, Hebrew roots reach down to the
+  water, and every name opens to its naming verse, its word family and its letters.
+exclude:
+  - README.md
+  - AGENTS.md
+  - CLAUDE.md
+  - CONTRIBUTING.md
+  - docs
+  - tools
+  - Gemfile
+  - Gemfile.lock
+  - vendor

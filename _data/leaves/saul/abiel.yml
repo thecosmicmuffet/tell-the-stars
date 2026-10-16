@@ -1,0 +1,13 @@
+en: Abiel
+heb: אֲבִיאֵל
+xlit: ʾăbîʾēl
+gloss: my father is God
+parent: zeror
+kind: begat
+ref: 1Sam.9.1
+order: 359
+roots:
+- {root: אבה, id: r-a-ae}
+- {root: אל, id: E}
+strong: '22'
+li: aax

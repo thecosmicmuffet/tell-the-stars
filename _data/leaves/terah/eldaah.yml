@@ -1,0 +1,13 @@
+en: Eldaah
+heb: אֶלְדָּעָה
+xlit: ʾeldāʿâ
+gloss: God has called? God knows?
+parent: midian
+kind: begat
+ref: Gen.25.4
+order: 141
+roots:
+- {root: ידע, id: r-j-au}
+- {root: אל, id: E}
+strong: '420'
+li: ard

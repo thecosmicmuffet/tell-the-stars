@@ -1,0 +1,19 @@
+en: Zipporah
+heb: צִפֹּרָה
+xlit: ṣippōrâ
+gloss: bird
+parent: reuel
+kind: begat
+ref: Exod.2.21
+order: 273
+flags: f
+roots:
+- {root: צפר, id: r-r-do}
+links:
+- {to: moses, kind: wife of}
+strong: '6855'
+li: kzr
+note: >-
+  Tsipporah, bird. 'After he had sent her back' (Exod 18:2): Moses had sent away his foreign
+  wife and her sons, and her father returned them at the mount of God. On the road she circumcised
+  her son with a flint (4:25).

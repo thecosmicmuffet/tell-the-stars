@@ -1,0 +1,15 @@
+en: Aholibamah
+heb: אָהֳלִיבָמָה
+xlit: ʾohŏlîbāmâ
+gloss: tent of the high place
+parent: hivite
+kind: people
+ref: Gen.36.2
+order: 158
+flags: f
+roots:
+- {root: אהל, id: r-a-bl}
+links:
+- {to: esau, kind: wife of}
+strong: '173'
+li: ahc

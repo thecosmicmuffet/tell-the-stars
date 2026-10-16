@@ -1,0 +1,16 @@
+en: of Israel
+heb: יִּשְׂרָאֵל
+xlit: yiśrāʾēl
+gloss: the houses whose tribe is not recorded
+parent: jacob
+kind: of
+ref: Ezra.10.25
+order: 372
+flags: g
+roots:
+- {root: שרה, id: r-u-ce}
+- {root: אל, id: E}
+strong: '3478'
+li: fmf
+note: >-
+  'Moreover of Israel' (Ezra 10:25): the lay houses, their tribe unrecorded.

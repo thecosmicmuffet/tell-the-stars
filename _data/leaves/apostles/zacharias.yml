@@ -1,0 +1,17 @@
+en: Zacharias
+heb: זְכַרְיָה
+xlit: zĕkaryâ
+greek: Ζαχαρίας
+gloss: Yah has remembered
+parent: aaron
+kind: course
+ref: Luke.1.5
+order: 540
+roots:
+- {root: זכר, id: r-g-bh}
+- {root: יה, id: Y}
+links:
+- {to: r-zechariah, kind: same name as}
+note: >-
+  Zekharyah, Yah has remembered; 'of the course of Abia' (Luke 1:5), the eighth priestly course
+  (1 Chr 24:10). Struck dumb until he wrote his son's name.

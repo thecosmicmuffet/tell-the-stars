@@ -1,0 +1,14 @@
+en: Johanan
+heb: יוֹחָנָן
+xlit: yôḥānān
+gloss: Yah has been gracious
+parent: azariah1
+kind: begat
+ref: 1Chr.6.9
+wref: 1Chr.5.35
+order: 287
+roots:
+- {root: חנן, id: r-h-dz}
+- {root: יה, id: Y}
+strong: '3110'
+li: exl

@@ -1,0 +1,23 @@
+cons: עבד
+w: עָבַד
+def: work, serve
+bdb: p.ac
+family:
+- {w: עָבַד, x: ʿābad, p: vb, d: work, li: izb}
+- {w: עֶבֶד, x: ʿebed, p: n.m, d: slave, li: iyz}
+- {w: עֶבֶד, x: ʿebed, p: n.pr.m, d: Ebed, li: iza}
+- {w: עֲבָד, x: ʿăbād, p: n.m, d: work, r: Eccl.9.1, li: iyy}
+- {w: עוֹבֵד, x: ʿôbēd, p: n.pr.m, d: Obed, li: jde}
+- {w: עֹבֵד אֱדֹם, x: ʿōbēd ʾĕdôm, p: n.pr.m, d: Obed-edom, li: izc}
+- {w: עֶבֶד מֶלֶךְ, x: ʿebed melek, p: n.pr.m, d: Ebed-melech, li: izd}
+- {w: עֲבֵד נְגוֹ, x: ʿăbēd nĕgô, p: n.pr.m, d: Abed-nego, r: Dan.1.7, li: ize}
+- {w: עַבְדָּא, x: ʿabdāʾ, p: n.pr.m, d: Abda, li: izf}
+- {w: עַבְדְּאֵל, x: ʿabdĕʾēl, p: n.pr.m, d: Abdeel. Compare, r: Jer.36.26, li: izg}
+- {w: עֲבֹדָה, x: ʿăbōdâ, p: n.f, d: labour, li: izh}
+- {w: עֲבֻדָּה, x: ʿăbuddâ, p: n.f, d: service, li: izi}
+- {w: עַבְדּוֹן, x: ʿabdôn, p: n.pr, d: Abdon. Compare, li: izj}
+- {w: עַבְדוּת, x: ʿabdût, p: n.f, d: servitude, r: Ezra.9.8, li: izk}
+- {w: עַבְדִּי, x: ʿabdî, p: n.pr.m, d: Abdi, li: izl}
+- {w: עַבְדִּיאֵל, x: ʿabdîʾēl, p: n.pr.m, d: Abdiel. Compare, r: 1Chr.5.15, li: izm}
+- {w: עֹבַדְיָהוּ, x: ʿōbadyāhû, p: n.pr.m, d: Obadiah, li: izn}
+- {w: מַעְבָּד, x: maʿbād, p: 'n.[m.]', d: work, r: Job.34.25, li: hfr}

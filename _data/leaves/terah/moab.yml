@@ -1,0 +1,19 @@
+en: Moab
+heb: מוֹאָב
+xlit: môʾāb
+gloss: from a father?
+parent: lot
+kind: begat
+ref: Gen.19.37
+order: 111
+flags: n
+roots:
+- {root: אבה, id: r-a-ae, role: pun}
+naming:
+- {ref: Gen.19.37, text: 'And the firstborn bare a son, and called his name Moab: the same
+    is the father of the Moabites unto this day.'}
+strong: '4124'
+li: gob
+note: >-
+  'The firstborn bare a son, and called his name Moab' (Gen 19:37). The Hebrew gives no reason;
+  the Septuagint supplies one, 'saying, From my father,' me-av. Ruth is his descendant.

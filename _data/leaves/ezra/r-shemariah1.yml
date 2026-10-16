@@ -1,0 +1,13 @@
+en: Shemariah
+heb: שְׁמַרְיָה
+xlit: šĕmaryāhû
+gloss: Yah has kept
+parent: harim-i
+kind: house
+ref: Ezra.10.32
+order: 464
+roots:
+- {root: שמר, id: r-v-ef}
+- {root: יה, id: Y}
+strong: '8114'
+li: nbr

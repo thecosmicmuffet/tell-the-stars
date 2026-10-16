@@ -1,0 +1,15 @@
+en: Eliphelet
+heb: אֱלִיפֶלֶט
+xlit: ʾălîpeleṭ
+gloss: my God is deliverance
+parent: hashum
+kind: house
+ref: Ezra.10.33
+order: 468
+roots:
+- {root: פלט, id: r-q-bo}
+- {root: אל, id: E}
+strong: '467'
+li: asx
+note: >-
+  Elifelet, my God is deliverance.

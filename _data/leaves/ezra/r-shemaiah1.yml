@@ -1,0 +1,13 @@
+en: Shemaiah
+heb: שְׁמַעְיָה
+xlit: šĕmaʿyāhû
+gloss: Yah has heard
+parent: harim-p
+kind: house
+ref: Ezra.10.21
+order: 401
+roots:
+- {root: שמע, id: r-v-ed}
+- {root: יה, id: Y}
+strong: '8098'
+li: nav

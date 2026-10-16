@@ -1,0 +1,14 @@
+en: Medan
+heb: מְדָן
+xlit: mĕdān
+gloss: strife, judgment
+parent: abraham
+kind: begat
+ref: Gen.25.2
+order: 131
+roots:
+- {root: דין, id: r-d-bh}
+links:
+- {to: keturah, kind: mother}
+strong: '4091'
+li: gmr

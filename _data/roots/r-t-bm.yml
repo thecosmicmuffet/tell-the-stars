@@ -1,0 +1,25 @@
+cons: רום
+w: רוּם
+def: be high, exalted
+bdb: t.bm
+note: >-
+  Be high. Ram, Ramiah, Jeremoth, Ramoth, Amram, Jehoram.
+family:
+- {w: רוּם, x: rûm, p: vb, d: be high, li: ltr}
+- {w: רוּם, x: rûm, p: 'n.[m.]', d: height, li: lts}
+- {w: רוֹם, x: rôm, p: adv, d: on high, r: Hab.3.10, li: ltq}
+- {w: רוּמָה, x: rûmâ, p: n.pr.loc, d: Rumah, r: 2Kgs.23.36, li: ltu}
+- {w: רוֹמָה, x: rômâ, p: adv, d: haughtily, r: Mic.2.3, li: ltt}
+- {w: רָם, x: rām, p: n.pr.m, d: Ram. See also, li: lxs}
+- {w: רָמָה, x: rāmâ, p: n.f, d: height, li: lxx}
+- {w: רָמָה, x: rāmâ, p: n.pr.loc, d: Ramah, r: 2Kgs.8.29, li: lxu}
+- {w: רָמָתִי, x: rāmātî, p: adj.gent, d: Ramathite, r: 1Chr.27.27, li: lyz}
+- {w: רָ(א)מַת, x: rāmat hammiṣpeh, p: n.pr.loc, d: Ramath-mizpeh, r: Judg.15.17, li: lyx}
+- {w: רָ(א)מוֹת, x: rāʾmôt, p: n.pr, d: Ramoth, r: 1Sam.30.27, li: lps}
+- {w: רָמוּת, x: rāmût, p: n.f, d: height, r: Ezek.32.5, li: lye}
+- {w: רוֹמָם, x: rômām, p: 'n.[m.]', d: extolling, li: ltv}
+- {w: רוֹמֵמוּת, x: rômēmût, p: n.f, d: uprising, r: Isa.33.3, li: ltx}
+- {w: רֹמַמְתִּי עֶזֶר, x: rōmamtî ʿezer, p: n.pr.m, d: Romamti-ezer, li: lyq}
+- {w: מָרוֹם, x: mārôm, p: n.m, d: height, li: hox}
+- {w: תְּרוּמָה, x: tĕrûmâ, p: n.f, d: contribution, li: nxo}
+- {w: תְּרוּמִיָּה, x: tĕrûmîyâ, p: n.f, d: what belongs to a contribution, li: nxp}

@@ -1,0 +1,20 @@
+en: Ruth
+heb: רוּת
+xlit: rût
+gloss: companion? watered, refreshed?
+parent: moab
+kind: people
+ref: Ruth.1.4
+order: 310
+flags: f
+roots:
+- {root: רעה, id: r-t-dl, role: maybe}
+- {root: רוה, id: r-t-bj, role: maybe}
+links:
+- {to: mahlon, kind: wife of}
+- {to: boaz, kind: wife of}
+strong: '7327'
+li: lud
+note: >-
+  Rut: perhaps re'ut, companion, or from ravah, to water abundantly. 'Whither thou goest,
+  I will go' (Ruth 1:16). The foreign wife who is not sent away: she is David's great-grandmother.

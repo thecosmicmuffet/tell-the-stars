@@ -1,0 +1,15 @@
+char: ר
+position: 20
+value: 200
+name: resh
+name_heb: רֵישׁ
+picture: a head
+meaning: head
+sefer_yetzirah: double · r
+greek: Ρ rho
+latin: R
+near:
+- {char: ד, note: 'one corner: Rodanim and Dodanim'}
+note: >-
+  The head: rosh, and reshit, beginning. 'In the beginning (בְּרֵאשִׁית)' puts the head inside
+  the house, bet. Resh and dalet differ by one corner, and the text keeps the stumbles.

@@ -1,0 +1,14 @@
+cons: דוד
+w: דוד
+def: swing, rock, dandle, fondle, love, disturb
+bdb: d.as
+family:
+- {w: דוד, x: dwd, d: 'swing, rock, dandle, fondle, love, disturb', li: crv}
+- {w: דּוֹד, x: dôd, p: n.m, d: beloved, li: crt}
+- {w: דֹּדָה, x: dōdâ, p: n.f, d: aunt, li: crj}
+- {w: דּוֹדוֹ, x: dôdô, p: n.pr.m, d: Dodo, li: crw}
+- {w: דּוֹדַי, x: dôday, p: n.pr.m, d: Dodai, r: 1Chr.27.4, li: cry}
+- {w: דּוֹדָוָהוּ, x: dôdāwāhû, p: n.pr.m, d: Dodavah, r: 2Chr.20.37, li: crx}
+- {w: דָּוִד, x: dāwid, p: n.pr.m, d: David, li: crs}
+- {w: דּוּדַי, x: dûday, p: n.m, d: mandrake, li: crz}
+- {w: דּוּד, x: dûd, p: n.m, d: pot, li: cru}

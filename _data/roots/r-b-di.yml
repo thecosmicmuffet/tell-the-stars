@@ -1,0 +1,10 @@
+cons: בשם
+w: בשׂם
+def: have a sweet odour, be sweet, pleasant
+bdb: b.di
+family:
+- {w: בשׂם, x: bśm, d: 'have a sweet odour, be sweet, pleasant', li: cak}
+- {w: בֹּשֶׂם, x: beśem, p: n.m, d: spice, li: cai}
+- {w: בָּשְׂמַת, x: bāśĕmat, p: n.pr.f, d: Bashemath, li: cal}
+- {w: יִבְשָׂם, x: yibśām, p: n.pr.m, d: Jibsam, r: 1Chr.7.2, li: etl}
+- {w: מִבְשָׂם, x: mibśām, p: n.pr.m, d: Mibsam, li: gjz}

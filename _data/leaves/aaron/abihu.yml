@@ -1,0 +1,14 @@
+en: Abihu
+heb: אֲבִיהוּא
+xlit: ʾăbîhûʾ
+gloss: he is my father
+parent: aaron
+kind: begat
+ref: Exod.6.23
+order: 267
+roots:
+- {root: אבה, id: r-a-ae}
+links:
+- {to: elisheba, kind: mother}
+strong: '30'
+li: abe

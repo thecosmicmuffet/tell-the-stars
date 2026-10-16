@@ -1,0 +1,20 @@
+en: Jehoiakim
+heb: יְהוֹיָקִים
+xlit: yĕhôyāqîm
+gloss: Yah raises up (born Eliakim, God raises up)
+parent: josiah
+kind: begat
+ref: 2Kgs.23.34
+order: 350
+roots:
+- {root: קום, id: r-s-av}
+- {root: יה, id: Y}
+- {root: אל, id: E}
+aliases:
+- {en: Eliakim, ref: 2Kgs.23.34, by: Pharaoh Necho, note: the Pharaoh exchanged El for Yah,
+  heb: אֶלְיָקִים}
+strong: '3079'
+li: ewd
+note: >-
+  'Pharaoh-nechoh made Eliakim the son of Josiah king... and turned his name to Jehoiakim'
+  (2 Kgs 23:34). The Pharaoh replaced El with Yah: God raises up became Yah raises up.

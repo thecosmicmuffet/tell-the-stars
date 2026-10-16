@@ -1,0 +1,16 @@
+en: Abimael
+heb: אֲבִימָאֵל
+xlit: ʾăbîmāʾēl
+gloss: my father is God
+parent: joktan
+kind: begat
+ref: Gen.10.28
+order: 95
+flags: n
+roots:
+- {root: אבה, id: r-a-ae}
+- {root: אל, id: E}
+strong: '39'
+li: abm
+note: >-
+  My father is God.

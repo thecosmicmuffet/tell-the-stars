@@ -1,0 +1,15 @@
+char: ז
+position: 7
+value: 7
+name: zayin
+name_heb: זַיִן
+picture: a weapon? a manacle?
+meaning: weapon
+sefer_yetzirah: simple
+greek: Ζ zeta
+latin: Z
+near:
+- {char: ו, note: a vav with a head}
+note: >-
+  In later Hebrew zayin is a weapon. The Latin alphabet dropped Z early and took it back from
+  Greek in the first century BCE, which is why it stands at the end of ours.

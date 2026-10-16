@@ -1,0 +1,17 @@
+en: Mehujael
+heb: מְחוּיָאֵל
+xlit: mĕḥûyāʾēl
+gloss: smitten of God / God makes alive (two spellings)
+parent: irad
+kind: begat
+ref: Gen.4.18
+order: 7
+roots:
+- {root: מחה, id: r-m-bm}
+- {root: חיה, id: r-h-cd, role: pun}
+- {root: אל, id: E}
+strong: '4232'
+li: gso
+note: >-
+  Spelled two ways in one verse (Gen 4:18): Mehuya'el, then Mehiyya'el. The first can be read
+  'smitten of God,' the second 'God gives life.' The scribes kept both.

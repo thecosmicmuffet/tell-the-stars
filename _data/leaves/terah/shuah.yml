@@ -1,0 +1,16 @@
+en: Shuah
+heb: שׁוּחַ
+xlit: šûaḥ
+gloss: sinking, pit
+parent: abraham
+kind: begat
+ref: Gen.25.2
+order: 134
+roots:
+- {root: שוח, id: r-v-br}
+links:
+- {to: keturah, kind: mother}
+strong: '7744'
+li: mmc
+note: >-
+  Shuah, sinking. Bildad was 'the Shuhite' (Job 2:11).

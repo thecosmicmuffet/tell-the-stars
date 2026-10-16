@@ -1,0 +1,19 @@
+en: Jehiel
+heb: יְחִיאֵל
+xlit: yĕḥîʾēl
+gloss: God lives
+parent: elam-h
+kind: house
+ref: Ezra.10.2
+order: 383
+roots:
+- {root: חיה, id: r-h-cd}
+- {root: אל, id: E}
+links:
+- {to: r-jehiel2, kind: same person as, certainty: 0.5}
+strong: '3171'
+li: ezy
+note: >-
+  Yehi'el, God lives. A Jehiel of the sons of Elam is listed in 10:26 among those with foreign
+  wives. If he is Shechaniah's father, the man who proposed the covenant was sending away
+  his own father's household.

@@ -1,0 +1,17 @@
+en: Jabal
+heb: יָבָל
+xlit: yābāl
+gloss: stream; he leads (flocks)
+parent: lamech-c
+kind: begat
+ref: Gen.4.20
+order: 12
+roots:
+- {root: יבל, id: r-j-ah}
+links:
+- {to: adah, kind: mother}
+strong: '2989'
+li: esv
+note: >-
+  'The father of such as dwell in tents, and of such as have cattle' (Gen 4:20). Yaval: a
+  stream, a watercourse; the verb is to lead along.

@@ -1,0 +1,15 @@
+en: Malchiel
+heb: מַלְכִּיאֵל
+xlit: malkîʾēl
+gloss: my king is God
+parent: beriah
+kind: begat
+ref: Gen.46.17
+order: 233
+roots:
+- {root: מלך, id: r-m-cd}
+- {root: אל, id: E}
+strong: '4439'
+li: hao
+note: >-
+  Malki'el, my king is God.

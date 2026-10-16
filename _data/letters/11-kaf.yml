@@ -1,0 +1,15 @@
+char: כ
+final: ך
+position: 11
+value: 20
+name: kaf
+name_heb: כַּף
+picture: the palm of a hand
+meaning: palm
+sefer_yetzirah: double · k and kh
+greek: Κ kappa
+latin: K
+near:
+- {char: ב, note: a small heel at the bottom right}
+note: >-
+  The open palm. At the end of a word it straightens and drops below the line as ך.

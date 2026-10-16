@@ -1,0 +1,13 @@
+en: Ramiah
+heb: רַמְיָה
+xlit: ramyâ
+gloss: Yah is high
+parent: parosh
+kind: house
+ref: Ezra.10.25
+order: 420
+roots:
+- {root: רום, id: r-t-bm}
+- {root: יה, id: Y}
+strong: '7422'
+li: lyj
