@@ -1,0 +1,15 @@
+cons: חמם
+w: חָמַם
+def: be, become warm
+bdb: h.di
+family:
+- {w: חָמַם, x: ḥāmam, p: vb, d: be warm, li: dzs}
+- {w: חֹם, x: ḥōm, p: n.m, d: heat, li: dyn}
+- {w: חָם, x: ḥām, p: adj, d: hot, li: dym}
+- {w: חַמָּה, x: ḥammâ, p: n.f, d: heat, li: dyw}
+- {w: חַמָּן, x: ḥammān, p: n.m, d: sun-pillar, li: dzt}
+- {w: חַמּוֹן, x: ḥammôn, p: n.pr.loc, d: Hammon, li: dze}
+- {w: חַמַּת, x: ḥammat, p: n.pr.loc, d: Hammath, r: Josh.19.35, li: eax}
+- {w: חַמַּת, x: ḥammat, p: n.pr.m, d: Hammath, r: 1Chr.2.55, li: eay}
+- {w: חַמֹּת דֹּאר, x: ḥammōt dōʾr, p: n.pr.loc, d: Hamath-Dor, r: Josh.21.32, li: eba}
+- {w: חַמּוּאֵל, x: ḥammûʾēl, p: n.pr.m, d: Hamuel, r: 1Chr.4.26, li: dyy}

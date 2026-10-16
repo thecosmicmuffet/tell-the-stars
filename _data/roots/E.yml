@@ -1,0 +1,57 @@
+cons: אל
+w: אֵל
+def: El, God
+bdb: a.dl
+element: true
+note: >-
+  El, God, the oldest Semitic word for deity. It closes a name (Ishmael, Israel) or opens
+  one (Eliezer, Elisheba). With Yah it is the second taproot.
+family:
+- {w: אֵל, x: ʾēl, p: N, d: 'God, god; might', r: Gen.14.18}
+- {w: אֱלֹהִים, x: ʾĕlōhîm, p: N, d: God (a plural of majesty), r: Gen.1.1}
+- {w: אֱלוֹהַּ, x: ʾĕlôah, p: N, d: 'God (the singular, mostly in Job)', r: Deut.32.15}
+- {w: אֵלִי, x: ʾēlî, p: N, d: my God, r: Ps.22.2}
+- {w: '־אֵל, אֱלִי־', x: '-ʾēl, ʾĕlî-', p: Ne, d: 'element of a name: Ishma-el, Eli-ezer'}
+- {w: אלה, x: ʾlh, d: 'god, God, strong', r: Hos.3.5, li: arm}
+- {w: אֱלֹהַּ, x: ʾĕlōah, p: n.m, d: god, li: are}
+- {w: אֶלְדָּד, x: ʾeldād, p: n.pr.m, d: Eldad, li: arc}
+- {w: אֶלְדָּעָה, x: ʾeldāʿâ, p: n.pr.m, d: Eldaah, li: ard}
+- {w: אֶלְזָבָד, x: ʾelzābād, p: n.pr.m, d: Elzabad, li: arz}
+- {w: אֶלְחָנָן, x: ʾelḥānān, p: n.pr.m, d: Elkanan, li: asb}
+- {w: אֱלִיאָב, x: ʾĕlîʾāb, p: n.pr.m, d: Eliab, li: asc}
+- {w: אֱלִיאֵל, x: ʾĕlîʾēl, p: n.pr.m, d: Eliel, li: asd}
+- {w: אֳלִיאָתָה, x: ʾŏlîʾātâ, p: n.pr.m, d: Eliathah, li: ase}
+- {w: אֶלְדָּד, x: ʾĕlîdād, p: Np, d: Elidad, li: asf}
+- {w: אֶלְיָדָע, x: ʾelyādāʿ, p: n.pr.m, d: Eliada, li: asg}
+- {w: אֵלִיָּה, x: ʾēlîyâ, p: n.pr.m, d: Elijah, li: ash}
+- {w: אֱלִיהוּ, x: ʾĕlîhû, p: n.pr.m, d: Elihu, li: asj}
+- {w: אֶלְיַחְבָּא, x: ʾelyaḥbāʾ, p: n.pr.m, d: Eliahbah, li: asn}
+- {w: אֱלִיחֹרֶף, x: ʾĕlîḥōrep, p: n.pr.m, d: Elihoreph, r: 1Kgs.4.3, li: aso}
+- {w: אֱלִימֶלֶךְ, x: ʾĕlîmelek, p: n.pr.m, d: Elimelech, li: asq}
+- {w: אֶלְיָסָף, x: ʾelyāsāp, p: n.pr.m, d: Eliasaph, li: asr}
+- {w: אֱלִיעֶזֶר, x: ʾĕlîʿezer, p: n.pr.m, d: Eliezer, li: ass}
+- {w: אֱלִיעָם, x: ʾĕlîʿām, p: n.pr.m, d: Eliam, li: ast}
+- {w: אֱלִיפַז, x: ʾĕlîpaz, p: n.pr.m, d: Eliphaz, li: asu}
+- {w: אֱלִיפָל, x: ʾĕlîpāl, p: n.pr.m, d: Eliphal, li: asv}
+- {w: אֱלִיפְלֵהוּ, x: ʾĕlîpĕlēhû, p: n.pr.m, d: Elipheleh, li: asw}
+- {w: אֲלִיפֶלֶט, x: ʾălîpeleṭ, p: n.pr.m, d: Eliphalet, li: asx}
+- {w: אֱלִיצוּר, x: ʾĕlîṣûr, p: n.pr.m, d: Elizur, li: asy}
+- {w: אֱלִיצָפָן, x: ʾĕlîṣāpān, p: n.pr.m, d: Elizaphan, li: asz}
+- {w: אֱלִיקָא, x: ʾĕlîqāʾ, p: n.pr.m, d: Elika, r: 2Sam.23.25, li: ata}
+- {w: אֶלְיָקִים, x: ʾelyāqîm, p: n.pr.m, d: Eliakim, li: atb}
+- {w: אֱלִישֶׁבַע, x: ʾĕlîšebaʿ, p: n.pr.f, d: Elisheba, r: Exod.6.23, li: atc}
+- {w: אֱלִישׁוּעַ, x: ʾĕlîšûaʿ, p: n.pr.m, d: Elishua, li: ate}
+- {w: אֶלְיָשִׁיב, x: ʾelyāšîb, p: n.pr.m, d: Eliashib, li: atf}
+- {w: אֱלִישָׁמָע, x: ʾĕlîšāmāʿ, p: Np, d: Elishama, li: atg}
+- {w: אֱלִישָׁע, x: ʾĕlîšāʿ, p: n.pr.m, d: Elisha, li: ath}
+- {w: אֱלִישָׁפָט, x: ʾĕlîšāpāṭ, p: n.pr.m, d: Elishaphat, r: 2Chr.23.1, li: ati}
+- {w: אֶלְנָעַם, x: ʾelnāʿam, p: n.pr.m, d: Elnaam, r: 1Chr.11.46, li: atz}
+- {w: אֶלְנָתָן, x: ʾelnātān, p: Np, d: Elnathan, li: aua}
+- {w: אֶלְעָד, x: ʾelʿād, p: n.pr.m, d: Elead, r: 1Chr.7.21, li: auc}
+- {w: אֶלְעָדָה, x: ʾelʿādâ, p: n.pr.m, d: Eladah, r: 1Chr.7.20, li: aud}
+- {w: אֶלְעוּזַי, x: ʾelʿûzay, p: n.pr.m, d: Eluzai, r: 1Chr.12.6, li: aue}
+- {w: אֶלְעָזָר, x: ʾelʿāzār, p: n.pr.m, d: Eleazar, li: auf}
+- {w: אֶלְעָלֵא, x: ʾelʿālēʾ, p: n.pr.loc, d: Elealeh, li: aug}
+- {w: אֶלְעָשָׂה, x: ʾelʿāśâ, p: n.pr.m, d: Elasah, li: auh}
+- {w: אֶלְפַּעַל, x: ʾelpaʿal, p: n.pr.m, d: Elpaal, li: aun}
+- {w: אֶלְקָנָה, x: ʾelqānâ, p: n.pr.m, d: Elkanah, li: auq}

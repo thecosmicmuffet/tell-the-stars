@@ -1,0 +1,18 @@
+en: Tubal-cain
+heb: תּוּבַל קַיִן
+xlit: tûbal-qayin
+gloss: Tubal the smith
+parent: lamech-c
+kind: begat
+ref: Gen.4.22
+order: 14
+roots:
+- {root: קין, id: r-s-bk}
+- {root: יבל, id: r-j-ah, role: maybe}
+links:
+- {to: zillah, kind: mother}
+strong: '8423'
+li: npa
+note: >-
+  'An instructer of every artificer in brass (nehoshet) and iron' (Gen 4:22). Tubal is a smithing
+  people (Gen 10:2; Ezek 27:13); qayin is a smith. The brass he works is the serpent's metal.

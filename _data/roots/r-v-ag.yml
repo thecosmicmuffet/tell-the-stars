@@ -1,0 +1,15 @@
+cons: שאל
+w: שָׁאַל
+def: ask, inquire
+bdb: v.ag
+note: >-
+  Ask. Saul, Shaul, Sheal, Shealtiel. Sheol is written with the same letters.
+family:
+- {w: שָׁאַל, x: šāʾal, p: vb, d: ask, li: mfs}
+- {w: שְׁאָל, x: šĕʾāl, p: n.pr.m, d: Sheal, r: Ezra.10.29, li: mfr}
+- {w: שָׁאוּל, x: šāʾûl, p: n.pr.m, d: Saul, li: mfm}
+- {w: שָׁאוּלִי, x: šāʾûlî, p: adj.gent, d: Shaülite, r: Num.26.13, li: mfn}
+- {w: שְׁאֵלָה, x: šĕʾēlâ, p: n.f, d: request, li: mft}
+- {w: מִשְׁאָלָה, x: mišʾālâ, p: n.f, d: request, li: hrt}
+- {w: שְׁאַלְתִּיאֵל, x: šĕʾaltîʾēl, p: n.pr.m, d: Shalthiel, li: mfu}
+- {w: שְׁאוֹל, x: šĕʾôl, p: n.f, d: Shᵉ’ōl, li: mfl}

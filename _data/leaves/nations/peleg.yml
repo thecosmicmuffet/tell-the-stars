@@ -1,0 +1,20 @@
+en: Peleg
+heb: פֶּלֶג
+xlit: peleg
+gloss: division; water-channel
+parent: eber
+kind: begat
+ref: Gen.10.25
+order: 85
+roots:
+- {root: פלג, id: r-q-bl}
+naming:
+- {ref: Gen.10.25, text: 'And unto Eber were born two sons: the name of one was Peleg; for
+    in his days was the earth divided; and his brother’s name was Joktan.'}
+years: {beget: 30, total: 239}
+strong: '6389'
+li: ket
+note: >-
+  'For in his days was the earth divided (niflegah)' (Gen 10:25). Peleg is division, and a
+  water-channel cut for irrigation. Psalm 1's tree is 'planted by the rivers of water,' palgei
+  mayim, channels of water, under 'Blessed (ashrei) is the man.'

@@ -1,0 +1,15 @@
+en: Jadau
+heb: יַדַּי
+xlit: yiddô
+gloss: 'beloved? known? (ketiv: Jaddo)'
+parent: nebo
+kind: house
+ref: Ezra.10.43
+order: 503
+roots:
+- {root: ידד, id: r-j-as, role: maybe}
+kq: {k: ידו, q: יַדַּי, ref: Ezra.10.43}
+strong: '3035'
+li: eun
+note: >-
+  The written text has Yiddo; the Masoretic reading is Yaddai.

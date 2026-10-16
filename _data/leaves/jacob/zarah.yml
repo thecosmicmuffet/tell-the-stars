@@ -1,0 +1,21 @@
+en: Zarah
+heb: זָרַח
+xlit: zeraḥ
+gloss: dawn, scarlet shining
+parent: judah
+kind: begat
+ref: Gen.38.30
+order: 210
+roots:
+- {root: זרח, id: r-g-cj}
+naming:
+- {ref: Gen.38.30, text: 'And afterward came out his brother, that had the scarlet thread
+    upon his hand: and his name was called Zarah.'}
+links:
+- {to: tamar, kind: mother}
+strong: '2226'
+li: dln
+note: >-
+  'His brother, that had the scarlet thread upon his hand: and his name was called Zarah'
+  (Gen 38:30). Zerah, dawn, shining. The midwife tied the thread to the first hand out; the
+  other twin was born first.

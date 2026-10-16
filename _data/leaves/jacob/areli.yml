@@ -1,0 +1,13 @@
+en: Areli
+heb: אַרְאֵלִי
+xlit: ʾarʾēlî
+gloss: lion of God? hearth of God?
+parent: gad
+kind: begat
+ref: Gen.46.16
+order: 226
+roots:
+- {root: ארה, id: r-a-fo, role: maybe}
+- {root: אל, id: E}
+strong: '692'
+li: bbo

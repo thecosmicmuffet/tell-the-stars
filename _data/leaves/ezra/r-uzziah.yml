@@ -1,0 +1,13 @@
+en: Uzziah
+heb: עֻזִיָּה
+xlit: ʿuzzîyāhû
+gloss: Yah is my strength
+parent: harim-p
+kind: house
+ref: Ezra.10.21
+order: 403
+roots:
+- {root: עזז, id: r-p-bx}
+- {root: יה, id: Y}
+strong: '5818'
+li: jgf

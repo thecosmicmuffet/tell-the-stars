@@ -1,0 +1,18 @@
+en: Eliam
+heb: אֱלִיעָם
+xlit: ʾĕlîʿām
+gloss: God is kinsman (Ammiel in 1 Chr 3:5)
+parent: judah
+kind: people
+ref: 2Sam.11.3
+order: 325
+roots:
+- {root: עמם, id: r-p-di}
+- {root: אל, id: E}
+aliases:
+- {en: Ammiel, ref: 1Chr.3.5, by: Chronicles, note: the two halves swapped, heb: עַמִּיאֵל}
+strong: '463'
+li: ast
+note: >-
+  Eli'am, God is kinsman. Chronicles writes Ammiel, the two halves in reverse order (1 Chr
+  3:5).

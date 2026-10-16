@@ -1,0 +1,22 @@
+en: Eliezer
+heb: אֱלִיעֶזֶר
+xlit: ʾĕlîʿezer
+gloss: my God is help
+parent: moses
+kind: begat
+ref: Exod.18.4
+order: 276
+roots:
+- {root: עזר, id: r-p-bz}
+- {root: אל, id: E}
+naming:
+- {ref: Exod.18.4, text: 'And the name of the other was Eliezer; for the God of my father,
+    said he, was mine help, and delivered me from the sword of Pharaoh:'}
+links:
+- {to: zipporah, kind: mother}
+strong: '461'
+li: ass
+note: >-
+  'For the God of my father, said he, was mine help, and delivered me from the sword of Pharaoh'
+  (Exod 18:4). Son of Zipporah, the Midianite wife who was sent back and returned. His name
+  is on Ezra's roll three times (10:18, 23, 31).

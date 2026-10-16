@@ -1,0 +1,23 @@
+en: Naomi
+heb: נָעֳמִי
+xlit: noʿŏmî
+gloss: my pleasantness
+parent: elimelech
+kind: wife
+ref: Ruth.1.2
+order: 313
+flags: f
+roots:
+- {root: נעם, id: r-n-ed}
+- {root: מרר, id: r-m-dq, role: pun}
+aliases:
+- {en: Mara, ref: Ruth.1.20, by: herself, note: 'Call me not Naomi, call me Mara', heb: מָרָא}
+naming:
+- {ref: Ruth.1.20, text: 'And she said unto them, Call me not Naomi, call me Mara: for the
+    Almighty hath dealt very bitterly with me.'}
+strong: '5281'
+li: ijg
+note: >-
+  No'omi, my pleasantness. 'Call me not Naomi, call me Mara: for the Almighty hath dealt very
+  bitterly with me' (Ruth 1:20): a woman renames herself. At the end the neighbour women say
+  'There is a son born to Naomi' (4:17).

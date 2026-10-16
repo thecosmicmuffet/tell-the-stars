@@ -1,0 +1,20 @@
+en: Simon the Canaanite
+heb: שִׁמְעוֹן קַנְאָנָא
+xlit: šimʿôn qanʾānāʾ
+greek: Σίμων ὁ Καναναῖος
+gloss: heard; the Zealot (qan'ana)
+parent: israel
+kind: of
+ref: Matt.10.4
+order: 531
+roots:
+- {root: שמע, id: r-v-ed}
+- {root: קנא, id: r-s-ca, role: pun}
+aliases:
+- {en: Zelotes, ref: Luke.6.15, by: Luke, note: 'the same word, translated'}
+links:
+- {to: canaan, kind: not related to}
+note: >-
+  'Simon the Canaanite' in the King James (Matt 10:4) has nothing to do with Canaan. The Greek
+  is Kananaios, from Aramaic qan'ana, zealot; Luke translates it, 'Simon called Zelotes' (6:15).
+  The root is qana, jealous: 'the LORD, whose name is Jealous' (Exod 34:14).

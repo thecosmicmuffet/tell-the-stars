@@ -1,0 +1,17 @@
+en: Bashemath
+heb: בָּשְׂמַת
+xlit: bāśĕmat
+gloss: fragrance
+parent: ishmael
+kind: son
+ref: Gen.36.3
+order: 154
+flags: f
+roots:
+- {root: בשם, id: r-b-di}
+links:
+- {to: esau, kind: wife of}
+strong: '1315'
+li: cal
+note: >-
+  Basemath, fragrance (besem), the root of Mibsam. Ishmael's daughter, wife of Esau.

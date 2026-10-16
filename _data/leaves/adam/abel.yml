@@ -1,0 +1,17 @@
+en: Abel
+heb: הָבֶל
+xlit: hebel
+gloss: breath, vapour (hevel)
+parent: adam
+kind: begat
+ref: Gen.4.2
+order: 16
+roots:
+- {root: הבל, id: r-e-ag}
+links:
+- {to: eve, kind: mother}
+strong: '1893'
+li: cxv
+note: >-
+  Hevel: breath, vapour. The refrain of Ecclesiastes, 'Vanity of vanities,' is havel havalim,
+  Abel of Abels. The first son to die is named for what does not stay.

@@ -1,0 +1,55 @@
+---
+layout: null
+permalink: /llms-full.txt
+---
+# Tell the Stars, in full
+
+{{ site.data.meta.motto }}
+
+{{ site.data.meta.tagline }}. The idea, in the words of the person who planted it ({{ site.data.meta.thesis_by }}):
+{% for p in site.data.meta.idea %}
+> {{ p | strip }}
+{% endfor %}
+
+## Letters
+
+It starts with letters. Each of the twenty-two below: its old picture, the meaning of its name, its value, its place in Sefer Yetzirah, the Greek and Latin letters it became, the letters it is easily taken for, and a note.
+{% for l in site.data.letters %}
+### {{ l[1].char }}{% if l[1].final %} {{ l[1].final }}{% endif %} {{ l[1].name }} ({{ l[1].name_heb }}) [{{ l[0] }}]
+picture: {{ l[1].picture }} · meaning: {{ l[1].meaning }} · value: {{ l[1].value }} · Sefer Yetzirah: {{ l[1].sefer_yetzirah }} · Greek: {{ l[1].greek }}{% if l[1].latin %} · Latin: {{ l[1].latin }}{% endif %}
+{% for n in l[1].near %}near {{ n.char }}: {{ n.note }}
+{% endfor %}{{ l[1].note | strip }}
+{% endfor %}
+
+## Names
+
+Each leaf below: name, native form [id], meaning; then its parent and how it is joined, the verse, its roots, and its note. Roots are Hebrew consonants; יה is Yah and אל is El. Identity links carry a certainty when the sameness is uncertain.
+{% for g in site.data.groves %}
+
+## {{ g.label }}
+
+{{ g.heading }} ({{ g.ref }})
+{% assign leaves = site.data.leaves[g.id] -%}
+{% for l in leaves %}
+### {{ l[1].en }}{% if l[1].heb %} · {{ l[1].heb }}{% elsif l[1].greek %} · {{ l[1].greek }}{% endif %} [{{ l[0] }}]
+{{ l[1].gloss }}
+{% if l[1].parent %}{{ l[1].kind }} · {{ l[1].parent }}{% endif %}{% if l[1].ref %} · {{ l[1].ref }}{% endif %}
+{% if l[1].roots %}roots: {% for r in l[1].roots %}{{ r.root }}{% if r.role %} ({{ r.role }}){% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+{% endif %}{% if l[1].links %}links: {% for k in l[1].links %}{{ k.kind }} {{ k.to }}{% if k.certainty %} (certainty {{ k.certainty }}){% endif %}{% unless forloop.last %}; {% endunless %}{% endfor %}
+{% endif %}{% for n in l[1].naming %}naming: "{{ n.text }}" ({{ n.ref }})
+{% endfor %}{% if l[1].note %}{{ l[1].note | strip }}
+{% endif %}{% endfor %}{% endfor %}
+
+## Roots
+{% for r in site.data.roots %}
+### {{ r[1].cons }}{% if r[1].homonym %} {{ r[1].homonym }}{% endif %} [{{ r[0] }}]: {{ r[1].def }}
+{% if r[1].note %}{{ r[1].note | strip }}
+{% endif %}family: {% for f in r[1].family %}{{ f.w }} {{ f.d }}{% unless forloop.last %}; {% endunless %}{% endfor %}
+{% endfor %}
+
+## Readings
+{% for r in site.data.readings %}
+### {{ r[1].title }} [{{ r[0] }}]
+words: {{ r[1].words | join: " · " }}
+{{ r[1].note | strip }} (by {{ r[1].by }})
+{% endfor %}

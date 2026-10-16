@@ -1,0 +1,14 @@
+en: Onan
+heb: אוֹנָן
+xlit: ʾônān
+gloss: vigour
+parent: judah
+kind: begat
+ref: Gen.38.4
+order: 207
+roots:
+- {root: און, id: r-a-cb}
+links:
+- {to: bathshua, kind: mother}
+strong: '209'
+li: aiu

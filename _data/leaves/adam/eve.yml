@@ -1,0 +1,28 @@
+en: Eve
+heb: חַוָּה
+xlit: ḥawwâ
+gloss: life, life-giver
+parent: adam
+kind: built
+ref: Gen.3.20
+order: 3
+flags: f
+roots:
+- {root: חוה, id: r-h-ba}
+- {root: חיה, id: r-h-cd, role: pun}
+aliases:
+- {en: Woman, ref: Gen.2.23, by: Adam, note: 'first called Ishah, because she was taken out
+    of Ish', heb: אִשָּׁה}
+naming:
+- {ref: Gen.2.23, text: 'And Adam said, This is now bone of my bones, and flesh of my flesh:
+    she shall be called Woman, because she was taken out of Man.'}
+- {ref: Gen.3.20, text: And Adam called his wife’s name Eve; because she was the mother of
+    all living.}
+strong: '2332'
+li: dqd
+note: >-
+  Named twice. First Ishah, 'because she was taken out of Man' (Gen 2:23); then Havvah, 'because
+  she was the mother of all living' (3:20). The verb for her making is vayyiven, 'and he built'
+  (2:22): the first building in scripture is a woman, from the root of Bani, Binnui and Benaiah
+  on Ezra's roll. A saying of Rabbi Akiva (Sotah 17a) is read this way: ish and ishah share
+  esh, fire; his yod and her he together spell Yah.

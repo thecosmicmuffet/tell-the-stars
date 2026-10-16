@@ -1,0 +1,24 @@
+en: Abraham
+heb: אַבְרָם
+xlit: ʾabrām
+gloss: exalted father; father of a multitude
+parent: terah
+kind: begat
+ref: Gen.11.26
+order: 104
+roots:
+- {root: אבה, id: r-a-ae}
+- {root: רום, id: r-t-bm}
+- {root: המה, id: r-e-bt, role: pun}
+aliases:
+- {en: Abram, ref: Gen.17.5, by: God, note: 'the name lengthened by one letter, he', heb: אַבְרָם}
+naming:
+- {ref: Gen.17.5, text: 'Neither shall thy name any more be called Abram, but thy name shall
+    be Abraham; for a father of many nations have I made thee.'}
+strong: '87'
+li: adm
+note: >-
+  Abram, exalted father; then Abraham, 'for a father of many nations (av hamon goyim) have
+  I made thee' (Gen 17:5). The new name adds one letter, he, and the explanation hears hamon,
+  multitude. The father of the many nations is the patriarch of the Ezra 10 houses and of
+  the peoples they sent away.

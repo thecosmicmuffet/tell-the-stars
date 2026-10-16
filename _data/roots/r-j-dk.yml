@@ -1,0 +1,11 @@
+cons: ירח
+w: ירח
+def: wanderer
+bdb: j.dk
+family:
+- {w: ירח, x: yrḥ, d: wanderer, li: fiw}
+- {w: יָרֵחַ, x: yārēaḥ, p: n.m, d: moon, li: fiv}
+- {w: יֶרַח, x: yeraḥ, p: n.m, d: month, li: fiu}
+- {w: יֶרַח, x: yeraḥ, p: n.pr.m, d: Jerah, li: fit}
+- {w: יָרוֹחַ, x: yārôaḥ, p: n.pr.m, d: Jaroah, r: 1Chr.5.14, li: fip}
+- {w: יַרְחָע, x: yarḥāʿ, p: n.pr.m, d: Jarha, li: fja}

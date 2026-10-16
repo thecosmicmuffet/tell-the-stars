@@ -1,0 +1,18 @@
+char: ה
+position: 5
+value: 5
+name: he
+name_heb: הֵא
+picture: a figure with arms raised
+meaning: unknown; perhaps a shout, "lo!"
+sefer_yetzirah: simple
+greek: Ε epsilon
+latin: E
+near:
+- {char: ח, note: close the gap at its top left and he becomes het}
+- {char: ק, note: 'drop its leg below the line and it becomes qof, as in אלקים for אלהים'}
+- {char: ד, note: take its leg away and it becomes dalet}
+note: >-
+  The breath letter. God adds it to Abram and Sarai, and they become Abraham and Sarah (Gen
+  17:5, 15). It closes adamah, the ground, and Adam is the ground without it. It closes Yah,
+  and the Name holds it twice. The oldest sign is a person with arms raised.

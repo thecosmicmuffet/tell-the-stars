@@ -1,0 +1,13 @@
+en: Maaseiah
+heb: מַעֲשֵׂיָה
+xlit: maʿăśêāhû
+gloss: work of Yah
+parent: harim-p
+kind: house
+ref: Ezra.10.21
+order: 399
+roots:
+- {root: עשה, id: r-p-fy}
+- {root: יה, id: Y}
+strong: '4641'
+li: hir

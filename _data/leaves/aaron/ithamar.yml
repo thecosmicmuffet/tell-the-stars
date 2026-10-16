@@ -1,0 +1,16 @@
+en: Ithamar
+heb: אִיתָמָר
+xlit: ʾîtāmār
+gloss: coast of palms?
+parent: aaron
+kind: begat
+ref: Exod.6.23
+order: 269
+roots:
+- {root: תמר, id: r-w-ba, role: maybe}
+links:
+- {to: elisheba, kind: mother}
+strong: '385'
+li: apt
+note: >-
+  Itamar, perhaps 'coast of palms' (tamar).

@@ -1,0 +1,22 @@
+en: Manasseh
+heb: מְנַשֶּׁה
+xlit: mĕnaššeh
+gloss: making to forget
+parent: joseph
+kind: begat
+ref: Gen.41.51
+order: 235
+roots:
+- {root: נשה, id: r-n-fu}
+naming:
+- {ref: Gen.41.51, text: 'And Joseph called the name of the firstborn Manasseh: For God, said
+    he , hath made me forget all my toil, and all my father’s house.'}
+links:
+- {to: asenath, kind: mother}
+- {to: jacob, kind: adopted by}
+strong: '4519'
+li: hds
+note: >-
+  'For God, said he, hath made me forget (nashani) all my toil, and all my father's house'
+  (Gen 41:51). Son of Asenath the Egyptian. Jacob adopts him (48:5) and sets him in the blessing:
+  'In thee shall Israel bless, saying, God make thee as Ephraim and as Manasseh' (48:20).

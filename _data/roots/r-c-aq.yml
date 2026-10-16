@@ -1,0 +1,23 @@
+cons: גדל
+w: גָּדַל
+def: grow up, become great
+bdb: c.aq
+family:
+- {w: גָּדַל, x: gādal, p: vb, d: grow up, li: cfl}
+- {w: גָּדֵל, x: gādēl, p: pt.m, d: becoming great, li: cfk}
+- {w: גֹּדֶל, x: gōdel, p: n.m, d: greatness, li: cfm}
+- {w: גְּדִלִים, x: gĕdilîm, p: 'n.[m.]pl', d: twisted threads, li: cfp}
+- {w: גָּדוֹל, x: gādôl, p: adj, d: great, li: cev}
+- {w: גְּדוּלָּה, x: gĕdûllâ, p: n.f, d: greatness, li: cew}
+- {w: הַגְּדוֹלִים, x: haggĕdôlîm, p: n.pr.m, d: aloud, r: Neh.11.14, li: cyb}
+- {w: גִּדֵּל, x: giddēl, p: n.pr.m, d: Giddel, li: cfj}
+- {w: גְּדַלְיָה, x: gĕdalyâ, p: n.pr.m, d: Gedaliah, li: cfn}
+- {w: גְּדַלְיָהוּ, x: gĕdalyāhû, p: n.pr.m, d: Gedaliah, li: cfo}
+- {w: גִּדַּלְתִּי, x: giddaltî, p: n.pr.m, d: Giddalti, li: cfq}
+- {w: יִגְדַּלְיָהוּ, x: yigdalyāhû, p: n.pr.m, d: Igdaliah, r: Jer.35.4, li: etr}
+- {w: מִגְדָּל, x: migdāl, p: n.m, d: tower, li: gki}
+- {w: מִגְדַּל־אֵל, x: migdal-ʾēl, p: n.pr, d: Migdal-el, r: Josh.19.38, li: gkk}
+- {w: מִגְדַּל־גַּד, x: migdal-gad, p: n.pr, d: Migdal-gad, r: Josh.15.37, li: gkl}
+- {w: מִגְדַּל־עֵדֶר, x: migdal-ʿēder, p: n.pr, d: Migdal-eder, r: Gen.35.21, li: gkm}
+- {w: מִגְדּוֹל, x: migdôl, p: n.m, d: tower, r: 2Sam.22.51, li: gkg}
+- {w: מִגְדֹּל, x: migdōl, p: n.pr, d: Migdol, li: gkj}

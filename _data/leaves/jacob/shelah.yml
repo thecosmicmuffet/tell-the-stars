@@ -1,0 +1,14 @@
+en: Shelah
+heb: שֵׁלָה
+xlit: šēlâ
+gloss: quiet; asked?
+parent: judah
+kind: begat
+ref: Gen.38.5
+order: 208
+roots:
+- {root: שלה, id: r-v-dj, role: maybe}
+links:
+- {to: bathshua, kind: mother}
+strong: '7956'
+li: muz

@@ -1,0 +1,15 @@
+en: Adah
+heb: עָדָה
+xlit: ʿādâ
+gloss: ornament
+parent: heth
+kind: people
+ref: Gen.36.2
+order: 157
+flags: f
+roots:
+- {root: עדה, id: r-p-ar}
+links:
+- {to: esau, kind: wife of}
+strong: '5711'
+li: jbq

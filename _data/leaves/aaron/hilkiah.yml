@@ -1,0 +1,17 @@
+en: Hilkiah
+heb: חִלְקִיָּה
+xlit: ḥilqîyāhû
+gloss: my portion is Yah
+parent: shallum-p
+kind: begat
+ref: 1Chr.6.13
+wref: 1Chr.5.39
+order: 293
+roots:
+- {root: חלק, id: r-h-da}
+- {root: יה, id: Y}
+strong: '2518'
+li: dye
+note: >-
+  Hilqiyyahu, my portion is Yah: the high priest who found the book of the law in the house
+  of the LORD (2 Kgs 22:8).

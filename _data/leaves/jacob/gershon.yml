@@ -1,0 +1,16 @@
+en: Gershon
+heb: גֵּרְשׁוֹן
+xlit: gērĕšôn
+gloss: expulsion; a sojourner there
+parent: levi
+kind: begat
+ref: Gen.46.11
+order: 201
+roots:
+- {root: גרש, id: r-c-di}
+- {root: גור, id: r-c-bf, role: pun}
+strong: '1648'
+li: com
+note: >-
+  From garash, to drive out: the verb of Eden's gate (Gen 3:24) and of Hagar's dismissal (21:10).
+  Levi's firstborn is named Expulsion, or 'a sojourner there.'

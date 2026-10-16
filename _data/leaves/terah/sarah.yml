@@ -1,0 +1,22 @@
+en: Sarah
+heb: שָׂרָי
+xlit: śāray
+gloss: princess
+parent: terah
+kind: son
+ref: Gen.11.29
+order: 107
+flags: f
+roots:
+- {root: שרר, id: r-u-cm}
+aliases:
+- {en: Sarai, ref: Gen.17.15, by: God, note: my princess becomes princess, heb: שָׂרַי}
+naming:
+- {ref: Gen.17.15, text: 'And God said unto Abraham, As for Sarai thy wife, thou shalt not
+    call her name Sarai, but Sarah shall her name be .'}
+strong: '8297'
+li: njt
+note: >-
+  Sarai, my princess, becomes Sarah, princess (Gen 17:15). Abraham calls her 'the daughter
+  of my father, but not the daughter of my mother' (20:12). 'It may be that I may obtain children
+  by her' (16:2) is literally 'I may be built through her,' through Hagar.

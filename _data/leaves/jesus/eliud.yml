@@ -1,0 +1,12 @@
+en: Eliud
+heb: אֱלִיהוּד
+xlit: ʾĕlîhûd
+greek: Ἐλιούδ
+gloss: my God is majesty
+parent: achim
+kind: begat
+ref: Matt.1.14
+order: 511
+roots:
+- {root: הוד, id: r-e-ay}
+- {root: אל, id: E}

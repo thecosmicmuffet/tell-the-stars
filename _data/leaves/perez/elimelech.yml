@@ -1,0 +1,15 @@
+en: Elimelech
+heb: אֱלִימֶלֶךְ
+xlit: ʾĕlîmelek
+gloss: my God is king
+parent: judah
+kind: people
+ref: Ruth.1.2
+order: 312
+roots:
+- {root: מלך, id: r-m-cd}
+- {root: אל, id: E}
+strong: '458'
+li: asq
+note: >-
+  Elimelekh, my God is king. He left Bethlehem, the house of bread, in a famine, for Moab.

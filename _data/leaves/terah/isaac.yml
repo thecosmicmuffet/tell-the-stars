@@ -1,0 +1,20 @@
+en: Isaac
+heb: יִצְחָק
+xlit: yiṣḥāq
+gloss: he laughs
+parent: abraham
+kind: begat
+ref: Gen.21.3
+order: 127
+roots:
+- {root: צחק, id: r-r-br}
+naming:
+- {ref: Gen.21.6, text: 'And Sarah said, God hath made me to laugh, so that all that hear
+    will laugh with me.'}
+links:
+- {to: sarah, kind: mother}
+strong: '3327'
+li: fgh
+note: >-
+  Yitshaq, he laughs. Abraham laughed (Gen 17:17), Sarah laughed (18:12), and at the birth:
+  'God hath made me to laugh, so that all that hear will laugh with me' (21:6).

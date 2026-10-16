@@ -1,0 +1,13 @@
+en: Nethaneel
+heb: נְתַנְאֵל
+xlit: nĕtanʾēl
+gloss: God has given
+parent: pashur
+kind: house
+ref: Ezra.10.22
+order: 407
+roots:
+- {root: נתן, id: r-n-gg}
+- {root: אל, id: E}
+strong: '5417'
+li: ioz

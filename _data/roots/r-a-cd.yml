@@ -1,0 +1,22 @@
+cons: אור
+w: אוֹר
+def: be, become light
+bdb: a.cd
+family:
+- {w: אוֹר, x: ʾôr, p: vb, d: be light, li: ajb}
+- {w: אוֹר, x: ʾôr, p: n.m, d: light, li: aja}
+- {w: אוֹרָה, x: ʾôrâ, p: n.f, d: light, li: ajh}
+- {w: אוֹרָה, x: ʾôrâ, p: n.f, d: herb, li: ajg}
+- {w: אוּר, x: ʾûr, p: n.m, d: flame, li: aje}
+- {w: אֻרִים, x: ʾurîm, p: 'n.[m.]pl', d: region of light, r: Isa.24.15, li: bdo}
+- {w: אוּרִים, x: ʾûrîm, p: n.m, d: Urim, li: ajm}
+- {w: אוּר, x: ʾûr, p: n.pr.m, d: Ur, r: 1Chr.11.35, li: ajd}
+- {w: אוּרִי, x: ʾûrî, p: n.pr.m, d: Uri, li: aji}
+- {w: אוּרִיאֵל, x: ʾûrîʾēl, p: n.pr.m, d: Uriel, li: ajj}
+- {w: אוּרִיָּה, x: ʾûrîyâ, p: n.pr.m, d: Uriah, li: ajk}
+- {w: אוּרִיָּהוּ, x: ʾûrîyāhû, p: n.pr.m, d: Urijah, r: Jer.26.20, li: ajl}
+- {w: יָאִיר, x: yāʾîr, p: n.pr.m, d: Jair, li: ese}
+- {w: יָאִירִי, x: yāʾirî, p: adj.gent, d: Jairite, r: 2Sam.20.26, li: esi}
+- {w: מָאוֹר, x: māʾôr, p: n.m, d: luminary, li: gif}
+- {w: מְאוּרָה, x: mĕʾûrâ, p: n.f, d: light-hole, li: gig}
+- {w: אוּר, x: ʾûr, p: n.pr.loc, d: Ur, li: ajc}

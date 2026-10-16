@@ -1,0 +1,16 @@
+char: ס
+position: 15
+value: 60
+name: samekh
+name_heb: סָמֶךְ
+picture: a prop? a fish's spine?
+meaning: support
+sefer_yetzirah: simple
+greek: Ξ xi
+near:
+- {char: ם, note: samekh's ring beside final mem's square}
+- {char: ש, note: 'the Ephraimites said sibboleth, written with samekh (Judg 12:6)'}
+note: >-
+  The prop. Its name is the verb to lean on, to support, to lay hands on: Moses 'laid his
+  hands upon' Joshua (Num 27:23). In Psalm 145 the samekh line holds up the missing nun: 'The
+  LORD upholdeth (סוֹמֵךְ) all that fall' (145:14).

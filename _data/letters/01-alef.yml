@@ -1,0 +1,18 @@
+char: א
+position: 1
+value: 1
+name: alef
+name_heb: אָלֶף
+picture: an ox's head
+meaning: ox
+sefer_yetzirah: mother · air
+greek: Α alpha
+latin: A
+near:
+- {char: ע, note: two sounds from the throat that later speakers stopped telling apart}
+note: >-
+  The first letter has no sound of its own: a catch in the throat that carries whatever vowel
+  follows. Its picture is an ox's head; turn it over so the horns become legs and it is the
+  Latin A. Sefer Yetzirah makes it air, one of the three mothers. Counted, it is one. Ugarit
+  wrote it three ways, one for each vowel after it, and ink folded the three into one. Medieval
+  scribes sometimes fused it with lamed into a single sign for El (ﭏ).

@@ -1,0 +1,13 @@
+en: Ahaziah
+heb: אֲחַזְיָהוּ
+xlit: ʾăḥazyāhû
+gloss: Yah has grasped
+parent: jehoram
+kind: begat
+ref: 2Kgs.8.24
+order: 340
+roots:
+- {root: אחז, id: r-a-cl}
+- {root: יה, id: Y}
+strong: '274'
+li: ali

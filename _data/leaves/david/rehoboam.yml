@@ -1,0 +1,17 @@
+en: Rehoboam
+heb: רְחַבְעָם
+xlit: rĕḥabʿām
+gloss: he makes room for the people
+parent: solomon
+kind: begat
+ref: 1Kgs.14.21
+order: 335
+roots:
+- {root: רחב, id: r-t-bw}
+- {root: עמם, id: r-p-di}
+links:
+- {to: naamah-a, kind: mother}
+strong: '7346'
+li: luu
+note: >-
+  Rehav'am, he makes room for the people (rahav, broad). Under him the kingdom divided.

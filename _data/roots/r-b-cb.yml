@@ -1,0 +1,25 @@
+cons: בנה
+w: בָּנָה
+def: build, build
+bdb: b.cb
+note: >-
+  Build. The first building in scripture is the woman (Gen 2:22). 'It may be that I may obtain
+  children by her' (Gen 16:2; 30:3) is literally 'I may be built through her.' Ben, son, has
+  been heard in this root since antiquity, though it is probably an independent word. The
+  Baptist's pun runs between them: 'God is able of these stones (avanim) to raise up children
+  (banim) unto Abraham' (Matt 3:9).
+family:
+- {w: בָּנָה, x: bānâ, p: vb, d: build, li: btg}
+- {w: בִּנּוּי, x: binnûy, p: n.pr.m, d: Binnui, li: bti}
+- {w: בָּנִי, x: bānî, p: n.pr.m, d: Bani, li: btk}
+- {w: בֻּנִּי, x: bunnî, p: n.pr.m, d: Bunni, li: btl}
+- {w: בִּנְיָה, x: binyâ, p: n.f, d: structure, r: Ezek.41.13, li: bto}
+- {w: בְּנָיָהוּ, x: bĕnāyāhû, p: n.pr.m, d: Benaiah, li: btp}
+- {w: בִּנְיָן, x: binyān, p: n.m, d: structure, li: bts}
+- {w: יַבְנְאֵל, x: yabnĕʾēl, p: n.pr.loc, d: Jabneel, li: etb}
+- {w: יַבְנֶה, x: yabneh, p: n.pr.loc, d: Jabneh, li: etc}
+- {w: יִבְנְיָה, x: yibnĕyâ, p: n.pr.m, d: Ibneiah, r: 1Chr.9.8!a, li: etd}
+- {w: יִבְנְיָה, x: yibnîyâ, p: n.pr.m, d: Ibnijah, r: 1Chr.9.8!b, li: ete}
+- {w: מִבְנֶה, x: mibneh, p: n.m, d: structure, r: Ezek.40.2, li: gjt}
+- {w: מְבֻנַּי, x: mĕbunnay, p: n.pr.m, d: Mebunnai, r: 2Sam.23.27, li: gju}
+- {w: תַּבְנִית, x: tabnît, p: n.f, d: construction, li: nof}

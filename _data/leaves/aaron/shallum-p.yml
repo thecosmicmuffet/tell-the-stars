@@ -1,0 +1,13 @@
+en: Shallum
+heb: שַׁלּוּם
+xlit: šallûm
+gloss: recompense, made whole
+parent: zadok2
+kind: begat
+ref: 1Chr.6.12
+wref: 1Chr.5.38
+order: 292
+roots:
+- {root: שלם, id: r-v-ds}
+strong: '7967'
+li: mvn

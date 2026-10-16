@@ -1,0 +1,11 @@
+en: Azor
+heb: עַזּוּר
+xlit: ʿazzûr
+greek: Ἀζώρ
+gloss: helper
+parent: eliakim-m
+kind: begat
+ref: Matt.1.13
+order: 508
+roots:
+- {root: עזר, id: r-p-bz}

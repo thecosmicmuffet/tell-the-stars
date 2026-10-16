@@ -1,0 +1,16 @@
+en: Hezekiah
+heb: חִזְקִיָּהוּ
+xlit: ḥizqîyāhû
+gloss: Yah strengthens
+parent: ahaz
+kind: begat
+ref: 2Kgs.16.20
+order: 346
+roots:
+- {root: חזק, id: r-h-bs}
+- {root: יה, id: Y}
+strong: '2396'
+li: dst
+note: >-
+  Hizqiyyahu, Yah strengthens. He 'brake in pieces the brasen serpent that Moses had made...
+  and he called it Nehushtan' (2 Kgs 18:4).

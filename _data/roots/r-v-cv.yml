@@ -1,0 +1,8 @@
+cons: שיר
+w: שׁיר
+bdb: v.cv
+family:
+- {w: שׁיר, x: šyr, li: msk}
+- {w: שִׁיר, x: šîr, p: n.m, d: song, li: msi}
+- {w: שִׁירָה, x: šîrâ, p: n.f, d: song, li: msl}
+- {w: שִׁיר, x: šîr, p: vb, d: sing, li: msj}

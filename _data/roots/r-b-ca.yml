@@ -1,0 +1,33 @@
+cons: בן
+w: בֵּן
+def: son, son
+bdb: b.ca
+note: >-
+  Ben, son; bat, daughter; Aramaic bar. A ben is any member of a kind: 'son of death,' 'son
+  of a night' (Jonah 4:10, the gourd).
+family:
+- {w: בֵּן, x: bēn, p: n.m, d: son, li: bss}
+- {w: בֵּן, x: bēn, p: n.pr.m, d: Ben, r: 1Chr.15.18, li: bst}
+- {w: בֶּן־אֲבִינָדָב, x: ben-ʾăbînādāb, p: n.pr.m, d: the son of Abinadab, r: 1Kgs.4.11,
+  li: bsu}
+- {w: בֶּן־אוֹנִי, x: ben-ʾônî, p: n.pr.m, d: Ben-oni, r: Gen.35.18, li: bsv}
+- {w: בֶּן־גֶּבֶר, x: ben-geber, p: n.pr.m, d: the son of Geber, r: 1Kgs.4.13, li: bsw}
+- {w: בֶּן־דֶּקֶר, x: ben-deqer, p: n.pr.m, d: the son of Dekar, r: 1Kgs.4.9, li: bsx}
+- {w: בֶּן־הֲדַד, x: ben-hădad, p: n.pr.m, d: Benhadad, li: bsy}
+- {w: בֶּן־זוֹחֵת, x: ben-zôḥēt, p: n.pr.m, d: Ben-zoketh, r: 1Chr.4.20, li: bsz}
+- {w: בֶּן־חוּר, x: ben-ḥûr, p: n.pr.m, d: the son of Hur, r: 1Kgs.4.8, li: bta}
+- {w: בְּנוֹ, x: bĕnô, p: n.pr.m, d: his son, r: 1Chr.24.26, li: bth}
+- {w: בֶּן־חַיִל, x: ben-ḥayil, p: n.pr.m, d: Ben-hail, r: 2Chr.17.7, li: btb}
+- {w: בֶּן־חָנָן, x: ben-ḥānān, p: n.pr.m, d: Ben-hanan, r: 1Chr.4.20, li: btc}
+- {w: בֶּן־חֶסֶד, x: ben-ḥesed, p: n.pr.m, d: the son of Hesed, r: 1Kgs.4.10, li: btd}
+- {w: בֶּן־עַמִּי, x: ben-ʿammî, p: n.pr.m, d: Ben-ammi, r: Gen.19.38, li: btf}
+- {w: בְּנֵי־בְרַק, x: bĕnê-bĕraq, p: n.pr.loc, d: Bene-barak, r: Josh.19.45, li: btn}
+- {w: בְּנֵי יַעֲקָן, x: bĕnê yaʿăqān, p: n.pr.loc, d: Bene-jaakan, li: btm}
+- {w: בִּנְיָמִין, x: binyāmîn, p: n.pr.m, d: Benjamin, li: btr}
+- {w: בֶּן־יְמִינִי, x: ben-yĕmînî, p: adj.gent, d: Benjaminite, li: bte}
+- {w: בְּנִינוּ, x: bĕnînû, p: n.pr.m, d: Beninu, r: Neh.10.14, li: btt}
+- {w: בַּת, x: bat, p: n.f, d: daughter, li: cav}
+- {w: בַּת־רַבִּים, x: bat-rabbîm, p: n.pr.loc, d: Bath-rabbim, r: Song.7.5, li: cbj}
+- {w: בַּת־שֶׁבַע, x: bat-šebaʿ, p: n.pr.f, d: Bath-sheba, li: cbl}
+- {w: בַּת־שׁוּעַ, x: bat-šûaʿ, p: n.pr.f, d: Bath-shua, li: cbm}
+- {w: בִּתְיָה, x: bityâ, p: n.pr.f, d: Bithiah, r: 1Chr.4.18, li: cbd}

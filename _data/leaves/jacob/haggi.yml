@@ -1,0 +1,14 @@
+en: Haggi
+heb: חַגִּי
+xlit: ḥaggî
+gloss: festal, born on a feast
+parent: gad
+kind: begat
+ref: Gen.46.16
+order: 221
+roots:
+- {root: חגג, id: r-h-am}
+strong: '2291'
+li: dop
+note: >-
+  Haggi, festal: born on a feast (hag).

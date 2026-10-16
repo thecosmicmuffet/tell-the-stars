@@ -1,0 +1,17 @@
+en: Michal
+heb: מִיכַל
+xlit: mîkal
+gloss: who is like God? (Michael, shortened)
+parent: saul
+kind: begat
+ref: 1Sam.14.49
+order: 363
+flags: f
+roots:
+- {root: אל, id: E}
+links:
+- {to: david, kind: wife of}
+strong: '4324'
+li: gwf
+note: >-
+  Mikhal: a short form of Michael, 'who is like God?'

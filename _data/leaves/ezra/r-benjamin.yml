@@ -1,0 +1,15 @@
+en: Benjamin
+heb: בְּנְיָמִן
+xlit: binyāmîn
+gloss: son of the right hand
+parent: harim-i
+kind: house
+ref: Ezra.10.32
+order: 462
+roots:
+- {root: בן, id: r-b-ca}
+- {root: ימן, id: r-j-bs}
+strong: '1144'
+li: btr
+note: >-
+  Binyamin, son of the right hand.

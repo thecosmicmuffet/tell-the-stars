@@ -1,0 +1,25 @@
+en: Jesus
+heb: יֵשׁוּעַ
+xlit: yēšûaʿ
+greek: Ἰησοῦς
+gloss: Yah saves
+parent: joseph-m
+kind: supposed
+ref: Matt.1.21
+order: 517
+roots:
+- {root: ישע, id: r-j-dy}
+- {root: יה, id: Y}
+aliases:
+- {en: Emmanuel, ref: Matt.1.23, by: the prophet, note: God with us, heb: עִמָּנוּאֵל}
+naming:
+- {ref: Matt.1.21, text: 'And she shall bring forth a son, and thou shalt call his name JESUS:
+    for he shall save his people from their sins.'}
+links:
+- {to: mary, kind: mother}
+- {to: david, kind: son of}
+note: >-
+  'Thou shalt call his name JESUS: for he shall save (yoshia) his people from their sins'
+  (Matt 1:21). Yeshua, Yah saves: the name of Joshua son of Nun and of Jeshua son of Jozadak,
+  whom Zechariah called the Branch. In Luke he is 'the son (as was supposed) of Joseph' (3:23),
+  the only 'son' in that genealogy the Greek actually says.

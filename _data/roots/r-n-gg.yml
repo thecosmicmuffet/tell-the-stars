@@ -1,0 +1,22 @@
+cons: נתן
+w: נָתַן
+def: give, put
+bdb: n.gg
+note: >-
+  Give. With z-b-d, sixteen of the 113 on Ezra's roll are named for a gift.
+family:
+- {w: נָתַן, x: nātan, p: vb, d: give, li: iow}
+- {w: נָתָן, x: nātān, p: n.pr.m, d: Nathan, li: iox}
+- {w: נְתַן־מֶלֶךְ, x: nĕtan-melek, p: n.pr.m, d: Nathanmelech, r: 2Kgs.23.11, li: ioy}
+- {w: נְתִינִים, x: nĕtînîm, p: n.m.pl, d: Nethinim, li: iou}
+- {w: נְתַנְאֵל, x: nĕtanʾēl, p: n.pr.m, d: Nethaneel, li: ioz}
+- {w: נְתַנְיָהוּ, x: nĕtanyāhû, p: n.pr.m, d: Nethaniah, li: ipa}
+- {w: מַתָּן, x: mattān, p: n.m, d: gift, li: hwp}
+- {w: מַתָּן, x: mattān, p: n.pr.m, d: Mattan, li: hwo}
+- {w: מַתָּנָה, x: mattānâ, p: n.f, d: gift, li: hws}
+- {w: מַתָּנָה, x: mattānâ, p: n.pr.loc, d: Mattanah, li: hwr}
+- {w: מַתַּת, x: mattat, p: n.f, d: gift, li: hxe}
+- {w: מַתַּנְיָהוּ, x: mattanyāhû, p: n.pr.m, d: Mattaniah, li: hwv}
+- {w: מַתְּנַי, x: mattĕnay, p: n.pr.m, d: Mattenai, li: hwu}
+- {w: מַתִּתְיָהוּ, x: mattityāhû, p: n.pr.m, d: Mattithiah, li: hxg}
+- {w: מַתַּתָּה, x: mattattâ, p: n.pr.m, d: Mattathah, r: Ezra.10.33, li: hxf}

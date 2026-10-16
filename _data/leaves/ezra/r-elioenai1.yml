@@ -1,0 +1,14 @@
+en: Elioenai
+heb: אֶלְיוֹעֵינַי
+xlit: ʾelyôʿênay
+gloss: my eyes are toward Yah
+parent: pashur
+kind: house
+ref: Ezra.10.22
+order: 404
+roots:
+- {root: עין, id: r-p-ck}
+- {root: אל, id: E}
+- {root: יה, id: Y}
+strong: 454b
+li: asl

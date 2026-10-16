@@ -1,0 +1,27 @@
+en: Solomon
+heb: שְׁלֹמֹה
+xlit: šĕlōmōh
+gloss: peaceable, made whole
+parent: david
+kind: begat
+ref: 2Sam.12.24
+order: 333
+roots:
+- {root: שלם, id: r-v-ds}
+aliases:
+- {en: Jedidiah, ref: 2Sam.12.25, by: Nathan the prophet, note: beloved of Yah; never used
+    again, heb: יְדִידְיָהּ}
+naming:
+- {ref: 2Sam.12.24, text: 'And David comforted Bath-sheba his wife, and went in unto her,
+    and lay with her: and she bare a son, and he called his name Solomon: and the LORD loved
+    him.'}
+- {ref: 2Sam.12.25, text: 'And he sent by the hand of Nathan the prophet; and he called his
+    name Jedidiah, because of the LORD .'}
+links:
+- {to: bathsheba, kind: mother}
+strong: '8010'
+li: mxa
+note: >-
+  Shelomoh: his peace, made whole. 'And he sent by the hand of Nathan the prophet; and he
+  called his name Jedidiah, because of the LORD' (2 Sam 12:25). The prophet's name for him
+  never appears again.

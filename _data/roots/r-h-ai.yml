@@ -1,0 +1,22 @@
+cons: חבר
+w: חָבַר
+def: unite, be joined
+bdb: h.ai
+family:
+- {w: חָבַר, x: ḥābar, p: vb, d: unite, li: dnq}
+- {w: חֶבֶר, x: ḥeber, p: 'n.[m.]', d: company, li: dnn}
+- {w: חֶבֶר, x: ḥeber, p: n.pr.m, d: Heber, li: dnm}
+- {w: חֶבְרִי, x: ḥebrî, p: adj.gent, d: Heberites, r: Num.26.45, li: dnw}
+- {w: חֶבְרָה, x: ḥebrâ, p: n.f, d: association, r: Job.34.8, li: dns}
+- {w: חָבֵר, x: ḥābēr, p: adj, d: united, li: dnp}
+- {w: חֲבֶרֶת, x: ḥăberet, p: n.f, d: consort, r: Mal.2.14, li: dnx}
+- {w: חֹבֶרֶת, x: ḥōberet, p: n.f, d: a thing that joins, li: dny}
+- {w: חַבָּר, x: ḥabbār, p: n.m, d: associate, r: Job.40.30, li: dno}
+- {w: חַבּוּרָה, x: ḥabbûrâ, p: n.f, d: stripe, li: dmq}
+- {w: חֲבַרְבֻּרָה, x: ḥăbarburâ, p: n.f, d: stripe, r: Jer.13.23, li: dnr}
+- {w: חֶבְרוֹן, x: ḥebrôn, p: n.pr.loc, d: Hebron, li: dnu}
+- {w: חֶבְרוֹן, x: ḥebrôn, p: n.pr.m, d: Hebron, li: dnt}
+- {w: חֶבְרוֹנִי, x: ḥebrônî, p: adj.gent, d: Hebronites, li: dnv}
+- {w: מַחְבֶּרֶת, x: maḥberet, p: n.f, d: thing joined, li: gsg}
+- {w: מְחַבְּרָה, x: mĕḥabbĕrâ, p: n.f, d: binder, li: gsf}
+- {w: חָבוֹר, x: ḥābôr, p: n.pr.fl, d: Habor, li: dmp}

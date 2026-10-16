@@ -1,0 +1,18 @@
+en: Bathshua
+heb: בַּת־שׁוּעַ
+xlit: bat-šûaʿ
+gloss: daughter of Shua (of crying out? of wealth?)
+parent: canaan
+kind: people
+ref: 1Chr.2.3
+order: 204
+flags: f
+roots:
+- {root: בן, id: r-b-ca}
+- {root: שוע, id: r-v-bv, role: pun}
+links:
+- {to: judah, kind: wife of}
+note: >-
+  'Daughter of Shua,' a Canaanite (Gen 38:2; 1 Chr 2:3, 'Bathshua the Canaanitess'). Judah's
+  wife; mother of Er, Onan and Shelah. Chronicles later gives the same name to Bathsheba (1
+  Chr 3:5).

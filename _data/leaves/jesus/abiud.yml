@@ -1,0 +1,15 @@
+en: Abiud
+heb: אֲבִיהוּד
+xlit: ʾăbîhûd
+greek: Ἀβιούδ
+gloss: my father is majesty
+parent: zerubbabel
+kind: begat
+ref: Matt.1.13
+order: 506
+roots:
+- {root: אבה, id: r-a-ae}
+- {root: הוד, id: r-e-ay}
+note: >-
+  Matthew's names from Abiud to Jacob appear nowhere else in scripture; for these generations
+  the gospel is the only record.

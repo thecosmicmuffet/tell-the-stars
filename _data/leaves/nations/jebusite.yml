@@ -1,0 +1,13 @@
+en: Jebusite
+heb: יְבוּסִי
+xlit: yĕbûsî
+gloss: of Jebus (Jerusalem); trodden?
+parent: canaan
+kind: begat
+ref: Gen.10.16
+order: 65
+flags: n
+roots:
+- {root: בוס, id: r-b-as, role: maybe}
+strong: '2983'
+li: esp

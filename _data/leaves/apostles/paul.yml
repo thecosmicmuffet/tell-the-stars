@@ -1,0 +1,24 @@
+en: Paul
+heb: שָׁאוּל
+xlit: šāʾûl
+greek: Παῦλος
+gloss: 'Saul: asked for; Paulus: small'
+parent: benjamin
+kind: people
+ref: Acts.13.9
+order: 534
+roots:
+- {root: שאל, id: r-v-ag}
+aliases:
+- {en: Saul, ref: Acts.13.9, by: Luke, note: 'Saul, (who also is called Paul)', heb: שָׁאוּל}
+naming:
+- {ref: Acts.13.9, text: 'Then Saul, (who also is called Paul,) filled with the Holy Ghost,
+    set his eyes on him,'}
+links:
+- {to: saul, kind: same name and tribe as}
+note: >-
+  'Saul, (who also is called Paul,)' (Acts 13:9). Luke never says he was renamed; the narrative
+  switches names in Cyprus, in the presence of a proconsul called Sergius Paulus. Paulus is
+  Latin for small, and Paul calls himself 'the least (elachistos) of the apostles' (1 Cor
+  15:9). The first Saul of Benjamin was told 'When thou wast little in thine own sight' (1
+  Sam 15:17); the second took Small for his name.

@@ -1,0 +1,12 @@
+en: Amnon
+heb: אַמְנוֹן
+xlit: ʾamnôn
+gloss: faithful
+parent: david
+kind: begat
+ref: 2Sam.3.2
+order: 328
+roots:
+- {root: אמן, id: r-a-dy}
+strong: '550'
+li: awc

@@ -1,0 +1,19 @@
+en: Naamah
+heb: נַעֲמָה
+xlit: naʿămâ
+gloss: pleasant, lovely
+parent: lamech-c
+kind: begat
+ref: Gen.4.22
+order: 15
+flags: f
+roots:
+- {root: נעם, id: r-n-ed}
+links:
+- {to: zillah, kind: mother}
+strong: 5279a
+li: ijd
+note: >-
+  Pleasant, lovely: the root of Naomi and Naaman. Cain's line ends on a daughter's name. A
+  second Naamah, an Ammonitess, is the mother of Rehoboam and of every later king of Judah
+  (1 Kgs 14:21).

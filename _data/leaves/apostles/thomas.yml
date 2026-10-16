@@ -1,0 +1,16 @@
+en: Thomas
+heb: תְּאוֹמָא
+xlit: tĕʾômāʾ
+greek: Θωμᾶς
+gloss: 'twin (and Didymus: twin)'
+parent: israel
+kind: of
+ref: John.11.16
+order: 526
+roots:
+- {root: תאם, id: r-w-ad}
+aliases:
+- {en: Didymus, ref: John.11.16, by: John, note: the name and its translation are twins}
+note: >-
+  Te'oma, twin. John adds the Greek, 'Thomas, which is called Didymus' (John 11:16): twin
+  again. The name and its translation are twins.

@@ -1,0 +1,18 @@
+en: Eleazar
+heb: אֶלְעָזָר
+xlit: ʾelʿāzār
+gloss: God has helped
+parent: aaron
+kind: begat
+ref: Exod.6.23
+order: 268
+roots:
+- {root: עזר, id: r-p-bz}
+- {root: אל, id: E}
+links:
+- {to: elisheba, kind: mother}
+strong: '499'
+li: auf
+note: >-
+  El'azar, God has helped. In Greek he becomes Lazaros: Lazarus of Bethany carries Aaron's
+  son's name (John 11).

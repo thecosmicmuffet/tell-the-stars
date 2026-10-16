@@ -1,0 +1,16 @@
+en: Korah
+heb: קֹרַח
+xlit: qōraḥ
+gloss: bald, ice
+parent: esau
+kind: begat
+ref: Gen.36.5
+order: 163
+roots:
+- {root: קרח, id: r-s-dd}
+links:
+- {to: aholibamah, kind: mother}
+strong: '7141'
+li: lmj
+note: >-
+  Qorah, bald; qerah is ice and frost.

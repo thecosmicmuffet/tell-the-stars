@@ -1,0 +1,17 @@
+en: Eleazar
+heb: אֶלְעָזָר
+xlit: ʾelʿāzār
+gloss: God has helped
+parent: parosh
+kind: house
+ref: Ezra.10.25
+order: 424
+roots:
+- {root: עזר, id: r-p-bz}
+- {root: אל, id: E}
+links:
+- {to: eleazar, kind: same name as}
+strong: '499'
+li: auf
+note: >-
+  Aaron's son's name, and Lazarus's.

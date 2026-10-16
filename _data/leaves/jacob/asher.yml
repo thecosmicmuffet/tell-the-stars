@@ -1,0 +1,21 @@
+en: Asher
+heb: אָשֵׁר
+xlit: ʾāšēr
+gloss: happy, blessed
+parent: jacob
+kind: begat
+ref: Gen.30.13
+order: 184
+roots:
+- {root: אשר, id: r-a-gj}
+naming:
+- {ref: Gen.30.13, text: 'And Leah said, Happy am I, for the daughters will call me blessed:
+    and she called his name Asher.'}
+links:
+- {to: zilpah, kind: mother}
+strong: '836'
+li: bhc
+note: >-
+  'Happy am I, for the daughters will call me blessed (ishsheruni)' (Gen 30:13). This is the
+  blessing word of Psalm 1:1, 'Blessed (ashrei) is the man,' whose tree is planted by the
+  palgei mayim, the channels of Peleg.

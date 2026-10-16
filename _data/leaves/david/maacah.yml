@@ -1,0 +1,15 @@
+en: Maacah
+heb: מַעֲכָה
+xlit: maʿăkâ
+gloss: pressed?
+parent: talmai
+kind: begat
+ref: 2Sam.3.3
+order: 330
+flags: f
+roots:
+- {root: מעך, id: r-m-cy, role: maybe}
+links:
+- {to: david, kind: wife of}
+strong: '4601'
+li: hha

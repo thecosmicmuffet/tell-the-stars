@@ -1,0 +1,20 @@
+en: Ish-bosheth
+heb: אִישׁ בֹּשֶׁת
+xlit: ʾîš-bōšet
+gloss: 'man of shame (Esh-baal: man of Baal)'
+parent: saul
+kind: begat
+ref: 2Sam.2.8
+order: 364
+roots:
+- {root: בוש, id: r-b-ax}
+- {root: איש, id: r-a-da}
+- {root: בעל, id: r-b-ci, role: pun}
+aliases:
+- {en: Esh-baal, ref: 1Chr.8.33, by: Chronicles, note: 'man of Baal, the older form', heb: אֶשְׁבָּעַל}
+strong: '378'
+li: apm
+note: >-
+  Chronicles has Esh-baal, man of Baal (1 Chr 8:33); Samuel has Ish-bosheth, man of shame
+  (2 Sam 2:8). The scribes put bosheth, shame, where the god's name stood. Baal also means
+  simply lord, or husband.

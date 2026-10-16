@@ -1,0 +1,12 @@
+en: Shimi
+heb: שִׁמְעִי
+xlit: šimʿî
+gloss: heard
+parent: gershon
+kind: begat
+ref: Exod.6.17
+order: 253
+roots:
+- {root: שמע, id: r-v-ed}
+strong: '8096'
+li: nat

@@ -1,0 +1,17 @@
+en: Rachel
+heb: רָחֵל
+xlit: rāḥēl
+gloss: ewe
+parent: laban
+kind: son
+ref: Gen.29.16
+order: 124
+flags: f
+roots:
+- {root: רחל, id: r-t-by}
+links:
+- {to: jacob, kind: wife of}
+strong: '7354'
+li: lvb
+note: >-
+  Rahel, a ewe.

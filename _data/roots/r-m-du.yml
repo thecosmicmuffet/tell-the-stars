@@ -1,0 +1,9 @@
+cons: משך
+w: מָשַׁךְ
+def: draw, drag
+bdb: m.du
+family:
+- {w: מָשַׁךְ, x: māšak, p: vb, d: draw, li: htj}
+- {w: מֶשֶׁךְ, x: mešek, p: 'n.[m.]', d: a drawing, li: hth}
+- {w: מֶשֶׁךְ, x: mešek, p: n.pr.gent, d: Mesech, li: hti}
+- {w: מֹשֶׁכֶת, x: mōšeket, p: n.f, d: cord, r: Job.38.31, li: hts}

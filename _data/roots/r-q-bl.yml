@@ -1,0 +1,17 @@
+cons: פלג
+w: פָּלַג
+def: split, divide
+bdb: q.bl
+note: >-
+  Divide; a channel for water. Peleg; 'like a tree planted by the rivers (palgei) of water'
+  (Ps 1:3).
+family:
+- {w: פָּלַג, x: pālag, p: vb, d: split, li: keu}
+- {w: פֶּלֶג, x: peleg, p: n.m, d: channel, li: kes}
+- {w: פֶּלֶג, x: peleg, p: n.pr.m, d: Peleg, li: ket}
+- {w: פְּלַגָּה, x: pĕlaggâ, p: n.f, d: stream, li: kev}
+- {w: פְּלֻגָּה, x: pĕluggâ, p: n.f, d: division, r: 2Chr.35.5, li: kew}
+- {w: מִפְלַגָּה, x: miplaggâ, p: n.f, d: classification, r: 2Chr.35.12, li: hje}
+- {w: פִּלֶגֶשׁ, x: pilegeš, p: n.f, d: concubine, li: kex}
+- {w: פְּלָדָה, x: pĕlādâ, p: n.f, d: iron, r: Nah.2.4, li: key}
+- {w: פִּלְדָּשׁ, x: pildāš, p: n.pr.m, d: Pildash, r: Gen.22.22, li: kez}

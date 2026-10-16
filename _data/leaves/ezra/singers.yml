@@ -1,0 +1,11 @@
+en: the singers
+heb: הַמְשֹׁרְרִים
+xlit: hamšōrĕrîm
+gloss: the ones who sing
+parent: levi
+kind: of
+ref: Ezra.10.24
+order: 370
+flags: g
+roots:
+- {root: שיר, id: r-v-cv}

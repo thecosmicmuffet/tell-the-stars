@@ -1,0 +1,20 @@
+en: Gad
+heb: גָּד
+xlit: gād
+gloss: fortune; a troop
+parent: jacob
+kind: begat
+ref: Gen.30.11
+order: 183
+roots:
+- {root: גדד, id: r-c-ao}
+naming:
+- {ref: Gen.30.11, text: 'And Leah said, A troop cometh: and she called his name Gad.'}
+kq: {k: בגד, q: בָּא גָד, ref: Gen.30.11, note: 'written as one word, read as two'}
+links:
+- {to: zilpah, kind: mother}
+strong: '1410'
+li: cen
+note: >-
+  'A troop cometh' (Gen 30:11). The written text is one word, bagad, 'with fortune'; the Masoretic
+  reading divides it, ba gad, 'fortune comes.' Gad is luck, and a god of fortune (Isa 65:11).

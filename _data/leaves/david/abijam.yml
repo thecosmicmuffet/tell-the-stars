@@ -1,0 +1,19 @@
+en: Abijam
+heb: אֲבִיָּם
+xlit: ʾăbîyām
+gloss: 'my father is the sea (Abijah: my father is Yah)'
+parent: rehoboam
+kind: begat
+ref: 1Kgs.15.1
+order: 336
+roots:
+- {root: אבה, id: r-a-ae}
+- {root: ימם, id: r-j-br, role: pun}
+- {root: יה, id: Y}
+aliases:
+- {en: Abijah, ref: 2Chr.13.1, by: Chronicles, note: my father is Yah, heb: אֲבִיָּה}
+strong: '38'
+li: abl
+note: >-
+  Kings calls him Abijam, my father is the sea (yam); Chronicles calls him Abijah, my father
+  is Yah (2 Chr 13:1). One letter apart.

@@ -1,0 +1,23 @@
+en: Bath-sheba
+heb: בַּת־שֶׁבַע
+xlit: bat-šebaʿ
+gloss: daughter of the oath; daughter of seven
+parent: eliam
+kind: begat
+ref: 2Sam.11.3
+order: 326
+flags: f
+roots:
+- {root: בן, id: r-b-ca}
+- {root: שבע, id: r-v-av}
+aliases:
+- {en: Bath-shua, ref: 1Chr.3.5, by: Chronicles, note: the name of Judah's Canaanite wife,
+  heb: בַּת־שׁוּעַ}
+links:
+- {to: uriah, kind: wife of}
+- {to: david, kind: wife of}
+note: >-
+  Bat-sheva: daughter of the oath, or daughter of seven. 'The daughter of Eliam, the wife
+  of Uriah the Hittite' (2 Sam 11:3). Chronicles calls her Bath-shua (1 Chr 3:5), the name
+  of Judah's Canaanite wife. Matthew names her only by her Hittite husband: 'her that had
+  been the wife of Urias' (1:6).

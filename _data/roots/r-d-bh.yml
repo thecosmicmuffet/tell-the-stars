@@ -1,0 +1,22 @@
+cons: דין
+w: דִּין
+def: judge, act as judge
+bdb: d.bh
+note: >-
+  Judge. Dan, Dinah, Medan, Midian.
+family:
+- {w: דִּין, x: dîn, p: vb, d: judge, li: ctj}
+- {w: דִּין, x: dîn, p: 'n.[m.]', d: judgment, li: ctk}
+- {w: דִּינָה, x: dînâ, p: n.pr.f, d: Dinah, li: ctm}
+- {w: דָּן, x: dān, p: n.pr.m, d: Daniel, li: cvn}
+- {w: דָּנִי, x: dānî, p: adj.gent, d: Danite, li: cvt}
+- {w: דַּיָּן, x: dayyān, p: n.m, d: judge, li: ctl}
+- {w: דָּנִאֵל, x: dāniʾēl, p: n.pr.m, d: Daniel, li: cvp}
+- {w: מָדוֹן, x: mādôn, p: n.m, d: strife, li: glx}
+- {w: מָדוֹן, x: mādôn, p: n.pr.loc, d: Madon, li: gly}
+- {w: מְדָן, x: mĕdān, p: n.pr.m, d: Medan, li: gmr}
+- {w: מִדְיָן, x: midyān, p: n.pr.m, d: Midian, li: gmh}
+- {w: מִדְיָנִי, x: midyānî, p: adj.gent, d: Midianite, li: gmk}
+- {w: מְדִינָה, x: mĕdînâ, p: m.f, d: province, li: gmj}
+- {w: יָדוֹן, x: yādôn, p: n.pr.m, d: Jadon, r: Neh.3.7, li: euo}
+- {w: דִּיפַת, x: dîpat, p: n.pr.m, d: Riphath, r: 1Chr.1.6, li: ctn}

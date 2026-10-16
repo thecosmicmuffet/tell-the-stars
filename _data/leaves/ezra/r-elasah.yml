@@ -1,0 +1,13 @@
+en: Elasah
+heb: אֶלְעָשָׂה
+xlit: ʾelʿāśâ
+gloss: God has made
+parent: pashur
+kind: house
+ref: Ezra.10.22
+order: 409
+roots:
+- {root: עשה, id: r-p-fy}
+- {root: אל, id: E}
+strong: '501'
+li: auh

@@ -1,0 +1,16 @@
+en: Zimran
+heb: זִמְרָן
+xlit: zimrān
+gloss: song, celebrated
+parent: abraham
+kind: begat
+ref: Gen.25.2
+order: 129
+roots:
+- {root: זמר, id: r-g-bs}
+links:
+- {to: keturah, kind: mother}
+strong: '2175'
+li: djo
+note: >-
+  Song.

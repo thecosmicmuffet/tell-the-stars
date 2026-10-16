@@ -1,0 +1,8 @@
+cons: מת
+w: מַת
+def: male, man
+bdb: m.ea
+family:
+- {w: מַת, x: mat, p: n.m, d: male, li: hwa}
+- {w: מְתוּשָׁאֵל, x: mĕtûšāʾēl, p: n.pr.m, d: Methusael, li: hwg}
+- {w: מְתוּשֶׁלַח, x: mĕtûšelaḥ, p: n.pr.m, d: Methuselah, li: hwh}

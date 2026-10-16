@@ -1,0 +1,18 @@
+char: ו
+position: 6
+value: 6
+name: vav
+name_heb: וָו
+picture: a peg or hook
+meaning: hook, peg
+sefer_yetzirah: simple
+greek: Ϝ digamma; Υ upsilon
+latin: F, U, V, W, Y
+near:
+- {char: י, note: a long yod and a short vav are the commonest slip in the scrolls}
+- {char: ז, note: give a vav a head and it is zayin}
+note: >-
+  The peg: 'the hooks of the pillars' (Exod 27:10) are their vavim. As a word it is 'and',
+  the hook that joins each clause of Genesis to the next. In the West one letter unfolded
+  into five: through Greek digamma it became F, and through upsilon it became V, which split
+  into U, doubled into W, and came back from Greek as Y.

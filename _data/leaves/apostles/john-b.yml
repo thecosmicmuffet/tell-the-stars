@@ -1,0 +1,25 @@
+en: John the Baptist
+heb: יוֹחָנָן
+xlit: yôḥānān
+greek: Ἰωάννης
+gloss: Yah has been gracious
+parent: zacharias
+kind: begat
+ref: Luke.1.63
+order: 542
+roots:
+- {root: חנן, id: r-h-dz}
+- {root: יה, id: Y}
+naming:
+- {ref: Luke.1.60, text: 'And his mother answered and said, Not so ; but he shall be called
+    John.'}
+- {ref: Luke.1.63, text: 'And he asked for a writing table, and wrote, saying, His name is
+    John. And they marvelled all.'}
+links:
+- {to: elisabeth, kind: mother}
+- {to: r-jehohanan, kind: same name as}
+note: >-
+  The kin wanted to name him after his father. 'His mother answered and said, Not so; but
+  he shall be called John. And they said unto her, There is none of thy kindred that is called
+  by this name' (Luke 1:60-61). His father wrote 'His name is John,' and his mouth was opened
+  (1:63-64): a name that breaks with the line, given by both parents.

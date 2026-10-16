@@ -1,0 +1,28 @@
+en: Benjamin
+heb: בִנְיָמִין
+xlit: binyāmîn
+gloss: son of the right hand; son of the south
+parent: jacob
+kind: begat
+ref: Gen.35.18
+order: 189
+roots:
+- {root: בן, id: r-b-ca}
+- {root: ימן, id: r-j-bs}
+- {root: און, id: r-a-ca, role: pun}
+- {root: און, id: r-a-cb, role: pun}
+aliases:
+- {en: Ben-oni, ref: Gen.35.18, by: 'Rachel, dying', note: 'son of my sorrow, or son of my
+    strength; his father renamed him', heb: בֶּן־אוֹנִי}
+naming:
+- {ref: Gen.35.18, text: 'And it came to pass, as her soul was in departing, (for she died)
+    that she called his name Ben-oni: but his father called him Benjamin.'}
+links:
+- {to: rachel, kind: mother}
+strong: '1144'
+li: btr
+note: >-
+  Dying, Rachel 'called his name Benoni: but his father called him Benjamin' (Gen 35:18).
+  Oni can be read 'my sorrow' or 'my strength' (49:3, 'the beginning of my strength (oni)').
+  Benjamin, son of the right hand. Both Sauls come from this tribe: the king, and the apostle
+  who wrote 'of the tribe of Benjamin' (Phil 3:5).

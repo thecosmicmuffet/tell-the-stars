@@ -1,0 +1,18 @@
+cons: קדם
+w: קדם
+bdb: s.al
+family:
+- {w: קדם, x: qdm, li: lda}
+- {w: קֶדֶם, x: qedem, p: 'n.[m.]', d: front, r: Deut.33.15, li: lcy}
+- {w: קָדַם, x: qādam, p: vb, d: come in front, li: lcz}
+- {w: קֵדֶם, x: qēdem, p: adv, d: eastward, li: lcx}
+- {w: קַדְמָה, x: qadmâ, p: n.f, d: antiquity, li: ldd}
+- {w: קִדְמָה, x: qidmâ, p: n.f, d: front, li: ldb}
+- {w: קֵדְמָה, x: qēdĕmâ, p: n.pr.m, d: Kedemah, li: ldc}
+- {w: קָדִים, x: qādîm, p: n.m, d: East, li: lcw}
+- {w: קְדוּמִים, x: qādûm, p: 'n.[m.]pl', d: ancient, r: Judg.5.21, li: lcs}
+- {w: קַדְמוֹן, x: qadmôn, p: adj, d: eastern, r: Ezek.47.8, li: lde}
+- {w: קַדְמֹנִי, x: qadmōnî, p: adj, d: former, li: ldh}
+- {w: קַדְמֹנִי, x: qadmōnî, p: adj.gent, d: Easterners, r: Gen.15.19, li: ldi}
+- {w: קְדֵמֹת, x: qĕdēmôt, p: n.pr.loc, d: Kedemoth, li: ldf}
+- {w: קַדְמִיאֵל, x: qadmîʾēl, p: n.pr.m, d: Kadmiel, li: ldg}

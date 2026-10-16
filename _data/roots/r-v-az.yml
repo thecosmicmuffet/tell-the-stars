@@ -1,0 +1,12 @@
+cons: שבת
+w: שָׁבַת
+def: cease, desist
+bdb: v.az
+family:
+- {w: שָׁבַת, x: šābat, p: vb, d: cease, li: mjd}
+- {w: שֶׁבֶת, x: šebet, p: n.f, d: cessation, li: mja}
+- {w: שַׁבָּת, x: šabbāt, p: n.f, d: Sabbath, li: mjc}
+- {w: שָׁבַת, x: šābat, p: vb. denom, d: keep, li: mje}
+- {w: שַׁבָּתוֹן, x: šabbātôn, p: n.m, d: sabbath observance, li: mjf}
+- {w: שַׁבְּתַי, x: šabbĕtay, p: n.pr, d: Shabbethai, li: mjg}
+- {w: מִשְׁבָּת, x: mišbāt, p: 'n.[m.]', d: cessation, r: Lam.1.7, li: hrz}

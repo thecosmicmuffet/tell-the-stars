@@ -1,0 +1,31 @@
+en: Jacob
+heb: יַעֲקֹב
+xlit: yaʿăqōb
+gloss: heel-holder; may he protect
+parent: isaac
+kind: begat
+ref: Gen.25.26
+order: 156
+roots:
+- {root: עקב, id: r-p-eu}
+- {root: שרה, id: r-u-ce, role: pun}
+- {root: אל, id: E}
+aliases:
+- {en: Israel, ref: Gen.32.28, by: the wrestler, note: who would not give his own name, heb: יִשְׂרָאֵל}
+naming:
+- {ref: Gen.25.26, text: 'And after that came his brother out, and his hand took hold on Esau’s
+    heel; and his name was called Jacob: and Isaac was threescore years old when she bare
+    them.'}
+- {ref: Gen.32.28, text: 'And he said, Thy name shall be called no more Jacob, but Israel:
+    for as a prince hast thou power with God and with men, and hast prevailed.'}
+links:
+- {to: rebekah, kind: mother}
+strong: '3290'
+li: feu
+note: >-
+  'His hand took hold on Esau's heel; and his name was called Jacob' (Gen 25:26): heel-holder,
+  or as a name, may God protect. Esau hears the supplanter (27:36). At the Jabbok: 'Thy name
+  shall be called no more Jacob, but Israel: for as a prince hast thou power with God and
+  with men' (32:28). When Jacob asks the wrestler's name, he is blessed instead (32:29). Jeremiah:
+  'The heart is deceitful (aqov) above all things' (Jer 17:9), two verses after the blessed
+  tree.

@@ -1,0 +1,20 @@
+cons: יבל
+w: יָבַל
+def: conduct, bear along
+bdb: j.ah
+note: >-
+  Carry, lead along, flow. Jabal and Jubal; yuval, a stream (Jer 17:8); yovel, the ram's horn
+  and the jubilee.
+family:
+- {w: יָבַל, x: yābal, p: vb, d: conduct, li: est}
+- {w: יָבָל, x: yābāl, p: 'n.[m.]', d: watercourse, li: esu}
+- {w: יָבָל, x: yābāl, p: n.pr.m, d: Jabal, r: Gen.4.20, li: esv}
+- {w: יוּבַל, x: yûbal, p: 'n.[m.]', d: stream, r: Jer.17.8, li: exg}
+- {w: יוּבָל, x: yûbāl, p: n.pr.m, d: Jubal, r: Gen.4.21, li: exh}
+- {w: יְבוּל, x: yĕbûl, p: n.m, d: produce, li: esn}
+- {w: בּוּל, x: bûl, p: 'n.[m.]', d: produce, li: blp}
+- {w: יוֹבֵל, x: yôbēl, p: n.m, d: ram, li: exf}
+- {w: יַבָּל, x: yabbāl, p: adj, d: running, r: Lev.22.22, li: ess}
+- {w: אוּבַל, x: ʾûbal, p: 'n.[m.]', d: stream, r: Dan.8.2, li: ahk}
+- {w: תֵּבֵל, x: tēbēl, p: n.f, d: world, li: nnz}
+- {w: יִבְלְעָם, x: yiblĕʿām, p: n.pr.loc, d: Ibleam, li: esw}

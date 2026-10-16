@@ -1,0 +1,13 @@
+en: Mattaniah
+heb: מַתַּנְיָה
+xlit: mattanyāhû
+gloss: gift of Yah
+parent: zattu
+kind: house
+ref: Ezra.10.27
+order: 435
+roots:
+- {root: נתן, id: r-n-gg}
+- {root: יה, id: Y}
+strong: '4983'
+li: hwv

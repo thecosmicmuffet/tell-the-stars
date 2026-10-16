@@ -1,0 +1,23 @@
+en: Obed
+heb: עוֹבֵד
+xlit: ʿôbēd
+gloss: servant, worshipper
+parent: boaz
+kind: begat
+ref: Ruth.4.17
+order: 316
+roots:
+- {root: עבד, id: r-p-ac}
+naming:
+- {ref: Ruth.4.17, text: 'And the women her neighbours gave it a name, saying, There is a
+    son born to Naomi; and they called his name Obed: he is the father of Jesse, the father
+    of David.'}
+links:
+- {to: ruth, kind: mother}
+- {to: naomi, kind: nursed by}
+strong: '5744'
+li: jde
+note: >-
+  'And the women her neighbours gave it a name, saying, There is a son born to Naomi; and
+  they called his name Obed' (Ruth 4:17): the only child in scripture named by the neighbours.
+  Oved, servant.

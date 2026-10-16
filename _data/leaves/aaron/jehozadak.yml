@@ -1,0 +1,17 @@
+en: Jehozadak
+heb: יְהוֹצָדָק
+xlit: yĕhôṣādāq
+gloss: Yah is righteous
+parent: seraiah
+kind: begat
+ref: 1Chr.6.14
+wref: 1Chr.5.40
+order: 296
+roots:
+- {root: צדק, id: r-r-ar}
+- {root: יה, id: Y}
+strong: '3087'
+li: ewl
+note: >-
+  'And Jehozadak went into captivity, when the LORD carried away Judah and Jerusalem by the
+  hand of Nebuchadnezzar' (1 Chr 6:15).

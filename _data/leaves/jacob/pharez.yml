@@ -1,0 +1,22 @@
+en: Pharez
+heb: פָּרֶץ
+xlit: pereṣ
+gloss: breach, breaking out
+parent: judah
+kind: begat
+ref: Gen.38.29
+order: 209
+roots:
+- {root: פרץ, id: r-q-di}
+naming:
+- {ref: Gen.38.29, text: 'And it came to pass, as he drew back his hand, that, behold, his
+    brother came out: and she said, How hast thou broken forth? this breach be upon thee:
+    therefore his name was called Pharez.'}
+links:
+- {to: tamar, kind: mother}
+strong: '6557'
+li: klp
+note: >-
+  'How hast thou broken forth? this breach (perets) be upon thee' (Gen 38:29). The twin who
+  came out ahead of the scarlet thread. David's line is headed 'the generations of Pharez'
+  (Ruth 4:18), in the formula Genesis uses for its own sections.

@@ -1,0 +1,13 @@
+en: Jehiel
+heb: יחִיאֵל
+xlit: yĕḥîʾēl
+gloss: God lives
+parent: harim-p
+kind: house
+ref: Ezra.10.21
+order: 402
+roots:
+- {root: חיה, id: r-h-cd}
+- {root: אל, id: E}
+strong: '3171'
+li: ezy

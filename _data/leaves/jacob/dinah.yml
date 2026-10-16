@@ -1,0 +1,20 @@
+en: Dinah
+heb: דִּינָה
+xlit: dînâ
+gloss: judgment, vindication
+parent: jacob
+kind: begat
+ref: Gen.30.21
+order: 187
+flags: f
+roots:
+- {root: דין, id: r-d-bh}
+naming:
+- {ref: Gen.30.21, text: 'And afterwards she bare a daughter, and called her name Dinah.'}
+links:
+- {to: leah, kind: mother}
+strong: '1783'
+li: ctm
+note: >-
+  Dinah, judgment: the feminine of Dan. The only daughter of Jacob whose birth is recorded,
+  and the only child of his with no naming speech: 'and called her name Dinah' (Gen 30:21).

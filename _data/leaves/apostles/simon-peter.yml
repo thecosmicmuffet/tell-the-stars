@@ -1,0 +1,26 @@
+en: Simon Peter
+heb: שִׁמְעוֹן
+xlit: šimʿôn
+greek: Σίμων Πέτρος
+gloss: heard; stone (Cephas)
+parent: jona
+kind: son
+ref: Matt.16.17
+order: 519
+roots:
+- {root: שמע, id: r-v-ed}
+aliases:
+- {en: Cephas, ref: John.1.42, by: Jesus, note: 'which is by interpretation, A stone', heb: כֵּיפָא}
+- {en: Peter, ref: Matt.16.18, by: Jesus, note: upon this rock I will build}
+naming:
+- {ref: John.1.42, text: 'And he brought him to Jesus. And when Jesus beheld him, he said,
+    Thou art Simon the son of Jona: thou shalt be called Cephas, which is by interpretation,
+    A stone.'}
+- {ref: Matt.16.18, text: 'And I say also unto thee, That thou art Peter, and upon this rock
+    I will build my church; and the gates of hell shall not prevail against it.'}
+note: >-
+  'Thou art Simon the son of Jona: thou shalt be called Cephas, which is by interpretation,
+  A stone' (John 1:42). Blessed, then renamed: 'thou art Peter, and upon this rock I will
+  build my church' (Matt 16:18), the son of the dove made a stone. Seven verses later the
+  same man hears 'Get thee behind me, Satan' (16:23); 'behind me,' opiso mou, is also where
+  a disciple walks (16:24, 'If any man will come after me').

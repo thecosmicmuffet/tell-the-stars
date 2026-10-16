@@ -1,0 +1,14 @@
+en: Abishua
+heb: אֲבִישׁוּעַ
+xlit: ʾăbîšûaʿ
+gloss: my father is salvation, noble
+parent: phinehas
+kind: begat
+ref: 1Chr.6.4
+wref: 1Chr.5.30
+order: 277
+roots:
+- {root: אבה, id: r-a-ae}
+- {root: שוע, id: r-v-bv}
+strong: '50'
+li: aby

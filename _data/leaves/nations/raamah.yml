@@ -1,0 +1,13 @@
+en: Raamah
+heb: רַעְמָה
+xlit: raʿmâ
+gloss: trembling? thunder?
+parent: cush
+kind: begat
+ref: Gen.10.7
+order: 50
+flags: n
+roots:
+- {root: רעם, id: r-t-do, role: maybe}
+strong: '7484'
+li: mbc

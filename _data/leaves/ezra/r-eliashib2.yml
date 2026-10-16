@@ -1,0 +1,13 @@
+en: Eliashib
+heb: אֶלְיָשִׁיב
+xlit: ʾelyāšîb
+gloss: God restores, brings back
+parent: zattu
+kind: house
+ref: Ezra.10.27
+order: 434
+roots:
+- {root: שוב, id: r-v-bn}
+- {root: אל, id: E}
+strong: '475'
+li: atf

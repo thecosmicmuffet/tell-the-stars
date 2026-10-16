@@ -1,0 +1,16 @@
+en: Mary
+heb: מִרְיָם
+xlit: miryām
+greek: Μαρία
+gloss: Miriam (beloved? bitter?)
+parent: joseph-m
+kind: wife
+ref: Matt.1.16
+order: 516
+flags: f
+links:
+- {to: elisabeth, kind: cousin of}
+- {to: miriam, kind: same name as}
+note: >-
+  Miryam, Moses' sister's name. Luke calls her a cousin of Elisabeth, who is 'of the daughters
+  of Aaron' (Luke 1:5, 36).

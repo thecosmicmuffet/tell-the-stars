@@ -1,0 +1,33 @@
+cons: שלם
+w: שָׁלֵם
+def: be complete, sound
+bdb: v.ds
+note: >-
+  Whole, complete; repay; peace. Solomon, Shallum, Meshullam, Shelemiah, Absalom, Shillem.
+family:
+- {w: שָׁלֵם, x: šālēm, p: vb, d: be complete, li: mwv}
+- {w: שָׁלוֹם, x: yĕhōwâ šālôm, p: n.m, d: completeness, li: evx}
+- {w: שֶׁלֶם, x: šelem, p: 'n.[m.]', d: sacrifice for alliance, li: mwu}
+- {w: שָׁלַם, x: šālam, p: vb. denom, d: be in covenant of peace, li: mwy}
+- {w: שָׁלֵם, x: šālēm, p: adj, d: complete, li: mwx}
+- {w: שָׁלֵם, x: šālēm, p: n.pr.loc, d: Salem, li: mww}
+- {w: שִׁלֵּם, x: šillēm, p: 'n.[m.]', d: recompense, li: mwt}
+- {w: שִׁלֵּם, x: šillēm, p: n.pr.m, d: Shillem, li: mws}
+- {w: שִׁלֵּמִי, x: šillēmî, p: adj.gent, d: Shillemites, r: Num.26.49, li: mxh}
+- {w: שַׁלְמֹן, x: šalmōn, p: 'n.[m.]', d: reward, r: Isa.1.23, li: mxo}
+- {w: שִׁלּוּם, x: šillûm, p: 'n.[m.]', d: requital, li: mvm}
+- {w: שִׁלֻּמָה, x: šillumâ, p: n.f, d: requital, r: Ps.91.8, li: mxb}
+- {w: שַׁלּוּם, x: šallûm, p: n.pr.m, d: Shallum, li: mvn}
+- {w: שַׁלּוּן, x: šallûn, p: n.pr.m, d: Shallum, r: Neh.3.15, li: mvp}
+- {w: מְשֻׁלָּם, x: mĕšullām, p: n.pr.m, d: Meshullam, r: Ezra.10.29, li: hue}
+- {w: מְשִׁלֵּמוֹת, x: mĕšillēmôt, p: n.pr.m, d: Meshillemoth. Compare, li: huf}
+- {w: מְשֶׁלֶמְיָה(וּ), x: mĕšelemyāhû, p: n.pr.m, d: Meshelemiah, li: hug}
+- {w: מְשֻׁלֶּמֶת, x: mĕšullemet, p: n.pr.f, d: Meshullemeth, r: 2Kgs.21.19, li: hui}
+- {w: שְׁלֹמֹה, x: šĕlōmōh, p: n.pr.m, d: Solomon, li: mxa}
+- {w: שְׁלֹמוֹת, x: šĕlōmôt, p: n.pr.m, d: Shelomith (from the margin), li: mxf}
+- {w: שְׁלֹמִית, x: šĕlōmît, p: n.pr.f, d: Shelomith, li: mxm}
+- {w: שְׁלֹמִי, x: šĕlōmî, p: n.pr.m, d: Shelomi, r: Num.34.27, li: mxg}
+- {w: שְׁלֻמִיאֵל, x: šĕlumîʾēl, p: n.pr.m, d: Shelumiel, li: mxj}
+- {w: שֶׁלֶמְיָה(וּ), x: šelemyāhû, p: n.pr.m, d: Shelemiah, li: mxk}
+- {w: שַׁלְמָן, x: šalman, p: n.pr.m, d: Shalman. Compare, r: Hos.10.14, li: mxn}
+- {w: שַׁלְמַנְאֶסֶר, x: šalmanʾeser, p: n.pr.m, d: Shalmaneser. Comp, li: mxp}

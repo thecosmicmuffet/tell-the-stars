@@ -1,0 +1,31 @@
+cons: מלך
+w: מלך
+def: possess, own exclusively, counsel, advise
+homonym: I
+bdb: m.cd
+family:
+- {w: מלך, x: mlk, d: 'possess, own exclusively, counsel, advise', li: haj}
+- {w: מֶלֶךְ, x: melek, p: n.m, d: king, li: hae}
+- {w: מַלְכָּה, x: malkâ, p: n.f, d: queen, li: ham}
+- {w: מְלֶכֶת, x: mĕleket, p: n.f, d: queen, li: haw}
+- {w: מָלַךְ, x: mālak, p: vb. denom, d: be king, r: Dan.9.1, li: hag}
+- {w: מֶלֶךְ, x: melek, p: n.pr.m, d: Melech, li: haf}
+- {w: מֹלֶךְ, x: mōlek, p: n.pr.div, d: Molech. Compare, li: hai}
+- {w: מֹלֶכֶת, x: mōleket, p: n.pr.f, d: Hammoleketh (including the article), r: 1Chr.7.18,
+  li: hax}
+- {w: מִלְכָּה, x: milkâ, p: n.pr.f, d: Milcah, li: hal}
+- {w: מְלוּכָה, x: mĕlûkâ, p: n.f, d: kingship, li: gzm}
+- {w: מַלְכוּת, x: malkût, p: n.f, d: royalty, li: han}
+- {w: מַמְלָכָה, x: mamlākâ, p: n.f, d: kingdom, li: hbu}
+- {w: מַמְלָכוּת, x: mamlākût, p: n.f, d: kingdom, li: hbv}
+- {w: מַלְכִּיאֵל, x: malkîʾēl, p: n.pr.m, d: Malchiel, li: hao}
+- {w: מַלְכִּיאֵלִי, x: malkîʾēlî, p: adj.gent, d: Malkielite, r: Num.26.45, li: hap}
+- {w: מַלְכִּיָּהוּ, x: malkîyāhû, p: n.pr.m, d: Malchiah, li: haq}
+- {w: מַלְכִּי־צֶדֶק, x: malkî-ṣedeq, p: n.pr.m, d: Melchizedek, li: har}
+- {w: מַלְכִּירָם, x: malkîrām, p: n.pr.m, d: Malchiram, r: 1Chr.3.18, li: has}
+- {w: מַלְכִּישׁוּעַ, x: malkîšûaʿ, p: n.pr.m, d: Malchishua, li: hat}
+- {w: מַלְכָּם, x: malkām, p: n.pr.m, d: Malcham, li: hav}
+- {w: מִלכֹּם, x: milkōm, p: n.pr.div, d: Milcom, li: hau}
+- {w: יַמְלֵךְ, x: yamlēk, p: n.pr.m, d: Jamlech, r: 1Chr.4.34, li: fch}
+- {w: מַלּוּךְ, x: mallûk, p: n.pr.m, d: Malluch, li: gzl}
+- {w: מלוכי, x: mĕlîkû, p: n.pr.m, d: Melichu, r: Neh.12.14, li: hab}

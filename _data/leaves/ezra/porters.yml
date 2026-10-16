@@ -1,0 +1,11 @@
+en: the porters
+heb: הַשֹּׁעֲרִים
+xlit: haššōʿărîm
+gloss: the gatekeepers
+parent: levi
+kind: of
+ref: Ezra.10.24
+order: 371
+flags: g
+roots:
+- {root: שער, id: r-v-fa}

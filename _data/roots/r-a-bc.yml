@@ -1,0 +1,13 @@
+cons: אדם
+w: אדם
+def: make, produce
+homonym: I
+bdb: a.bc
+note: >-
+  Red; earth. Adam, adamah, Edom; dam, blood; odem, the sardius.
+family:
+- {w: אדם, x: ʾdm, d: 'make, produce', li: aff}
+- {w: אָדָם, x: ʾādām, p: n.m, d: Adam, r: Gen.1.27, li: afa}
+- {w: אֲדָמָה, x: ʾădāmâ, p: n.f, d: Adamah, li: afi}
+- {w: אַדְמָה, x: ʾadmâ, p: n.pr.loc, d: Admah, li: afk}
+- {w: אֲדָמִי הַנֶּקֶב, x: ʾădāmî hanneqeb, p: n.pr.loc, d: Adami, r: Josh.19.33, li: afn}

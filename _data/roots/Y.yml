@@ -1,0 +1,50 @@
+cons: יה
+w: יָהּ
+def: Yah, the short form of the Name
+bdb: e.az
+element: true
+note: >-
+  The short form of the Name, as in hallelu-yah. 'Extol him that rideth upon the heavens by
+  his name JAH' (Ps 68:4). In personal names it closes as -yah or -yahu (Mattaniah, Benaiah)
+  or opens as Yeho- or Yo- (Jehohanan, Joel). Every name carrying it feeds the tree's taproot.
+family:
+- {w: יָהּ, x: yāh, p: Np, d: 'Yah, the Name in short', r: Ps.68.5}
+- {w: יְהוָה, x: YHWH, p: Np, d: 'the LORD, the Name', r: Exod.3.15}
+- {w: הַלְלוּ־יָהּ, x: halĕlû-yāh, p: V, d: praise ye Yah, r: Ps.104.35}
+- {w: '־יָה, ־יָהוּ', x: '-yāh, -yāhû', p: Ne, d: 'closing element of a name: Mattan-iah'}
+- {w: 'יְהוֹ־, יוֹ־', x: 'yĕhô-, yô-', p: Ne, d: 'opening element of a name: Jeho-hanan, Jo-el'}
+- {w: הָוָה, x: hāwâ, p: vb, d: become, li: czx}
+- {w: הַוָּה, x: hawwâ, p: n.f, d: desire, li: czw}
+- {w: הַיָּה, x: hayyâ, p: n.f, d: destruction, r: Job.6.2, li: dap}
+- {w: הֹוָה, x: hōwâ, p: n.f, d: ruin, li: czy}
+- {w: יהוה, x: yĕhōwih, p: n.pr.dei, d: God, r: Exod.3.12-Exod.3.15, li: evs}
+- {w: יֵהוּא, x: yēhûʾ, p: n.pr.m, d: Jehu, li: evk}
+- {w: יְהוֹאָחָז, x: yĕhôʾāḥāz, p: n.pr.m, d: Jehoahaz. Compare, li: evl}
+- {w: יְהוֹאָשׁ, x: yĕhôʾāš, p: n.pr.m, d: Jehoash. Compare, li: evm}
+- {w: יְהוֹזָבָד, x: yĕhôzābād, p: n.pr.m, d: Jehozabad. Compare, li: evz}
+- {w: יְהוֹחָנָן, x: yĕhôḥānān, p: n.pr.m, d: Jehohanan, li: ewa}
+- {w: יְהוֹיָדָע, x: yĕhôyādāʿ, p: n.pr.m, d: Jehoiada. Compare, li: ewb}
+- {w: יְהוֹיָכִין, x: yĕhôyākîn, p: n.pr.m, d: Jehoiachin. Compare, li: ewc}
+- {w: יְהוֹיָקִים, x: yĕhôyāqîm, p: n.pr.m, d: Jehoiakim. Compare, li: ewd}
+- {w: יְהוֹיָרִיב, x: yĕhôyārîb, p: n.pr.m, d: Jehoiarib. Compare, li: ewe}
+- {w: יְהוּכַל, x: yĕhûkal, p: n.pr.m, d: Jehucal. Compare, li: ewf}
+- {w: יְהוֹנָדָב, x: yĕhônādāb, p: n.pr.m, d: Jehonadab, li: ewg}
+- {w: יְהוֹנָתָן, x: yĕhônātān, p: n.pr.m, d: Jonathan. Compare, li: ewh}
+- {w: יְהוֹעַדָּה, x: yĕhôʿaddâ, p: n.pr.m, d: Jehoada, li: ewj}
+- {w: יְהוֹעַדָּן, x: yĕhôʿaddān, p: n.pr.f, d: Jehoaddan, li: ewk}
+- {w: יְהוֹצָדָק, x: yĕhôṣādāq, p: n.pr.m, d: Jehozadek, li: ewl}
+- {w: יְהוֹרָם, x: yĕhôrām, p: n.pr.m, d: Jehoram, li: ewm}
+- {w: יְהוֹשֶׁבַע, x: yĕhôšebaʿ, p: n.pr.f, d: Jehosheba. Compare, li: ewn}
+- {w: יְהוֹשׁוּעַ, x: yĕhôšûaʿ, p: n.pr.m, d: Jehoshua, li: ewp}
+- {w: יְהוֹשָׁמָע, x: yĕhôšāmāʿ, p: n.pr.m, d: Hoshama, r: 1Chr.3.18, li: ewq}
+- {w: יְהוֹשָׁפָט, x: yĕhôšāpāṭ, p: n.pr.m, d: Jehoshaphat. Compare, li: ewr}
+- {w: יוֹאָב, x: yôʾāb, p: n.pr.m, d: Joab, li: ewy}
+- {w: יוֹאָח, x: yôʾāḥ, p: n.pr.m, d: Joah, li: ewz}
+- {w: יוֹאֵל, x: yôʾēl, p: n.pr.m, d: Joel, li: exb}
+- {w: יוֹזָכָר, x: yôzākār, p: n.pr.m, d: Jozachar, r: 2Kgs.12.22, li: exj}
+- {w: יוֹכֶבֶד, x: yôkebed, p: n.pr.f, d: Jochebed, li: exq}
+- {w: יוֹעֵד, x: yôʿēd, p: n.pr.m, d: Joed, r: Neh.11.7, li: eyj}
+- {w: יוֹעֶזֶר, x: yôʿezer, p: n.pr.m, d: Joezer, r: 1Chr.12.7, li: eyk}
+- {w: יוֹעָשׁ, x: yôʿāš, p: n.pr.m, d: Joash, li: eyl}
+- {w: יוֹתָם, x: yôtām, p: n.pr.m, d: Jotham, li: eyx}
+- {w: הוֹהָם, x: hôhām, p: n.pr.m, d: Hoham, r: Josh.10.3, li: czz}

@@ -1,0 +1,18 @@
+en: Eliphaz
+heb: אֱלִיפָז
+xlit: ʾĕlîpaz
+gloss: my God is fine gold
+parent: esau
+kind: begat
+ref: Gen.36.4
+order: 159
+roots:
+- {root: פזז, id: r-q-ay}
+- {root: אל, id: E}
+links:
+- {to: adah-e, kind: mother}
+strong: '464'
+li: asu
+note: >-
+  Eliphaz, my God is fine gold. His son Teman stands behind 'Eliphaz the Temanite,' who comforts
+  Job (Job 2:11).

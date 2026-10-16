@@ -1,0 +1,15 @@
+en: Azareel
+heb: עֲזַרְאֵל
+xlit: ʿăzarʾēl
+gloss: God has helped
+parent: bani2
+kind: house
+ref: Ezra.10.41
+order: 493
+roots:
+- {root: עזר, id: r-p-bz}
+- {root: אל, id: E}
+strong: '5832'
+li: jgs
+note: >-
+  Azar'el, God has helped.

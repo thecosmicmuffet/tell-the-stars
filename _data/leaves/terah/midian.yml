@@ -1,0 +1,18 @@
+en: Midian
+heb: מִדְיָן
+xlit: midyān
+gloss: strife, judgment
+parent: abraham
+kind: begat
+ref: Gen.25.2
+order: 132
+flags: n
+roots:
+- {root: דין, id: r-d-bh}
+links:
+- {to: keturah, kind: mother}
+strong: '4080'
+li: gmh
+note: >-
+  From din, judgment or strife. Moses' wife Zipporah is a daughter of the priest of Midian,
+  so the foreign wife is also a cousin, of Abraham's seed through Keturah.

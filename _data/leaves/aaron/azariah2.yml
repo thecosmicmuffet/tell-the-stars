@@ -1,0 +1,14 @@
+en: Azariah
+heb: עֲזַרְיָה
+xlit: ʿăzaryāhû
+gloss: Yah has helped
+parent: johanan1
+kind: begat
+ref: 1Chr.6.10
+wref: 1Chr.5.36
+order: 288
+roots:
+- {root: עזר, id: r-p-bz}
+- {root: יה, id: Y}
+strong: '5838'
+li: jgy

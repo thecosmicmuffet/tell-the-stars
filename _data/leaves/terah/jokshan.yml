@@ -1,0 +1,14 @@
+en: Jokshan
+heb: יָקְשָׁן
+xlit: yoqšān
+gloss: fowler, snarer
+parent: abraham
+kind: begat
+ref: Gen.25.2
+order: 130
+roots:
+- {root: יקש, id: r-j-de}
+links:
+- {to: keturah, kind: mother}
+strong: '3370'
+li: fhx

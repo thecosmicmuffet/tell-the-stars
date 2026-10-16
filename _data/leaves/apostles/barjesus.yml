@@ -1,0 +1,27 @@
+en: Bar-jesus
+heb: בַּר־יֵשׁוּעַ
+xlit: bar-yēšûaʿ
+greek: Βαριησοῦς
+gloss: son of Jeshua; Elymas, the magus
+parent: judah
+kind: people
+ref: Acts.13.6
+order: 536
+roots:
+- {root: בן, id: r-b-ca}
+- {root: ישע, id: r-j-dy}
+aliases:
+- {en: Elymas, ref: Acts.13.8, by: Luke, note: for so is his name by interpretation}
+- {en: child of the devil, ref: Acts.13.10, by: Paul, note: 'son of the diabolos, the one
+    who throws across'}
+naming:
+- {ref: Acts.13.8, text: 'But Elymas the sorcerer (for so is his name by interpretation) withstood
+    them, seeking to turn away the deputy from the faith.'}
+note: >-
+  'A certain sorcerer, a false prophet, a Jew, whose name was Barjesus' (Acts 13:6): son of
+  Jeshua. In English bar also means except, or a beam across a road, and he stood across the
+  way, 'seeking to turn away the deputy from the faith' (13:8). Paul named him again: 'thou
+  child of the devil' (13:10), son of the diabolos, from diaballein, to throw across; the
+  opposite of a symbolon, thrown together. His sentence was Saul's own: 'thou shalt be blind,
+  not seeing the sun for a season,' and he went 'seeking some to lead him by the hand' (13:11),
+  the word Luke used for Saul led into Damascus (9:8).

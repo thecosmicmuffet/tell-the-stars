@@ -1,0 +1,13 @@
+en: James
+heb: יַעֲקֹב
+xlit: yaʿăqōb
+greek: Ἰάκωβος
+gloss: heel-holder (Jacob)
+parent: zebedee
+kind: son
+ref: Matt.4.21
+order: 522
+roots:
+- {root: עקב, id: r-p-eu}
+aliases:
+- {en: Boanerges, ref: Mark.3.17, by: Jesus, note: 'which is, The sons of thunder'}

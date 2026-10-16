@@ -1,0 +1,21 @@
+en: Naphtali
+heb: נַפְתָּלִי
+xlit: naptālî
+gloss: my wrestling
+parent: jacob
+kind: begat
+ref: Gen.30.8
+order: 182
+roots:
+- {root: פתל, id: r-q-ec}
+naming:
+- {ref: Gen.30.8, text: 'And Rachel said, With great wrestlings have I wrestled with my sister,
+    and I have prevailed: and she called his name Naphtali.'}
+links:
+- {to: bilhah, kind: mother}
+strong: '5321'
+li: iky
+note: >-
+  'With great wrestlings (naftulei elohim, wrestlings of God) have I wrestled with my sister,
+  and I have prevailed' (Gen 30:8). Rachel wrestles for this name the way Jacob will wrestle
+  for his.

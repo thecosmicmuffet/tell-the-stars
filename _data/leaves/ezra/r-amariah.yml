@@ -1,0 +1,13 @@
+en: Amariah
+heb: אֲמַרְיָה
+xlit: ʾămaryāhû
+gloss: Yah has said
+parent: bani2
+kind: house
+ref: Ezra.10.42
+order: 497
+roots:
+- {root: אמר, id: r-a-ea}
+- {root: יה, id: Y}
+strong: '568'
+li: awt

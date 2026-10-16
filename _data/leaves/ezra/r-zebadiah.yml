@@ -1,0 +1,13 @@
+en: Zebadiah
+heb: זְבַדְיָה
+xlit: zĕbadyāhû
+gloss: Yah has bestowed
+parent: immer
+kind: house
+ref: Ezra.10.20
+order: 398
+roots:
+- {root: זבד, id: r-g-ad}
+- {root: יה, id: Y}
+strong: '2069'
+li: dfg

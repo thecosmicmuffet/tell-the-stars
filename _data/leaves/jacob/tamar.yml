@@ -1,0 +1,18 @@
+en: Tamar
+heb: תָּמָר
+xlit: tāmār
+gloss: date palm
+parent: judah
+kind: wife
+ref: Gen.38.6
+order: 205
+flags: f
+roots:
+- {root: תמר, id: r-w-ba}
+links:
+- {to: er, kind: wife of}
+strong: '8559'
+li: nuc
+note: >-
+  The date palm: 'The righteous shall flourish like the palm tree (tamar)' (Ps 92:12). Matthew
+  names her first of the four women in Jesus' genealogy (1:3).

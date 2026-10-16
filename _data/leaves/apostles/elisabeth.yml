@@ -1,0 +1,18 @@
+en: Elisabeth
+heb: אֱלִישֶׁבַע
+xlit: ʾĕlîšebaʿ
+greek: Ἐλισάβετ
+gloss: my God is an oath (Elisheba)
+parent: aaron
+kind: people
+ref: Luke.1.5
+order: 541
+flags: f
+roots:
+- {root: שבע, id: r-v-av}
+- {root: אל, id: E}
+links:
+- {to: zacharias, kind: wife of}
+- {to: elisheba, kind: same name as}
+note: >-
+  Elisheva: the name of Aaron's wife, carried by a daughter of Aaron.

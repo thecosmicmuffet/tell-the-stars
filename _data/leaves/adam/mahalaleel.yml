@@ -1,0 +1,16 @@
+en: Mahalaleel
+heb: מַהֲלַלְאֵל
+xlit: mahălalʾēl
+gloss: praise of God
+parent: cainan
+kind: begat
+ref: Gen.5.12
+order: 20
+roots:
+- {root: הלל, id: r-e-bp}
+- {root: אל, id: E}
+years: {beget: 65, total: 895}
+strong: '4111'
+li: gnk
+note: >-
+  Mahalal-el, praise of God: the counterpart in Seth's list to Cain's Mehujael.

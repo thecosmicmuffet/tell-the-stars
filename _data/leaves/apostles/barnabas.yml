@@ -1,0 +1,24 @@
+en: Barnabas
+heb: בַּר נַבָּא
+xlit: bar nabbāʾ
+greek: Βαρναβᾶς
+gloss: son of consolation (Luke); son of Nebo? son of prophecy?
+parent: levi
+kind: people
+ref: Acts.4.36
+order: 535
+roots:
+- {root: בן, id: r-b-ca}
+aliases:
+- {en: Joses, ref: Acts.4.36, by: Luke, note: his own name before the apostles named him}
+naming:
+- {ref: Acts.4.36, text: 'And Joses, who by the apostles was surnamed Barnabas, (which is,
+    being interpreted, The son of consolation,) a Levite, and of the country of Cyprus,'}
+links:
+- {to: nebo, kind: name from, certainty: 0.4}
+note: >-
+  'Joses, who by the apostles was surnamed Barnabas, (which is, being interpreted, The son
+  of consolation,)' (Acts 4:36). The Aramaic behind it is disputed: bar nevu'ah, son of prophecy,
+  and Adolf Deissmann's Bar-Nebo, son of Nebo, a name found in Semitic inscriptions, have
+  both been proposed. If the second, the last house on Ezra's roll survives in the name of
+  the Levite who vouched for Saul (Acts 9:27).

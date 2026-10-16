@@ -1,0 +1,22 @@
+en: Noah
+heb: נֹחַ
+xlit: nōaḥ
+gloss: rest
+parent: lamech-s
+kind: begat
+ref: Gen.5.29
+order: 25
+roots:
+- {root: נוח, id: r-n-by}
+- {root: נחם, id: r-n-cr, role: pun}
+naming:
+- {ref: Gen.5.29, text: 'And he called his name Noah, saying, This same shall comfort us concerning
+    our work and toil of our hands, because of the ground which the LORD hath cursed.'}
+years: {beget: 500, total: 950}
+strong: '5146'
+li: idj
+note: >-
+  'This same shall comfort us (yenahamenu) concerning our work and toil of our hands, because
+  of the ground which the LORD hath cursed' (Gen 5:29). The name is noah, rest; the explanation
+  reaches for naham, comfort. The Septuagint reads 'shall give us rest.' Out of the water,
+  Noah 'began to be an husbandman, and he planted a vineyard' (9:20), the first vine in scripture.

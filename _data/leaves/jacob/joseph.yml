@@ -1,0 +1,26 @@
+en: Joseph
+heb: יוֹסֵף
+xlit: yôsēp
+gloss: may he add; he has taken away (pun)
+parent: jacob
+kind: begat
+ref: Gen.30.24
+order: 188
+roots:
+- {root: יסף, id: r-j-bz}
+- {root: אסף, id: r-a-ev, role: pun}
+aliases:
+- {en: Zaphnath-paaneah, ref: Gen.41.45, by: Pharaoh, note: an imperial renaming, heb: פַּעְנֵחַ}
+naming:
+- {ref: Gen.30.23, text: 'And she conceived, and bare a son; and said, God hath taken away
+    my reproach:'}
+- {ref: Gen.30.24, text: 'And she called his name Joseph; and said, The LORD shall add to
+    me another son.'}
+links:
+- {to: rachel, kind: mother}
+strong: '3130'
+li: eyg
+note: >-
+  Rachel explains the name twice, with two roots and two names of God: 'God (Elohim) hath
+  taken away (asaf) my reproach... The LORD (YHWH) shall add (yosef) to me another son' (Gen
+  30:23-24). Pharaoh renames him Zaphnath-paaneah (41:45).

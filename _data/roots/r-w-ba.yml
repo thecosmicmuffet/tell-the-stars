@@ -1,0 +1,13 @@
+cons: תמר
+w: תמר
+bdb: w.ba
+note: >-
+  The date palm. Tamar; perhaps Ithamar.
+family:
+- {w: תמר, x: tmr, li: nuf}
+- {w: תֹּמֶר, x: tōmer, p: n.m, d: palm-tree, li: nue}
+- {w: תָּמָר, x: tāmār, p: n.m, d: palm-tree, li: nud}
+- {w: תָּמָר, x: tāmār, p: n.pr, d: Tamar, li: nuc}
+- {w: תִּמֹרָה, x: timōrâ, p: n.f, d: palm, li: nug}
+- {w: תִּימָרָה, x: tîmārâ, p: n.f, d: column, li: nrn}
+- {w: תַּמְרוּר, x: tamrûr, p: n.m, d: sign-posts, r: Jer.31.21, li: nui}

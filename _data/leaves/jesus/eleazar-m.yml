@@ -1,0 +1,12 @@
+en: Eleazar
+heb: אֶלְעָזָר
+xlit: ʾelʿāzār
+greek: Ἐλεάζαρ
+gloss: God has helped
+parent: eliud
+kind: begat
+ref: Matt.1.15
+order: 512
+roots:
+- {root: עזר, id: r-p-bz}
+- {root: אל, id: E}

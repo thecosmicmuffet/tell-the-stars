@@ -1,0 +1,16 @@
+en: Ramoth
+heb: רָמוֹת
+xlit: yĕrêmôt
+gloss: 'heights (ketiv: Jeremoth)'
+parent: bani1
+kind: house
+ref: Ezra.10.29
+order: 448
+roots:
+- {root: רום, id: r-t-bm}
+kq: {k: ירמות, q: וְרָמוֹת, ref: Ezra.10.29, note: 'Jeremoth written, ''and Ramoth'' read'}
+strong: '3406'
+li: fji
+note: >-
+  The written text reads Yeremot; the Masoretic reading is 've-Ramot,' and Ramoth. The yod
+  moves.

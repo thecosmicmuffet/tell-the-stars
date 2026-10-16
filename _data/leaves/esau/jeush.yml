@@ -1,0 +1,14 @@
+en: Jeush
+heb: יְעוּשׁ
+xlit: yĕʿûš
+gloss: he comes to help
+parent: esau
+kind: begat
+ref: Gen.36.5
+order: 161
+roots:
+- {root: עוש, id: r-p-bs}
+links:
+- {to: aholibamah, kind: mother}
+strong: '3266'
+li: fdt

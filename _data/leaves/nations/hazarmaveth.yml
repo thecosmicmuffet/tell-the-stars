@@ -1,0 +1,16 @@
+en: Hazarmaveth
+heb: חֲצַרְמָוֶת
+xlit: ḥăṣarmāwet
+gloss: court of death (Hadramawt)
+parent: joktan
+kind: begat
+ref: Gen.10.26
+order: 89
+flags: n
+roots:
+- {root: חצר, id: r-h-fb}
+- {root: מות, id: r-m-be}
+strong: '2700'
+li: egl
+note: >-
+  Hatsar-maveth, court of death: the Hadramawt of southern Arabia.

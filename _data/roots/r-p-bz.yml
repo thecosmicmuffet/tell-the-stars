@@ -1,0 +1,23 @@
+cons: עזר
+w: עָזַר
+def: help, succour
+homonym: I
+bdb: p.bz
+note: >-
+  Help. Ezra, Eleazar, Azariah, Eliezer, Azareel, Azor, Lazarus. 'I will make him an help
+  (ezer) meet for him' (Gen 2:18).
+family:
+- {w: עָזַר, x: ʿāzar, p: vb, d: help, li: jgp}
+- {w: עֵזֶר, x: ʿēzer, p: n.m, d: help, li: jgn}
+- {w: עֵזֶר, x: ʿēzer, p: n.pr.m, d: Ezer. Compare, li: jgm}
+- {w: עֶזֶר, x: ʿezer, p: n.pr.m, d: Ezer. Compare, li: jgo}
+- {w: עֶזְרָא, x: ʿezrāʾ, p: n.pr.m, d: Ezra, r: Neh.12.33, li: jgr}
+- {w: עֶזְרָה, x: ʿezrâ, p: n.f, d: help, li: jgv}
+- {w: עֶזְרָה, x: ʿezrâ, p: n.pr.m, d: Ezrah, r: 1Chr.4.17, li: jgu}
+- {w: עַזּוּר, x: ʿazzûr, p: n.pr.m, d: Azur, r: Ezek.11.1, li: jfw}
+- {w: עֲזַרְאֵל, x: ʿăzarʾēl, p: n.pr.m, d: Azarael, li: jgs}
+- {w: עַזְרִיאֵל, x: ʿazrîʾēl, p: n.pr.m, d: Azriel, r: Jer.36.26, li: jgx}
+- {w: עֲזַרְיָהוּ, x: ʿăzaryāhû, p: n.pr.m, d: Azariah, r: Neh.12.33, li: jgy}
+- {w: עֶזְרִי, x: ʿezrî, p: n.pr.m, d: Ezri, r: 1Chr.7.26, li: jgw}
+- {w: עַזְרִיקָם, x: ʿazrîqām, p: n.pr.m, d: Azrikam, li: jgz}
+- {w: יַעְזֵר, x: yaʿzēr, p: n.pr.loc, d: Jaazer, li: fdx}

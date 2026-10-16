@@ -1,0 +1,22 @@
+en: Zedekiah
+heb: צִדְקִיָּהוּ
+xlit: ṣidqîyāhû
+gloss: Yah is righteous (born Mattaniah, gift of Yah)
+parent: josiah
+kind: begat
+ref: 2Kgs.24.17
+order: 351
+roots:
+- {root: צדק, id: r-r-ar}
+- {root: נתן, id: r-n-gg}
+- {root: יה, id: Y}
+aliases:
+- {en: Mattaniah, ref: 2Kgs.24.17, by: Nebuchadnezzar, note: 'gift of Yah, renamed by Babylon',
+  heb: מַתַּנְיָה}
+strong: '6667'
+li: kqm
+note: >-
+  'The king of Babylon made Mattaniah his father's brother king in his stead, and changed
+  his name to Zedekiah' (2 Kgs 24:17). The last king of Judah was a Mattaniah, gift of Yah.
+  His sons were killed before his eyes, and then his eyes were put out (25:7). Mattaniah appears
+  four times on Ezra's roll.

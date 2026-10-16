@@ -1,0 +1,16 @@
+en: Jaalam
+heb: יַעְלָם
+xlit: yaʿlām
+gloss: hidden
+parent: esau
+kind: begat
+ref: Gen.36.5
+order: 162
+roots:
+- {root: עלם, id: r-p-cx}
+links:
+- {to: aholibamah, kind: mother}
+strong: '3281'
+li: fej
+note: >-
+  Ya'lam, hidden: from alam, to conceal, the root of olam, the hidden age.

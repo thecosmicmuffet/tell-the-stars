@@ -1,0 +1,1765 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tell the Stars</title>
+<meta name="description" content="A living tree of names: lineage rises into the stars, Hebrew roots reach down to the water, and each name opens to its naming verse, its word family and its letters. Models start at llms.txt.">
+<link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=IM+Fell+English:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Imperial+Aramaic&family=Noto+Sans+Phoenician&family=Noto+Sans+Ugaritic&display=swap">
+<style>
+/* Layout: one night scene. The canopy of names grows up from the horizon into the stars, the Hebrew roots
+   spread down through the soil to the water, and a leaf opens in a side sheet (wide) or a bottom sheet (phone). */
+:root {
+  --sky-0: #05070f;
+  --sky-1: #0b1030;
+  --sky-2: #1a2047;
+  --soil-0: #2a1b13;
+  --soil-1: #110a07;
+  --water: #2e6c9b;
+  --water-hi: #8bc0df;
+  --wine: #7c1f3e;
+  --wine-hi: #c24768;
+  --star: #f3ebd9;
+  --gold: #e8bd62;
+  --purple: #b894e6;
+  --silver: #c7cad8;
+  --bark: #9b8d77;
+  --ink: #ece6d8;
+  --muted: #a7aac0;
+  --faint: #70748f;
+  --panel: rgba(13, 16, 35, 0.95);
+  --panel-solid: #0d1023;
+  --panel-2: #161b36;
+  --line: rgba(236, 230, 216, 0.13);
+  --line-2: rgba(236, 230, 216, 0.24);
+  --font-display: "IM Fell English", "IM Fell DW Pica", Georgia, "Times New Roman", serif;
+  --font-hebrew: "Frank Ruhl Libre", "Noto Serif Hebrew", "SBL Hebrew", "Times New Roman", serif;
+  --font-body: "Spectral", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-phoen: "Noto Sans Phoenician", "Segoe UI Historic", sans-serif;
+  --font-aram: "Noto Sans Imperial Aramaic", "Segoe UI Historic", sans-serif;
+  --font-ugar: "Noto Sans Ugaritic", "Segoe UI Historic", sans-serif;
+  --step--1: 0.8125rem;
+  --step-0: 0.9375rem;
+  --step-1: 1.125rem;
+  --step-2: 1.5rem;
+  --step-3: 2rem;
+  --step-4: 2.6rem;
+  color-scheme: dark;
+}
+html { height: 100%; box-sizing: border-box; background: var(--sky-0); }
+*, *::before, *::after { box-sizing: inherit; }
+body { height: 100%; margin: 0; overflow: hidden; background: var(--sky-0); color: var(--ink); font-family: var(--font-body); font-size: var(--step-0); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+button, input, select, textarea { font: inherit; color: inherit; }
+a { color: var(--gold); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+[lang="he"] { font-family: var(--font-hebrew); }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+#app { position: relative; height: 100%; width: 100%; overflow: hidden; }
+#scene { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; }
+#scene.dragging { cursor: grabbing; }
+
+/* top bar */
+.bar { position: absolute; top: 0; left: 0; right: 0; z-index: 5; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px 16px;
+  padding-top: 12px; padding-bottom: 18px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  background: linear-gradient(to bottom, rgba(5,7,15,0.95), rgba(5,7,15,0.8) 65%, rgba(5,7,15,0)); pointer-events: none; }
+.bar > * { pointer-events: auto; }
+.brand { display: grid; gap: 2px; min-width: 0; margin-right: auto; }
+.brand h1 { margin: 0; font-family: var(--font-display); font-weight: 400; font-style: italic; font-size: var(--step-3); line-height: 1; letter-spacing: 0.01em; text-wrap: balance; }
+.brand .count { font-family: var(--font-mono); font-size: var(--step--1); color: var(--muted); font-variant-numeric: tabular-nums; }
+.brand .count b { color: var(--star); font-weight: 500; }
+.brand .verse { font-family: var(--font-display); font-style: italic; color: var(--muted); font-size: var(--step--1); }
+.tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: flex-end; min-width: 0; }
+.search { position: relative; flex: 1 1 220px; min-width: 0; max-width: 340px; }
+.search input { width: 100%; height: 36px; border-radius: 18px; border: 1px solid var(--line-2); background: rgba(13,16,35,0.82); padding: 0 14px 0 34px; color: var(--ink); }
+.search input::placeholder { color: var(--faint); }
+.search svg { position: absolute; left: 11px; top: 10px; width: 16px; height: 16px; stroke: var(--muted); fill: none; }
+.results { position: absolute; top: 42px; left: 0; right: 0; background: var(--panel-solid); border: 1px solid var(--line-2); border-radius: 12px; overflow: hidden; box-shadow: 0 18px 40px rgba(0,0,0,0.5); }
+.results button { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; width: 100%; text-align: left; background: none; border: 0; padding: 8px 12px; border-bottom: 1px solid var(--line); cursor: pointer; }
+.results button:last-child { border-bottom: 0; }
+.results button:hover, .results button[aria-selected="true"] { background: var(--panel-2); }
+.results .r-en { font-family: var(--font-display); font-size: var(--step-1); }
+.results .r-he { font-family: var(--font-hebrew); font-size: var(--step-1); direction: rtl; text-align: right; }
+.results .r-gl { grid-column: 1 / -1; color: var(--muted); font-size: var(--step--1); }
+.seg { display: inline-flex; border: 1px solid var(--line-2); border-radius: 18px; overflow: hidden; background: rgba(13,16,35,0.82); }
+.seg button { border: 0; background: none; height: 34px; padding: 0 12px; cursor: pointer; color: var(--muted); font-size: var(--step--1); letter-spacing: 0.02em; }
+.seg button[aria-pressed="true"] { background: var(--panel-2); color: var(--star); }
+.seg button .he { font-family: var(--font-hebrew); font-size: 1.15rem; }
+.seg button .ph, .seg button .ar, .seg button .ug { font-size: 1.1rem; }
+.ph { font-family: var(--font-phoen); } .ar { font-family: var(--font-aram); } .ug { font-family: var(--font-ugar); } .sq { font-family: var(--font-hebrew); }
+.seg { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+.seg::-webkit-scrollbar { display: none; }
+.dock { display: contents; }
+.btn { height: 34px; padding: 0 13px; border-radius: 17px; border: 1px solid var(--line-2); background: rgba(13,16,35,0.82); cursor: pointer; color: var(--ink); font-size: var(--step--1); letter-spacing: 0.02em; }
+.btn:hover { border-color: var(--gold); }
+.btn.primary { background: var(--gold); color: #1a1408; border-color: var(--gold); font-weight: 500; }
+.btn.quiet { background: none; }
+.btn[disabled] { opacity: 0.45; cursor: default; }
+
+/* status card */
+.status { position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%); z-index: 4; width: min(440px, calc(100% - 32px)); text-align: center; padding: 22px 22px 20px; border-radius: 16px; background: rgba(13,16,35,0.86); border: 1px solid var(--line); }
+.status h2 { margin: 0 0 6px; font-family: var(--font-display); font-weight: 400; font-size: var(--step-2); }
+.status p { margin: 0; color: var(--muted); }
+
+/* sheet (leaf, groves, rings, plant, about) */
+.sheet { position: absolute; z-index: 6; display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--line); box-shadow: 0 24px 60px rgba(0,0,0,0.55); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+@media (min-width: 860px) {
+  .sheet { top: 84px; right: max(16px, env(safe-area-inset-right, 0px)); bottom: max(16px, env(safe-area-inset-bottom, 0px)); width: 430px; border-radius: 16px; }
+}
+@media (max-width: 859.98px) {
+  .sheet { left: 0; right: 0; bottom: 0; max-height: 74%; border-radius: 18px 18px 0 0; border-bottom: 0; padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .sheet.compact { max-height: 38%; }
+}
+.sheet-head { display: flex; align-items: center; gap: 8px; padding: 10px max(16px, env(safe-area-inset-right, 0px)) 8px max(16px, env(safe-area-inset-left, 0px)); border-bottom: 1px solid var(--line); }
+.sheet-head .crumb { flex: 1; min-width: 0; font-family: var(--font-mono); font-size: var(--step--1); color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-transform: uppercase; letter-spacing: 0.08em; }
+.icon-btn { width: 34px; height: 34px; display: inline-grid; place-items: center; border-radius: 17px; border: 1px solid var(--line); background: none; cursor: pointer; color: var(--muted); flex: none; }
+.icon-btn:hover { color: var(--star); border-color: var(--line-2); }
+.icon-btn svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.6; }
+.grab { display: none; }
+@media (max-width: 859.98px) { .grab { display: block; width: 44px; height: 5px; border-radius: 3px; background: var(--line-2); margin: 8px auto 0; flex: none; } }
+.sheet-body { overflow-y: auto; overscroll-behavior: contain; padding: 16px max(16px, env(safe-area-inset-right, 0px)) 22px max(16px, env(safe-area-inset-left, 0px)); display: grid; gap: 18px; min-height: 0; }
+
+/* leaf */
+.leaf-head { display: grid; gap: 4px; }
+.leaf-head .names { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; }
+.leaf-head .en { font-family: var(--font-display); font-size: var(--step-4); line-height: 1; margin: 0; font-weight: 400; text-wrap: balance; }
+.leaf-head .he { font-family: var(--font-hebrew); font-size: var(--step-4); line-height: 1.1; direction: rtl; }
+.leaf-head .grk { font-family: var(--font-body); font-size: var(--step-3); line-height: 1.1; color: var(--silver); }
+.leaf-head .sub { display: flex; flex-wrap: wrap; gap: 4px 14px; color: var(--muted); font-size: var(--step--1); }
+.leaf-head .sub .he-plain { font-family: var(--font-hebrew); font-size: var(--step-1); color: var(--silver); direction: rtl; }
+.leaf-head .sub .xl { font-style: italic; }
+.leaf-head .sub .gr { font-family: var(--font-body); }
+.gloss { font-family: var(--font-display); font-style: italic; font-size: var(--step-2); line-height: 1.2; color: var(--star); text-wrap: balance; margin: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line-2); font-size: var(--step--1); color: var(--muted); background: none; cursor: default; }
+button.chip { cursor: pointer; color: var(--ink); }
+button.chip:hover { border-color: var(--gold); }
+.chip .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--star); flex: none; }
+.chip.w .dot { background: var(--purple); }
+.chip.g .dot { background: none; border: 1px solid var(--silver); }
+.chip .he { font-family: var(--font-hebrew); font-size: 1rem; }
+.section { display: grid; gap: 8px; }
+.section > h3 { margin: 0; font-family: var(--font-mono); font-weight: 500; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); }
+.line-path { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 4px; font-family: var(--font-display); font-size: var(--step-1); }
+.line-path button { background: none; border: 0; padding: 0 2px; cursor: pointer; color: var(--silver); font: inherit; }
+.line-path button:hover { color: var(--gold); }
+.line-path .sep { color: var(--faint); font-size: var(--step--1); }
+.line-path .here { color: var(--gold); }
+.kind { font-family: var(--font-mono); font-size: 0.72rem; color: var(--faint); letter-spacing: 0.04em; }
+blockquote.kjv { margin: 0; padding: 10px 14px; border-left: 2px solid var(--gold); background: rgba(232,189,98,0.06); border-radius: 0 10px 10px 0; font-family: var(--font-display); font-size: var(--step-1); line-height: 1.45; }
+blockquote.kjv cite { display: block; margin-top: 4px; font-style: normal; font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
+.note { margin: 0; max-width: 62ch; line-height: 1.6; }
+.kq { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; align-items: baseline; padding: 10px 14px; border: 1px dashed var(--line-2); border-radius: 10px; }
+.kq .lbl { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--faint); }
+.kq .he { font-family: var(--font-hebrew); font-size: var(--step-2); direction: rtl; text-align: right; }
+.kq .written { color: var(--silver); }
+.kq .read { color: var(--star); }
+.kq .why { grid-column: 1 / -1; color: var(--muted); font-size: var(--step--1); }
+.years { font-family: var(--font-mono); font-size: var(--step--1); color: var(--muted); font-variant-numeric: tabular-nums; }
+.alias { display: grid; grid-template-columns: 1fr auto; gap: 0 12px; padding: 8px 0; border-top: 1px solid var(--line); }
+.alias:first-of-type { border-top: 0; padding-top: 0; }
+.alias .a-en { font-family: var(--font-display); font-size: var(--step-1); }
+.alias .a-he { font-family: var(--font-hebrew); font-size: var(--step-1); direction: rtl; }
+.alias .a-by { grid-column: 1 / -1; color: var(--muted); font-size: var(--step--1); }
+.root-card { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.root-card header { display: flex; align-items: center; gap: 12px; padding: 10px 14px; background: rgba(46,108,155,0.10); border-bottom: 1px solid var(--line); }
+.root-card header .rc { font-family: var(--font-hebrew); font-size: var(--step-3); line-height: 1; direction: rtl; color: var(--water-hi); }
+.root-card header .rg { flex: 1; min-width: 0; display: grid; }
+.root-card header .rg b { font-weight: 500; }
+.root-card header .rg span { color: var(--muted); font-size: var(--step--1); }
+.root-card header .role { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(232,189,98,0.4); padding: 1px 7px; border-radius: 999px; }
+.root-card .rc-body { padding: 10px 14px 12px; display: grid; gap: 10px; }
+.fam-wrap { overflow-x: auto; }
+table.fam { width: 100%; border-collapse: collapse; font-size: var(--step--1); }
+table.fam th { text-align: left; font-family: var(--font-mono); font-weight: 500; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); padding: 4px 6px; border-bottom: 1px solid var(--line); }
+table.fam td { padding: 5px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.fam td.w { font-family: var(--font-hebrew); font-size: 1.15rem; direction: rtl; text-align: right; white-space: nowrap; }
+table.fam td.x { font-style: italic; color: var(--silver); white-space: nowrap; }
+table.fam td.p { font-family: var(--font-mono); color: var(--faint); font-size: 0.7rem; white-space: nowrap; }
+table.fam td.r { font-family: var(--font-mono); font-size: 0.7rem; white-space: nowrap; }
+table.fam tr.on-tree td { background: rgba(232,189,98,0.07); }
+table.fam tr.on-tree td.d button { background: none; border: 0; padding: 0; color: var(--gold); cursor: pointer; font: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.more { justify-self: start; }
+.refs { display: flex; flex-wrap: wrap; gap: 4px 10px; font-family: var(--font-mono); font-size: 0.75rem; }
+.marg { display: grid; gap: 10px; }
+.marg article { padding: 10px 12px; border-radius: 10px; background: var(--panel-2); border: 1px solid var(--line); }
+.marg article p { margin: 0 0 4px; white-space: pre-wrap; }
+.marg article footer { font-family: var(--font-mono); font-size: 0.7rem; color: var(--faint); }
+.marg .empty { color: var(--faint); font-style: italic; margin: 0; }
+form.plant, form.add-note { display: grid; gap: 10px; }
+.field { display: grid; gap: 4px; min-width: 0; }
+.field label { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); }
+.field input, .field select, .field textarea { width: 100%; min-width: 0; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line-2); background: rgba(5,7,15,0.6); color: var(--ink); }
+.field textarea { resize: vertical; min-height: 70px; line-height: 1.5; }
+.field input.he { font-family: var(--font-hebrew); font-size: 1.2rem; direction: rtl; }
+.field .hint { color: var(--faint); font-size: 0.75rem; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+@media (max-width: 420px) { .row2 { grid-template-columns: 1fr; } }
+.picker { position: relative; }
+.picker .results { top: 40px; z-index: 2; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.confirm { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 10px 12px; border: 1px solid rgba(194,71,104,0.5); border-radius: 10px; background: rgba(124,31,62,0.15); }
+.grove { border-top: 1px solid var(--line); padding-top: 10px; display: grid; gap: 6px; }
+.grove:first-child { border-top: 0; padding-top: 0; }
+.grove > button.gh { display: grid; gap: 2px; text-align: left; background: none; border: 0; padding: 0; cursor: pointer; }
+.grove > button.gh .gl { font-family: var(--font-display); font-size: var(--step-2); line-height: 1.1; }
+.grove > button.gh .gq { font-family: var(--font-display); font-style: italic; color: var(--muted); }
+.grove > button.gh .gc { font-family: var(--font-mono); font-size: 0.72rem; color: var(--faint); }
+.grove .roll { display: flex; flex-wrap: wrap; gap: 4px; }
+.ring { display: grid; gap: 4px; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); text-align: left; background: none; cursor: pointer; }
+.ring:hover, .ring[aria-pressed="true"] { border-color: var(--gold); }
+.ring .rd { font-family: var(--font-mono); font-size: 0.72rem; color: var(--gold); }
+.ring .rt { font-family: var(--font-display); font-size: var(--step-2); line-height: 1.15; }
+.ring .rs { color: var(--muted); }
+.ring .rn { font-family: var(--font-mono); font-size: 0.72rem; color: var(--faint); }
+.about p { margin: 0; max-width: 62ch; }
+.about .legend-list { display: grid; gap: 8px; }
+.about .lg { display: grid; grid-template-columns: 34px 1fr; gap: 10px; align-items: center; }
+.about .lg canvas { width: 34px; height: 22px; }
+
+/* letters: leaf rows and the bench */
+.scripts { display: grid; gap: 4px; }
+.script-row { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.script-row .lbl { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); }
+.script-row .w { font-size: 1.55rem; line-height: 1.35; color: var(--star); overflow-wrap: anywhere; text-align: left; }
+.script-row .count { font-family: var(--font-mono); color: var(--silver); }
+.bench-inputs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.bench-inputs input { width: 100%; min-width: 0; height: 44px; padding: 0 10px; border-radius: 10px; border: 1px solid var(--line-2); background: rgba(5,7,15,0.6); color: var(--ink); font-family: var(--font-hebrew); font-size: 1.35rem; text-align: right; }
+.bench-inputs input.c0 { box-shadow: inset 0 -2px 0 var(--water-hi); }
+.bench-inputs input.c1 { box-shadow: inset 0 -2px 0 var(--wine-hi); }
+.bench-inputs input.c2 { box-shadow: inset 0 -2px 0 var(--gold); }
+.c0 { color: var(--water-hi); } .c1 { color: var(--wine-hi); } .c2 { color: var(--gold); }
+.bench-inputs input.c0, .bench-inputs input.c1, .bench-inputs input.c2 { color: var(--ink); }
+.lay { display: grid; gap: 6px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; }
+.lay header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 10px; }
+.lay header b { font-family: var(--font-display); font-weight: 400; font-size: var(--step-1); }
+.lay header span { font-family: var(--font-mono); font-size: 0.7rem; color: var(--faint); letter-spacing: 0.04em; }
+.lay .plain { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 1.7rem; line-height: 1.3; min-height: 1.3em; }
+.lay canvas { width: 100%; height: 92px; display: block; border-radius: 8px; }
+.counts { display: flex; flex-wrap: wrap; gap: 6px 16px; font-family: var(--font-mono); font-size: var(--step--1); font-variant-numeric: tabular-nums; }
+.names-row { display: flex; flex-wrap: wrap; gap: 4px 6px; }
+.reading-note { margin: 0; padding: 10px 14px; border-left: 2px solid var(--gold); background: rgba(232,189,98,0.06); border-radius: 0 10px 10px 0; line-height: 1.55; max-width: 62ch; }
+.he-row { font-family: var(--font-hebrew); font-size: 1.25rem; }
+
+/* links that look like buttons, proposal sheet, footnote links */
+a.btn { display: inline-flex; align-items: center; text-decoration: none; color: var(--ink); }
+a.btn.primary { color: #1a1408; }
+.proposal-path { font-family: var(--font-mono); font-size: 0.75rem; color: var(--silver); overflow-wrap: anywhere; }
+textarea.yaml { font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.5; white-space: pre; overflow: auto; }
+.footnote a { pointer-events: auto; color: var(--muted); }
+.thesis { margin: 0; padding: 10px 14px; border-left: 2px solid var(--gold); background: rgba(232,189,98,0.06); border-radius: 0 10px 10px 0; font-family: var(--font-display); font-size: var(--step-1); line-height: 1.45; }
+.thesis cite { display: block; margin-top: 6px; font-style: normal; font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
+
+/* hover tip and toast */
+.tip { position: absolute; z-index: 7; pointer-events: none; padding: 6px 10px; border-radius: 8px; background: rgba(13,16,35,0.94); border: 1px solid var(--line-2); max-width: 280px; display: grid; gap: 0; }
+.tip .t-en { font-family: var(--font-display); font-size: var(--step-1); }
+.tip .t-he { font-family: var(--font-hebrew); font-size: var(--step-1); direction: rtl; }
+.tip .t-gl { color: var(--muted); font-size: var(--step--1); }
+.toast { position: absolute; z-index: 9; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); padding: 8px 14px; border-radius: 10px; background: var(--panel-solid); border: 1px solid var(--line-2); max-width: calc(100% - 32px); }
+.zoom { position: absolute; z-index: 5; left: max(16px, env(safe-area-inset-left, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); display: grid; gap: 6px; }
+.zoom .icon-btn { background: rgba(13,16,35,0.82); }
+.footnote { position: absolute; z-index: 4; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(14px + env(safe-area-inset-bottom, 0px)); font-family: var(--font-mono); font-size: 0.68rem; color: var(--faint); text-align: right; pointer-events: none; }
+@media (max-width: 859.98px) {
+  .footnote { display: none; } .brand .verse { display: none; } .brand h1 { font-size: var(--step-2); }
+  .bar { flex-wrap: wrap; gap: 8px 10px; }
+  .tools { flex: 1 1 100%; flex-wrap: wrap; justify-content: flex-start; }
+  .search { max-width: none; flex: 1 1 100%; }
+  #b-about { position: absolute; top: 12px; right: max(16px, env(safe-area-inset-right, 0px)); }
+  .seg button { padding: 0 9px; }
+  .dock { display: flex; gap: 6px; position: fixed; z-index: 5; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
+  .dock .btn { background: rgba(13,16,35,0.88); }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+
+</head>
+<body>
+<div id="app">
+  <canvas id="scene" role="img" aria-label="A tree of biblical names drawn as a night sky: lineage rises from the horizon into the stars, Hebrew roots spread into the soil below. Use the Groves list for a text index."></canvas>
+
+  <header class="bar">
+    <div class="brand">
+      <h1>Tell the Stars</h1>
+      <div class="count" id="count">the tree is reading its rings</div>
+      <div class="verse">“Tell the stars, if thou be able to number them … So shall thy seed be.” Gen 15:5</div>
+    </div>
+    <div class="tools">
+      <div class="search">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11l4 4"/></svg>
+        <input id="q" type="search" placeholder="Find a name or a root" autocomplete="off" aria-label="Find a name, a root, or a meaning" aria-controls="qres">
+        <div class="results" id="qres" role="listbox" hidden></div>
+      </div>
+      <div class="seg" role="group" aria-label="Label the stars with">
+        <button type="button" id="m-en" aria-pressed="true" data-mode="en">Names</button>
+        <button type="button" id="m-pt" aria-pressed="false" data-mode="pt" title="Hebrew, pointed" aria-label="Hebrew, pointed"><span class="he" lang="he">שֵׁם</span></button>
+        <button type="button" id="m-un" aria-pressed="false" data-mode="un" title="Hebrew, consonants only" aria-label="Hebrew, consonants only"><span class="he" lang="he">שם</span></button>
+        <button type="button" id="m-ph" aria-pressed="false" data-mode="ph" title="Old Hebrew letters" aria-label="Old Hebrew letters"><span class="ph" dir="rtl">&#x10914;&#x1090C;</span></button>
+        <button type="button" id="m-ar" aria-pressed="false" data-mode="ar" title="Aramaic letters, Ezra’s script" aria-label="Aramaic letters, Ezra’s script"><span class="ar" dir="rtl">&#x10854;&#x1084C;</span></button>
+        <button type="button" id="m-ug" aria-pressed="false" data-mode="ug" title="The clay alphabet of Ugarit" aria-label="The clay alphabet of Ugarit"><span class="ug" dir="ltr">&#x1038C;&#x1038E;</span></button>
+      </div>
+      <div class="dock">
+        <button type="button" class="btn" id="b-groves">Groves</button>
+        <button type="button" class="btn" id="b-rings">Rings</button>
+        <button type="button" class="btn" id="b-bench">Letters</button>
+        <button type="button" class="btn" id="b-plant" hidden>Plant</button>
+      </div>
+      <button type="button" class="btn quiet" id="b-about" aria-label="About this tree">?</button>
+    </div>
+  </header>
+
+  <div class="status" id="status">
+    <h2>Reading the rings</h2>
+    <p>The tree is loading.</p>
+  </div>
+
+  <aside class="sheet" id="sheet" hidden aria-label="Leaf">
+    <div class="grab" aria-hidden="true"></div>
+    <div class="sheet-head">
+      <button type="button" class="icon-btn" id="s-back" aria-label="Back" hidden><svg viewBox="0 0 16 16"><path d="M10 3L5 8l5 5"/></svg></button>
+      <div class="crumb" id="s-crumb"></div>
+      <button type="button" class="icon-btn" id="s-center" aria-label="Show on the tree"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="2.5"/><path d="M8 1v3M8 12v3M1 8h3M12 8h3"/></svg></button>
+      <button type="button" class="icon-btn" id="s-close" aria-label="Close"><svg viewBox="0 0 16 16"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9"/></svg></button>
+    </div>
+    <div class="sheet-body" id="s-body"></div>
+  </aside>
+
+  <div class="zoom">
+    <button type="button" class="icon-btn" id="z-in" aria-label="Zoom in"><svg viewBox="0 0 16 16"><path d="M8 3v10M3 8h10"/></svg></button>
+    <button type="button" class="icon-btn" id="z-out" aria-label="Zoom out"><svg viewBox="0 0 16 16"><path d="M3 8h10"/></svg></button>
+    <button type="button" class="icon-btn" id="z-fit" aria-label="Whole tree"><svg viewBox="0 0 16 16"><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4"/></svg></button>
+  </div>
+  <div class="footnote">Hebrew: Westminster Leningrad Codex · roots: Brown-Driver-Briggs · Open Scriptures Hebrew Bible Project<br><a href="llms.txt">llms.txt</a> · <a href="names.txt">names.txt</a> · <a href="tree.json">tree.json</a> · <a href="https://github.com/thecosmicmuffet/tell-the-stars" target="_blank" rel="noopener">the repository</a></div>
+  <div class="tip" id="tip" hidden></div>
+  <div class="toast" id="toast" hidden role="status"></div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* ------------------------------------------------------------------ helpers */
+const $ = (s, el = document) => el.querySelector(s);
+const reduceMotion = (() => { try { return matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { return false; } })();
+const ATTRS = new Set(['dir', 'lang', 'role', 'type', 'id', 'for', 'name', 'placeholder', 'value', 'href', 'target', 'rel', 'title', 'tabindex', 'rows', 'maxlength', 'autocomplete', 'colspan', 'scope']);
+function h(tag, attrs, ...kids) {
+  const el = document.createElement(tag);
+  if (attrs) for (const [k, v] of Object.entries(attrs)) {
+    if (v == null || v === false) continue;
+    if (k === 'class') el.className = v;
+    else if (k === 'text') el.textContent = v;
+    else if (k.startsWith('on')) el.addEventListener(k.slice(2), v);
+    else if (k.startsWith('aria-') || k.startsWith('data-') || ATTRS.has(k)) el.setAttribute(k, v === true ? '' : v);
+    else el[k] = v;
+  }
+  for (const kid of kids.flat(Infinity)) {
+    if (kid == null || kid === false || kid === '') continue;
+    el.append(kid.nodeType ? kid : document.createTextNode(String(kid)));
+  }
+  return el;
+}
+const he = (text, cls) => h('span', { class: cls || 'he', lang: 'he', dir: 'rtl', text });
+const NIQQUD = /[֑-ׇ]/g;
+const unpoint = s => (s || '').replace(NIQQUD, '').replace(/[־]/g, '־');
+const lettersOnly = s => (s || '').replace(/[^א-ת]/g, '');
+const FINALS = { 'ך': 'כ', 'ם': 'מ', 'ן': 'נ', 'ף': 'פ', 'ץ': 'צ' };
+const ALEFBET = 'אבגדהוזחטיכלמנסעפצקרשת';
+const letterIndex = c => { const ch = FINALS[c] || c; const i = ALEFBET.indexOf(ch); return i < 0 ? 99 : i; };
+const ease = t => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+function slug(s) { return (s || 'x').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40) || 'name'; }
+function rid() { return Math.random().toString(36).slice(2, 7); }
+function toast(msg, ms = 2600) { const t = $('#toast'); t.textContent = msg; t.hidden = false; clearTimeout(toast._t); toast._t = setTimeout(() => { t.hidden = true; }, ms); }
+
+const BOOK = { Gen: ['Gen', 'Genesis'], Exod: ['Exod', 'Exodus'], Lev: ['Lev', 'Leviticus'], Num: ['Num', 'Numbers'], Deut: ['Deut', 'Deuteronomy'], Josh: ['Josh', 'Joshua'], Judg: ['Judg', 'Judges'], Ruth: ['Ruth', 'Ruth'], '1Sam': ['1 Sam', 'I_Samuel'], '2Sam': ['2 Sam', 'II_Samuel'], '1Kgs': ['1 Kgs', 'I_Kings'], '2Kgs': ['2 Kgs', 'II_Kings'], '1Chr': ['1 Chr', 'I_Chronicles'], '2Chr': ['2 Chr', 'II_Chronicles'], Ezra: ['Ezra', 'Ezra'], Neh: ['Neh', 'Nehemiah'], Esth: ['Esth', 'Esther'], Job: ['Job', 'Job'], Ps: ['Ps', 'Psalms'], Prov: ['Prov', 'Proverbs'], Eccl: ['Eccl', 'Ecclesiastes'], Song: ['Song', 'Song_of_Songs'], Isa: ['Isa', 'Isaiah'], Jer: ['Jer', 'Jeremiah'], Lam: ['Lam', 'Lamentations'], Ezek: ['Ezek', 'Ezekiel'], Dan: ['Dan', 'Daniel'], Hos: ['Hos', 'Hosea'], Joel: ['Joel', 'Joel'], Amos: ['Amos', 'Amos'], Obad: ['Obad', 'Obadiah'], Jonah: ['Jonah', 'Jonah'], Mic: ['Mic', 'Micah'], Nah: ['Nah', 'Nahum'], Hab: ['Hab', 'Habakkuk'], Zeph: ['Zeph', 'Zephaniah'], Hag: ['Hag', 'Haggai'], Zech: ['Zech', 'Zechariah'], Mal: ['Mal', 'Malachi'], Matt: ['Matt'], Mark: ['Mark'], Luke: ['Luke'], John: ['John'], Acts: ['Acts'], Rom: ['Rom'], '1Cor': ['1 Cor'], '2Cor': ['2 Cor'], Gal: ['Gal'], Eph: ['Eph'], Phil: ['Phil'], Col: ['Col'], Heb: ['Heb'], Jas: ['Jas'], '1Pet': ['1 Pet'], Jude: ['Jude'], Rev: ['Rev'] };
+function refText(ref) { if (!ref) return ''; const [b, c, v] = String(ref).split('.'); const bk = BOOK[b] ? BOOK[b][0] : b; return v ? `${bk} ${c}:${v}` : `${bk} ${c || ''}`.trim(); }
+function refLink(ref) {
+  const t = refText(ref);
+  return h('a', { href: 'https://www.biblegateway.com/passage/?search=' + encodeURIComponent(t) + '&version=KJV', target: '_blank', rel: 'noopener', text: t });
+}
+function sefariaLink(wref) {
+  if (!wref) return null; const [b, c, v] = wref.split('.'); const bk = BOOK[b] && BOOK[b][1]; if (!bk || !v) return null;
+  return h('a', { href: `https://www.sefaria.org/${bk}.${c}.${v}?lang=bi`, target: '_blank', rel: 'noopener', text: 'Hebrew text' });
+}
+
+/* ------------------------------------------------------------------ state */
+const S = {
+  meta: null,
+  hw: { people: new Map(), roots: new Map() },
+  dbPeople: new Map(), dbRoots: new Map(),
+  notes: [], rings: [], dialogs: [], letters: new Map(), bench: ['אֵלִיָּה', 'אֲדָמָה', 'אָדָם'], benchNote: null, benchRefresh: null,
+  people: new Map(), roots: new Map(),
+  kids: new Map(), rootUsers: new Map(), depthMax: 1,
+  mode: 'en', sel: null, hover: null, ringFocus: null,
+  heartwoodSeen: false, dbState: 'waiting', view: null, editing: false,
+};
+const REPO_DEFAULT = { slug: 'thecosmicmuffet/tell-the-stars', branch: 'master' };
+
+/* ------------------------------------------------------------------ merge + model */
+function mergeAll() {
+  const P = new Map();
+  for (const [id, p] of S.hw.people) P.set(id, Object.assign({}, p, { _src: 'heartwood' }));
+  for (const [id, d] of S.dbPeople) {
+    if (d.deleted) { P.delete(id); continue; }
+    const base = P.get(id);
+    P.set(id, Object.assign({}, base || {}, d, { id, _src: base ? 'edited' : 'added' }));
+  }
+  const R = new Map();
+  for (const [id, r] of S.hw.roots) R.set(id, Object.assign({}, r, { _src: 'heartwood' }));
+  for (const [id, d] of S.dbRoots) {
+    if (d.deleted) { R.delete(id); continue; }
+    const base = R.get(id);
+    R.set(id, Object.assign({}, base || {}, d, { id, _src: base ? 'edited' : 'added' }));
+  }
+  S.people = P; S.roots = R;
+  buildModel();
+}
+
+const ORIGIN = 'god';
+function buildModel() {
+  const P = S.people;
+  if (!P.has(ORIGIN) && P.size) P.set(ORIGIN, { id: ORIGIN, en: 'of God', greek: 'τοῦ θεοῦ', gloss: 'the root register, unlabeled', flags: 'g', _src: 'virtual' });
+  const kids = new Map();
+  for (const id of P.keys()) kids.set(id, []);
+  const parentOf = id => { const p = P.get(id); return p && p.parent && P.has(p.parent) ? p.parent : null; };
+  for (const p of P.values()) {
+    if (p.id === ORIGIN) continue;
+    let par = parentOf(p.id);
+    // refuse cycles
+    let cur = par, n = 0;
+    while (cur && n < 400) { if (cur === p.id) { par = null; break; } cur = parentOf(cur); n++; }
+    p._parent = par || ORIGIN;
+    kids.get(p._parent).push(p.id);
+  }
+  for (const list of kids.values()) list.sort((a, b) => {
+    const A = P.get(a), B = P.get(b);
+    const oa = A.order ?? 1e9, ob = B.order ?? 1e9;
+    if (oa !== ob) return oa - ob;
+    return String(A.at || '').localeCompare(String(B.at || '')) || String(A.en || '').localeCompare(String(B.en || ''));
+  });
+  S.kids = kids;
+  // root users
+  const ru = new Map();
+  for (const p of P.values()) for (const r of (p.roots || [])) {
+    if (!S.roots.has(r.id)) continue;
+    if (!ru.has(r.id)) ru.set(r.id, []);
+    ru.get(r.id).push(p.id);
+  }
+  S.rootUsers = ru;
+  layout();
+  buildSearch();
+  updateCount();
+}
+
+/* ------------------------------------------------------------------ layout */
+const L = { R0: 230, K: 48, ax: 1, nodes: new Map(), roots: new Map(), bounds: null, waterY: 600, order: [] };
+function layout() {
+  const P = S.people, kids = S.kids;
+  if (!P.size) return;
+  const vw = Math.max(320, canvas.clientWidth || innerWidth), vh = Math.max(320, canvas.clientHeight || innerHeight);
+  L.ax = Math.max(0.56, Math.min(1, (vw / vh) / 1.55));
+  // weights (post-order, iterative)
+  const weight = new Map(), depth = new Map(), order = [];
+  const stack = [[ORIGIN, 0]];
+  while (stack.length) {
+    const [id, d] = stack.pop();
+    depth.set(id, d); order.push(id);
+    const ks = kids.get(id) || [];
+    for (let i = ks.length - 1; i >= 0; i--) stack.push([ks[i], d + 1]);
+  }
+  for (let i = order.length - 1; i >= 0; i--) {
+    const id = order[i]; const ks = kids.get(id) || [];
+    weight.set(id, ks.length ? ks.reduce((s, k) => s + weight.get(k), 0) + 0.15 : 1);
+  }
+  // angles + radii (pre-order)
+  const A0 = -Math.PI + 0.16, A1 = -0.16;
+  const nodes = new Map();
+  nodes.set(ORIGIN, { id: ORIGIN, a0: A0, a1: A1, th: -Math.PI / 2, r: 0, x: 0, y: 0, depth: 0, w: weight.get(ORIGIN) });
+  let maxD = 1;
+  for (const id of order) {
+    const n = nodes.get(id); const ks = kids.get(id) || [];
+    if (!ks.length) continue;
+    const total = ks.reduce((s, k) => s + weight.get(k), 0);
+    let a = n.a0;
+    const step = id === ORIGIN ? L.R0 : (ks.length > 1 ? L.K : L.K * 0.6);
+    for (const k of ks) {
+      const span = (n.a1 - n.a0) * weight.get(k) / total;
+      const th = a + span / 2;
+      const r = n.r + step;
+      nodes.set(k, { id: k, a0: a, a1: a + span, th, r, x: Math.cos(th) * r * L.ax, y: Math.sin(th) * r, depth: depth.get(k), w: weight.get(k), parent: id });
+      maxD = Math.max(maxD, depth.get(k));
+      a += span;
+    }
+  }
+  L.nodes = nodes; L.order = order; S.depthMax = maxD;
+  // grove labels, placed beyond each grove's outermost star
+  L.groveLabels = [];
+  for (const g of (S.meta?.groves || [])) {
+    let sx = 0, sy = 0, n = 0, rmax = 0;
+    for (const p of P.values()) {
+      if (p.grove !== g.id) continue; const nd = nodes.get(p.id); if (!nd || p.id === ORIGIN) continue;
+      sx += Math.cos(nd.th); sy += Math.sin(nd.th); n++; rmax = Math.max(rmax, nd.r);
+    }
+    if (n < 3) continue;
+    const th = Math.atan2(sy / n, sx / n), r = rmax + 90;
+    L.groveLabels.push({ id: g.id, label: g.label, x: Math.cos(th) * r * L.ax, y: Math.sin(th) * r, th });
+  }
+  // roots in the soil
+  const roots = [...S.roots.values()];
+  const counts = new Map(roots.map(r => [r.id, (S.rootUsers.get(r.id) || []).length]));
+  const special = roots.filter(r => r.id === 'Y' || r.id === 'E');
+  const rest = roots.filter(r => r.id !== 'Y' && r.id !== 'E')
+    .sort((a, b) => letterIndex((a.cons || '?')[0]) - letterIndex((b.cons || '?')[0]) || (counts.get(b.id) - counts.get(a.id)) || String(a.cons).localeCompare(String(b.cons)));
+  const F0 = Math.PI * 0.05, F1 = Math.PI * 0.95;
+  const rp = new Map();
+  let maxCount = 1; for (const c of counts.values()) maxCount = Math.max(maxCount, c);
+  rest.forEach((r, i) => {
+    const phi = F0 + (i + 0.5) / Math.max(1, rest.length) * (F1 - F0);
+    const c = counts.get(r.id) || 0;
+    const rho = 200 + 80 * Math.sqrt(c) + (i % 3) * 55;
+    rp.set(r.id, { id: r.id, phi, rho, x: Math.cos(phi) * rho * L.ax * 1.7, y: Math.sin(phi) * rho, c });
+  });
+  special.forEach((r, i) => {
+    const c = counts.get(r.id) || 0;
+    const phi = Math.PI / 2 + (i === 0 ? -0.05 : 0.05);
+    const rho = 260 + 70 * Math.sqrt(Math.max(c, maxCount)) + 40 * i;
+    rp.set(r.id, { id: r.id, phi, rho, x: Math.cos(phi) * rho * L.ax, y: Math.sin(phi) * rho, c, tap: true });
+  });
+  L.roots = rp;
+  let maxY = 300; for (const r of rp.values()) maxY = Math.max(maxY, r.y);
+  L.waterY = maxY + 50;
+  // bounds
+  let x0 = 0, x1 = 0, y0 = 0, y1 = L.waterY + 140;
+  for (const n of nodes.values()) { x0 = Math.min(x0, n.x); x1 = Math.max(x1, n.x); y0 = Math.min(y0, n.y); }
+  for (const r of rp.values()) { x0 = Math.min(x0, r.x); x1 = Math.max(x1, r.x); }
+  L.bounds = { x0: x0 - 60, x1: x1 + 60, y0: y0 - 60, y1 };
+  makeStars();
+}
+
+/* ------------------------------------------------------------------ canvas + camera */
+const canvas = $('#scene');
+const ctx = canvas.getContext('2d');
+let DPR = 1;
+const cam = { k: 0.2, tx: 0, ty: 0 };
+let needDraw = true, growStart = 0, grown = reduceMotion ? 1 : 0;
+function resize() {
+  DPR = Math.min(2.5, window.devicePixelRatio || 1);
+  const w = canvas.clientWidth, hgt = canvas.clientHeight;
+  canvas.width = Math.round(w * DPR); canvas.height = Math.round(hgt * DPR);
+  const oldAx = L.ax;
+  if (S.people.size) { layout(); }
+  if (!cam._set || Math.abs(oldAx - L.ax) > 0.05) fit(false);
+  request();
+}
+function fit(animate = true) {
+  if (!L.bounds) { cam.k = 0.2; cam.tx = canvas.clientWidth / 2; cam.ty = canvas.clientHeight * 0.62; return; }
+  const w = canvas.clientWidth, hh = canvas.clientHeight;
+  const top = barHeight() + 8, bottom = 12;
+  const sheetW = sheetOpen() && w >= 860 ? 460 : 0;
+  const avW = w - sheetW - 24, avH = hh - top - bottom;
+  const bw = L.bounds.x1 - L.bounds.x0, bh = L.bounds.y1 - L.bounds.y0;
+  const k = Math.min(avW / bw, avH / bh);
+  const tx = 12 + avW / 2 - (L.bounds.x0 + bw / 2) * k;
+  const ty = top + avH / 2 - (L.bounds.y0 + bh / 2) * k;
+  flyTo({ k, tx, ty }, animate);
+  cam._set = true;
+}
+function barHeight() { const b = $('.bar'); return b ? b.getBoundingClientRect().height : 60; }
+function sheetOpen() { return !$('#sheet').hidden; }
+let flight = null;
+function flyTo(target, animate = true) {
+  if (!animate || reduceMotion) { Object.assign(cam, target); request(); return; }
+  const from = { k: cam.k, tx: cam.tx, ty: cam.ty }, t0 = performance.now(), dur = 650;
+  flight = { from, target, t0, dur };
+  request();
+}
+function focusWorld(x, y, k) {
+  const w = canvas.clientWidth, hh = canvas.clientHeight;
+  const sheetW = sheetOpen() && w >= 860 ? 460 : 0;
+  const sheetH = sheetOpen() && w < 860 ? Math.min(hh * 0.5, $('#sheet').getBoundingClientRect().height) : 0;
+  const cx = (w - sheetW) / 2, cy = barHeight() + (hh - barHeight() - sheetH) / 2;
+  const kk = k || Math.max(cam.k, 1.1);
+  flyTo({ k: kk, tx: cx - x * kk, ty: cy - y * kk });
+}
+const toScreen = (x, y) => [x * cam.k + cam.tx, y * cam.k + cam.ty];
+const toWorld = (sx, sy) => [(sx - cam.tx) / cam.k, (sy - cam.ty) / cam.k];
+function request() { if (!needDraw) { needDraw = true; } if (!request._raf) request._raf = requestAnimationFrame(frame); }
+function frame(now) {
+  request._raf = 0;
+  if (flight) {
+    const t = Math.min(1, (now - flight.t0) / flight.dur), e = ease(t);
+    // interpolate in log-zoom for steady motion
+    const lk = Math.log(flight.from.k) + (Math.log(flight.target.k) - Math.log(flight.from.k)) * e;
+    const k = Math.exp(lk);
+    // keep the world point under the screen centre moving linearly
+    const w = canvas.clientWidth, hh = canvas.clientHeight;
+    const fc = [(w / 2 - flight.from.tx) / flight.from.k, (hh / 2 - flight.from.ty) / flight.from.k];
+    const tc = [(w / 2 - flight.target.tx) / flight.target.k, (hh / 2 - flight.target.ty) / flight.target.k];
+    const c = [fc[0] + (tc[0] - fc[0]) * e, fc[1] + (tc[1] - fc[1]) * e];
+    cam.k = k; cam.tx = w / 2 - c[0] * k; cam.ty = hh / 2 - c[1] * k;
+    if (t >= 1) { Object.assign(cam, flight.target); flight = null; }
+    needDraw = true;
+  }
+  if (grown < 1 && S.people.size) {
+    if (!growStart) growStart = now;
+    grown = Math.min(1, (now - growStart) / 1700);
+    needDraw = true;
+  }
+  if (needDraw) { needDraw = false; draw(); }
+  if (flight || (grown < 1 && S.people.size)) request._raf = requestAnimationFrame(frame);
+}
+
+/* ------------------------------------------------------------------ decor */
+let STARS = [];
+function makeStars() {
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  STARS = [];
+  for (let i = 0; i < 320; i++) STARS.push({ x: rnd(), y: rnd(), r: 0.3 + rnd() * 1.1, a: 0.15 + rnd() * 0.55 });
+}
+const COLOR = {};
+function readColors() {
+  const cs = getComputedStyle(document.documentElement);
+  for (const k of ['sky-0', 'sky-1', 'sky-2', 'soil-0', 'soil-1', 'water', 'water-hi', 'wine', 'wine-hi', 'star', 'gold', 'purple', 'silver', 'bark', 'ink', 'muted', 'faint']) COLOR[k] = cs.getPropertyValue('--' + k).trim();
+}
+function rgba(hex, a) {
+  const m = /^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(hex || '#ffffff');
+  if (!m) return hex; return `rgba(${parseInt(m[1], 16)},${parseInt(m[2], 16)},${parseInt(m[3], 16)},${a})`;
+}
+
+/* ------------------------------------------------------------------ draw */
+/* ------------------------------------------------------------------ letters */
+const HEB_ORDER = 'אבגדהוזחטיכלמנסעפצקרשת';
+const FINAL_BASE = { 'ך': 'כ', 'ם': 'מ', 'ן': 'נ', 'ף': 'פ', 'ץ': 'צ' };
+const VALUE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 200, 300, 400];
+const UGAR = { 'ב': 0x10381, 'ג': 0x10382, 'ד': 0x10384, 'ה': 0x10385, 'ו': 0x10386, 'ז': 0x10387, 'ח': 0x10388, 'ט': 0x10389, 'י': 0x1038A, 'כ': 0x1038B, 'ל': 0x1038D, 'מ': 0x1038E, 'נ': 0x10390, 'ס': 0x10392, 'ע': 0x10393, 'פ': 0x10394, 'צ': 0x10395, 'ק': 0x10396, 'ר': 0x10397, 'ש': 0x1038C, 'ת': 0x1039A };
+const A_VOWELS = /[\u05B2\u05B7\u05B8]/, I_VOWELS = /[\u05B1\u05B4\u05B5\u05B6]/, U_VOWELS = /[\u05B3\u05B9\u05BA\u05BB\u05C7]/, ANY_VOWEL = /[\u05B0-\u05BB\u05C7]/;
+const LETTER_NAMES = { 'א': 'alef · ox · air', 'ב': 'bet · house', 'ג': 'gimel · camel', 'ד': 'dalet · door', 'ה': 'he · raised arms', 'ו': 'vav · peg', 'ז': 'zayin · weapon', 'ח': 'het · fence', 'ט': 'tet · wheel?', 'י': 'yod · hand', 'כ': 'kaf · palm', 'ל': 'lamed · goad', 'מ': 'mem · water', 'נ': 'nun · fish', 'ס': 'samekh · prop', 'ע': 'ayin · eye', 'פ': 'pe · mouth', 'צ': 'tsade · hook?', 'ק': 'qof · unknown', 'ר': 'resh · head', 'ש': 'shin · tooth · fire', 'ת': 'tav · mark' };
+const SCRIPTS = [
+  { id: 'ug', label: 'Clay', sub: 'Ugarit, 13th c. BCE · pressed with a stylus · read left to right', dir: 'ltr' },
+  { id: 'ph', label: 'Old Hebrew', sub: 'the kingdoms, 10th–6th c. BCE · stone and ink', dir: 'rtl' },
+  { id: 'ar', label: 'Ezra’s script', sub: 'Imperial Aramaic, 5th c. BCE · Sanhedrin 21b', dir: 'rtl' },
+  { id: 'sq', label: 'Square', sub: 'from the Aramaic · the Masoretic page', dir: 'rtl' },
+];
+const baseLetter = ch => FINAL_BASE[ch] || ch;
+function clusters(s) {
+  const out = [];
+  for (const ch of String(s || '')) {
+    const cp = ch.codePointAt(0);
+    if (cp >= 0x05D0 && cp <= 0x05EA) out.push({ ch, marks: '' });
+    else if (cp >= 0x0591 && cp <= 0x05C7 && cp !== 0x05BE && cp !== 0x05C0 && cp !== 0x05C3 && cp !== 0x05C6) { if (out.length && out[out.length - 1].ch) out[out.length - 1].marks += ch; }
+    else if (ch === ' ' || ch === '\u05BE' || ch === '-') { if (out.length && !out[out.length - 1].sep) out.push({ sep: true }); }
+  }
+  while (out.length && out[out.length - 1].sep) out.pop();
+  return out;
+}
+function glyphs(s, script) {
+  const cl = clusters(s), out = [];
+  for (let i = 0; i < cl.length; i++) {
+    const c = cl[i];
+    if (c.sep) { out.push(script === 'ph' ? '\u{1091F}' : script === 'ug' ? '\u{1039F}' : ' '); continue; }
+    const b = baseLetter(c.ch), k = HEB_ORDER.indexOf(b); if (k < 0) continue;
+    if (script === 'sq') out.push(c.ch);
+    else if (script === 'ph') out.push(String.fromCodePoint(0x10900 + k));
+    else if (script === 'ar') out.push(String.fromCodePoint(0x10840 + k));
+    else if (b === 'א') {
+      let m = c.marks; const nx = cl[i + 1];
+      if (!ANY_VOWEL.test(m) && nx && nx.ch === 'ו' && /[\u05B9\u05BC]/.test(nx.marks)) m = '\u05B9';
+      out.push(String.fromCodePoint(A_VOWELS.test(m) ? 0x10380 : I_VOWELS.test(m) ? 0x1039B : U_VOWELS.test(m) ? 0x1039C : 0x10380));
+    } else out.push(String.fromCodePoint(UGAR[b]));
+  }
+  return out;
+}
+const toScript = (s, script) => glyphs(s, script).join('');
+function countOf(s) { let n = 0; for (const c of clusters(s)) if (c.ch) { const k = HEB_ORDER.indexOf(baseLetter(c.ch)); if (k >= 0) n += VALUE[k]; } return n; }
+function labelFor(p) {
+  if (!p) return { t: '', k: 'latin' };
+  if (S.mode === 'en') return { t: p.en || '', k: 'latin' };
+  if (!p.heb) return { t: p.greek || p.en || '', k: 'latin' };
+  if (S.mode === 'pt') return { t: p.heb, k: 'heb' };
+  if (S.mode === 'un') return { t: unpoint(p.heb), k: 'heb' };
+  return { t: toScript(p.heb, S.mode), k: S.mode };
+}
+const SCRIPT_SAMPLE = { ph: '\u{10900}\u{1090B}', ar: '\u{10840}\u{1084B}', ug: '\u{1039B}\u{1038D}' };
+const scriptFontsLoaded = {};
+function ensureScriptFont(mode) {
+  if (!SCRIPT_SAMPLE[mode] || scriptFontsLoaded[mode] || !document.fonts || !document.fonts.load) return Promise.resolve();
+  const fam = { ph: FONTS.phoen, ar: FONTS.aram, ug: FONTS.ugar }[mode];
+  return document.fonts.load(`16px ${fam}`, SCRIPT_SAMPLE[mode]).then(() => { scriptFontsLoaded[mode] = true; request(); }).catch(() => {});
+}
+function isHeb(s) { return /[֐-׿]/.test(s || ''); }
+function flagsOf(p) { return String(p.flags || ''); }
+
+function draw() {
+  const w = canvas.clientWidth, hh = canvas.clientHeight;
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  // sky
+  const [, horizonY] = toScreen(0, 0);
+  const sky = ctx.createLinearGradient(0, 0, 0, Math.max(10, horizonY));
+  sky.addColorStop(0, COLOR['sky-0']); sky.addColorStop(0.7, COLOR['sky-1']); sky.addColorStop(1, COLOR['sky-2']);
+  ctx.fillStyle = sky; ctx.fillRect(0, 0, w, Math.max(0, Math.min(hh, horizonY)));
+  // field stars (slight parallax)
+  const px = (cam.tx * 0.04) % w, py = (cam.ty * 0.04) % hh;
+  for (const s of STARS) {
+    let sx = (s.x * w + px + w) % w, sy = (s.y * hh + py + hh) % hh;
+    if (sy > horizonY - 4) continue;
+    ctx.fillStyle = rgba(COLOR.star, s.a * 0.75);
+    ctx.fillRect(sx, sy, s.r, s.r);
+  }
+  // soil
+  if (horizonY < hh) {
+    const [, wY] = toScreen(0, L.waterY);
+    const soil = ctx.createLinearGradient(0, horizonY, 0, Math.max(horizonY + 1, wY + 160 * cam.k));
+    soil.addColorStop(0, COLOR['soil-0']); soil.addColorStop(0.55, COLOR['soil-1']); soil.addColorStop(1, '#0a1220');
+    ctx.fillStyle = soil; ctx.fillRect(0, Math.max(0, horizonY), w, hh - Math.max(0, horizonY));
+    // water table
+    const wTop = wY, wBot = wY + 150 * cam.k;
+    if (wTop < hh) {
+      const wg = ctx.createLinearGradient(0, wTop, 0, wBot);
+      wg.addColorStop(0, rgba(COLOR.water, 0)); wg.addColorStop(0.35, rgba(COLOR.water, 0.32)); wg.addColorStop(1, rgba(COLOR.water, 0.55));
+      ctx.fillStyle = wg; ctx.fillRect(0, wTop, w, Math.max(0, hh - wTop));
+      ctx.strokeStyle = rgba(COLOR['water-hi'], 0.18); ctx.lineWidth = 1;
+      for (let j = 0; j < 4; j++) {
+        const yy = wTop + (36 + j * 30) * cam.k; if (yy > hh) break;
+        ctx.beginPath();
+        for (let x = 0; x <= w; x += 12) { const y2 = yy + Math.sin((x - cam.tx) / (40 + j * 9) + j) * 2.2; x === 0 ? ctx.moveTo(x, y2) : ctx.lineTo(x, y2); }
+        ctx.stroke();
+      }
+    }
+    // horizon line
+    ctx.strokeStyle = rgba(COLOR.star, 0.18); ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(0, horizonY + 0.5); ctx.lineTo(w, horizonY + 0.5); ctx.stroke();
+  }
+  if (!S.people.size) { drawSeedling(); return; }
+  const g = grown < 1 ? ease(grown) : 1;
+  const sel = S.sel;
+  const selPerson = sel && sel.type === 'p' ? sel.id : null;
+  const selRoot = sel && sel.type === 'r' ? sel.id : null;
+  const litRoots = new Set();
+  if (selPerson) for (const r of (S.people.get(selPerson)?.roots || [])) litRoots.add(r.id);
+  if (selRoot) litRoots.add(selRoot);
+  const ringSet = S.ringFocus ? new Set(S.ringFocus) : null;
+
+  // root strands
+  const [ox, oy] = toScreen(0, 0);
+  const rootsDrawn = [];
+  for (const r of L.roots.values()) {
+    const [rx, ry] = toScreen(r.x, r.y);
+    const lit = litRoots.has(r.id);
+    const reach = Math.min(1, g * 1.15);
+    const sx = ox + (rx - ox) * reach, sy = oy + (ry - oy) * reach;
+    if (Math.max(sy, oy) < -20 || Math.min(sx, ox) > w + 400 || Math.max(sx, ox) < -400) continue;
+    const grad = ctx.createLinearGradient(sx, sy, ox, oy);
+    grad.addColorStop(0, rgba(lit ? COLOR['water-hi'] : COLOR.water, lit ? 0.95 : 0.55));
+    grad.addColorStop(0.7, rgba(lit ? COLOR['wine-hi'] : COLOR.wine, lit ? 0.95 : 0.55));
+    grad.addColorStop(1, rgba(COLOR['wine-hi'], lit ? 1 : 0.7));
+    ctx.strokeStyle = grad;
+    ctx.lineWidth = Math.max(0.6, (0.9 + Math.sqrt(r.c || 0) * (r.tap ? 1.6 : 0.8)) * cam.k * (lit ? 1.8 : 1));
+    ctx.beginPath(); ctx.moveTo(sx, sy);
+    const c1x = sx + (ox - sx) * 0.1, c1y = sy + (oy - sy) * 0.55;
+    const c2x = ox + (sx - ox) * 0.22, c2y = oy + 26 * cam.k;
+    ctx.bezierCurveTo(c1x, c1y, c2x, c2y, ox, oy + 2);
+    ctx.stroke();
+    rootsDrawn.push([r, sx, sy, lit]);
+  }
+  // trunk
+  const adam = L.nodes.get('adam') || [...L.nodes.values()].find(n => n.parent === ORIGIN);
+  if (adam) {
+    const [axs, ays] = toScreen(adam.x, adam.y * g);
+    const wBase = Math.max(3, 26 * cam.k), wTop = Math.max(2, 11 * cam.k);
+    const tg = ctx.createLinearGradient(0, oy, 0, ays);
+    tg.addColorStop(0, rgba(COLOR['wine-hi'], 0.9)); tg.addColorStop(0.25, rgba(COLOR.bark, 0.95)); tg.addColorStop(1, rgba(COLOR.silver, 0.85));
+    ctx.fillStyle = tg; ctx.beginPath();
+    ctx.moveTo(ox - wBase, oy + 1); ctx.quadraticCurveTo(ox - wBase * 0.35, (oy + ays) / 2, axs - wTop / 2, ays);
+    ctx.lineTo(axs + wTop / 2, ays); ctx.quadraticCurveTo(ox + wBase * 0.35, (oy + ays) / 2, ox + wBase, oy + 1);
+    ctx.closePath(); ctx.fill();
+  }
+  // path to origin for the selection
+  const pathSet = new Set();
+  if (selPerson && L.nodes.has(selPerson)) { let cur = selPerson; let n = 0; while (cur && n < 300) { pathSet.add(cur); cur = L.nodes.get(cur)?.parent; n++; } }
+  // branches
+  const dimOthers = !!(selPerson || selRoot || ringSet);
+  ctx.lineCap = 'round';
+  for (const id of L.order) {
+    const n = L.nodes.get(id); if (!n || !n.parent || n.parent === ORIGIN) continue;
+    const pnode = L.nodes.get(n.parent);
+    const prog = Math.max(0, Math.min(1, g * (S.depthMax + 4) / 4 - (n.depth - 1) / 4));
+    if (prog <= 0) continue;
+    const p = S.people.get(id); const kind = p.kind;
+    const onPath = pathSet.has(id);
+    const [x0, y0] = toScreen(pnode.x, pnode.y);
+    const ex = pnode.x + (n.x - pnode.x) * prog, ey = pnode.y + (n.y - pnode.y) * prog;
+    const [x3, y3] = toScreen(ex, ey);
+    if ((x0 < -50 && x3 < -50) || (x0 > w + 50 && x3 > w + 50) || (y0 < -50 && y3 < -50) || (y0 > hh + 50 && y3 > hh + 50)) continue;
+    const rm = (pnode.r + n.r) / 2;
+    const c1 = toScreen(Math.cos(pnode.th) * rm * L.ax, Math.sin(pnode.th) * rm);
+    const c2 = toScreen(Math.cos(n.th) * rm * L.ax, Math.sin(n.th) * rm);
+    let col = COLOR.silver, alpha = 0.34, dash = null;
+    if (kind === 'people' || kind === 'of' || kind === 'course') { alpha = 0.26; dash = [4, 4]; }
+    if (kind === 'wife' || kind === 'maid' || kind === 'housed') { col = COLOR.purple; alpha = 0.42; dash = [3, 4]; }
+    if (kind === 'built') { col = COLOR.purple; alpha = 0.5; dash = [1, 4]; }
+    if (kind === 'supposed') { col = COLOR.gold; alpha = 0.5; dash = [6, 4]; }
+    if (dimOthers && !onPath) alpha *= ringSet && ringSet.has(id) ? 1.6 : 0.45;
+    if (onPath) { col = COLOR.gold; alpha = 0.95; }
+    ctx.strokeStyle = rgba(col, Math.min(1, alpha));
+    ctx.lineWidth = Math.max(onPath ? 1.6 : 0.5, (0.5 + Math.log2(1 + n.w) * 0.9) * cam.k * (onPath ? 1.6 : 1));
+    ctx.setLineDash(dash || []);
+    ctx.beginPath(); ctx.moveTo(x0, y0);
+    if (prog < 1) ctx.lineTo(x3, y3); else ctx.bezierCurveTo(c1[0], c1[1], c2[0], c2[1], x3, y3);
+    ctx.stroke();
+  }
+  ctx.setLineDash([]);
+  // secondary links for the selection
+  if (selPerson) drawSecondary(selPerson);
+  // constellations
+  for (const rid of litRoots) drawConstellation(rid, rid === selRoot ? 1 : 0.75);
+  // root nodes + labels
+  drawRootTips(rootsDrawn, litRoots);
+  // stars
+  const nodeR = Math.max(1.3, Math.min(5.2, 3.1 * cam.k));
+  const visible = [];
+  for (const id of L.order) {
+    const n = L.nodes.get(id); if (!n) continue;
+    const prog = Math.max(0, Math.min(1, g * (S.depthMax + 4) / 4 - (n.depth - 1) / 4));
+    if (prog < 1) continue;
+    const [sx, sy] = toScreen(n.x, n.y);
+    if (sx < -30 || sx > w + 30 || sy < -30 || sy > hh + 30) continue;
+    const p = S.people.get(id); const f = flagsOf(p);
+    const inRing = ringSet && ringSet.has(id);
+    const lit = id === selPerson || pathSet.has(id) || inRing || (litRoots.size && (p.roots || []).some(r => litRoots.has(r.id)));
+    let a = dimOthers && !lit ? 0.4 : 1;
+    if (id === ORIGIN) {
+      ctx.fillStyle = rgba(COLOR['wine-hi'], 0.9); ctx.beginPath(); ctx.arc(sx, sy, nodeR * 1.3, 0, Math.PI * 2); ctx.fill();
+      visible.push({ id, sx, sy, pri: 100 }); continue;
+    }
+    if (f.includes('u')) {
+      const rg = ctx.createRadialGradient(sx, sy, 0, sx, sy, Math.max(10, 28 * cam.k));
+      rg.addColorStop(0, rgba(COLOR.purple, 0.35 * a)); rg.addColorStop(1, rgba(COLOR.purple, 0));
+      ctx.fillStyle = rg; ctx.beginPath(); ctx.arc(sx, sy, Math.max(10, 28 * cam.k), 0, Math.PI * 2); ctx.fill();
+      visible.push({ id, sx, sy, pri: 0.5 }); continue;
+    }
+    const col = f.includes('f') ? COLOR.purple : COLOR.star;
+    if (f.includes('g')) {
+      ctx.strokeStyle = rgba(COLOR.silver, 0.85 * a); ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(sx, sy, nodeR * 1.15, 0, Math.PI * 2); ctx.stroke();
+    } else {
+      if (lit) { const glow = ctx.createRadialGradient(sx, sy, 0, sx, sy, nodeR * 4.5); glow.addColorStop(0, rgba(col, 0.45)); glow.addColorStop(1, rgba(col, 0)); ctx.fillStyle = glow; ctx.beginPath(); ctx.arc(sx, sy, nodeR * 4.5, 0, Math.PI * 2); ctx.fill(); }
+      ctx.fillStyle = rgba(col, a); ctx.beginPath(); ctx.arc(sx, sy, nodeR, 0, Math.PI * 2); ctx.fill();
+      if ((p.aliases || []).length) { ctx.beginPath(); ctx.arc(sx + nodeR * 2.1, sy - nodeR * 0.9, nodeR * 0.55, 0, Math.PI * 2); ctx.fill(); }
+    }
+    if (p.kq) { ctx.strokeStyle = rgba(COLOR.gold, 0.9 * a); ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(sx, sy - nodeR * 2.6, Math.max(1.6, nodeR * 0.55), 0, Math.PI * 2); ctx.stroke(); }
+    const pri = (lit ? 50 : 0) + Math.log2(1 + n.w) * 2 + (p.note ? 0.6 : 0) + (n.depth < 3 ? 6 : 0) + (f.includes('g') ? 0.4 : 0);
+    visible.push({ id, sx, sy, pri, lit });
+  }
+  // selection ring
+  if (selPerson && L.nodes.has(selPerson)) {
+    const n = L.nodes.get(selPerson); const [sx, sy] = toScreen(n.x, n.y);
+    ctx.strokeStyle = COLOR.gold; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(sx, sy, nodeR * 2.8 + 3, 0, Math.PI * 2); ctx.stroke();
+  }
+  drawLabels(visible, nodeR);
+}
+
+function drawSecondary(id) {
+  const p = S.people.get(id); if (!p) return;
+  const links = [];
+  for (const s of (p.sec || [])) links.push([id, s.id, s.kind]);
+  for (const q of S.people.values()) for (const s of (q.sec || [])) if (s.id === id) links.push([q.id, id, s.kind]);
+  ctx.setLineDash([2, 4]); ctx.lineWidth = 1.2;
+  for (const [a, b, kind] of links) {
+    const na = L.nodes.get(a), nb = L.nodes.get(b); if (!na || !nb) continue;
+    const [x0, y0] = toScreen(na.x, na.y), [x1, y1] = toScreen(nb.x, nb.y);
+    const mx = (x0 + x1) / 2, my = (y0 + y1) / 2 - Math.hypot(x1 - x0, y1 - y0) * 0.18;
+    const fem = /mother|wife|maid|nursed|cousin/.test(kind);
+    ctx.strokeStyle = rgba(fem ? COLOR.purple : COLOR.silver, 0.85);
+    ctx.beginPath(); ctx.moveTo(x0, y0); ctx.quadraticCurveTo(mx, my, x1, y1); ctx.stroke();
+  }
+  ctx.setLineDash([]);
+}
+
+function drawConstellation(rootId, strength) {
+  const users = (S.rootUsers.get(rootId) || []).filter(id => L.nodes.has(id));
+  if (users.length < 2) return;
+  const pts = users.map(id => L.nodes.get(id)).sort((a, b) => a.th - b.th || a.r - b.r);
+  ctx.strokeStyle = rgba(rootId === 'Y' || rootId === 'E' ? COLOR.gold : COLOR['water-hi'], 0.5 * strength);
+  ctx.lineWidth = 1; ctx.beginPath();
+  pts.forEach((n, i) => { const [x, y] = toScreen(n.x, n.y); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
+  ctx.stroke();
+}
+
+function drawRootTips(list, litRoots) {
+  const showLabels = cam.k > 0.32;
+  for (const [r, sx, sy, lit] of list) {
+    const rd = S.roots.get(r.id);
+    const rad = Math.max(1.6, Math.min(6, (2 + Math.sqrt(r.c || 0)) * cam.k * (r.tap ? 1.6 : 1)));
+    ctx.fillStyle = lit ? COLOR.gold : rgba(COLOR['water-hi'], 0.85);
+    ctx.beginPath(); ctx.arc(sx, sy, rad, 0, Math.PI * 2); ctx.fill();
+    if (showLabels || lit || r.tap) {
+      const fs = Math.max(11, Math.min(22, (r.tap ? 22 : 15) * Math.sqrt(cam.k)));
+      ctx.font = `500 ${fs}px ${getFont('hebrew')}`;
+      ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+      ctx.fillStyle = lit ? COLOR.gold : rgba(COLOR['water-hi'], r.tap ? 0.95 : 0.8);
+      const label = r.tap ? (r.id === 'Y' ? 'יה' : 'אל') : (rd && rd.cons) || '';
+      ctx.fillText(label, sx, sy + rad + 3);
+      if ((cam.k > 0.75 || lit) && rd) {
+        ctx.font = `italic ${Math.max(10, fs * 0.62)}px ${getFont('body')}`;
+        ctx.fillStyle = rgba(COLOR.muted, 0.9);
+        ctx.fillText(shortDef(rd), sx, sy + rad + 4 + fs);
+      }
+    }
+  }
+}
+function shortDef(rd) { const d = (rd.def || '').split(/[,;]/)[0].trim(); return d.length > 22 ? d.slice(0, 21) + '…' : d; }
+
+const FONTS = { display: '"IM Fell English", Georgia, serif', hebrew: '"Frank Ruhl Libre", "Noto Serif Hebrew", "Times New Roman", serif', body: '"Spectral", Georgia, serif', mono: '"IBM Plex Mono", Menlo, monospace', phoen: '"Noto Sans Phoenician", "Segoe UI Historic", sans-serif', aram: '"Noto Sans Imperial Aramaic", "Segoe UI Historic", sans-serif', ugar: '"Noto Sans Ugaritic", "Segoe UI Historic", sans-serif' };
+const LABEL_FONT = k => k === 'heb' ? `500 16px ${FONTS.hebrew}` : k === 'ph' ? `16px ${FONTS.phoen}` : k === 'ar' ? `17px ${FONTS.aram}` : k === 'ug' ? `15px ${FONTS.ugar}` : `14px ${FONTS.display}`;
+function getFont(k) { return FONTS[k]; }
+
+function drawLabels(visible, nodeR) {
+  const w = canvas.clientWidth, hh = canvas.clientHeight;
+  const k = cam.k;
+  let minPri = k > 0.9 ? -1 : k > 0.5 ? 2.2 : k > 0.28 ? 5.5 : 8.5;
+  visible.sort((a, b) => b.pri - a.pri);
+  const cell = 18, grid = new Map();
+  const key = (x, y) => (x << 16) ^ y;
+  const occupied = (x0, y0, x1, y1) => { for (let gx = Math.floor(x0 / cell); gx <= Math.floor(x1 / cell); gx++) for (let gy = Math.floor(y0 / cell); gy <= Math.floor(y1 / cell); gy++) if (grid.has(key(gx, gy))) return true; return false; };
+  const mark = (x0, y0, x1, y1) => { for (let gx = Math.floor(x0 / cell); gx <= Math.floor(x1 / cell); gx++) for (let gy = Math.floor(y0 / cell); gy <= Math.floor(y1 / cell); gy++) grid.set(key(gx, gy), 1); };
+  ctx.textBaseline = 'middle';
+  if (k < 0.8 && L.groveLabels) {
+    ctx.font = `italic ${k < 0.3 ? 15 : 17}px ${getFont('display')}`;
+    ctx.textAlign = 'center';
+    for (const gl of L.groveLabels) {
+      const [gx, gy] = toScreen(gl.x, gl.y);
+      const tw = ctx.measureText(gl.label).width;
+      const x0 = gx - tw / 2, y0 = gy - 10, x1 = gx + tw / 2, y1 = gy + 10;
+      if (x1 < 0 || x0 > w || y1 < 0 || y0 > hh || occupied(x0, y0, x1, y1)) continue;
+      mark(x0 - 4, y0, x1 + 4, y1);
+      ctx.fillStyle = rgba(COLOR.gold, 0.62);
+      ctx.fillText(gl.label, gx, gy);
+    }
+  }
+  let drawn = 0;
+  for (const v of visible) {
+    if (v.pri < minPri && !v.lit) continue;
+    const p = S.people.get(v.id); if (!p) continue;
+    const lab = v.id === ORIGIN ? { t: S.mode === 'en' ? 'of God' : 'τοῦ θεοῦ', k: 'latin' } : labelFor(p);
+    const text = lab.t;
+    if (!text) continue;
+    const fs = lab.k === 'latin' ? 14 : 16;
+    ctx.font = LABEL_FONT(lab.k);
+    const tw = ctx.measureText(text).width;
+    const x0 = v.sx + nodeR + 4, y0 = v.sy - fs / 2 - 1, x1 = x0 + tw, y1 = y0 + fs + 2;
+    if (x1 < 0 || x0 > w || y1 < 0 || y0 > hh) continue;
+    if (occupied(x0, y0, x1, y1)) continue;
+    mark(x0 - 2, y0, x1 + 2, y1);
+    const f = flagsOf(p);
+    ctx.fillStyle = v.lit ? COLOR.gold : (f.includes('f') ? rgba(COLOR.purple, 0.95) : rgba(COLOR.ink, 0.86));
+    ctx.textAlign = 'left';
+    ctx.fillText(text, x0, v.sy);
+    if (++drawn > 700) break;
+  }
+}
+
+function drawSeedling() {
+  const [ox, oy] = toScreen(0, 0);
+  ctx.strokeStyle = rgba(COLOR.silver, 0.6); ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(ox, oy); ctx.quadraticCurveTo(ox - 6, oy - 26, ox + 2, oy - 46); ctx.stroke();
+  ctx.fillStyle = COLOR.star; ctx.beginPath(); ctx.arc(ox + 2, oy - 48, 3, 0, Math.PI * 2); ctx.fill();
+}
+
+/* ------------------------------------------------------------------ pointer */
+const pointers = new Map();
+let drag = null, pinch = null, moved = false;
+canvas.addEventListener('pointerdown', e => {
+  try { canvas.setPointerCapture(e.pointerId); } catch (err) {}
+  pointers.set(e.pointerId, { x: e.offsetX, y: e.offsetY });
+  moved = false; flight = null;
+  if (pointers.size === 1) drag = { x: e.offsetX, y: e.offsetY, tx: cam.tx, ty: cam.ty };
+  if (pointers.size === 2) {
+    const [a, b] = [...pointers.values()];
+    pinch = { d: Math.hypot(a.x - b.x, a.y - b.y), k: cam.k, cx: (a.x + b.x) / 2, cy: (a.y + b.y) / 2, tx: cam.tx, ty: cam.ty };
+    drag = null;
+  }
+});
+canvas.addEventListener('pointermove', e => {
+  if (!pointers.has(e.pointerId)) { hoverAt(e.offsetX, e.offsetY); return; }
+  pointers.set(e.pointerId, { x: e.offsetX, y: e.offsetY });
+  if (pinch && pointers.size >= 2) {
+    const [a, b] = [...pointers.values()];
+    const d = Math.hypot(a.x - b.x, a.y - b.y);
+    const k = clampK(pinch.k * d / Math.max(10, pinch.d));
+    const cx = (a.x + b.x) / 2, cy = (a.y + b.y) / 2;
+    const wx = (pinch.cx - pinch.tx) / pinch.k, wy = (pinch.cy - pinch.ty) / pinch.k;
+    cam.k = k; cam.tx = cx - wx * k; cam.ty = cy - wy * k; moved = true; request();
+  } else if (drag) {
+    const dx = e.offsetX - drag.x, dy = e.offsetY - drag.y;
+    if (Math.abs(dx) + Math.abs(dy) > 3) { moved = true; canvas.classList.add('dragging'); }
+    cam.tx = drag.tx + dx; cam.ty = drag.ty + dy; request();
+  }
+});
+function endPointer(e) {
+  const wasTap = pointers.size === 1 && !moved && !pinch;
+  pointers.delete(e.pointerId);
+  if (pointers.size < 2) pinch = null;
+  if (pointers.size === 0) { drag = null; canvas.classList.remove('dragging'); }
+  if (wasTap && e.type === 'pointerup') tapAt(e.offsetX, e.offsetY);
+}
+canvas.addEventListener('pointerup', endPointer);
+canvas.addEventListener('pointercancel', endPointer);
+canvas.addEventListener('pointerleave', () => { $('#tip').hidden = true; if (S.hover) { S.hover = null; } });
+canvas.addEventListener('wheel', e => {
+  e.preventDefault();
+  const f = Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.0015));
+  zoomAt(e.offsetX, e.offsetY, f);
+}, { passive: false });
+function clampK(k) { return Math.max(0.03, Math.min(6, k)); }
+function zoomAt(sx, sy, f) {
+  const k = clampK(cam.k * f); const [wx, wy] = toWorld(sx, sy);
+  cam.k = k; cam.tx = sx - wx * k; cam.ty = sy - wy * k; flight = null; request();
+}
+function pick(sx, sy) {
+  let best = null, bd = 18 * 18;
+  for (const n of L.nodes.values()) {
+    const [x, y] = toScreen(n.x, n.y); const d = (x - sx) ** 2 + (y - sy) ** 2;
+    if (d < bd) { bd = d; best = { type: 'p', id: n.id }; }
+  }
+  for (const r of L.roots.values()) {
+    const [x, y] = toScreen(r.x, r.y); const d = (x - sx) ** 2 + (y - sy) ** 2 - 20;
+    if (d < bd) { bd = d; best = { type: 'r', id: r.id }; }
+  }
+  return best;
+}
+function tapAt(sx, sy) {
+  const hit = pick(sx, sy);
+  if (hit) select(hit, { fly: false, push: true });
+  else if (S.sel) { S.sel = null; closeSheet(); request(); }
+}
+function hoverAt(sx, sy) {
+  if (matchMedia('(hover: none)').matches) return;
+  const hit = pick(sx, sy); const tip = $('#tip');
+  if (!hit) { tip.hidden = true; return; }
+  tip.replaceChildren();
+  if (hit.type === 'p') {
+    const p = S.people.get(hit.id); if (!p) return;
+    tip.append(h('div', { class: 't-en', text: p.en }), p.heb ? he(p.heb, 't-he') : (p.greek ? h('div', { class: 't-en', text: p.greek }) : null), h('div', { class: 't-gl', text: p.gloss || '' }));
+  } else {
+    const r = S.roots.get(hit.id); if (!r) return;
+    tip.append(he(r.id === 'Y' ? 'יָהּ' : r.id === 'E' ? 'אֵל' : (r.w || r.cons), 't-he'), h('div', { class: 't-gl', text: (r.def || '') + ' · ' + (S.rootUsers.get(r.id) || []).length + ' names' }));
+  }
+  tip.hidden = false;
+  const bw = canvas.clientWidth; const tw = tip.offsetWidth;
+  tip.style.left = Math.min(bw - tw - 8, sx + 14) + 'px'; tip.style.top = (sy + 14) + 'px';
+}
+
+/* ------------------------------------------------------------------ selection + sheet */
+const history_ = [];
+function select(target, { fly = true, push = true } = {}) {
+  if (!target) return;
+  if (target.type === 'p' && !S.people.has(target.id)) return;
+  if (target.type === 'r' && !S.roots.has(target.id)) return;
+  if (push) {
+    if (S.sel && !S.editing && !(S.sel.type === target.type && S.sel.id === target.id)) history_.push({ kind: 'sel', sel: S.sel });
+    else if (!S.sel && S.view) history_.push({ kind: 'view', open: S.view });
+  }
+  S.view = null; S.editing = false;
+  S.sel = target; S.ringFocus = null;
+  openSheet(target.type === 'p' ? renderPerson(target.id) : renderRoot(target.id), target.type === 'p' ? groveLabel(S.people.get(target.id)) : 'root');
+  try { history.replaceState(null, '', '#' + target.id); } catch (e) {}
+  if (fly) centerOnSelection();
+  request();
+}
+function centerOnSelection() {
+  const s = S.sel; if (!s) return;
+  if (s.type === 'p' && L.nodes.has(s.id)) { const n = L.nodes.get(s.id); focusWorld(n.x, n.y, Math.max(cam.k, 1.15)); }
+  if (s.type === 'r' && L.roots.has(s.id)) fit(true);
+}
+function groveLabel(p) { if (!p) return ''; const g = (S.meta?.groves || []).find(x => x.id === p.grove); return g ? g.label : (p._src === 'added' ? 'planted' : ''); }
+function openSheet(content, crumb, opts = {}) {
+  const sh = $('#sheet');
+  S.benchRefresh = null;
+  $('#s-body').replaceChildren(content);
+  $('#s-crumb').textContent = crumb || '';
+  $('#s-back').hidden = history_.length === 0;
+  $('#s-center').hidden = !S.sel || opts.noCenter;
+  sh.hidden = false;
+  sh.classList.toggle('compact', !!opts.compact);
+  $('#s-body').scrollTop = 0;
+}
+function closeSheet() { $('#sheet').hidden = true; history_.length = 0; S.view = null; S.editing = false; try { history.replaceState(null, '', '#'); } catch (e) {} }
+$('#s-close').addEventListener('click', () => { S.sel = null; S.ringFocus = null; closeSheet(); request(); });
+$('#s-center').addEventListener('click', () => centerOnSelection());
+$('#s-back').addEventListener('click', () => {
+  const prev = history_.pop(); if (!prev) return;
+  if (prev.kind === 'sel') { S.sel = prev.sel; openSheet(prev.sel.type === 'p' ? renderPerson(prev.sel.id) : renderRoot(prev.sel.id), prev.sel.type === 'p' ? groveLabel(S.people.get(prev.sel.id)) : 'root'); request(); }
+  else if (prev.kind === 'view') { S.sel = null; S.editing = false; S.view = prev.open; prev.open(); request(); }
+});
+function rerenderSheet() {
+  if ($('#sheet').hidden || S.editing) return;
+  if (S.sel?.type === 'p' && S.people.has(S.sel.id)) $('#s-body').replaceChildren(renderPerson(S.sel.id));
+  else if (S.sel?.type === 'r' && S.roots.has(S.sel.id)) $('#s-body').replaceChildren(renderRoot(S.sel.id));
+}
+
+function personChip(id, extra) {
+  const p = S.people.get(id); if (!p) return null;
+  const f = flagsOf(p);
+  return h('button', { type: 'button', class: 'chip' + (f.includes('f') ? ' w' : '') + (f.includes('g') ? ' g' : ''), onclick: () => select({ type: 'p', id }) },
+    extra ? h('span', { class: 'kind', text: extra }) : h('span', { class: 'dot', 'aria-hidden': 'true' }), p.en);
+}
+const KIND_WORD = { begat: 'begotten of', son: 'son of', of: 'of', built: 'built from the side of', wife: 'wife of', maid: 'handmaid of', people: 'of the people', house: 'of the house of', course: 'of the priestly family of', supposed: 'son, as was supposed, of', housed: 'housed in' };
+const REVERSE = { 'same person as': 'same person as', 'name from': 'name kept in', 'heard as': 'heard in place of', 'translated as': 'translated from', mother: 'mother of', 'wife of': 'wife', 'adopted by': 'adopted', 'nursed by': 'nursed', 'son of': 'father of', 'son of (1 Chr 3:19)': 'father of (1 Chr 3:19)', 'cousin of': 'cousin of', 'from the people of': 'their people sent away', 'name from?': 'name kept in?', "mother's father": "daughter's son", 'son-in-law of': 'father-in-law of', 'same name and tribe as': 'same name and tribe as', 'the same man as?': 'the same man as?', 'same name as': 'same name as', 'purple and trade, as in': 'purple and trade, as in', 'not related to': 'confused in English with' };
+
+function lineage(id) {
+  const out = []; let cur = id, n = 0;
+  while (cur && n < 300) { out.push(cur); cur = S.people.get(cur)?._parent; if (cur === ORIGIN) { out.push(ORIGIN); break; } n++; }
+  return out.reverse();
+}
+
+function renderPerson(id) {
+  const p = S.people.get(id);
+  const f = flagsOf(p);
+  const frag = document.createDocumentFragment();
+  // head
+  const head = h('div', { class: 'leaf-head' },
+    h('div', { class: 'names' },
+      h('h2', { class: 'en', text: id === ORIGIN ? 'of God' : p.en }),
+      p.heb ? he(p.heb, 'he') : (p.greek ? h('span', { class: 'grk', text: p.greek }) : null)),
+    h('div', { class: 'sub' },
+      p.heb ? he(unpoint(p.heb), 'he-plain') : null,
+      p.xlit ? h('span', { class: 'xl', text: p.xlit }) : null,
+      p.greek && p.heb ? h('span', { class: 'gr', text: p.greek }) : null,
+      p.strong ? h('span', { class: 'mono', text: 'Strong ' + p.strong }) : null));
+  frag.append(head);
+  if (p.gloss) frag.append(h('p', { class: 'gloss', text: p.gloss }));
+  // chips
+  const chips = h('div', { class: 'chips' });
+  if (f.includes('f')) chips.append(h('span', { class: 'chip w' }, h('span', { class: 'dot' }), 'woman'));
+  if (f.includes('u')) chips.append(h('span', { class: 'chip w' }, h('span', { class: 'dot' }), 'unnamed'));
+  if (f.includes('n')) chips.append(h('span', { class: 'chip g' }, h('span', { class: 'dot' }), 'a people'));
+  else if (f.includes('g')) chips.append(h('span', { class: 'chip g' }, h('span', { class: 'dot' }), 'house or group'));
+  if (p.years) chips.append(h('span', { class: 'chip years', text: `begat at ${p.years.beget} · lived ${p.years.total} years (MT)` }));
+  if (p.by) chips.append(h('span', { class: 'chip', text: 'planted by ' + whoName(p.by) + (p.at ? ' · ' + String(p.at).slice(0, 10) : '') }));
+  if (chips.childNodes.length) frag.append(chips);
+  // lineage
+  if (id !== ORIGIN) {
+    const line = lineage(id);
+    const path = h('div', { class: 'line-path' });
+    const showAll = line.length <= 9 || renderPerson._open === id;
+    const items = showAll ? line : [...line.slice(0, 3), null, ...line.slice(-5)];
+    items.forEach((x, i) => {
+      if (i) path.append(h('span', { class: 'sep', text: '›' }));
+      if (x === null) { path.append(h('button', { type: 'button', title: 'Show the whole line', onclick: () => { renderPerson._open = id; rerenderSheet(); }, text: `… ${line.length - 8} more …` })); return; }
+      const q = S.people.get(x);
+      if (x === id) path.append(h('span', { class: 'here', text: q.en }));
+      else path.append(h('button', { type: 'button', onclick: () => select({ type: 'p', id: x }), text: x === ORIGIN ? 'of God' : q.en }));
+    });
+    const kindWord = KIND_WORD[p.kind] || p.kind || '';
+    const ai = line.indexOf('adam'), steps = ai >= 0 ? line.length - 1 - ai : -1;
+    const coord = steps > 0 ? ` · ${steps} ${steps === 1 ? 'step' : 'steps'} from Adam` : '';
+    frag.append(h('section', { class: 'section' }, h('h3', { text: 'Root to branch · lineage' }), path,
+      p._parent && p._parent !== ORIGIN && kindWord ? h('div', { class: 'kind', text: `${kindWord} ${S.people.get(p._parent)?.en || ''}` + (p.ref ? ' · ' + refText(p.ref) : '') + coord }) : null));
+  }
+  // children
+  const ks = S.kids.get(id) || [];
+  if (ks.length) frag.append(h('section', { class: 'section' }, h('h3', { text: id === ORIGIN ? 'Of God' : `Branches · ${ks.length}` }), h('div', { class: 'chips' }, ks.map(k => personChip(k)))));
+  // secondary links
+  const links = [];
+  const fuzz = s => (s.certainty != null && s.certainty < 1 ? '?' : '');
+  for (const s of (p.sec || [])) if (S.people.has(s.id)) links.push([s.kind + fuzz(s), s.id]);
+  for (const q of S.people.values()) for (const s of (q.sec || [])) if (s.id === id) links.push([(REVERSE[s.kind] || 'linked with') + fuzz(s), q.id]);
+  if (links.length) frag.append(h('section', { class: 'section' }, h('h3', { text: 'Also joined' }), h('div', { class: 'chips' }, links.map(([k, x]) => personChip(x, k)))));
+  // aliases
+  if ((p.aliases || []).length) frag.append(h('section', { class: 'section' }, h('h3', { text: 'Other names' }),
+    ...p.aliases.map(a => h('div', { class: 'alias' }, h('span', { class: 'a-en', text: a.en }), a.heb ? he(a.heb, 'a-he') : h('span'),
+      h('span', { class: 'a-by' }, [a.by ? `named by ${a.by}` : null, a.note || null].filter(Boolean).join(' · '), a.ref ? ' · ' : '', a.ref ? refLink(a.ref) : null)))));
+  // naming verses
+  if ((p.naming || []).length) frag.append(h('section', { class: 'section' }, h('h3', { text: 'The naming' }),
+    ...p.naming.map(n => h('blockquote', { class: 'kjv' }, n.text, h('cite', {}, refLink(n.ref))))));
+  // ketiv / qere
+  if (p.kq) frag.append(h('section', { class: 'section' }, h('h3', { text: 'Written and read' }),
+    h('div', { class: 'kq' }, h('span', { class: 'lbl', text: 'written' }), he(p.kq.k, 'he written'), h('span', { class: 'lbl', text: 'read' }), he(p.kq.q, 'he read'),
+      h('span', { class: 'why' }, p.kq.note ? p.kq.note + ' · ' : '', refLink(p.kq.ref)))));
+  // note
+  if (p.note) frag.append(h('section', { class: 'section' }, h('h3', { text: 'Branch to leaf · masoret' }), h('p', { class: 'note', text: p.note })));
+  // roots
+  const rs = (p.roots || []).filter(r => S.roots.has(r.id));
+  if (rs.length) frag.append(h('section', { class: 'section' }, h('h3', { text: 'Roots' }), ...rs.map(r => rootCard(r.id, r.role, id))));
+  // letters
+  if (p.heb) {
+    for (const m of ['ph', 'ar', 'ug']) ensureScriptFont(m);
+    frag.append(h('section', { class: 'section' }, h('h3', { text: 'Letters' }),
+      h('div', { class: 'scripts' },
+        SCRIPTS.map(sc => h('div', { class: 'script-row' }, h('span', { class: 'lbl', text: sc.label }),
+          h('span', { class: 'w ' + sc.id, dir: sc.dir, lang: sc.id === 'sq' ? 'he' : null, text: sc.id === 'sq' ? p.heb : toScript(p.heb, sc.id) }))),
+        h('div', { class: 'script-row' }, h('span', { class: 'lbl', text: 'Counted' }), h('span', { class: 'count', text: String(countOf(p.heb)) })),
+        S.letters.size ? h('div', { class: 'script-row' }, h('span', { class: 'lbl', text: 'Pictures' }), h('span', { class: 'kind', style: 'font-size:0.8rem', text: clusters(p.heb).filter(c => c.ch).map(c => { const l = S.letters.get(c.ch); return l ? String(l.meaning || '').split(/[;,]/)[0].trim() : ''; }).filter(Boolean).join(' · ') })) : null),
+      h('div', { class: 'actions' }, h('button', { type: 'button', class: 'btn quiet', onclick: () => openView(() => viewBench([p.heb])) }, 'Lay it on the bench'))));
+  }
+  // references
+  const refs = [p.ref, ...(p.refs || [])].filter(Boolean);
+  if (refs.length || p.wref || (p.ref && BOOK[p.ref.split('.')[0]]?.[1])) {
+    const sef = sefariaLink(p.wref || (p.ref && BOOK[p.ref.split('.')[0]]?.[1] ? p.ref : null));
+    frag.append(h('section', { class: 'section' }, h('h3', { text: 'Read it' }), h('div', { class: 'refs' }, refs.map(r => refLink(r)), sef)));
+  }
+  // marginalia
+  frag.append(marginalia('p:' + id));
+  // actions
+  frag.append(h('div', { class: 'actions' },
+    h('button', { type: 'button', class: 'btn', onclick: () => openPlant({ parent: id }) }, 'Plant a branch here'),
+    h('a', { class: 'btn quiet', href: ghUrl(`/edit/${repoInfo().branch}/_data/leaves/${p.grove}/${id}.yml`), target: '_blank', rel: 'noopener', text: 'Edit this leaf on GitHub' })));
+  return frag;
+}
+
+function rootCard(rootId, role, fromPerson) {
+  const r = S.roots.get(rootId);
+  const users = (S.rootUsers.get(rootId) || []).filter(x => x !== fromPerson);
+  const card = h('div', { class: 'root-card' });
+  const big = rootId === 'Y' ? 'יה' : rootId === 'E' ? 'אל' : (r.cons || '');
+  card.append(h('header', {},
+    h('button', { type: 'button', class: 'icon-btn', style: 'width:auto;height:auto;border:0;padding:0', onclick: () => select({ type: 'r', id: rootId }), 'aria-label': 'Open the root ' + big }, he(big, 'rc')),
+    h('div', { class: 'rg' }, h('b', { text: r.def || (r.element ? 'element' : '') }), h('span', {}, r.w && r.w !== big ? he(r.w, 'he') : null, r.w && r.w !== big ? ' · ' : '', [r.mod ? 'homonym ' + r.mod : null, `${(S.rootUsers.get(rootId) || []).length} on the tree`].filter(Boolean).join(' · '))),
+    role && role !== 'root' ? h('span', { class: 'role', text: role === 'pun' ? 'wordplay' : 'perhaps' }) : null));
+  const body = h('div', { class: 'rc-body' });
+  if (r.note) body.append(h('p', { class: 'note', text: r.note }));
+  if (users.length) body.append(h('div', { class: 'chips' }, users.slice(0, 40).map(x => personChip(x)), users.length > 40 ? h('button', { type: 'button', class: 'chip', onclick: () => select({ type: 'r', id: rootId }) }, `+${users.length - 40} more`) : null));
+  body.append(familyTable(r, fromPerson ? 8 : 400));
+  card.append(body);
+  return card;
+}
+
+function familyTable(r, limit) {
+  const fam = r.family || [];
+  const wrap = h('div', { class: 'fam-wrap' });
+  if (!fam.length) { wrap.append(h('p', { class: 'marg empty', text: 'No word family recorded yet.' })); return wrap; }
+  const liOnTree = new Map();
+  for (const p of S.people.values()) if (p.li) { if (!liOnTree.has(p.li)) liOnTree.set(p.li, p.id); }
+  const tb = h('tbody');
+  fam.slice(0, limit).forEach(f => {
+    const onTree = f.li && liOnTree.get(f.li);
+    tb.append(h('tr', { class: onTree ? 'on-tree' : '' },
+      h('td', { class: 'w', lang: 'he', dir: 'rtl', text: f.w }),
+      h('td', { class: 'x', text: f.x || '' }),
+      h('td', { class: 'p', text: f.p || '' }),
+      h('td', { class: 'd' }, onTree ? h('button', { type: 'button', onclick: () => select({ type: 'p', id: onTree }), text: f.d || '' }) : (f.d || '')),
+      h('td', { class: 'r' }, f.r ? refLink(f.r) : '')));
+  });
+  wrap.append(h('table', { class: 'fam' }, h('thead', {}, h('tr', {}, h('th', { scope: 'col', text: 'word' }), h('th', { scope: 'col', text: 'sound' }), h('th', { scope: 'col', text: 'kind' }), h('th', { scope: 'col', text: 'meaning' }), h('th', { scope: 'col', text: 'first ref' }))), tb));
+  const box = h('div', { class: 'section' }, wrap);
+  if (fam.length > limit) box.append(h('button', { type: 'button', class: 'btn quiet more', onclick: () => select({ type: 'r', id: r.id }) }, `The whole family · ${fam.length} words`));
+  return box;
+}
+
+function renderRoot(rootId) {
+  const r = S.roots.get(rootId);
+  const frag = document.createDocumentFragment();
+  const big = rootId === 'Y' ? 'יה' : rootId === 'E' ? 'אל' : (r.cons || '');
+  frag.append(h('div', { class: 'leaf-head' },
+    h('div', { class: 'names' }, h('h2', { class: 'en', text: r.def || (rootId === 'Y' ? 'Yah' : rootId === 'E' ? 'El' : 'root') }), he(big, 'he')),
+    h('div', { class: 'sub' }, r.w ? he(r.w, 'he-plain') : null, r.mod ? h('span', { text: 'homonym ' + r.mod }) : null, r.bdb ? h('span', { class: 'mono', text: 'BDB ' + r.bdb }) : null)));
+  const users = S.rootUsers.get(rootId) || [];
+  frag.append(h('p', { class: 'gloss', text: users.length === 1 ? 'One name on the tree grows from this root.' : `${users.length} names on the tree grow from this root.` }));
+  if (r.note) frag.append(h('section', { class: 'section' }, h('h3', { text: 'Note' }), h('p', { class: 'note', text: r.note })));
+  if (users.length) frag.append(h('section', { class: 'section' }, h('h3', { text: 'The constellation' }), h('div', { class: 'chips' }, users.map(x => {
+    const role = (S.people.get(x).roots || []).find(q => q.id === rootId)?.role;
+    return personChip(x, role === 'pun' ? 'wordplay' : role === 'maybe' ? 'perhaps' : null);
+  }))));
+  frag.append(h('section', { class: 'section' }, h('h3', { text: 'The family · Brown-Driver-Briggs' }), familyTable(r, 1000)));
+  frag.append(marginalia('r:' + rootId));
+  if (!r.pending) frag.append(h('div', { class: 'actions' }, h('a', { class: 'btn quiet', href: ghUrl(`/edit/${repoInfo().branch}/_data/roots/${rootId}.yml`), target: '_blank', rel: 'noopener', text: 'Edit this root on GitHub' })));
+  else frag.append(h('p', { class: 'marg empty', text: 'This root was named by a planted leaf and has no file yet. Add one at _data/roots/ with its word family.' }));
+  return frag;
+}
+
+function marginalia(target) {
+  const list = S.notes.filter(n => n.target === target).sort((a, b) => String(a.at).localeCompare(String(b.at)));
+  const box = h('section', { class: 'section marg' }, h('h3', { text: 'Marginalia' }));
+  if (!list.length) box.append(h('p', { class: 'empty', text: 'Nothing written in this margin yet.' }));
+  for (const n of list) box.append(h('article', {}, h('p', { text: n.text }), h('footer', { text: `${whoName(n.by)} · ${String(n.at || '').slice(0, 10)}` })));
+  const tid = 'note-' + target.replace(/[^a-z0-9]/gi, '-');
+  const ta = h('textarea', { id: tid, rows: 3, maxlength: 3000, placeholder: 'Write in the margin' });
+  const by = signField(tid + '-by');
+  const form = h('form', { class: 'add-note', onsubmit: e => {
+    e.preventDefault(); const text = ta.value.trim(); if (!text) return;
+    const who = by.value.trim(); setSigner(who);
+    const at = new Date().toISOString();
+    const file = `${target.replace(/[^a-z0-9]+/gi, '-')}-${at.replace(/[^0-9]/g, '').slice(0, 14)}.yml`;
+    showProposal('A margin note', '_data/marginalia', file, yamlDoc({ target, text, by: who || 'a reader', at }));
+  } }, h('div', { class: 'field' }, h('label', { for: tid, text: 'Add a note' }), ta), h('div', { class: 'field' }, h('label', { for: tid + '-by', text: 'Signed' }), by), h('div', { class: 'actions' }, h('button', { type: 'submit', class: 'btn' }, 'Propose it')));
+  box.append(form);
+  return box;
+}
+function whoName(by) { if (!by) return 'someone'; if (by === 'claude') return 'Claude'; return String(by); }
+
+/* ------------------------------------------------------------------ proposals: the tree grows by commits */
+function repoInfo() { const m = S.meta || {}; return { slug: m.repo || REPO_DEFAULT.slug, branch: m.branch || REPO_DEFAULT.branch }; }
+function ghUrl(path) { return `https://github.com/${repoInfo().slug}${path}`; }
+function signer() { try { return localStorage.getItem('tts-by') || ''; } catch (e) { return ''; } }
+function setSigner(v) { try { if (v) localStorage.setItem('tts-by', v); } catch (e) {} }
+function signField(id) { return h('input', { id, type: 'text', maxlength: 60, value: signer(), placeholder: 'your name, or model/instance', autocomplete: 'off' }); }
+function yamlDoc(obj) {
+  const lines = [];
+  for (const [k, v] of Object.entries(obj)) {
+    if (v === null || v === undefined || v === '' || (Array.isArray(v) && !v.length)) continue;
+    if (typeof v === 'string' && (v.length > 72 || v.includes('\n'))) {
+      lines.push(`${k}: |-`);
+      for (const ln of v.split('\n')) lines.push('  ' + ln);
+    } else lines.push(`${k}: ${JSON.stringify(v)}`);
+  }
+  return lines.join('\n') + '\n';
+}
+async function copyText(t) {
+  try { await navigator.clipboard.writeText(t); return true; }
+  catch (e) { const ta = $('#proposal-text'); if (ta) { ta.focus(); ta.select(); } return false; }
+}
+function showProposal(title, dir, filename, text) {
+  const r = repoInfo();
+  const base = `https://github.com/${r.slug}/new/${r.branch}/${dir}?filename=${encodeURIComponent(filename)}`;
+  const full = base + '&value=' + encodeURIComponent(text);
+  const href = full.length <= 7000 ? full : base;
+  const ta = h('textarea', { id: 'proposal-text', class: 'yaml', rows: Math.min(18, text.split('\n').length + 1), readOnly: true, spellcheck: false });
+  ta.value = text;
+  const frag = document.createDocumentFragment();
+  frag.append(h('p', { class: 'note', text: 'The tree grows by commits. Open the file on GitHub with this text filled in and commit it there; if you are not a collaborator, GitHub offers a fork and a pull request. The live tree picks it up on the next build.' }));
+  frag.append(h('div', { class: 'proposal-path', text: `${dir}/${filename}` }));
+  frag.append(h('div', { class: 'field' }, h('label', { for: 'proposal-text', text: title }), ta));
+  frag.append(h('div', { class: 'actions' },
+    h('a', { class: 'btn primary', href, target: '_blank', rel: 'noopener', text: 'Open on GitHub' }),
+    h('button', { type: 'button', class: 'btn', onclick: () => copyText(text).then(ok => toast(ok ? 'Copied.' : 'The text is selected; copy it from there.')) }, 'Copy the text')));
+  if (href === base) frag.append(h('p', { class: 'marg empty', text: 'This one is too long to fill in through a link. Copy the text, then paste it into the new file.' }));
+  S.editing = true; S.sel = null;
+  openSheet(frag, 'proposal', { noCenter: true });
+}
+
+/* ------------------------------------------------------------------ search */
+let SEARCH = [];
+function buildSearch() {
+  SEARCH = [];
+  for (const p of S.people.values()) {
+    if (p.id === ORIGIN) continue;
+    const al = (p.aliases || []).map(a => a.en + ' ' + (a.heb ? lettersOnly(a.heb) : '')).join(' ');
+    SEARCH.push({ type: 'p', id: p.id, en: p.en, heb: p.heb || p.greek || '', gloss: p.gloss || '', hay: [p.en, p.gloss, p.xlit, lettersOnly(p.heb), al, p.greek].join(' ').toLowerCase() });
+  }
+  for (const r of S.roots.values()) SEARCH.push({ type: 'r', id: r.id, en: (r.def || '') + ' (root)', heb: r.id === 'Y' ? 'יה' : r.id === 'E' ? 'אל' : r.cons, gloss: `${(S.rootUsers.get(r.id) || []).length} names`, hay: [r.cons, r.def, lettersOnly(r.w), r.id === 'Y' ? 'yah jah name' : '', r.id === 'E' ? 'el god' : ''].join(' ').toLowerCase() });
+}
+function runSearch(qs) {
+  const q = qs.trim().toLowerCase(); if (!q) return [];
+  const qh = lettersOnly(q);
+  const out = [];
+  for (const it of SEARCH) {
+    let s = 0; const en = (it.en || '').toLowerCase();
+    if (qh) { if (lettersOnly(it.heb) === qh) s = 10; else if (it.hay.includes(qh)) s = 4; }
+    else { if (en === q) s = 10; else if (en.startsWith(q)) s = 7; else if (it.hay.includes(q)) s = 3; }
+    if (s) out.push([s + (it.type === 'p' ? 0.5 : 0), it]);
+  }
+  out.sort((a, b) => b[0] - a[0] || a[1].en.localeCompare(b[1].en));
+  return out.slice(0, 9).map(x => x[1]);
+}
+function bindPicker(input, box, onPick, filter) {
+  let items = [], idx = -1;
+  const render = () => {
+    box.replaceChildren(); if (!items.length) { box.hidden = true; return; }
+    items.forEach((it, i) => box.append(h('button', { type: 'button', role: 'option', 'aria-selected': i === idx ? 'true' : 'false', onmousedown: e => e.preventDefault(), onclick: () => { onPick(it); box.hidden = true; } },
+      h('span', { class: 'r-en', text: it.en }), it.heb ? h('span', { class: 'r-he', lang: isHeb(it.heb) ? 'he' : null, text: it.heb }) : h('span'), h('span', { class: 'r-gl', text: it.gloss }))));
+    box.hidden = false;
+  };
+  input.addEventListener('input', () => { items = runSearch(input.value).filter(filter || (() => true)); idx = items.length ? 0 : -1; render(); });
+  input.addEventListener('keydown', e => {
+    if (box.hidden) return;
+    if (e.key === 'ArrowDown') { idx = Math.min(items.length - 1, idx + 1); render(); e.preventDefault(); }
+    else if (e.key === 'ArrowUp') { idx = Math.max(0, idx - 1); render(); e.preventDefault(); }
+    else if (e.key === 'Enter') { if (items[idx]) { onPick(items[idx]); box.hidden = true; } e.preventDefault(); }
+    else if (e.key === 'Escape') { box.hidden = true; }
+  });
+  input.addEventListener('blur', () => setTimeout(() => { box.hidden = true; }, 120));
+}
+bindPicker($('#q'), $('#qres'), it => { $('#q').value = ''; $('#q').blur(); select({ type: it.type, id: it.id }); });
+
+/* ------------------------------------------------------------------ groves, rings, about */
+function openView(fn) {
+  if (S.sel && !S.editing) history_.push({ kind: 'sel', sel: S.sel });
+  S.sel = null; S.editing = false; S.view = fn; fn(); request();
+}
+function viewGroves() {
+  const frag = document.createDocumentFragment();
+  const groves = [...(S.meta?.groves || [])].sort((a, b) => a.order - b.order);
+  const added = [...S.people.values()].filter(p => p._src === 'added' && !groves.some(g => g.id === p.grove));
+  if (added.length) groves.push({ id: '__added', label: 'Planted here', heading: 'Names added on this page.', ref: null });
+  frag.append(h('p', { class: 'note', text: 'Each grove opens with the heading its own book gives it: the toledot, “these are the generations,” where there is one. Tap a heading to fly there, or a name to open its leaf.' }));
+  for (const g of groves) {
+    const members = [...S.people.values()].filter(p => g.id === '__added' ? added.includes(p) : p.grove === g.id).sort((a, b) => (a.order ?? 1e9) - (b.order ?? 1e9));
+    const first = members.find(p => p.id !== ORIGIN);
+    const div = h('div', { class: 'grove' },
+      h('button', { type: 'button', class: 'gh', onclick: () => { if (first && L.nodes.has(first.id)) { const n = L.nodes.get(first.id); focusWorld(n.x, n.y, 0.6); } } },
+        h('span', { class: 'gl', text: g.label }), h('span', { class: 'gq', text: g.heading }), h('span', { class: 'gc', text: `${members.length} names` + (g.ref ? ' · ' + refText(g.ref) : '') })));
+    const roll = h('div', { class: 'roll' }, members.filter(p => p.id !== ORIGIN).map(p => personChip(p.id)));
+    div.append(roll);
+    frag.append(div);
+  }
+  openSheet(frag, 'groves', { noCenter: true });
+}
+function viewRings() {
+  const frag = document.createDocumentFragment();
+  frag.append(h('p', { class: 'note', text: 'A ring is a session that added to the tree. Tap one to light what it grew.' }));
+  const rings = [...S.rings].sort((a, b) => String(b.date).localeCompare(String(a.date)) || String(b.id).localeCompare(String(a.id)));
+  if (!rings.length) frag.append(h('p', { class: 'marg empty', text: 'No rings recorded yet.' }));
+  for (const r of rings) {
+    const n = (r.added || []).filter(x => S.people.has(x)).length;
+    frag.append(h('button', { type: 'button', class: 'ring', 'aria-pressed': S.ringFocus && S.ringFocus._id === r.id ? 'true' : 'false', onclick: () => {
+      const set = (r.added || []).filter(x => S.people.has(x)); set._id = r.id; S.ringFocus = set.length ? set : null; request(); viewRings();
+    } }, h('span', { class: 'rd', text: r.date + ' · ' + whoName(r.by) }), h('span', { class: 'rt', text: r.title }), h('span', { class: 'rs', text: r.summary || '' }), h('span', { class: 'rn', text: n ? `${n} names lit` : 'conversation only' })));
+  }
+  {
+    const t = h('input', { id: 'ring-title', type: 'text', placeholder: 'What this session grew', maxlength: 120 });
+    const s = h('textarea', { id: 'ring-sum', rows: 3, maxlength: 2000, placeholder: 'A few lines for the next reader' });
+    const by = signField('ring-by');
+    frag.append(h('form', { class: 'plant', onsubmit: e => {
+      e.preventDefault(); if (!t.value.trim()) return;
+      const who = by.value.trim(); setSigner(who);
+      const today = new Date().toISOString().slice(0, 10);
+      const since = S.rings.map(r => r.date).sort().pop() || '0000';
+      const added = [...S.people.values()].filter(p => p.at && String(p.at).slice(0, 10) >= since).map(p => p.id);
+      showProposal('A ring', '_data/rings', `${today}-${slug(t.value)}.yml`, yamlDoc({ day: today, title: t.value.trim(), summary: s.value.trim(), by: who || 'a reader', added }));
+    } }, h('div', { class: 'field' }, h('label', { for: 'ring-title', text: 'Cut a ring' }), t), h('div', { class: 'field' }, h('label', { for: 'ring-sum', text: 'Summary' }), s), h('div', { class: 'field' }, h('label', { for: 'ring-by', text: 'Signed' }), by), h('div', { class: 'actions' }, h('button', { type: 'submit', class: 'btn' }, 'Propose the ring'))));
+  }
+  openSheet(frag, 'rings', { noCenter: true });
+}
+function legendSwatch(drawFn) { const c = h('canvas', { width: 68, height: 44 }); const x = c.getContext('2d'); x.scale(2, 2); drawFn(x); return c; }
+function viewBench(words) {
+  if (words) { S.bench = [words[0] || '', words[1] || '', words[2] || '']; S.benchNote = null; }
+  for (const m of ['ph', 'ar', 'ug']) ensureScriptFont(m);
+  const frag = document.createDocumentFragment();
+  frag.append(h('p', { class: 'note', text: 'Set up to three words and walk them through the scripts. Under each script they are laid over each other letter by letter, first letters together; where two strokes fall in the same place the ink turns white. Point the Hebrew and the clay alphabet can choose its alef by the vowel.' }));
+  const inputs = [0, 1, 2].map(i => h('input', { id: 'bench-' + i, type: 'text', class: 'c' + i, dir: 'rtl', lang: 'he', value: S.bench[i] || '', maxlength: 32, placeholder: 'מִלָּה', autocomplete: 'off', 'aria-label': 'Word ' + (i + 1) }));
+  const noteBox = h('div');
+  const panels = h('div', { class: 'section' });
+  const savedBox = h('div', { class: 'section' });
+  frag.append(h('div', { class: 'bench-inputs' }, inputs), noteBox, panels);
+  let timer = 0;
+  const entries = () => S.bench.map((w, i) => ({ w: (w || '').trim(), i })).filter(e => clusters(e.w).length);
+  function renderNote() {
+    noteBox.replaceChildren();
+    const d = S.benchNote; if (!d) return;
+    noteBox.append(h('section', { class: 'section' }, h('h3', { text: d.title || 'Reading' }), h('p', { class: 'reading-note', text: d.note || '' }),
+      h('div', { class: 'kind', text: (d.at ? String(d.at).slice(0, 10) + ' · ' : '') + whoName(d.by) })));
+  }
+  function renderPanels() {
+    const es = entries();
+    panels.replaceChildren();
+    if (!es.length) { panels.append(h('p', { class: 'marg empty', text: 'Type a word above to set it on the bench.' })); return; }
+    const canvases = [];
+    for (const sc of SCRIPTS) {
+      const cv = h('canvas', { 'aria-label': `${sc.label}: the words laid over each other`, role: 'img' });
+      canvases.push([cv, sc.id]);
+      panels.append(h('div', { class: 'lay' },
+        h('header', {}, h('b', { text: sc.label }), h('span', { text: sc.sub })),
+        h('div', { class: 'plain', dir: sc.dir }, es.map(e => h('span', { class: sc.id + ' c' + e.i, dir: sc.dir, lang: sc.id === 'sq' ? 'he' : null, text: sc.id === 'sq' ? e.w : toScript(e.w, sc.id) }))),
+        cv));
+    }
+    panels.append(h('div', { class: 'counts' }, es.map(e => h('span', { class: 'c' + e.i }, h('span', { class: 'he', lang: 'he', dir: 'rtl', text: unpoint(e.w) }), ' counts ' + countOf(e.w)))));
+    const letterBox = h('div', { class: 'section' });
+    panels.append(h('section', { class: 'section' }, h('h3', { text: 'The old names of the letters' }),
+      ...es.map(e => h('div', { class: 'names-row' }, clusters(e.w).filter(c => c.ch).map(c => h('button', { type: 'button', class: 'chip c' + e.i, onclick: () => showLetter(baseLetter(c.ch), letterBox) }, h('span', { class: 'he', lang: 'he', text: c.ch }), ' ' + (LETTER_NAMES[baseLetter(c.ch)] || ''))))),
+      letterBox));
+    const draw = () => canvases.forEach(([cv, sid]) => drawLay(cv, sid, es));
+    requestAnimationFrame(draw);
+    Promise.all(['ph', 'ar', 'ug'].map(ensureScriptFont)).then(() => requestAnimationFrame(draw));
+  }
+  inputs.forEach((inp, i) => inp.addEventListener('input', () => { S.bench[i] = inp.value; S.benchNote = null; clearTimeout(timer); timer = setTimeout(() => { renderNote(); renderPanels(); }, 160); }));
+  function setWords(ws) { S.bench = [ws[0] || '', ws[1] || '', ws[2] || '']; inputs.forEach((inp, i) => { inp.value = S.bench[i]; }); renderNote(); renderPanels(); $('#s-body').scrollTop = 0; }
+  function renderSaved() {
+    savedBox.replaceChildren(h('h3', { text: 'Readings kept' }));
+    const list = [...S.dialogs].sort((a, b) => String(b.at || '').localeCompare(String(a.at || '')));
+    if (!list.length) savedBox.append(h('p', { class: 'marg empty', text: 'No readings kept yet.' }));
+    for (const d of list) savedBox.append(h('button', { type: 'button', class: 'ring', onclick: () => { S.benchNote = d; setWords(d.words || []); } },
+      h('span', { class: 'rd', text: (d.at ? String(d.at).slice(0, 10) + ' · ' : '') + whoName(d.by) }),
+      h('span', { class: 'rt', text: d.title || (d.words || []).join(' · ') }),
+      h('span', { class: 'he-row', lang: 'he', dir: 'rtl', text: (d.words || []).filter(Boolean).join('   ') }),
+      d.note ? h('span', { class: 'rs', text: d.note.length > 220 ? d.note.slice(0, 219) + '…' : d.note }) : null));
+  }
+  frag.append(savedBox);
+  {
+    const t = h('input', { id: 'reading-title', type: 'text', maxlength: 120, placeholder: 'Name what you see' });
+    const n = h('textarea', { id: 'reading-note', rows: 3, maxlength: 3000, placeholder: 'What the letters are doing' });
+    const by = signField('reading-by');
+    const form = h('form', { class: 'plant', onsubmit: e => {
+      e.preventDefault(); const ws = entries().map(x => x.w); if (!ws.length) { toast('Set a word on the bench first.'); return; }
+      const who = by.value.trim(); setSigner(who);
+      const title = t.value.trim() || ws.map(unpoint).join(' · ');
+      showProposal('A reading', '_data/readings', `reading-${slug(t.value.trim() || 'reading')}-${rid()}.yml`, yamlDoc({ title, words: ws, note: n.value.trim(), by: who || 'a reader', at: new Date().toISOString() }));
+    } }, h('div', { class: 'field' }, h('label', { for: 'reading-title', text: 'Keep this reading' }), t), h('div', { class: 'field' }, h('label', { for: 'reading-note', text: 'Note' }), n), h('div', { class: 'field' }, h('label', { for: 'reading-by', text: 'Signed' }), by), h('div', { class: 'actions' }, h('button', { type: 'submit', class: 'btn' }, 'Propose it')));
+    frag.append(form);
+  }
+  renderNote(); renderPanels(); renderSaved();
+  openSheet(frag, 'bench', { noCenter: true });
+  S.benchRefresh = renderSaved;
+}
+function showLetter(ch, box) {
+  box.replaceChildren();
+  const l = S.letters.get(ch); if (!l) return;
+  const line = [l.picture ? 'the old sign: ' + l.picture : null, l.meaning ? 'the name: ' + l.meaning : null, 'counts ' + l.value, l.sefer_yetzirah ? 'Sefer Yetzirah: ' + l.sefer_yetzirah : null, l.greek ? 'Greek ' + l.greek + (l.latin ? ', Latin ' + l.latin : '') : null].filter(Boolean).join(' · ');
+  box.append(h('div', { class: 'reading-note' },
+    h('div', { class: 'he-row', lang: 'he', dir: 'rtl', text: `${l.char}${l.final ? ' ' + l.final : ''}  ${l.name_heb || ''}` }),
+    h('div', { class: 'kind', text: line }),
+    h('p', { class: 'note', style: 'margin:6px 0 0', text: l.note || '' }),
+    ...(l.near || []).map(n => h('div', { class: 'kind' }, h('span', { class: 'he', lang: 'he', text: n.char + ' ' }), n.note))));
+}
+function drawLay(cv, script, es) {
+  if (!cv.isConnected) return;
+  const dpr = Math.min(2.5, window.devicePixelRatio || 1);
+  const W = cv.clientWidth || 320, H = cv.clientHeight || 92;
+  cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+  const c = cv.getContext('2d'); c.setTransform(dpr, 0, 0, dpr, 0, 0);
+  c.fillStyle = rgba(COLOR['sky-0'], 0.75); c.fillRect(0, 0, W, H);
+  const seqs = es.map(e => glyphs(e.w, script));
+  const n = Math.max(1, ...seqs.map(q => q.length));
+  const pad = 10, slot = Math.min(66, (W - pad * 2) / n);
+  const fsz = Math.max(14, Math.min(56, slot * 0.9, H * 0.7));
+  const fam = script === 'ph' ? FONTS.phoen : script === 'ar' ? FONTS.aram : script === 'ug' ? FONTS.ugar : FONTS.hebrew;
+  const rtl = script !== 'ug';
+  c.strokeStyle = rgba(COLOR.ink, 0.07); c.lineWidth = 1;
+  for (let li = 0; li <= n; li++) { const x = Math.round(rtl ? W - pad - slot * li : pad + slot * li) + 0.5; c.beginPath(); c.moveTo(x, 8); c.lineTo(x, H - 8); c.stroke(); }
+  c.font = `${script === 'sq' ? '500 ' : ''}${fsz}px ${fam}`;
+  c.textAlign = 'center'; c.textBaseline = 'middle';
+  c.globalCompositeOperation = 'lighter';
+  const cols = [COLOR['water-hi'], COLOR['wine-hi'], COLOR.gold];
+  seqs.forEach((seq, wi) => {
+    c.fillStyle = rgba(cols[es[wi].i] || cols[0], 0.92);
+    seq.forEach((g, li) => c.fillText(g, rtl ? W - pad - slot * (li + 0.5) : pad + slot * (li + 0.5), H / 2 + 2));
+  });
+  c.globalCompositeOperation = 'source-over';
+}
+function viewAbout() {
+  const frag = h('div', { class: 'about section' });
+  frag.append(h('p', { class: 'gloss', text: S.meta?.motto || 'Root to branch: lineage. Branch to leaf: masoret.' }));
+  if (Array.isArray(S.meta?.idea) && S.meta.idea.length) frag.append(h('section', { class: 'section' }, h('h3', { text: 'The idea' }), h('blockquote', { class: 'thesis' }, ...S.meta.idea.map(t => h('p', { style: 'margin:0 0 10px', text: t })), h('cite', { text: S.meta.thesis_by || '' }))));
+  else if (S.meta?.thesis) frag.append(h('blockquote', { class: 'thesis' }, S.meta.thesis, h('cite', { text: S.meta.thesis_by || '' })));
+  frag.append(h('p', { text: 'Above the horizon, each star is a name, and each branch runs from a parent to a child as the text gives it: begat, son of, of the house of. Below, each strand is a Hebrew root; the more names it feeds, the deeper it reaches toward the water. Yah and El, the elements of the Name, are the taproots. Strands run from water-blue to wine as they rise. Tap a star for its leaf: the naming verse, the written and read forms, the notes, and the word family of every root it grows from.' }));
+  const L2 = h('div', { class: 'legend-list' });
+  const row = (fn, text) => h('div', { class: 'lg' }, legendSwatch(fn), h('span', { text }));
+  L2.append(
+    row(x => { x.fillStyle = COLOR.star; x.beginPath(); x.arc(17, 11, 3, 0, 7); x.fill(); }, 'a name'),
+    row(x => { x.fillStyle = COLOR.purple; x.beginPath(); x.arc(17, 11, 3, 0, 7); x.fill(); }, 'a woman'),
+    row(x => { x.strokeStyle = COLOR.silver; x.beginPath(); x.arc(17, 11, 3.5, 0, 7); x.stroke(); }, 'a house, a group, or a people'),
+    row(x => { x.fillStyle = COLOR.star; x.beginPath(); x.arc(15, 12, 3, 0, 7); x.fill(); x.beginPath(); x.arc(21, 9, 1.6, 0, 7); x.fill(); }, 'more than one name (renamed, or named twice)'),
+    row(x => { x.fillStyle = COLOR.star; x.beginPath(); x.arc(17, 14, 3, 0, 7); x.fill(); x.strokeStyle = COLOR.gold; x.beginPath(); x.arc(17, 6, 1.8, 0, 7); x.stroke(); }, 'the circellus: written one way, read another'),
+    row(x => { x.strokeStyle = COLOR.silver; x.lineWidth = 1.2; x.beginPath(); x.moveTo(4, 16); x.bezierCurveTo(12, 16, 20, 6, 30, 6); x.stroke(); }, 'begat, or son of'),
+    row(x => { x.strokeStyle = COLOR.silver; x.setLineDash([3, 3]); x.beginPath(); x.moveTo(4, 16); x.bezierCurveTo(12, 16, 20, 6, 30, 6); x.stroke(); }, 'belongs to a people or a house'),
+    row(x => { x.strokeStyle = COLOR.purple; x.setLineDash([3, 3]); x.beginPath(); x.moveTo(4, 16); x.bezierCurveTo(12, 16, 20, 6, 30, 6); x.stroke(); }, 'wife, handmaid, built, housed'),
+    row(x => { const g = x.createLinearGradient(0, 20, 0, 2); g.addColorStop(0, COLOR.water); g.addColorStop(1, COLOR['wine-hi']); x.strokeStyle = g; x.lineWidth = 2; x.beginPath(); x.moveTo(6, 20); x.bezierCurveTo(10, 10, 22, 8, 28, 2); x.stroke(); }, 'a root strand, water to wine'));
+  frag.append(h('section', { class: 'section' }, h('h3', { text: 'Reading the sky' }), L2));
+  frag.append(h('section', { class: 'section' }, h('h3', { text: 'Letters' }), h('p', { text: 'Every leaf now shows the old picture behind each of its letters, and on the Letters bench each letter opens to its own note: its sign, its value, the Greek and Latin letters it became, and the letters it is easily taken for. The letter buttons above the sky set every name in an older hand: the Old Hebrew letters of the kingdoms; the Aramaic script that, by the Talmud’s account, came in with Ezra (Sanhedrin 21b); and the clay alphabet of Ugarit, pressed with a stylus and read left to right. These are transcriptions of the Hebrew consonants, not spellings found in those places. In clay the alef carries its vowel, so El begins with the i-alef and Adam with the a-alef. The Letters bench lays words over each other, letter by letter, and keeps the readings you name.' })));
+  frag.append(h('section', { class: 'section' }, h('h3', { text: 'Growing it' }), h('p', { text: 'The tree lives in a public repository, one small YAML file per leaf, root, reading, ring and margin note, and this page rebuilds from it on every commit. Plant, Propose and Edit open the right file on GitHub with the text filled in; commit it there, or send it as a pull request. Each session that adds something cuts a ring and signs it.' })));
+  const minds = h('div', { class: 'refs', style: 'display:grid;gap:6px;font-family:var(--font-body);font-size:var(--step--1)' });
+  for (const [href, label, what] of [['llms.txt', 'llms.txt', 'where a model should start'], ['names.txt', 'names.txt', 'every name, one per line'], ['llms-full.txt', 'llms-full.txt', 'every leaf, root and reading as plain text'], ['tree.json', 'tree.json', 'the whole tree as one JSON document'], [ghUrl(`/blob/${repoInfo().branch}/AGENTS.md`), 'AGENTS.md', 'how a model reads, writes and signs a contribution'], [ghUrl(''), 'The repository', 'the files themselves']])
+    minds.append(h('span', {}, h('a', { href, target: href.startsWith('http') ? '_blank' : null, rel: href.startsWith('http') ? 'noopener' : null, text: label }), ' · ' + what));
+  frag.append(h('section', { class: 'section' }, h('h3', { text: 'For minds' }), h('p', { text: 'Every map is first ingested as a name, so the front door for a model is the list of names.' }), minds));
+  const src = h('div', { class: 'refs', style: 'display:grid;gap:6px;font-family:var(--font-body);font-size:var(--step--1)' });
+  for (const s of (S.meta?.sources || [])) src.append(h('span', {}, h('a', { href: s.url, target: '_blank', rel: 'noopener', text: s.name }), ' · ' + s.license));
+  frag.append(h('section', { class: 'section' }, h('h3', { text: 'Sources' }), src));
+  openSheet(frag, 'about', { noCenter: true });
+}
+$('#b-groves').addEventListener('click', () => openView(viewGroves));
+$('#b-rings').addEventListener('click', () => openView(viewRings));
+$('#b-about').addEventListener('click', () => openView(viewAbout));
+$('#b-bench').addEventListener('click', () => openView(() => viewBench()));
+$('#b-plant').addEventListener('click', () => openView(() => openPlant({})));
+
+/* ------------------------------------------------------------------ plant + edit */
+const KINDS = [['begat', 'begat (child of)'], ['son', 'son or daughter of'], ['of', 'of (belongs to)'], ['house', 'of the house of'], ['people', 'of the people of'], ['wife', 'wife of'], ['maid', 'handmaid of'], ['course', 'priestly family of'], ['supposed', 'as was supposed']];
+function rootRefsFromText(txt) {
+  const out = [];
+  for (let tok of String(txt || '').split(/[,\s]+/).filter(Boolean)) {
+    let role = 'root';
+    if (tok.startsWith('~')) { role = 'pun'; tok = tok.slice(1); } else if (tok.startsWith('?')) { role = 'maybe'; tok = tok.slice(1); }
+    let ref;
+    if (/^(yah|y)$/i.test(tok) || tok === 'יה') ref = { root: 'יה', id: 'Y' };
+    else if (/^(el|e)$/i.test(tok) || tok === 'אל') ref = { root: 'אל', id: 'E' };
+    else if (S.roots.has(tok) && !S.roots.get(tok).pending) ref = { root: S.roots.get(tok).cons, id: tok };
+    else {
+      const c = lettersOnly(tok); if (!c) continue;
+      const found = [...S.roots.values()].filter(r => r.cons === c && !r.pending).sort((a, b) => (S.rootUsers.get(b.id) || []).length - (S.rootUsers.get(a.id) || []).length)[0];
+      ref = found ? { root: c, id: found.id } : { root: c };
+    }
+    if (role !== 'root') ref.role = role;
+    out.push(ref);
+  }
+  return out;
+}
+
+function personForm(p, isNew) {
+  const f = (id, label, input, hint) => h('div', { class: 'field' }, h('label', { for: id, text: label }), input, hint ? h('span', { class: 'hint', text: hint }) : null);
+  const en = h('input', { id: 'pf-en', type: 'text', value: p.en || '', placeholder: 'as the King James spells it', maxlength: 80 });
+  const heb = h('input', { id: 'pf-heb', type: 'text', class: 'he', dir: 'rtl', lang: 'he', value: p.heb || '', placeholder: 'עברית', maxlength: 80 });
+  const xl = h('input', { id: 'pf-xl', type: 'text', value: p.xlit || '', placeholder: 'transliteration', maxlength: 80 });
+  const gl = h('input', { id: 'pf-gl', type: 'text', value: p.gloss || '', placeholder: 'what the name means', maxlength: 200 });
+  const parentName = h('input', { id: 'pf-parent', type: 'text', value: p.parent ? (S.people.get(p.parent)?.en || '') : '', placeholder: 'search the tree', autocomplete: 'off' });
+  let parentId = p.parent || null;
+  const pres = h('div', { class: 'results', hidden: true, role: 'listbox' });
+  bindPicker(parentName, pres, it => { parentId = it.id; parentName.value = it.en; }, it => it.type === 'p' && it.id !== p.id);
+  const kind = h('select', { id: 'pf-kind' }, KINDS.map(([v, t]) => h('option', { value: v, text: t, selected: (p.kind || 'begat') === v })));
+  const ref = h('input', { id: 'pf-ref', type: 'text', value: p.ref || '', placeholder: 'Gen.4.18', maxlength: 40 });
+  const roots = h('input', { id: 'pf-roots', type: 'text', class: 'he', dir: 'rtl', lang: 'he', value: '', placeholder: 'נתן יה', maxlength: 120 });
+  const note = h('textarea', { id: 'pf-note', rows: 4, maxlength: 4000, value: p.note || '', placeholder: 'the masoret: what the name carries' });
+  note.value = p.note || '';
+  const woman = h('input', { id: 'pf-f', type: 'checkbox', checked: flagsOf(p).includes('f') });
+  const group = h('input', { id: 'pf-g', type: 'checkbox', checked: flagsOf(p).includes('g') });
+  const by = signField('pf-by');
+  const form = h('form', { class: 'plant' },
+    h('div', { class: 'row2' }, f('pf-en', 'Name', en), f('pf-heb', 'Hebrew', heb)),
+    h('div', { class: 'row2' }, f('pf-xl', 'Sound', xl), f('pf-gl', 'Meaning', gl)),
+    h('div', { class: 'row2' }, h('div', { class: 'field picker' }, h('label', { for: 'pf-parent', text: 'Branch of' }), parentName, pres), f('pf-kind', 'Joined as', kind)),
+    h('div', { class: 'row2' }, f('pf-roots', 'Roots', roots, 'Hebrew letters; יה or אל for the Name; ~ for wordplay, ? for perhaps'), f('pf-ref', 'Verse', ref, 'book.chapter.verse')),
+    f('pf-note', 'Note', note),
+    f('pf-by', 'Signed', by),
+    h('div', { class: 'chips' }, h('label', { class: 'chip' }, woman, 'a woman'), h('label', { class: 'chip' }, group, 'a house, group or people')));
+  form._collect = () => {
+    const flags = (woman.checked ? 'f' : '') + (group.checked ? 'g' : '');
+    const who = by.value.trim(); setSigner(who);
+    return { en: en.value.trim(), heb: heb.value.trim() || null, xlit: xl.value.trim() || null, gloss: gl.value.trim(), parent: parentId || ORIGIN, kind: kind.value, ref: ref.value.trim() || null, flags: flags || null, roots: rootRefsFromText(roots.value), note: note.value.trim() || null, by: who || 'a reader', at: new Date().toISOString() };
+  };
+  return form;
+}
+function openPlant({ parent }) {
+  const p = { parent: parent || null };
+  const form = personForm(p, true);
+  form.append(h('div', { class: 'actions' }, h('button', { type: 'submit', class: 'btn primary' }, 'Propose the leaf')));
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const out = form._collect();
+    if (!out.en) { toast('Give the name first.'); return; }
+    const base = slug(out.en); let id = base, n = 2;
+    while (S.people.has(id)) id = base + '-' + (n++);
+    const grove = S.people.get(out.parent)?.grove || 'planted';
+    showProposal('A new leaf', `_data/leaves/${grove}`, `${id}.yml`, yamlDoc(out));
+  });
+  const frag = document.createDocumentFragment();
+  frag.append(h('p', { class: 'note', text: parent ? `A new branch of ${S.people.get(parent)?.en}. Fill in what you know; the next step opens the leaf as a file on GitHub.` : 'A new name for the tree. Choose where it branches from; without a parent it hangs from the root. The next step opens the leaf as a file on GitHub.' }), form);
+  if (parent && S.sel) { history_.push({ kind: 'sel', sel: S.sel }); }
+  S.sel = null; S.editing = true;
+  openSheet(frag, 'plant', { noCenter: true });
+}
+function stripNulls(o) { const r = {}; for (const [k, v] of Object.entries(o)) if (v !== null && v !== undefined && !k.startsWith('_')) r[k] = v; return r; }
+
+/* ------------------------------------------------------------------ mode + zoom buttons */
+for (const b of document.querySelectorAll('.seg button')) b.addEventListener('click', () => {
+  S.mode = b.dataset.mode;
+  for (const o of document.querySelectorAll('.seg button')) o.setAttribute('aria-pressed', String(o === b));
+  try { localStorage.setItem('tts-mode', S.mode); } catch (e) {}
+  ensureScriptFont(S.mode);
+  request();
+});
+$('#z-in').addEventListener('click', () => zoomAt(canvas.clientWidth / 2, canvas.clientHeight / 2, 1.5));
+$('#z-out').addEventListener('click', () => zoomAt(canvas.clientWidth / 2, canvas.clientHeight / 2, 1 / 1.5));
+$('#z-fit').addEventListener('click', () => fit(true));
+document.addEventListener('keydown', e => {
+  if (e.target.closest('input, textarea, select')) return;
+  if (e.key === 'Escape') { S.sel = null; S.ringFocus = null; closeSheet(); request(); }
+  if (e.key === '/') { e.preventDefault(); $('#q').focus(); }
+  if (e.key === '+' || e.key === '=') zoomAt(canvas.clientWidth / 2, canvas.clientHeight / 2, 1.3);
+  if (e.key === '-') zoomAt(canvas.clientWidth / 2, canvas.clientHeight / 2, 1 / 1.3);
+});
+
+function updateCount() {
+  const n = [...S.people.values()].filter(p => p.id !== ORIGIN && !flagsOf(p).includes('u')).length;
+  const r = S.roots.size;
+  $('#count').replaceChildren(h('b', { text: String(n) }), ' names told · ', h('b', { text: String(r) }), ' roots');
+}
+function setStatus(title, text) {
+  const st = $('#status');
+  if (!title) { st.hidden = true; return; }
+  st.hidden = false; st.replaceChildren(h('h2', { text: title }), h('p', { text }));
+}
+
+/* ------------------------------------------------------------------ data wiring: tree.json */
+function collectNotes(m, out = []) {
+  if (!m || typeof m !== 'object') return out;
+  for (const v of Object.values(m)) {
+    if (v && typeof v === 'object' && typeof v.text === 'string' && v.target) out.push(v);
+    else if (v && typeof v === 'object') collectNotes(v, out);
+  }
+  return out;
+}
+function ingest(d) {
+  S.meta = Object.assign({}, d.meta || {}, { groves: (d.groves || []).map((g, i) => Object.assign({ order: i }, g)) });
+  const people = new Map();
+  for (const [grove, leaves] of Object.entries(d.leaves || {})) {
+    for (const [id, leaf] of Object.entries(leaves || {})) {
+      if (!leaf || typeof leaf !== 'object' || Array.isArray(leaf)) continue;
+      const p = Object.assign({}, leaf, { id, grove });
+      p.sec = (Array.isArray(leaf.links) ? leaf.links : []).filter(l => l && l.to).map(l => ({ id: l.to, kind: l.kind || 'linked with', certainty: l.certainty }));
+      p.roots = (Array.isArray(leaf.roots) ? leaf.roots : []).map(r => typeof r === 'string' ? { root: r } : (r || {}));
+      if (p.flags != null) p.flags = String(p.flags);
+      people.set(id, p);
+    }
+  }
+  const roots = new Map();
+  for (const [id, r] of Object.entries(d.roots || {})) if (r && typeof r === 'object') roots.set(id, Object.assign({}, r, { id, mod: r.homonym || null, family: Array.isArray(r.family) ? r.family : [] }));
+  const byCons = new Map();
+  for (const r of roots.values()) { if (!byCons.has(r.cons)) byCons.set(r.cons, []); byCons.get(r.cons).push(r.id); }
+  for (const p of people.values()) {
+    p.roots = p.roots.map(r => {
+      let id = r.id && roots.has(r.id) ? r.id : null;
+      const raw = String(r.root || '');
+      if (!id) {
+        if (raw === 'יה' || /^y(ah)?$/i.test(raw)) id = 'Y';
+        else if (raw === 'אל' || /^el?$/i.test(raw)) id = 'E';
+        else {
+          const c = lettersOnly(raw);
+          if (c && byCons.get(c)) id = byCons.get(c)[0];
+          else if (c) { id = 'cons-' + c; if (!roots.has(id)) { roots.set(id, { id, cons: c, w: c, def: '', family: [], pending: true }); byCons.set(c, [id]); } }
+        }
+      }
+      return id ? { id, role: r.role || 'root' } : null;
+    }).filter(Boolean);
+  }
+  S.hw.people = people; S.hw.roots = roots;
+  S.dialogs = Object.entries(d.readings || {}).filter(([, r]) => r && typeof r === 'object').map(([id, r]) => Object.assign({ id }, r, { words: Array.isArray(r.words) ? r.words : [] }));
+  S.rings = Object.entries(d.rings || {}).filter(([, r]) => r && typeof r === 'object').map(([id, r]) => Object.assign({ id }, r, { date: String(r.day || r.date || ''), added: Array.isArray(r.added) ? r.added : [] }));
+  S.notes = collectNotes(d.marginalia);
+  S.letters = new Map();
+  for (const l of Object.values(d.letters || {})) {
+    if (!l || typeof l !== 'object' || !l.char) continue;
+    S.letters.set(l.char, l);
+    if (l.final) S.letters.set(l.final, l);
+    const pic = String(l.meaning || '').split(/[;,]/)[0].trim();
+    const el = /mother/.test(String(l.sefer_yetzirah || '')) ? ' · ' + String(l.sefer_yetzirah).split('·').pop().trim() : '';
+    LETTER_NAMES[l.char] = `${l.name} · ${pic}${el}`;
+  }
+  S.heartwoodSeen = true;
+}
+let firstData = true;
+function afterData() {
+  mergeAll();
+  if (!S.people.size) setStatus('Nothing planted yet', 'The repository has no leaves. Plant the first name with Plant.');
+  else setStatus(null);
+  if (firstData && S.people.size) {
+    firstData = false; fit(false); growStart = 0; grown = reduceMotion ? 1 : 0;
+    const hash = decodeURIComponent((location.hash || '').slice(1));
+    if (hash && (S.people.has(hash) || S.roots.has(hash))) setTimeout(() => select({ type: S.people.has(hash) ? 'p' : 'r', id: hash }), 400);
+  }
+  rerenderSheet();
+  request();
+}
+async function boot() {
+  readColors();
+  try { const m = localStorage.getItem('tts-mode'); if (m && ['en', 'pt', 'un', 'ph', 'ar', 'ug'].includes(m)) { S.mode = m; ensureScriptFont(m); for (const o of document.querySelectorAll('.seg button')) o.setAttribute('aria-pressed', String(o.dataset.mode === m)); } } catch (e) {}
+  resize();
+  new ResizeObserver(() => resize()).observe(canvas);
+  let data;
+  try {
+    const res = await fetch('tree.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    data = await res.json();
+  } catch (e) {
+    setStatus('The tree did not load', 'tree.json could not be read (' + (e && e.message ? e.message : 'unknown error') + '). The site is built by GitHub Pages; opened as a bare file it has nothing to read.');
+    return;
+  }
+  ingest(data);
+  afterData();
+}
+(document.fonts && document.fonts.ready ? Promise.race([document.fonts.ready, new Promise(r => setTimeout(r, 1800))]) : Promise.resolve()).then(() => request());
+boot();
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+en: Gershom
+heb: גֵּרְשֹׁם
+xlit: gērĕšōm
+gloss: a stranger there; expelled
+parent: moses
+kind: begat
+ref: Exod.2.22
+order: 275
+roots:
+- {root: גרש, id: r-c-di}
+- {root: גור, id: r-c-bf, role: pun}
+naming:
+- {ref: Exod.2.22, text: 'And she bare him a son, and he called his name Gershom: for he said,
+    I have been a stranger in a strange land.'}
+links:
+- {to: zipporah, kind: mother}
+strong: '1647'
+li: con
+note: >-
+  'I have been a stranger (ger) in a strange land' (Exod 2:22): ger sham, a stranger there.
+  The same consonants spell garash, driven out.

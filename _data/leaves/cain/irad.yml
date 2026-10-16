@@ -1,0 +1,16 @@
+en: Irad
+heb: עִירָד
+xlit: ʿîrād
+gloss: 'uncertain: city? wild ass?'
+parent: enoch-c
+kind: begat
+ref: Gen.4.18
+order: 6
+roots:
+- {root: עיר, id: r-p-cn, role: maybe}
+- {root: ערה, id: r-p-fi, role: maybe}
+strong: '5897'
+li: jju
+note: >-
+  Uncertain. Some hear ir, city, his father's city; others arod, wild ass. Seth's list has
+  Jared in the same slot.
