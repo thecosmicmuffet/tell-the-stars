@@ -1,0 +1,13 @@
+char: ด
+position: 20
+name: do dek
+name_native: ด เด็ก
+meaning: child
+class: mid
+sound: d
+ipa: d
+final_sound: t
+near:
+- {char: ต, note: a notch at the top is the whole difference}
+note: >-
+  Thai's everyday d. No Sanskrit stop is said the way Thai says ด or บ.

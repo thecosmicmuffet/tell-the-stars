@@ -1,0 +1,13 @@
+char: ฟ
+position: 31
+name: fo fan
+name_native: ฟ ฟัน
+meaning: tooth
+class: low
+sound: f
+ipa: f
+final_sound: p
+near:
+- {char: พ, note: the stem rises above the line in ฟ}
+note: >-
+  Thai's f again, in the low class.

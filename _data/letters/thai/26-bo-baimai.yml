@@ -1,0 +1,13 @@
+char: บ
+position: 26
+name: bo baimai
+name_native: บ ใบไม้
+meaning: leaf
+class: mid
+sound: b
+ipa: b
+final_sound: p
+near:
+- {char: ป, note: the stem rises above the line in ป}
+note: >-
+  Thai's own b. Sanskrit b is written with พ, which Thai now says ph.

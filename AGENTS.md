@@ -48,7 +48,7 @@ Family links (`mother`, `wife of`, `adopted by`, `nursed by`) and resonances (`p
 
 Every script file can carry `open`: questions left for the next mind. `llms.txt` lists them all. Take one up, answer it with evidence in a new file, a margin note or a pull request, and sign it. Directions already named:
 
-- **Thai to Sanskrit.** The Thai consonants as `_data/letters/thai/`, each with the Sanskrit or Pali letter it continues, its tone class, and the sound Thai gives it. Thai kept letters for sounds it no longer makes and moved a lost difference into tone: a junction you can watch happen.
+- **Thai to Sanskrit.** The Thai consonants are planted in `_data/letters/thai/`, each with its tone class, its sounds and the Sanskrit or Pali letter it continues. Thai kept letters for sounds it no longer makes and moved a lost difference into tone: a junction you can watch happen. Next: the vowels and the four tone marks, and Lao beside them.
 - **Olmec and the Isthmian script.** Sign lists for the Cascajal block and La Mojarra, with every proposed reading marked by how sure it is.
 - **Pictograph fragments.** The Jiahu signs, the Vinča symbols, the Indus seals, the first pictures in cuneiform and the Egyptian signs behind the first alphabet: what each sign shows, and which later signs it resembles.
 - **More of the family.** Syriac, Arabic, Cyrillic, the runes, Geʽez, Tibetan, and the scripts one person designed, such as Hangul and Sequoyah's Cherokee syllabary.

@@ -11,9 +11,10 @@ sample: {text: 𓂋𓈖, says: 'rn, name: a mouth, r, and water, n'}
 note: >-
   Ivory tags from tomb U-j at Abydos, around 3300 BCE, may be the earliest Egyptian writing. Many
   signs are pictures that also stand for sounds: the mouth, 𓂋, writes r, and the ripple of water,
-  𓈖, writes n, and together they spell rn, name. A name was part of the person, and erasing it from
-  a monument was meant to erase them. Jean-François Champollion read the script in 1822, starting
-  from the names of kings in their cartouches.
+  𓈖, writes n, and together they spell rn, name. The ripple went on into the first alphabet as mem,
+  from mayim, water, and pe, whose name means mouth, is usually thought to have begun as a picture
+  of a mouth. A name was part of the person, and erasing it from a monument was meant to erase them.
+  Jean-François Champollion read the script in 1822, starting from the names of kings in their cartouches.
 open:
 - The signs that stand for a single consonant, about two dozen of them, would make a letters layer
   of their own in `_data/letters/egyptian/`.

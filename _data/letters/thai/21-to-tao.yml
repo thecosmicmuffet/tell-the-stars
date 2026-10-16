@@ -1,0 +1,12 @@
+char: ต
+position: 21
+name: to tao
+name_native: ต เต่า
+meaning: turtle
+class: mid
+sound: t
+ipa: t
+final_sound: t
+sanskrit: त ta
+near:
+- {char: ด, note: a notch at the top is the whole difference}

@@ -1,0 +1,12 @@
+char: ถ
+position: 22
+name: tho thung
+name_native: ถ ถุง
+meaning: sack
+class: high
+sound: th
+ipa: tʰ
+final_sound: t
+sanskrit: थ tha
+near:
+- {char: ภ, note: they differ only at the foot}

@@ -1,0 +1,14 @@
+char: ภ
+position: 32
+name: pho samphao
+name_native: ภ สำเภา
+meaning: junk, a sailing ship
+class: low
+sound: ph
+ipa: pʰ
+final_sound: p
+sanskrit: भ bha
+near:
+- {char: ถ, note: they differ only at the foot}
+note: >-
+  Sanskrit bha: ภาษา, phasa, language, is bhāṣā.

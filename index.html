@@ -1548,12 +1548,16 @@ function showLetter(ch, box) {
 function showLetterObj(l, box) {
   box.replaceChildren();
   const heb = !l.script || l.script === 'hebrew';
-  const line = [l.picture ? 'the old sign: ' + l.picture : null, l.meaning ? 'the name: ' + l.meaning : null, l.value != null ? 'counts ' + l.value : null, l.sefer_yetzirah ? 'Sefer Yetzirah: ' + l.sefer_yetzirah : null, l.greek ? 'Greek ' + l.greek + (l.latin ? ', Latin ' + l.latin : '') : null].filter(Boolean).join(' · ');
+  const sc = heb ? null : S.scripts.get(l.script);
+  const fam = sc && sc.font ? sc.font : null;
+  const sound = (l.sound || l.ipa) ? 'sound ' + [l.sound, l.ipa ? '/' + l.ipa + '/' : null].filter(Boolean).join(' ') + (l.final_sound ? ', final ' + l.final_sound : '') : null;
+  const line = [l.picture ? 'the old sign: ' + l.picture : null, l.meaning ? (heb ? 'the name: ' : 'named for: ') + l.meaning : null, l.class ? l.class + ' class' : null, sound, l.value != null ? 'counts ' + l.value : null, l.sefer_yetzirah ? 'Sefer Yetzirah: ' + l.sefer_yetzirah : null, l.sanskrit ? 'Sanskrit ' + l.sanskrit : null, l.greek ? 'Greek ' + l.greek + (l.latin ? ', Latin ' + l.latin : '') : null, l.obsolete ? 'no longer used' : null].filter(Boolean).join(' · ');
   box.append(h('div', { class: 'reading-note' },
-    h('div', { class: heb ? 'he-row' : 'he-row lat', lang: heb ? 'he' : null, dir: heb ? 'rtl' : null, text: `${l.char}${l.final ? ' ' + l.final : ''}  ${l.name_heb || l.name || ''}` }),
-    h('div', { class: 'kind', text: line }),
-    h('p', { class: 'note', style: 'margin:6px 0 0', text: l.note || '' }),
-    ...(l.near || []).map(n => h('div', { class: 'kind' }, h('span', { class: 'he', lang: 'he', text: n.char + ' ' }), n.note))));
+    heb ? h('div', { class: 'he-row', lang: 'he', dir: 'rtl', text: `${l.char}${l.final ? ' ' + l.final : ''}  ${l.name_heb || ''}` })
+      : h('div', { class: 'he-row lat', style: bodyWith(fam), text: `${l.char}   ${l.name_native || ''}${l.name ? '  · ' + l.name : ''}` }),
+    h('div', { class: 'kind', style: heb ? null : bodyWith(fam), text: line }),
+    l.note ? h('p', { class: 'note', style: 'margin:6px 0 0;' + (heb ? '' : bodyWith(fam) || ''), text: String(l.note) }) : null,
+    ...(l.near || []).map(n => h('div', { class: 'kind' }, h('span', heb ? { class: 'he', lang: 'he', text: n.char + ' ' } : { style: fontStyle(fam), text: n.char + ' ' }), n.note))));
 }
 function drawLay(cv, script, es) {
   if (!cv.isConnected) return;

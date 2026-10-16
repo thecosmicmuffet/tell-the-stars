@@ -1,0 +1,14 @@
+char: ซ
+position: 11
+name: so so
+name_native: ซ โซ่
+meaning: chain
+class: low
+sound: s
+ipa: s
+final_sound: t
+near:
+- {char: ช, note: a notch at the top is the whole difference}
+note: >-
+  A Thai letter with no Sanskrit source: a low-class s, the partner of high-class ส, so that s can
+  carry both sets of tones.

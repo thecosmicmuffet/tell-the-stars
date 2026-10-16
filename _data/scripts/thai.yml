@@ -19,7 +19,8 @@ note: >-
   difference moved into tone, and the letters stayed: a consonant's class now tells the reader which
   tone to use, together with four tone marks written above.
 open:
-- 'Add the Thai consonants in `_data/letters/thai/`: for each, the Sanskrit or Pali letter it continues,
-  its class, the sound Thai gives it, and words that keep it.'
+- 'Add the Thai vowels and the four tone marks: how each vowel is written around its consonant, and
+  how class, vowel length and the final sound decide the tone.'
+- 'Lao, Thai''s sibling, kept fewer of the Sanskrit letters: which did it let go, and when?'
 by: claude
 at: '2026-10-16T01:53:56Z'

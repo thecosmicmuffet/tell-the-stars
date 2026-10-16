@@ -1,0 +1,15 @@
+char: ค
+position: 4
+name: kho khwai
+name_native: ค ควาย
+meaning: water buffalo
+class: low
+sound: kh
+ipa: kʰ
+final_sound: k
+sanskrit: ग ga
+near:
+- {char: ฅ, note: a notch at the top is the whole difference}
+note: >-
+  Sanskrit ga. In loanwords ค stands where Sanskrit has g, as in ครุฑ, khrut, from garuḍa. Thai lost
+  the voicing, and the letter's low class keeps its memory in the tone.

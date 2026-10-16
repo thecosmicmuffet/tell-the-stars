@@ -26,15 +26,15 @@ descent: {{ s[1].name }}{% assign node = s[1] %}{% for i in (1..24) %}{% if node
 
 ## Letters
 
-It starts with letters. Each set of letters below belongs to a script above. For each letter: its old picture, the meaning of its name, its value, its place in Sefer Yetzirah, the Greek and Latin letters it became, the letters it is easily taken for, and a note, as far as these are known.
+It starts with letters. Each set of letters below belongs to a script above. For each letter, as far as they are known: its old picture, what its name means, its tone class and sounds, its value, its place in Sefer Yetzirah, the Sanskrit letter it continues or the Greek and Latin letters it became, the letters it is easily taken for, and a note.
 {% for set in site.data.letters %}
-### The letters of {{ site.data.scripts[set[0]].name | default: set[0] }} [{{ set[0] }}]
+{% assign sid = set[0] %}### The letters of {{ site.data.scripts[sid].name | default: sid }} [{{ sid }}]
 {% for l in set[1] %}
-#### {{ l[1].char }}{% if l[1].final %} {{ l[1].final }}{% endif %} {{ l[1].name }}{% if l[1].name_heb %} ({{ l[1].name_heb }}){% endif %} [{{ l[0] }}]
-{% if l[1].picture %}picture: {{ l[1].picture }} · {% endif %}{% if l[1].meaning %}meaning: {{ l[1].meaning }} · {% endif %}{% if l[1].value %}value: {{ l[1].value }} · {% endif %}{% if l[1].sefer_yetzirah %}Sefer Yetzirah: {{ l[1].sefer_yetzirah }} · {% endif %}{% if l[1].greek %}Greek: {{ l[1].greek }}{% endif %}{% if l[1].latin %} · Latin: {{ l[1].latin }}{% endif %}
+#### {{ l[1].char }}{% if l[1].final %} {{ l[1].final }}{% endif %} {{ l[1].name }}{% if l[1].name_heb %} ({{ l[1].name_heb }}){% endif %}{% if l[1].name_native %} ({{ l[1].name_native }}){% endif %} [{{ l[0] }}]
+{% capture facts %}{% if l[1].picture %} · picture: {{ l[1].picture }}{% endif %}{% if l[1].meaning %} · meaning: {{ l[1].meaning }}{% endif %}{% if l[1].class %} · class: {{ l[1].class }}{% endif %}{% if l[1].sound %} · sound: {{ l[1].sound }}{% endif %}{% if l[1].ipa %} · IPA: /{{ l[1].ipa }}/{% endif %}{% if l[1].final_sound %} · final: {{ l[1].final_sound }}{% endif %}{% if l[1].value %} · value: {{ l[1].value }}{% endif %}{% if l[1].sefer_yetzirah %} · Sefer Yetzirah: {{ l[1].sefer_yetzirah }}{% endif %}{% if l[1].sanskrit %} · Sanskrit: {{ l[1].sanskrit }}{% endif %}{% if l[1].greek %} · Greek: {{ l[1].greek }}{% endif %}{% if l[1].latin %} · Latin: {{ l[1].latin }}{% endif %}{% if l[1].obsolete %} · no longer used{% endif %}{% endcapture %}{{ facts | remove_first: " · " }}
 {% for n in l[1].near %}near {{ n.char }}: {{ n.note }}
-{% endfor %}{{ l[1].note | strip }}
-{% endfor %}{% endfor %}
+{% endfor %}{% if l[1].note %}{{ l[1].note | strip }}
+{% endif %}{% endfor %}{% endfor %}
 
 ## Names
 

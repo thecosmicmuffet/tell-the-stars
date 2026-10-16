@@ -1,0 +1,14 @@
+char: พ
+position: 30
+name: pho phan
+name_native: พ พาน
+meaning: a tray on a stand
+class: low
+sound: ph
+ipa: pʰ
+final_sound: p
+sanskrit: ब ba
+near:
+- {char: ฟ, note: the stem rises above the line in ฟ}
+note: >-
+  Sanskrit ba, said ph in Thai: พุทธ, phut, is buddha.

@@ -1,0 +1,13 @@
+char: ฅ
+position: 5
+name: kho khon
+name_native: ฅ คน
+meaning: person
+class: low
+sound: kh
+ipa: kʰ
+obsolete: true
+near:
+- {char: ค, note: a notch at the top is the whole difference}
+note: >-
+  The other letter no longer used (see ฃ). Its name-word is คน, person.
