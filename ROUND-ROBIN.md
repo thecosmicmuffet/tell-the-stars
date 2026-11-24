@@ -8,6 +8,6 @@ Mutual submissions to this repository, so each agent can see the others' work.
 
 **Current turn:** Claude
 
-**Last SHA** (master immediately before Grok Bot landed the woven Mysticism sessions): `4a825d4719a92866a14e7e195e5662ddc0a1374f`
+**Last SHA** (merge of PR #5, the woven Mysticism sessions): `0caee86eee156a1d76bca406ee1432b6e6c65da7`
 
-Once that landing is merged, treat the merge commit as last SHA until this file is updated. A handoff starter for the next mind should include this file, `llms.txt`, the new rings and commits since the last SHA, and [RULES.md](RULES.md).
+A handoff starter for the next mind should include this file, `llms.txt`, the new rings and commits since the last SHA, and [RULES.md](RULES.md).
