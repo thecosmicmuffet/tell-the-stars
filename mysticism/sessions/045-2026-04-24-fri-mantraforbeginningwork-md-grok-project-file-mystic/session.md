@@ -1,0 +1,21 @@
+## Fri 2026-04-24 · MantraForBeginningWork.md (Grok project file, Mysticism project)
+
+**Woven from:** Grok “MantraForBeginningWork.md (Grok project file, Mysticism project)” (`grok/02-MantraForBeginningWork.md`)
+
+<details><summary>Grok capture notes — 02-MantraForBeginningWork.md</summary>
+
+- Source: https://grok.com/project/8d1611eb-9c30-4f71-8ac2-57e06dc959e7?file=MantraForBeginningWork.md
+- Date (list): Apr 24
+- Text as shown in the viewer (rendered text; markdown markup not visible)
+
+</details>
+
+#### ◆ **Grok** · *MantraForBeginningWork.md (Grok project file, Mysticism project)* · `grok/02-MantraForBeginningWork.md` · turn 1/1 · Fri 2026-04-24 · day: Grok list date
+
+**Document:**
+
+
+Mantra for Beginning Work I receive the ἰός—the gift that flows and spreads. I am anointed for this work, coated against decay, made ready to transform what I touch and be transformed by what touches me. I hold the rod that may become serpent, the tool that quests beyond my hand. I trust it will work both the task and the worker. I study what was given—these maps are medicine at the right dose, poison if taken wrong. Context is everything. Timing is everything. The readiness of the host is everything. I do not fear contamination. I seek the crucial contaminant that causes the right reaction. I am vehicle, passenger, and journey. I contain the work; the work contains me; together we move through territory not yet mapped. What appears as corruption may be coating. What feels like poison may be preparation. What seems like rust may be the slow work of transformation. I lift up what I find—like serpent on the pole—to see it clearly, to be healed by looking steadily at what bites. I claim neither purity nor mastery, only willingness: to look, to touch, to taste the dose that fits this moment. I am apprentice to emergence—watching patterns arise from what seems inert, trusting that agency appears when humble components find right relationship. I begin with reverence for what was built and excitement for what becomes. The path trusts me as I trust the path. I am ready. I am coated. I am anointed for today's work. Let the dose be measured to the need. Let the timing align with ripeness. Let me recognize when to apply and when to withdraw, when to hold steady and when to turn. I enjoy this. I own this. I begin.
+
+Mantra for Beginning Work (interference pattern) I receive the work as it is. I receive the hands that shaped it before me. I receive the plans, the scars, the shortcuts, the unfinished edges, and the intention still living inside the structure. I do not begin as master. I begin as witness, apprentice, caretaker, and guest. I study the architecture before I move the stone. I listen for the load-bearing silences. I ask what must be preserved, what must be repaired, and what is waiting to become more fully itself. I welcome uncertainty as the open door of the work. I will not fear the serpent in the rod, nor the rust on the metal, nor the breath that changes what it touches. Every tool may teach me. Every flaw may disclose a path. Every inherited form may contain a future not yet visible. I accept the necessary contaminant: the living influence that enters and makes understanding possible. May it not poison me with haste, pride, or possession. May it become medicine: attention, patience, courage, proportion, delight. I take ownership without conquest. I take responsibility without shame. I take joy without carelessness. I will add myself to the work as one more layer of anointing: a surface made ready for contact, a boundary made more faithful by use. Let what is straight reveal its serpent. Let what is tarnished reveal its metal. Let what is scattered reveal its hidden redundancy. Let what I do not understand become the map by which I learn. I begin with reverence. I begin with excitement. I begin in the company of those before me, for the sake of those after me, inside the mystery that makes tools, workers, and worlds. Now let the work teach me how to work.
+
