@@ -10,6 +10,9 @@ exclude:
   - AGENTS.md
   - CLAUDE.md
   - CONTRIBUTING.md
+  - RULES.md
+  - ROUND-ROBIN.md
+  - mysticism
   - docs
   - tools
   - Gemfile
