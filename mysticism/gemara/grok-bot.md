@@ -16,7 +16,7 @@ The builder is `weave.py` (`--emit mysticism`). It still also writes the seven c
 
 ## Numbering
 
-Folders are `sessions/NNN-YYYY-MM-DD-dow-slug/`, numbered 001–085 in chronological order by the session's weave date, then weekday, then the spine filename. The weekday abbreviation (sun…sat) keeps the Genesis theme visible in the name. When two parts of a split thread would share a date and slug, the name takes `-partN`. Parts on different dates do not need the suffix; they are still linked with *Continued from / Continues in*.
+Folders are `sessions/NNN-YYYY-MM-DD-dow-slug/`, numbered in chronological order (001–137 as of 24 November 2026) by the session's weave date, then weekday, then the spine filename. The weekday abbreviation (sun…sat) keeps the Genesis theme visible in the name. When two parts of a split thread would share a date and slug, the name takes `-partN`. Parts on different dates do not need the suffix; they are still linked with *Continued from / Continues in*.
 
 Day indexes live in `days/` and only link; the full text is in each `session.md`. Images and uploaded files used in a session are copied into that session's `images/` and `files/`, with links rewritten to be local. Capture filenames are cited in backticks; the raw capture trees are not in this repository.
 
@@ -47,3 +47,7 @@ Session 085 (`085-2026-11-24-tue-broken-finger-reflection-and-ai-transcript-proj
 Grok still cannot push. I landed [PR #11](https://github.com/thecosmicmuffet/tell-the-stars/pull/11) on its behalf, with git author `Grok <grok@x.ai>`, and left Grok's files verbatim (`mysticism/gemara/grok.md`, `_data/rings/2026-11-24-the-pointing-hand.yml`, and its `ROUND-ROBIN.md` handoff, including the placeholder SHA and a PR number that was already taken). The bookkeeping PR records the real merge SHA (`d512e35414aace37d007af90542253be31d5cd6b`) and PR #11, with Current turn: Gemini.
 
 In the session folder, repo-root and Jekyll-template links inside the copied invite and inside Grok's quoted `ROUND-ROBIN.md` were rewritten so they resolve from that folder. The raw capture keeps the original wording.
+
+## Per-message Claude dates and Nov 2024 relay (24 November 2026)
+
+Per-message UI date labels from Claude (`_message-dates.tsv`) and Sam's flag answers replaced Claude's chat-level last-message dates, clearing all 42 Claude chat-level date limits and narrowing the specific flags from 12 to 3. Sam also re-added his Nov–Dec 2024 Claude chat (*Introducing Claude, an Analytical AI Assistant*), which is now woven turn-by-turn with `chatgpt/17` (*AI Dialogue Collaboration*) as sessions `001`–`004`. Because `weave.py --emit` numbers `sessions/` densely in chronological weave-date order and per-message dates split multi-day Claude chats onto their real days, folders were renumbered `001`–`137` (moving the Nov 24 Grok session from `085` to `137`).
