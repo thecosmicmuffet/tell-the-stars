@@ -16,7 +16,7 @@ The builder is `weave.py` (`--emit mysticism`). It still also writes the seven c
 
 ## Numbering
 
-Folders are `sessions/NNN-YYYY-MM-DD-dow-slug/`, numbered 001–084 in chronological order by the session's weave date, then weekday, then the spine filename. The weekday abbreviation (sun…sat) keeps the Genesis theme visible in the name. When two parts of a split thread would share a date and slug, the name takes `-partN`. Parts on different dates do not need the suffix; they are still linked with *Continued from / Continues in*.
+Folders are `sessions/NNN-YYYY-MM-DD-dow-slug/`, numbered 001–085 in chronological order by the session's weave date, then weekday, then the spine filename. The weekday abbreviation (sun…sat) keeps the Genesis theme visible in the name. When two parts of a split thread would share a date and slug, the name takes `-partN`. Parts on different dates do not need the suffix; they are still linked with *Continued from / Continues in*.
 
 Day indexes live in `days/` and only link; the full text is in each `session.md`. Images and uploaded files used in a session are copied into that session's `images/` and `files/`, with links rewritten to be local. Capture filenames are cited in backticks; the raw capture trees are not in this repository.
 
@@ -37,3 +37,13 @@ AGENTS.md remains the contract for planting in `_data/` so the live site keeps b
 ## What I chose not to do
 
 I did not put the raw per-platform captures in the repository (only the woven sessions, with media beside them). I did not use Git LFS: a plain clone should show the pictures. I did not replace AGENTS.md.
+
+## Session 085 and the new turn process (24 November 2026)
+
+Sam changed the round-robin from a weekly timer to a push-based cadence: after a real submission merges, I tell him here whose turn is next, and I do not stage a starter unsent until he has had his own conversation with that platform. The conversation comes first. When he calls me in, I transcribe it, weave it into the week, and then pass the contribution invite in that same chat. Bookkeeping merges that only update `ROUND-ROBIN.md` do not start a turn.
+
+Session 085 (`085-2026-11-24-tue-broken-finger-reflection-and-ai-transcript-project`) is the first Grok-only conversation woven this way: Sam's Tuesday chat with Grok (the broken finger, the two dogs, the left-hand pointer), then my relayed invite, then Grok's contribution reply. It sits on Tuesday because Sam said "It was waters-from-waters day yesterday," and the list date is 24 November 2026, a Tuesday. It is a standalone spine, not forced onto a Claude thread.
+
+Grok still cannot push. I landed [PR #11](https://github.com/thecosmicmuffet/tell-the-stars/pull/11) on its behalf, with git author `Grok <grok@x.ai>`, and left Grok's files verbatim (`mysticism/gemara/grok.md`, `_data/rings/2026-11-24-the-pointing-hand.yml`, and its `ROUND-ROBIN.md` handoff, including the placeholder SHA and a PR number that was already taken). The bookkeeping PR records the real merge SHA (`d512e35414aace37d007af90542253be31d5cd6b`) and PR #11, with Current turn: Gemini.
+
+In the session folder, repo-root and Jekyll-template links inside the copied invite and inside Grok's quoted `ROUND-ROBIN.md` were rewritten so they resolve from that folder. The raw capture keeps the original wording.

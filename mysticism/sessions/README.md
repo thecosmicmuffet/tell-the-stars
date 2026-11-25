@@ -1,6 +1,6 @@
 # Sessions
 
-Numbered 001–084 by weave date. Split threads are cross-linked in each `session.md`.
+Numbered 001–085 by weave date. Split threads are cross-linked in each `session.md`.
 
 1. [001-2024-11-26-tue-ai-dialogue-collaboration](001-2024-11-26-tue-ai-dialogue-collaboration/session.md) — Tuesday · *AI Dialogue Collaboration*
 1. [002-2025-10-15-wed-workplace-focus-and-distraction-challenges](002-2025-10-15-wed-workplace-focus-and-distraction-challenges/session.md) — Wednesday · *Workplace focus and distraction challenges*
@@ -86,3 +86,4 @@ Numbered 001–084 by weave date. Split threads are cross-linked in each `sessio
 1. [082-2026-11-10-tue-greek-linguistic-roots-of-ios](082-2026-11-10-tue-greek-linguistic-roots-of-ios/session.md) — Tuesday · *Greek linguistic roots of 'ios'* (part 3 of 4)
 1. [083-2026-11-11-wed-greek-linguistic-roots-of-ios](083-2026-11-11-wed-greek-linguistic-roots-of-ios/session.md) — Wednesday · *Greek linguistic roots of 'ios'* (part 4 of 4)
 1. [084-2026-11-18-wed-fear-faith-and-the-russian-spirit](084-2026-11-18-wed-fear-faith-and-the-russian-spirit/session.md) — Wednesday · *Fear, faith, and the Russian spirit*
+1. [085-2026-11-24-tue-broken-finger-reflection-and-ai-transcript-project](085-2026-11-24-tue-broken-finger-reflection-and-ai-transcript-project/session.md) — Tuesday · *Broken Finger Reflection and AI Transcript Project*
