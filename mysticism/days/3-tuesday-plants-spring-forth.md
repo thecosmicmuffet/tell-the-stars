@@ -7,7 +7,7 @@
 > **ChatGPT** (chatgpt/15): “Day Three — Dry Land and Seed: landing humbly in learning” — “Day Three gives the ground.”  
 > **Mistral** (mistral/01): “Day Three — Dry Land and First Greening: Taking Root in Learning” / “Day Three — The Plane (2 dimensions): Consequence, Emergence, the First Area”
 
-*14 session(s) on this day, oldest first. Labels and flags are explained in [README.md](../README.md).*
+*15 session(s) on this day, oldest first. Labels and flags are explained in [README.md](../README.md).*
 
 ## Sessions
 
@@ -25,6 +25,7 @@
 - [Tue 2026-06-30 · Trust as a muscle: causality, correlation, and Zalgo (part 3 of 3)](../sessions/064-2026-06-30-tue-trust-as-a-muscle-causality-correlation-and-zalgo-part3/session.md)
 - [Tue 2026-10-06 · Abstraction failing at its own foundation (part 3 of 4)](../sessions/074-2026-10-06-tue-abstraction-failing-at-its-own-foundation/session.md)
 - [Tue 2026-11-10 · Greek linguistic roots of 'ios' (part 3 of 4)](../sessions/082-2026-11-10-tue-greek-linguistic-roots-of-ios/session.md)
+- [Tue 2026-11-24 · Broken Finger Reflection and AI Transcript Project](../sessions/085-2026-11-24-tue-broken-finger-reflection-and-ai-transcript-project/session.md)
 
 ---
 

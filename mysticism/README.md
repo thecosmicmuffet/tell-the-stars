@@ -2,12 +2,12 @@
 
 Sam's ask: *"this is a transcript where you synthesize the appearance of weaving Claude and OpenAI into the same sessions"*, organized by the day-of-week themes of the Genesis week. The Claude and ChatGPT threads never heard each other; this weave puts them side by side. Grok, Gemini and Mistral passages are woven in the same way where Sam sent them the same words.
 
-These files are the woven week as landed in [tell-the-stars](https://github.com/thecosmicmuffet/tell-the-stars). Every message in the captures appears once, word for word; nothing was trimmed. Images and uploaded files sit in each session folder (`images/`, `files/`). Captures: 45 Claude, 32 ChatGPT, 2 Grok, 1 Gemini, 1 Mistral. Rebuild with `python3 tools/weave.py --emit mysticism` from a checkout that also has the raw captures, or from the box copy at `/workspace/mysticism`.
+These files are the woven week as landed in [tell-the-stars](https://github.com/thecosmicmuffet/tell-the-stars). Every message in the captures appears once, word for word; nothing was trimmed. Images and uploaded files sit in each session folder (`images/`, `files/`). Captures: 45 Claude, 32 ChatGPT, 3 Grok, 1 Gemini, 1 Mistral. Rebuild with `python3 tools/weave.py --emit mysticism` from a checkout that also has the raw captures, or from the box copy at `/workspace/mysticism`.
 
 ## Layout
 
 - [days/](days/) — one index per Genesis weekday, linking into sessions
-- [sessions/](sessions/) — 84 woven sessions, numbered 001–084 in chronological order
+- [sessions/](sessions/) — 85 woven sessions, numbered 001–085 in chronological order
 - [starters.md](starters.md) — draft openings, one per day, modeled on the Genesis chat
 - [gemara/](gemara/) — voluntary public notes by each mind, so successor activations need not retread the same search
 
@@ -40,7 +40,7 @@ Mistral's first Genesis reply puts Day One on "Monday morning of the spirit". Th
 - **Same words.** When Sam sent the identical text to two platforms, it is printed once, with *"Sam sent the same words here as to Claude above."* If he edited it at all, both versions are printed.
 - **Relays.** Where Sam pasted another platform's reply (or an earlier chat's reply) into a message, that passage sits between `⟪relayed from X — reply in “title” (file, message n, date)⟫` and `⟪end relayed⟫`. These were found by matching his text against every captured reply. Relays whose source isn't in the captures are marked by hand.
 - **Flags.** `⚑ day unsure` and `⚑ source unsure` appear inline and are all listed below.
-- **Numbering.** Folders are `NNN-YYYY-MM-DD-dow-slug`, 001–084 by the session's weave date, then weekday, then spine filename. When two parts of a split thread would share a date and slug, the folder name takes `-partN`.
+- **Numbering.** Folders are `NNN-YYYY-MM-DD-dow-slug`, 001–085 by the session's weave date, then weekday, then spine filename. When two parts of a split thread would share a date and slug, the folder name takes `-partN`.
 
 ## Counts per day
 
@@ -50,12 +50,12 @@ Turns are one Sam message plus its reply. Messages are in brackets. "Placed" mea
 |---|---|---|---|---|---|---|---|
 | [Sunday](days/1-sunday-light.md) | 5 | 19 (38) | 16 (32) | – | – | – | Claude 19, ChatGPT 10 |
 | [Monday](days/2-monday-waters-from-waters.md) | 10 | 25 (50) | 28 (53) | – | – | – | Claude 25, ChatGPT 25 |
-| [Tuesday](days/3-tuesday-plants-spring-forth.md) | 14 | 30 (60) | 78 (156) | – | 3 (6) | 7 (14) | Claude 30, ChatGPT 71, Mistral 7 |
+| [Tuesday](days/3-tuesday-plants-spring-forth.md) | 15 | 30 (60) | 78 (156) | 3 (6) | 3 (6) | 7 (14) | Claude 30, ChatGPT 71, Grok 3, Mistral 7 |
 | [Wednesday](days/4-wednesday-starlight.md) | 13 | 38 (76) | 16 (32) | 1 (2) | 2 (4) | – | Claude 38, ChatGPT 33, Gemini 5 |
 | [Thursday](days/5-thursday-birds-fish-monsters.md) | 13 | 41 (82) | 18 (36) | – | – | – | Claude 41, ChatGPT 60 |
 | [Friday](days/6-friday-naming.md) | 22 | 92 (183) | 83 (161) | 3 (5) | – | – | Claude 92, ChatGPT 54, Grok 4 |
 | [Saturday](days/7-saturday-sabbath.md) | 7 | 22 (44) | 14 (28) | – | – | – | Claude 22 |
-| **Total** | 84 | 267 (533) | 253 (498) | 4 (7) | 5 (10) | 7 (14) | |
+| **Total** | 85 | 267 (533) | 253 (498) | 7 (13) | 5 (10) | 7 (14) | |
 
 ## Which chats are woven together
 
@@ -109,8 +109,9 @@ Turns are one Sam message plus its reply. Messages are in brackets. "Placed" mea
 | `chatgpt/14-kosher-laws-and-spirituality.md` — *Kosher Laws and Spirituality* | — | [Tue 2026-06-16](sessions/059-2026-06-16-tue-kosher-laws-and-spirituality/session.md) (part 1 of 2) → [Thu 2026-06-18](sessions/060-2026-06-18-thu-kosher-laws-and-spirituality/session.md) (part 2 of 2) |
 | `chatgpt/17-ai-dialogue-collaboration.md` — *AI Dialogue Collaboration* | — | [Tue 2024-11-26](sessions/001-2024-11-26-tue-ai-dialogue-collaboration/session.md) |
 | `grok/02-MantraForBeginningWork.md` — *MantraForBeginningWork.md (Grok project file, Mysticism project)* | — | [Fri 2026-04-24](sessions/045-2026-04-24-fri-mantraforbeginningwork-md-grok-project-file-mystic/session.md) |
+| `grok/03-broken-finger-reflection.md` — *Broken Finger Reflection and AI Transcript Project* | — | [Tue 2026-11-24](sessions/085-2026-11-24-tue-broken-finger-reflection-and-ai-transcript-project/session.md) |
 
-Not woven with a Claude chat: **chatgpt/14** *Kosher Laws and Spirituality*, which relays Claude's bird readings from claude/11 rather than replaying that chat; **chatgpt/17** *AI Dialogue Collaboration* (Nov 2024), Sam's intermediary dialogue between ChatGPT and a Claude chat outside this project; **grok/02** *MantraForBeginningWork.md*, a Grok project file holding the two mantras; and **claude/2026-02-22**, Claude's interrupted reply, which Sam re-sent the next day as claude/2026-02-23.
+Not woven with a Claude chat: **chatgpt/14** *Kosher Laws and Spirituality*, which relays Claude's bird readings from claude/11 rather than replaying that chat; **chatgpt/17** *AI Dialogue Collaboration* (Nov 2024), Sam's intermediary dialogue between ChatGPT and a Claude chat outside this project; **grok/02** *MantraForBeginningWork.md*, a Grok project file holding the two mantras; **grok/03** *Broken Finger Reflection and AI Transcript Project*, a Grok-only Tuesday session that includes Grok Bot's relayed contribution invite; and **claude/2026-02-22**, Claude's interrupted reply, which Sam re-sent the next day as claude/2026-02-23.
 
 ## Everything flagged "unsure"
 
